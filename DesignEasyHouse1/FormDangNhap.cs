@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DesignEasyHouse1
 {
-    public partial class SampleMenuForm : Form
+    public partial class FormDangNhap : Form
     {
-        public SampleMenuForm()
+        public FormDangNhap()
         {
             InitializeComponent();
         }

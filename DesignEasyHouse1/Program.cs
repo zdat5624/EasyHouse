@@ -16,8 +16,7 @@ namespace DesignEasyHouse1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SampleMenuForm());
-            Application.Run(new SampleChildForm());
+            Application.Run(new FormDangNhap());
         }
     }
 }

@@ -13,3 +13,4 @@ C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\DesignEasyHouse1\DesignEasyHouse1\obj\De
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\DesignEasyHouse1\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.pdb
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\DesignEasyHouse1\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.SampleChildForm.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\DesignEasyHouse1\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.SampleMenuForm.resources
+C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\DesignEasyHouse1\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.FormDangNhap.resources
