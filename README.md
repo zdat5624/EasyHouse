@@ -8,3 +8,5 @@ Segoe UI, 12pt
 test pull vào nhánh lethanhdat
 
 test merge nhánh
+
+test merge nhánh 2
