@@ -6,3 +6,5 @@ font:
 Segoe UI, 12pt
 
 test pull vào nhánh lethanhdat
+
+test merge nhánh
