@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\DesignEasyHouse1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\DesignEasyHouse1\\DesignEasyHouse1\\FormDangNhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DesignEasyHouse1\\FormDangNhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\dulieucuatoi\\nam3hk1\\congnghephanmem\\designeasyhouse1\\designeasyhouse1\\formgiamdoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formgiamdoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\dulieucuatoi\\nam3hk1\\congnghephanmem\\designeasyhouse1\\designeasyhouse1\\formkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\dulieucuatoi\\nam3hk1\\congnghephanmem\\designeasyhouse1\\designeasyhouse1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormDangNhap.cs",
-              "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\DesignEasyHouse1\\DesignEasyHouse1\\FormDangNhap.cs",
-              "RelativeDocumentMoniker": "DesignEasyHouse1\\FormDangNhap.cs",
-              "ToolTip": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\DesignEasyHouse1\\DesignEasyHouse1\\FormDangNhap.cs",
-              "RelativeToolTip": "DesignEasyHouse1\\FormDangNhap.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAwA0AAAAFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FormKhachHang.cs [Design]",
+              "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\DesignEasyHouse1\\DesignEasyHouse1\\FormKhachHang.cs",
+              "RelativeDocumentMoniker": "DesignEasyHouse1\\FormKhachHang.cs",
+              "ToolTip": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\DesignEasyHouse1\\DesignEasyHouse1\\FormKhachHang.cs [Design]",
+              "RelativeToolTip": "DesignEasyHouse1\\FormKhachHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T01:26:36.168Z",
+              "WhenOpened": "2024-10-02T07:51:17.156Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormGiamDoc.cs [Design]",
+              "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\DesignEasyHouse1\\DesignEasyHouse1\\FormGiamDoc.cs",
+              "RelativeDocumentMoniker": "DesignEasyHouse1\\FormGiamDoc.cs",
+              "ToolTip": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\DesignEasyHouse1\\DesignEasyHouse1\\FormGiamDoc.cs [Design]*",
+              "RelativeToolTip": "DesignEasyHouse1\\FormGiamDoc.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T07:50:41.703Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\DesignEasyHouse1\\DesignEasyHouse1\\Program.cs",
+              "RelativeDocumentMoniker": "DesignEasyHouse1\\Program.cs",
+              "ToolTip": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\DesignEasyHouse1\\DesignEasyHouse1\\Program.cs",
+              "RelativeToolTip": "DesignEasyHouse1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T07:31:06.253Z",
               "EditorCaption": ""
             }
           ]
