@@ -33,10 +33,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +85,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.textBox2);
@@ -96,6 +98,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(482, 453);
             this.panel2.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(101, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(275, 54);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "ĐĂNG NHẬP";
             // 
             // label3
             // 
@@ -129,15 +141,16 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Tên đăng nhập";
             // 
-            // label4
+            // label5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(101, 27);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(275, 54);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "ĐĂNG NHẬP";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkGray;
+            this.label5.Location = new System.Drawing.Point(83, 314);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(113, 23);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Đổi mật khẩu";
             // 
             // FormDangNhap
             // 
@@ -168,5 +181,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
