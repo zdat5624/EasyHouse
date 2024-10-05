@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace DesignEasyHouse1
 {
-    public partial class FormKhachHang : Form
+    public partial class FormPhongBan : Form
     {
-        public FormKhachHang()
+        public FormPhongBan()
         {
             InitializeComponent();
         }
     }
+
+
+
 }

@@ -1,6 +1,6 @@
 ﻿namespace DesignEasyHouse1
 {
-    partial class FormKhachHang
+    partial class FormCuDan
     {
         /// <summary>
         /// Required designer variable.
@@ -19,6 +19,7 @@
             }
             base.Dispose(disposing);
         }
+
 
 
         #region Windows Form Designer generated code
@@ -1010,5 +1011,6 @@
         private System.Windows.Forms.Button button39;
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button37;
+
     }
 }

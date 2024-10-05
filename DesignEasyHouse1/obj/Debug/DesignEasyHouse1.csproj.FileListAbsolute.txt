@@ -25,7 +25,6 @@ C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\bin
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.csproj.AssemblyReference.cache
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.FormDangNhap.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.FormGiamDoc.resources
-C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.FormKhachHang.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.SampleChildForm.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.SampleMenuForm.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.Properties.Resources.resources
