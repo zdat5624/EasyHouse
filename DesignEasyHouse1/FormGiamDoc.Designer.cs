@@ -77,8 +77,28 @@
             this.button29 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.panel1Menu.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1Menu
@@ -86,46 +106,25 @@
             this.panel1Menu.AutoScroll = true;
             this.panel1Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.panel1Menu.Controls.Add(this.button30);
-            this.panel1Menu.Controls.Add(this.button47);
-            this.panel1Menu.Controls.Add(this.button46);
-            this.panel1Menu.Controls.Add(this.button43);
+            this.panel1Menu.Controls.Add(this.panel1);
             this.panel1Menu.Controls.Add(this.button42);
-            this.panel1Menu.Controls.Add(this.button41);
-            this.panel1Menu.Controls.Add(this.button40);
-            this.panel1Menu.Controls.Add(this.button39);
+            this.panel1Menu.Controls.Add(this.panel12);
             this.panel1Menu.Controls.Add(this.button38);
-            this.panel1Menu.Controls.Add(this.button37);
-            this.panel1Menu.Controls.Add(this.button36);
-            this.panel1Menu.Controls.Add(this.button35);
+            this.panel1Menu.Controls.Add(this.panel11);
             this.panel1Menu.Controls.Add(this.button34);
-            this.panel1Menu.Controls.Add(this.button33);
-            this.panel1Menu.Controls.Add(this.button32);
-            this.panel1Menu.Controls.Add(this.button31);
+            this.panel1Menu.Controls.Add(this.panel10);
             this.panel1Menu.Controls.Add(this.button23);
-            this.panel1Menu.Controls.Add(this.button22);
-            this.panel1Menu.Controls.Add(this.button21);
-            this.panel1Menu.Controls.Add(this.button16);
+            this.panel1Menu.Controls.Add(this.panel9);
             this.panel1Menu.Controls.Add(this.button6);
-            this.panel1Menu.Controls.Add(this.button24);
-            this.panel1Menu.Controls.Add(this.button25);
-            this.panel1Menu.Controls.Add(this.button26);
+            this.panel1Menu.Controls.Add(this.panel8);
             this.panel1Menu.Controls.Add(this.button27);
-            this.panel1Menu.Controls.Add(this.button17);
-            this.panel1Menu.Controls.Add(this.button18);
-            this.panel1Menu.Controls.Add(this.button19);
+            this.panel1Menu.Controls.Add(this.panel7);
             this.panel1Menu.Controls.Add(this.button20);
-            this.panel1Menu.Controls.Add(this.button7);
-            this.panel1Menu.Controls.Add(this.button12);
-            this.panel1Menu.Controls.Add(this.button13);
-            this.panel1Menu.Controls.Add(this.button14);
+            this.panel1Menu.Controls.Add(this.panel6);
             this.panel1Menu.Controls.Add(this.button15);
-            this.panel1Menu.Controls.Add(this.button8);
-            this.panel1Menu.Controls.Add(this.button9);
-            this.panel1Menu.Controls.Add(this.button10);
+            this.panel1Menu.Controls.Add(this.panel5);
             this.panel1Menu.Controls.Add(this.button11);
-            this.panel1Menu.Controls.Add(this.button5);
-            this.panel1Menu.Controls.Add(this.button4);
-            this.panel1Menu.Controls.Add(this.button3);
+            this.panel1Menu.Controls.Add(this.panel4);
             this.panel1Menu.Controls.Add(this.button2);
             this.panel1Menu.Controls.Add(this.button1);
             this.panel1Menu.Controls.Add(this.panel3);
@@ -133,27 +132,27 @@
             this.panel1Menu.Location = new System.Drawing.Point(0, 0);
             this.panel1Menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1Menu.Name = "panel1Menu";
-            this.panel1Menu.Size = new System.Drawing.Size(270, 629);
+            this.panel1Menu.Size = new System.Drawing.Size(270, 1055);
             this.panel1Menu.TabIndex = 0;
             // 
             // button30
             // 
             this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
             this.button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button30.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button30.Dock = System.Windows.Forms.DockStyle.Top;
             this.button30.FlatAppearance.BorderSize = 0;
             this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button30.ForeColor = System.Drawing.Color.White;
             this.button30.Image = global::DesignEasyHouse1.Properties.Resources.icons8_logout_38;
             this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button30.Location = new System.Drawing.Point(0, 1838);
+            this.button30.Location = new System.Drawing.Point(0, 1956);
             this.button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button30.Name = "button30";
             this.button30.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button30.Size = new System.Drawing.Size(249, 76);
             this.button30.TabIndex = 30;
-            this.button30.Text = "ĐĂNG XUẤT";
+            this.button30.Text = "  ĐĂNG XUẤT";
             this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button30.UseVisualStyleBackColor = false;
             // 
@@ -166,7 +165,7 @@
             this.button47.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button47.ForeColor = System.Drawing.Color.White;
             this.button47.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button47.Location = new System.Drawing.Point(0, 1799);
+            this.button47.Location = new System.Drawing.Point(0, 78);
             this.button47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button47.Name = "button47";
             this.button47.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -185,7 +184,7 @@
             this.button46.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button46.ForeColor = System.Drawing.Color.White;
             this.button46.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button46.Location = new System.Drawing.Point(0, 1760);
+            this.button46.Location = new System.Drawing.Point(0, 39);
             this.button46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button46.Name = "button46";
             this.button46.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -204,7 +203,7 @@
             this.button43.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button43.ForeColor = System.Drawing.Color.White;
             this.button43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button43.Location = new System.Drawing.Point(0, 1721);
+            this.button43.Location = new System.Drawing.Point(0, 0);
             this.button43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button43.Name = "button43";
             this.button43.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -223,7 +222,7 @@
             this.button42.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button42.ForeColor = System.Drawing.Color.Silver;
             this.button42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button42.Location = new System.Drawing.Point(0, 1673);
+            this.button42.Location = new System.Drawing.Point(0, 1778);
             this.button42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button42.Name = "button42";
             this.button42.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -242,7 +241,7 @@
             this.button41.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button41.ForeColor = System.Drawing.Color.White;
             this.button41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button41.Location = new System.Drawing.Point(0, 1634);
+            this.button41.Location = new System.Drawing.Point(0, 78);
             this.button41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button41.Name = "button41";
             this.button41.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -261,7 +260,7 @@
             this.button40.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button40.ForeColor = System.Drawing.Color.White;
             this.button40.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button40.Location = new System.Drawing.Point(0, 1595);
+            this.button40.Location = new System.Drawing.Point(0, 0);
             this.button40.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button40.Name = "button40";
             this.button40.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -280,7 +279,7 @@
             this.button39.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button39.ForeColor = System.Drawing.Color.White;
             this.button39.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button39.Location = new System.Drawing.Point(0, 1556);
+            this.button39.Location = new System.Drawing.Point(0, 39);
             this.button39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button39.Name = "button39";
             this.button39.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -299,7 +298,7 @@
             this.button38.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button38.ForeColor = System.Drawing.Color.Silver;
             this.button38.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button38.Location = new System.Drawing.Point(0, 1508);
+            this.button38.Location = new System.Drawing.Point(0, 1600);
             this.button38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button38.Name = "button38";
             this.button38.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -318,7 +317,7 @@
             this.button37.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button37.ForeColor = System.Drawing.Color.White;
             this.button37.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button37.Location = new System.Drawing.Point(0, 1469);
+            this.button37.Location = new System.Drawing.Point(0, 39);
             this.button37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button37.Name = "button37";
             this.button37.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -337,7 +336,7 @@
             this.button36.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button36.ForeColor = System.Drawing.Color.White;
             this.button36.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button36.Location = new System.Drawing.Point(0, 1430);
+            this.button36.Location = new System.Drawing.Point(0, 0);
             this.button36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button36.Name = "button36";
             this.button36.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -356,7 +355,7 @@
             this.button35.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button35.ForeColor = System.Drawing.Color.White;
             this.button35.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button35.Location = new System.Drawing.Point(0, 1391);
+            this.button35.Location = new System.Drawing.Point(0, 78);
             this.button35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button35.Name = "button35";
             this.button35.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -375,7 +374,7 @@
             this.button34.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button34.ForeColor = System.Drawing.Color.Silver;
             this.button34.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button34.Location = new System.Drawing.Point(0, 1343);
+            this.button34.Location = new System.Drawing.Point(0, 1422);
             this.button34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button34.Name = "button34";
             this.button34.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -394,7 +393,7 @@
             this.button33.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button33.ForeColor = System.Drawing.Color.White;
             this.button33.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button33.Location = new System.Drawing.Point(0, 1304);
+            this.button33.Location = new System.Drawing.Point(0, 39);
             this.button33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button33.Name = "button33";
             this.button33.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -413,7 +412,7 @@
             this.button32.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button32.ForeColor = System.Drawing.Color.White;
             this.button32.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button32.Location = new System.Drawing.Point(0, 1265);
+            this.button32.Location = new System.Drawing.Point(0, 0);
             this.button32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button32.Name = "button32";
             this.button32.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -432,7 +431,7 @@
             this.button31.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button31.ForeColor = System.Drawing.Color.White;
             this.button31.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button31.Location = new System.Drawing.Point(0, 1226);
+            this.button31.Location = new System.Drawing.Point(0, 78);
             this.button31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button31.Name = "button31";
             this.button31.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -451,7 +450,7 @@
             this.button23.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button23.ForeColor = System.Drawing.Color.Silver;
             this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.Location = new System.Drawing.Point(0, 1178);
+            this.button23.Location = new System.Drawing.Point(0, 1244);
             this.button23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button23.Name = "button23";
             this.button23.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -470,7 +469,7 @@
             this.button22.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button22.ForeColor = System.Drawing.Color.White;
             this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.Location = new System.Drawing.Point(0, 1139);
+            this.button22.Location = new System.Drawing.Point(0, 78);
             this.button22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button22.Name = "button22";
             this.button22.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -489,7 +488,7 @@
             this.button21.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.ForeColor = System.Drawing.Color.White;
             this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.Location = new System.Drawing.Point(0, 1100);
+            this.button21.Location = new System.Drawing.Point(0, 0);
             this.button21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button21.Name = "button21";
             this.button21.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -508,7 +507,7 @@
             this.button16.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ForeColor = System.Drawing.Color.White;
             this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(0, 1061);
+            this.button16.Location = new System.Drawing.Point(0, 39);
             this.button16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button16.Name = "button16";
             this.button16.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -527,7 +526,7 @@
             this.button6.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Silver;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 1013);
+            this.button6.Location = new System.Drawing.Point(0, 1066);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -546,7 +545,7 @@
             this.button24.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.button24.ForeColor = System.Drawing.Color.White;
             this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.Location = new System.Drawing.Point(0, 974);
+            this.button24.Location = new System.Drawing.Point(0, 78);
             this.button24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button24.Name = "button24";
             this.button24.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -565,7 +564,7 @@
             this.button25.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.button25.ForeColor = System.Drawing.Color.White;
             this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.Location = new System.Drawing.Point(0, 935);
+            this.button25.Location = new System.Drawing.Point(0, 0);
             this.button25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button25.Name = "button25";
             this.button25.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -584,7 +583,7 @@
             this.button26.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button26.ForeColor = System.Drawing.Color.White;
             this.button26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button26.Location = new System.Drawing.Point(0, 896);
+            this.button26.Location = new System.Drawing.Point(0, 39);
             this.button26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button26.Name = "button26";
             this.button26.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -603,7 +602,7 @@
             this.button27.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button27.ForeColor = System.Drawing.Color.Silver;
             this.button27.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button27.Location = new System.Drawing.Point(0, 848);
+            this.button27.Location = new System.Drawing.Point(0, 888);
             this.button27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button27.Name = "button27";
             this.button27.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -622,7 +621,7 @@
             this.button17.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.button17.ForeColor = System.Drawing.Color.White;
             this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(0, 809);
+            this.button17.Location = new System.Drawing.Point(0, 78);
             this.button17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button17.Name = "button17";
             this.button17.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -641,7 +640,7 @@
             this.button18.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.button18.ForeColor = System.Drawing.Color.White;
             this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(0, 770);
+            this.button18.Location = new System.Drawing.Point(0, 0);
             this.button18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button18.Name = "button18";
             this.button18.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -660,7 +659,7 @@
             this.button19.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.ForeColor = System.Drawing.Color.White;
             this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.Location = new System.Drawing.Point(0, 731);
+            this.button19.Location = new System.Drawing.Point(0, 39);
             this.button19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button19.Name = "button19";
             this.button19.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -679,7 +678,7 @@
             this.button20.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ForeColor = System.Drawing.Color.Silver;
             this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.Location = new System.Drawing.Point(0, 683);
+            this.button20.Location = new System.Drawing.Point(0, 710);
             this.button20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button20.Name = "button20";
             this.button20.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -698,7 +697,7 @@
             this.button7.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 644);
+            this.button7.Location = new System.Drawing.Point(0, 78);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -717,7 +716,7 @@
             this.button12.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.button12.ForeColor = System.Drawing.Color.White;
             this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(0, 605);
+            this.button12.Location = new System.Drawing.Point(0, 0);
             this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button12.Name = "button12";
             this.button12.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -736,7 +735,7 @@
             this.button13.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.Location = new System.Drawing.Point(0, 566);
+            this.button13.Location = new System.Drawing.Point(0, 39);
             this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button13.Name = "button13";
             this.button13.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -755,7 +754,7 @@
             this.button14.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(0, 527);
+            this.button14.Location = new System.Drawing.Point(0, 117);
             this.button14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button14.Name = "button14";
             this.button14.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -774,7 +773,7 @@
             this.button15.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.Color.Silver;
             this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(0, 479);
+            this.button15.Location = new System.Drawing.Point(0, 492);
             this.button15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button15.Name = "button15";
             this.button15.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -793,7 +792,7 @@
             this.button8.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(0, 440);
+            this.button8.Location = new System.Drawing.Point(0, 78);
             this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -812,7 +811,7 @@
             this.button9.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(0, 401);
+            this.button9.Location = new System.Drawing.Point(0, 0);
             this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button9.Name = "button9";
             this.button9.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -831,7 +830,7 @@
             this.button10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.White;
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(0, 362);
+            this.button10.Location = new System.Drawing.Point(0, 39);
             this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button10.Name = "button10";
             this.button10.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -869,7 +868,7 @@
             this.button5.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 275);
+            this.button5.Location = new System.Drawing.Point(0, 78);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
@@ -888,13 +887,13 @@
             this.button4.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 236);
+            this.button4.Location = new System.Drawing.Point(0, 0);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
             this.button4.Size = new System.Drawing.Size(249, 39);
             this.button4.TabIndex = 6;
-            this.button4.Text = "Chi phí thi công";
+            this.button4.Text = "Doanh thu thi công";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -907,13 +906,13 @@
             this.button3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 197);
+            this.button3.Location = new System.Drawing.Point(0, 39);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
             this.button3.Size = new System.Drawing.Size(249, 39);
             this.button3.TabIndex = 5;
-            this.button3.Text = "Doanh thu thi công";
+            this.button3.Text = "Chi phí thi công";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -926,7 +925,7 @@
             this.button2.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Silver;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 149);
+            this.button2.Location = new System.Drawing.Point(0, 136);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -952,7 +951,7 @@
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(249, 76);
+            this.button1.Size = new System.Drawing.Size(249, 63);
             this.button1.TabIndex = 1;
             this.button1.Text = "HOME";
             this.button1.UseVisualStyleBackColor = false;
@@ -1002,17 +1001,128 @@
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(273, 0);
+            this.panel2.Location = new System.Drawing.Point(266, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(879, 629);
+            this.panel2.Size = new System.Drawing.Size(886, 1055);
             this.panel2.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button47);
+            this.panel1.Controls.Add(this.button46);
+            this.panel1.Controls.Add(this.button43);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 1826);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(249, 130);
+            this.panel1.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button5);
+            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 184);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(249, 130);
+            this.panel4.TabIndex = 5;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.button8);
+            this.panel5.Controls.Add(this.button10);
+            this.panel5.Controls.Add(this.button9);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 362);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(249, 130);
+            this.panel5.TabIndex = 10;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.button14);
+            this.panel6.Controls.Add(this.button7);
+            this.panel6.Controls.Add(this.button13);
+            this.panel6.Controls.Add(this.button12);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 540);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(249, 170);
+            this.panel6.TabIndex = 14;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.button17);
+            this.panel7.Controls.Add(this.button19);
+            this.panel7.Controls.Add(this.button18);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 758);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(249, 130);
+            this.panel7.TabIndex = 19;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.button24);
+            this.panel8.Controls.Add(this.button26);
+            this.panel8.Controls.Add(this.button25);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 936);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(249, 130);
+            this.panel8.TabIndex = 25;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.button22);
+            this.panel9.Controls.Add(this.button16);
+            this.panel9.Controls.Add(this.button21);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 1114);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(249, 130);
+            this.panel9.TabIndex = 45;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.button31);
+            this.panel10.Controls.Add(this.button33);
+            this.panel10.Controls.Add(this.button32);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 1292);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(249, 130);
+            this.panel10.TabIndex = 45;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.button35);
+            this.panel11.Controls.Add(this.button37);
+            this.panel11.Controls.Add(this.button36);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(0, 1470);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(249, 130);
+            this.panel11.TabIndex = 45;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.button41);
+            this.panel12.Controls.Add(this.button39);
+            this.panel12.Controls.Add(this.button40);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(0, 1648);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(249, 130);
+            this.panel12.TabIndex = 45;
             // 
             // FormGiamDoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 629);
+            this.ClientSize = new System.Drawing.Size(1152, 1055);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1Menu);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1022,6 +1132,16 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1Menu.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1076,5 +1196,15 @@
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel12;
     }
 }

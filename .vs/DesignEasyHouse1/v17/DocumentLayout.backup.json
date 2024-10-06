@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\dulieucuatoi\\nam3hk1\\congnghephanmem\\easyhouse\\easyhouse\\designeasyhouse1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\dulieucuatoi\\nam3hk1\\congnghephanmem\\easyhouse\\easyhouse\\designeasyhouse1\\formcudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formcudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\dulieucuatoi\\nam3hk1\\congnghephanmem\\easyhouse\\easyhouse\\designeasyhouse1\\formcudan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formcudan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\designeasyhouse1\\formgiamdoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formgiamdoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\designeasyhouse1\\formphongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formphongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\dulieucuatoi\\nam3hk1\\congnghephanmem\\easyhouse\\easyhouse\\designeasyhouse1\\formgiamdoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formgiamdoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\dulieucuatoi\\nam3hk1\\congnghephanmem\\easyhouse\\easyhouse\\designeasyhouse1\\formphongban.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\designeasyhouse1\\formcudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formcudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\designeasyhouse1\\formphongban.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formphongban.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\dulieucuatoi\\nam3hk1\\congnghephanmem\\easyhouse\\easyhouse\\designeasyhouse1\\formphongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formphongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\designeasyhouse1\\formcudan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formcudan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\designeasyhouse1\\formphongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formphongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\designeasyhouse1\\samplechildform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -46,37 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\Program.cs",
-              "RelativeDocumentMoniker": "DesignEasyHouse1\\Program.cs",
-              "ToolTip": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\Program.cs",
-              "RelativeToolTip": "DesignEasyHouse1\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBQAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T13:33:54.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FormCuDan.Designer.cs",
-              "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormCuDan.Designer.cs",
-              "RelativeDocumentMoniker": "DesignEasyHouse1\\FormCuDan.Designer.cs",
-              "ToolTip": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormCuDan.Designer.cs",
-              "RelativeToolTip": "DesignEasyHouse1\\FormCuDan.Designer.cs",
-              "ViewState": "AgIAAPADAAAAAAAAAAAswPQDAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T13:33:26.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "FormCuDan.cs [Design]",
               "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\FormCuDan.cs",
@@ -88,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "FormPhongBan.Designer.cs",
               "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormPhongBan.Designer.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\FormPhongBan.Designer.cs",
@@ -101,32 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormPhongBan.cs",
-              "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormPhongBan.cs",
-              "RelativeDocumentMoniker": "DesignEasyHouse1\\FormPhongBan.cs",
-              "ToolTip": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormPhongBan.cs",
-              "RelativeToolTip": "DesignEasyHouse1\\FormPhongBan.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T13:22:29.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormPhongBan.cs [Design]",
-              "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormPhongBan.cs",
-              "RelativeDocumentMoniker": "DesignEasyHouse1\\FormPhongBan.cs",
-              "ToolTip": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormPhongBan.cs [Design]",
-              "RelativeToolTip": "DesignEasyHouse1\\FormPhongBan.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T13:16:34.055Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "FormGiamDoc.cs [Design]",
               "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormGiamDoc.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\FormGiamDoc.cs",
@@ -138,7 +83,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "FormGiamDoc.cs",
+              "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormGiamDoc.cs",
+              "RelativeDocumentMoniker": "DesignEasyHouse1\\FormGiamDoc.cs",
+              "ToolTip": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormGiamDoc.cs",
+              "RelativeToolTip": "DesignEasyHouse1\\FormGiamDoc.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIAwwBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T12:59:05.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormCuDan.Designer.cs",
+              "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormCuDan.Designer.cs",
+              "RelativeDocumentMoniker": "DesignEasyHouse1\\FormCuDan.Designer.cs",
+              "ToolTip": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormCuDan.Designer.cs",
+              "RelativeToolTip": "DesignEasyHouse1\\FormCuDan.Designer.cs",
+              "ViewState": "AgIAAPADAAAAAAAAAAAswPQDAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:33:26.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormPhongBan.cs [Design]",
+              "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormPhongBan.cs",
+              "RelativeDocumentMoniker": "DesignEasyHouse1\\FormPhongBan.cs",
+              "ToolTip": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormPhongBan.cs [Design]",
+              "RelativeToolTip": "DesignEasyHouse1\\FormPhongBan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T13:16:34.055Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "FormDangNhap.cs [Design]",
               "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\FormDangNhap.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\FormDangNhap.cs",
@@ -149,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "SampleChildForm.cs [Design]",
               "DocumentMoniker": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\SampleChildForm.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\SampleChildForm.cs",
