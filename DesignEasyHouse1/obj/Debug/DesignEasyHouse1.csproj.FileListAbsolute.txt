@@ -36,3 +36,5 @@ C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.FormCuDan.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.FormPhongBan.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formQuanLyCuDan.resources
+C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.SampleChildForm2.resources
+C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.SampleChildForm1.resources
