@@ -79,6 +79,12 @@
     <Compile Include="FormPhongBan.Designer.cs">
       <DependentUpon>FormPhongBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsPhongBan\formQuanLyCuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\formQuanLyCuDan.Designer.cs">
+      <DependentUpon>formQuanLyCuDan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -106,6 +112,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGiamDoc.resx">
       <DependentUpon>FormGiamDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhongBan.resx">
+      <DependentUpon>FormPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\formQuanLyCuDan.resx">
+      <DependentUpon>formQuanLyCuDan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SampleChildForm.resx">
       <DependentUpon>SampleChildForm.cs</DependentUpon>
@@ -144,7 +156,12 @@
   <ItemGroup>
     <Folder Include="formsCuDan\" />
     <Folder Include="formsGiamDoc\" />
-    <Folder Include="formsPhongBan\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Edit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

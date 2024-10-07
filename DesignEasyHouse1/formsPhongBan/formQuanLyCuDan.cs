@@ -8,21 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DesignEasyHouse1
+namespace DesignEasyHouse1.formsPhongBan
 {
-    public partial class FormPhongBan : Form
+    public partial class formQuanLyCuDan : Form
     {
-        public FormPhongBan()
+        public formQuanLyCuDan()
         {
             InitializeComponent();
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
-
-
-
 }

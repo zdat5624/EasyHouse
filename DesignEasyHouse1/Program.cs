@@ -16,10 +16,10 @@ namespace DesignEasyHouse1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDangNhap());
-            Application.Run(new FormGiamDoc());
-            Application.Run(new FormPhongBan());
-            Application.Run(new FormCuDan());
+            //Application.Run(new FormDangNhap());
+            //Application.Run(new FormGiamDoc());
+            //Application.Run(new FormPhongBan());
+            //Application.Run(new FormCuDan());
             Application.Run(new SampleChildForm());
         }
     }
