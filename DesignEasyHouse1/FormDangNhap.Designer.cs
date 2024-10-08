@@ -33,11 +33,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,6 +99,17 @@
             this.panel2.Size = new System.Drawing.Size(482, 453);
             this.panel2.TabIndex = 3;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkGray;
+            this.label5.Location = new System.Drawing.Point(83, 314);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(113, 23);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Đổi mật khẩu";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -141,17 +152,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Tên đăng nhập";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkGray;
-            this.label5.Location = new System.Drawing.Point(83, 314);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 23);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Đổi mật khẩu";
-            // 
             // FormDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -163,7 +163,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "FormDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormDangKy";
+            this.Text = "EasyHouse";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

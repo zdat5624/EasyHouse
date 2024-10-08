@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1Menu = new System.Windows.Forms.Panel();
-            this.button30 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
@@ -56,11 +55,12 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button29 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1Menu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -104,27 +104,6 @@
             this.panel1Menu.Name = "panel1Menu";
             this.panel1Menu.Size = new System.Drawing.Size(270, 629);
             this.panel1Menu.TabIndex = 0;
-            // 
-            // button30
-            // 
-            this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(210)))));
-            this.button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button30.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button30.FlatAppearance.BorderSize = 0;
-            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button30.ForeColor = System.Drawing.Color.White;
-            this.button30.Image = global::DesignEasyHouse1.Properties.Resources.icons8_logout_38;
-            this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button30.Location = new System.Drawing.Point(0, 1208);
-            this.button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button30.Name = "button30";
-            this.button30.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.button30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button30.Size = new System.Drawing.Size(249, 76);
-            this.button30.TabIndex = 30;
-            this.button30.Text = "ĐĂNG XUẤT";
-            this.button30.UseVisualStyleBackColor = false;
             // 
             // button22
             // 
@@ -620,6 +599,78 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.button29);
+            this.panel3.Controls.Add(this.button28);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(249, 73);
+            this.panel3.TabIndex = 3;
+            // 
+            // button29
+            // 
+            this.button29.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button29.FlatAppearance.BorderSize = 0;
+            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button29.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button29.ForeColor = System.Drawing.Color.Silver;
+            this.button29.Location = new System.Drawing.Point(0, 6);
+            this.button29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(249, 33);
+            this.button29.TabIndex = 1;
+            this.button29.Text = "Tag user";
+            this.button29.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            this.button28.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button28.FlatAppearance.BorderSize = 0;
+            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button28.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button28.ForeColor = System.Drawing.Color.Silver;
+            this.button28.Location = new System.Drawing.Point(0, 39);
+            this.button28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(249, 34);
+            this.button28.TabIndex = 0;
+            this.button28.Text = "User name";
+            this.button28.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(273, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(879, 629);
+            this.panel2.TabIndex = 1;
+            // 
+            // button30
+            // 
+            this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(210)))));
+            this.button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button30.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button30.FlatAppearance.BorderSize = 0;
+            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button30.ForeColor = System.Drawing.Color.White;
+            this.button30.Image = global::DesignEasyHouse1.Properties.Resources.icons8_logout_38;
+            this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button30.Location = new System.Drawing.Point(0, 1208);
+            this.button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button30.Name = "button30";
+            this.button30.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.button30.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button30.Size = new System.Drawing.Size(249, 76);
+            this.button30.TabIndex = 30;
+            this.button30.Text = "ĐĂNG XUẤT";
+            this.button30.UseVisualStyleBackColor = false;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
@@ -640,57 +691,6 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "HOME";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.button29);
-            this.panel3.Controls.Add(this.button28);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(249, 73);
-            this.panel3.TabIndex = 3;
-            // 
-            // button29
-            // 
-            this.button29.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button29.FlatAppearance.BorderSize = 0;
-            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button29.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button29.ForeColor = System.Drawing.Color.Silver;
-            this.button29.Location = new System.Drawing.Point(0, 6);
-            this.button29.Margin = new System.Windows.Forms.Padding(4);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(249, 33);
-            this.button29.TabIndex = 1;
-            this.button29.Text = "Tag user";
-            this.button29.UseVisualStyleBackColor = true;
-            // 
-            // button28
-            // 
-            this.button28.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button28.FlatAppearance.BorderSize = 0;
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.ForeColor = System.Drawing.Color.Silver;
-            this.button28.Location = new System.Drawing.Point(0, 39);
-            this.button28.Margin = new System.Windows.Forms.Padding(4);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(249, 34);
-            this.button28.TabIndex = 0;
-            this.button28.Text = "User name";
-            this.button28.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(273, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(879, 629);
-            this.panel2.TabIndex = 1;
             // 
             // SampleMenuForm
             // 

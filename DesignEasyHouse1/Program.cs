@@ -20,9 +20,14 @@ namespace DesignEasyHouse1
             //Application.Run(new FormGiamDoc());
             //Application.Run(new FormPhongBan());
             //Application.Run(new FormCuDan());
-            SampleChildForm frm = new SampleChildForm();
-            Application.Run(frm);
-            
+            //SampleChildForm frm = new SampleChildForm();
+            //Application.Run(frm);
+            //Application.Run(new formsPhongBan.formQuanLyCuDan());
+            //Application.Run(new formsPhongBan.formThemCuDan());
+            //Application.Run(new FormDangNhap());
+            Application.Run(new SampleChildForm2());
+            //Application.Run(new formsPhongBan.formThemCuDan());
+
         }
     }
 }

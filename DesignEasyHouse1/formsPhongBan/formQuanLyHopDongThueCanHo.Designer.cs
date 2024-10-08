@@ -1,6 +1,6 @@
-﻿namespace DesignEasyHouse1
+﻿namespace DesignEasyHouse1.formsPhongBan
 {
-    partial class SampleChildForm
+    partial class formQuanLyHopDongThueCanHo
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SampleChildForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -75,9 +74,10 @@
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(291, 70);
+            this.button1.Size = new System.Drawing.Size(380, 70);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Child form name";
+            this.button1.Text = "Quản lý hợp đồng thuê căn hộ";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
@@ -163,7 +163,6 @@
             // 
             this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Delete.HeaderText = "";
-            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
             this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -173,7 +172,6 @@
             // 
             this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Edit.HeaderText = "";
-            this.Edit.Image = ((System.Drawing.Image)(resources.GetObject("Edit.Image")));
             this.Edit.MinimumWidth = 6;
             this.Edit.Name = "Edit";
             this.Edit.Width = 6;
@@ -182,7 +180,6 @@
             // 
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
             this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -193,7 +190,6 @@
             // 
             this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn2.Image")));
             this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 125;
@@ -212,9 +208,9 @@
             this.button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button30.Name = "button30";
             this.button30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button30.Size = new System.Drawing.Size(177, 56);
+            this.button30.Size = new System.Drawing.Size(204, 56);
             this.button30.TabIndex = 31;
-            this.button30.Text = "Thêm cư dân";
+            this.button30.Text = "Thêm hợp đồng";
             this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button30.UseVisualStyleBackColor = false;
             // 
@@ -267,7 +263,7 @@
             this.textBox2.Size = new System.Drawing.Size(220, 31);
             this.textBox2.TabIndex = 32;
             // 
-            // SampleChildForm
+            // formQuanLyHopDongThueCanHo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -279,7 +275,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.Name = "SampleChildForm";
+            this.Name = "formQuanLyHopDongThueCanHo";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);

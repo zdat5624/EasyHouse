@@ -85,6 +85,36 @@
     <Compile Include="formsPhongBan\formQuanLyCuDan.Designer.cs">
       <DependentUpon>formQuanLyCuDan.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsPhongBan\formQuanLyHopDongThueCanHo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\formQuanLyHopDongThueCanHo.Designer.cs">
+      <DependentUpon>formQuanLyHopDongThueCanHo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\formSuaHopDongThueCanHo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\formSuaHopDongThueCanHo.Designer.cs">
+      <DependentUpon>formSuaHopDongThueCanHo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\formSuaThongTinCuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\formSuaThongTinCuDan.Designer.cs">
+      <DependentUpon>formSuaThongTinCuDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\formThemCuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\formThemCuDan.Designer.cs">
+      <DependentUpon>formThemCuDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\formThemHopDongThueCanHo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\formThemHopDongThueCanHo.Designer.cs">
+      <DependentUpon>formThemHopDongThueCanHo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -131,6 +161,21 @@
     <EmbeddedResource Include="formsPhongBan\formQuanLyCuDan.resx">
       <DependentUpon>formQuanLyCuDan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\formQuanLyHopDongThueCanHo.resx">
+      <DependentUpon>formQuanLyHopDongThueCanHo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\formSuaHopDongThueCanHo.resx">
+      <DependentUpon>formSuaHopDongThueCanHo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\formSuaThongTinCuDan.resx">
+      <DependentUpon>formSuaThongTinCuDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\formThemCuDan.resx">
+      <DependentUpon>formThemCuDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\formThemHopDongThueCanHo.resx">
+      <DependentUpon>formThemHopDongThueCanHo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SampleChildForm.resx">
       <DependentUpon>SampleChildForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +219,7 @@
   <ItemGroup>
     <Folder Include="formsCuDan\" />
     <Folder Include="formsGiamDoc\" />
+    <Folder Include="UC\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Close.png" />
@@ -192,6 +238,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
