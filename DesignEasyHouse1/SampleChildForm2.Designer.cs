@@ -88,11 +88,11 @@
             this.button30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button30.ForeColor = System.Drawing.Color.White;
             this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button30.Location = new System.Drawing.Point(228, 14);
+            this.button30.Location = new System.Drawing.Point(285, 18);
             this.button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button30.Name = "button30";
             this.button30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button30.Size = new System.Drawing.Size(177, 66);
+            this.button30.Size = new System.Drawing.Size(150, 50);
             this.button30.TabIndex = 31;
             this.button30.Text = "Chấp nhận";
             this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -107,11 +107,11 @@
             this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(411, 14);
+            this.button2.Location = new System.Drawing.Point(441, 18);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button2.Size = new System.Drawing.Size(177, 66);
+            this.button2.Size = new System.Drawing.Size(150, 50);
             this.button2.TabIndex = 32;
             this.button2.Text = "Hủy bỏ";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -122,9 +122,9 @@
             this.panel2.Controls.Add(this.button30);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 800);
+            this.panel2.Location = new System.Drawing.Point(0, 819);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(600, 100);
+            this.panel2.Size = new System.Drawing.Size(600, 81);
             this.panel2.TabIndex = 33;
             // 
             // textBox2

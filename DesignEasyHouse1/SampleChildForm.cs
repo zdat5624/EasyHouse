@@ -15,6 +15,7 @@ namespace DesignEasyHouse1
         public SampleChildForm()
         {
             InitializeComponent();
+            dataGridView1.Rows.Add("Giá trị 1", "Giá trị 2", "Giá trị 3", "Giá trị 4", "Giá trị 5");
         }
     }
 }
