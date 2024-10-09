@@ -79,6 +79,24 @@
     <Compile Include="FormPhongBan.Designer.cs">
       <DependentUpon>FormPhongBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsCuDan\formGuiYeuCauDichVuCuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCuDan\formGuiYeuCauDichVuCuDan.Designer.cs">
+      <DependentUpon>formGuiYeuCauDichVuCuDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCuDan\formYeuCauDichVuCuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCuDan\formYeuCauDichVuCuDan.Designer.cs">
+      <DependentUpon>formYeuCauDichVuCuDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCuDan\formThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCuDan\formThongBao.Designer.cs">
+      <DependentUpon>formThongBao.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsPhongBan\formQuanLyCuDan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +194,15 @@
     <EmbeddedResource Include="FormPhongBan.resx">
       <DependentUpon>FormPhongBan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsCuDan\formGuiYeuCauDichVuCuDan.resx">
+      <DependentUpon>formGuiYeuCauDichVuCuDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCuDan\formYeuCauDichVuCuDan.resx">
+      <DependentUpon>formYeuCauDichVuCuDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCuDan\formThongBao.resx">
+      <DependentUpon>formThongBao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formQuanLyCuDan.resx">
       <DependentUpon>formQuanLyCuDan.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,7 +271,6 @@
     <None Include="Images\menu-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="formsCuDan\" />
     <Folder Include="formsGiamDoc\" />
     <Folder Include="UC\" />
   </ItemGroup>
