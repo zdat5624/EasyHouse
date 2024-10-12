@@ -7,12 +7,13 @@ GO
 
 -- Bảng thông tin cư dân
 CREATE TABLE CuDan (
-    CuDanID INT PRIMARY KEY IDENTITY,
+    CuDanID INT IDENTITY PRIMARY KEY ,
     HoTen NVARCHAR(100),
     SoDienThoai NVARCHAR(15),
 	Email NVARCHAR(255),
     DiaChi NVARCHAR(255),
 	TrangThai NVARCHAR(255), --'Còn ở' hoặc 'Chuyển đi'
+	ThanhToan NVARCHAR(255) DEFAULT N'Trả đủ', --'Trả đủ' hoặc 'Nợ'
 	NgayChuyenDen DATETIME DEFAULT GETDATE(),
 );
 GO
@@ -118,4 +119,12 @@ CREATE TABLE DanhGiaDichVuCuDan (
     NoiDungDanhGia TEXT,
     NgayDanhGia DATETIME DEFAULT GETDATE(),
 );
+GO
+
+
+insert into CuDan (HoTen,SoDienThoai,Email,DiaChi,TrangThai)
+values ('le thanh dat 1','352352352 1','dfaf@gmail.com 1','Q 7 1', N'Còn ở'),
+('le thanh dat 2','352352352 2','dfaf@gmail.com 2','Q 7 2', N'Còn ở'),
+('le thanh dat 3','352352352 3','dfaf@gmail.com 3','Q 7 3', N'Còn ở'),
+('le thanh dat 4','352352352 4','dfaf@gmail.com 4','Q 7 4', N'Còn ở')
 GO

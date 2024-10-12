@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormBanQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBanQuanLy.Designer.cs">
+      <DependentUpon>FormBanQuanLy.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCuDan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,12 +78,6 @@
     </Compile>
     <Compile Include="FormGiamDoc.Designer.cs">
       <DependentUpon>FormGiamDoc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormPhongBan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormPhongBan.Designer.cs">
-      <DependentUpon>FormPhongBan.cs</DependentUpon>
     </Compile>
     <Compile Include="formsCuDan\formGuiYeuCauDichVuCuDan.cs">
       <SubType>Form</SubType>
@@ -182,6 +182,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBanQuanLy.resx">
+      <DependentUpon>FormBanQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCuDan.resx">
       <DependentUpon>FormCuDan.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,9 +193,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGiamDoc.resx">
       <DependentUpon>FormGiamDoc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormPhongBan.resx">
-      <DependentUpon>FormPhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsCuDan\formGuiYeuCauDichVuCuDan.resx">
       <DependentUpon>formGuiYeuCauDichVuCuDan.cs</DependentUpon>

@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace DesignEasyHouse1
 {
-    public partial class FormPhongBan : Form
+    public partial class FormBanQuanLy : Form
     {
-        public FormPhongBan()
+        public FormBanQuanLy()
         {
             InitializeComponent();
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
-
-
-
 }
