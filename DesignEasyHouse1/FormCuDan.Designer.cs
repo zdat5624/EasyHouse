@@ -82,7 +82,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.button29 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.panel1Menu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -1024,22 +1024,22 @@
             this.button28.Text = "User name";
             this.button28.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // panelMain
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(273, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(879, 629);
-            this.panel2.TabIndex = 1;
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelMain.Location = new System.Drawing.Point(270, 0);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(882, 629);
+            this.panelMain.TabIndex = 1;
             // 
             // FormCuDan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1152, 629);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel1Menu);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormCuDan";
@@ -1085,7 +1085,7 @@
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Button button36;
         private System.Windows.Forms.Button button35;
         private System.Windows.Forms.Button button34;

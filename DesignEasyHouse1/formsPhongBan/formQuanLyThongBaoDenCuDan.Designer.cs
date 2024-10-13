@@ -44,8 +44,8 @@
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button30 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -63,7 +63,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1061, 70);
+            this.panel1.Size = new System.Drawing.Size(1300, 70);
             this.panel1.TabIndex = 0;
             // 
             // button1
@@ -212,18 +212,6 @@
             this.panel3.Size = new System.Drawing.Size(40, 31);
             this.panel3.TabIndex = 0;
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.textBox2.Location = new System.Drawing.Point(0, 0);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(365, 31);
-            this.textBox2.TabIndex = 32;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
@@ -242,6 +230,18 @@
             this.button2.Size = new System.Drawing.Size(40, 31);
             this.button2.TabIndex = 32;
             this.button2.UseVisualStyleBackColor = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.textBox2.Location = new System.Drawing.Point(0, 0);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(365, 31);
+            this.textBox2.TabIndex = 32;
             // 
             // button30
             // 
@@ -267,7 +267,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 654);
+            this.ClientSize = new System.Drawing.Size(1300, 1000);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button30);
             this.Controls.Add(this.dataGridView1);

@@ -16,7 +16,7 @@ namespace DesignEasyHouse1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formsPhongBan.formQuanLyCuDan());
+            Application.Run(new FormBanQuanLy());
         }
     }
 }

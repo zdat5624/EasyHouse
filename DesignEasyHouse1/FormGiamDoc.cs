@@ -16,5 +16,26 @@ namespace DesignEasyHouse1
         {
             InitializeComponent();
         }
+
+        #region Slide form
+        private Form currentChildForm = null;
+
+        private void OpenChildForm(Form childForm)
+        {
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(childForm);
+            panelMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        #endregion
     }
 }
