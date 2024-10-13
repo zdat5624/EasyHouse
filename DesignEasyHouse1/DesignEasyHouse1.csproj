@@ -271,6 +271,8 @@
     <None Include="Images\menu-32.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DAO\" />
+    <Folder Include="DTO\" />
     <Folder Include="formsGiamDoc\" />
     <Folder Include="UC\" />
   </ItemGroup>

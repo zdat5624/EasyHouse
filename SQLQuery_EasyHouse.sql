@@ -1,5 +1,4 @@
-﻿-- Tạo database
-CREATE DATABASE EasyHouseDB;
+﻿CREATE DATABASE EasyHouseDB;
 GO
 
 USE EasyHouseDB;
@@ -23,7 +22,7 @@ GO
 
 -- Bảng thông tin cư dân
 CREATE TABLE LichSuCapNhatCuDan (
-	CapNhatID INT PRIMARY KEY IDENTITY,
+	CapNhatID INT IDENTITY PRIMARY KEY,
     CuDanID INT,
     HoTen NVARCHAR(100),
     SoDienThoai NVARCHAR(15),
@@ -38,9 +37,9 @@ GO
 
 -- Bảng hợp đồng thuê căn hộ
 CREATE TABLE HopDongThue (
-    HopDongID INT PRIMARY KEY IDENTITY,
+    HopDongID INT IDENTITY PRIMARY KEY,
     CuDanID INT,
-	NoiDungDieuKhoan TEXT,
+	NoiDungDieuKhoan NVARCHAR(MAX),
 	TienThueMoiThang FLOAT,
 	SoTienCoc FLOAT,
 	NgayBatDau DATE,
@@ -51,9 +50,9 @@ GO
 
 -- Bảng quản lý thông báo
 CREATE TABLE ThongBao (
-    ThongBaoID INT PRIMARY KEY IDENTITY,
+    ThongBaoID INT IDENTITY PRIMARY KEY,
     TieuDe NVARCHAR(255),
-    NoiDung TEXT,
+    NoiDung NVARCHAR(MAX),
     NgayGui DATETIME DEFAULT GETDATE(),
     LoaiThongBao NVARCHAR(50) -- 'Chung' hoặc 'Riêng'
 );
@@ -61,7 +60,7 @@ GO
 
 -- Bảng lưu thông báo riêng đến các cư dân
 CREATE TABLE ThongBaoCuDan (
-    ThongBaoCuDanID INT PRIMARY KEY IDENTITY,
+    ThongBaoCuDanID INT IDENTITY PRIMARY KEY,
     ThongBaoID INT,
     CuDanID INT,
 );
@@ -69,54 +68,45 @@ GO
 
 -- Bảng yêu cầu cư dân
 CREATE TABLE LoaiYeuCau (
-    LoaiYeuCauID INT PRIMARY KEY IDENTITY,
+    LoaiYeuCauID INT IDENTITY PRIMARY KEY,
     TenLoaiYeuCau NVARCHAR(100),
     MoTa NVARCHAR(255)
 );
 GO
 
 CREATE TABLE YeuCau (
-    YeuCauID INT PRIMARY KEY IDENTITY,
+    YeuCauID INT IDENTITY PRIMARY KEY,
     CuDanID INT,
 	LoaiYeuCauID INT,
     TieuDe NVARCHAR(255),
-    NoiDung TEXT,
+    NoiDung NVARCHAR(MAX),
     NgayGui DATETIME DEFAULT GETDATE(),
     TrangThai NVARCHAR(50) DEFAULT 'Đang chờ xử lý', --'Đang xử lý' hoặc 'Hoàn thành'
 );
 GO
 
-CREATE TABLE PhanHoiTuCuDan (
-    PhanHoiID INT PRIMARY KEY IDENTITY,
+CREATE TABLE PhanHoiYeuCau (
+    PhanHoiID INT IDENTITY PRIMARY KEY,
     YeuCauID INT,
-    CuDanID NVARCHAR(50),
-    NoiDung TEXT,
-    NgayPhanHoi DATETIME DEFAULT GETDATE()
-);
-GO
-
-CREATE TABLE PhanHoiTuQuanLy (
-    PhanHoiID INT PRIMARY KEY IDENTITY,
-    YeuCauID INT,
-    NhanVienID INT,
-    NoiDung TEXT,
+    NguoiPhanHoiID INT, -- Nếu người phản hồi là cư dân thì NguoiPhanHoiID = null
+    NoiDung NVARCHAR(MAX),
     NgayPhanHoi DATETIME DEFAULT GETDATE()
 );
 
 -- Bảng đánh giá dịch vụ
 CREATE TABLE LoaiDanhGia (
-    LoaiDanhGiaID INT PRIMARY KEY IDENTITY,
+    LoaiDanhGiaID INT IDENTITY PRIMARY KEY,
     TenLoaiDanhGia NVARCHAR(100),
     MoTa NVARCHAR(255)
 );
 GO
 
 CREATE TABLE DanhGiaDichVuCuDan (
-    DanhGiaID INT PRIMARY KEY IDENTITY,
+    DanhGiaID INT IDENTITY PRIMARY KEY,
     CuDanID INT,
 	LoaiDanhGiaID INT,
     DiemDanhGia INT, -- Từ 1 đến 5
-    NoiDungDanhGia TEXT,
+    NoiDungDanhGia NVARCHAR(MAX),
     NgayDanhGia DATETIME DEFAULT GETDATE(),
 );
 GO
@@ -128,3 +118,22 @@ values ('le thanh dat 1','352352352 1','dfaf@gmail.com 1','Q 7 1', N'Còn ở'),
 ('le thanh dat 3','352352352 3','dfaf@gmail.com 3','Q 7 3', N'Còn ở'),
 ('le thanh dat 4','352352352 4','dfaf@gmail.com 4','Q 7 4', N'Còn ở')
 GO
+
+INSERT INTO YeuCau (CuDanID, LoaiYeuCauID, TieuDe, NoiDung)
+VALUES 
+(1, 101, N'Yêu cầu sửa chữa', N'Xin vui lòng sửa chữa hệ thống điện ở tầng 2.'),
+(2, 102, N'Yêu cầu vệ sinh', N'Vui lòng dọn vệ sinh khu vực công cộng tầng 1.'),
+(3, 101, N'Yêu cầu sửa chữa', N'Hệ thống nước bị rò rỉ ở phòng 302.');
+
+INSERT INTO PhanHoiYeuCau (YeuCauID, NguoiPhanHoiID, NoiDung)
+VALUES 
+(1, 201, N'Chúng tôi đã tiếp nhận yêu cầu và sẽ xử lý trong thời gian sớm nhất.'),
+(1, 202, N'Yêu cầu đã được chuyển đến bộ phận vệ sinh để xử lý.'),
+(3, 201, N'Chúng tôi đã hoàn thành sửa chữa hệ thống nước tại phòng 302.'),
+(1, null, N'Chúng tôi đã tiếp nhận yêu cầu và sẽ xử lý trong thời gian sớm nhất.'),
+(1, null, N'Yêu cầu đã được chuyển đến bộ phận vệ sinh để xử lý.'),
+(1, null, N'Chúng tôi đã hoàn thành sửa chữa hệ thống nước tại phòng 302.');
+
+
+SELECT PhanHoiYeuCau.* FROM  YeuCau, PhanHoiYeuCau
+WHERE YeuCau.YeuCauID = PhanHoiYeuCau.YeuCauID
