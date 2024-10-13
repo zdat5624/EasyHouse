@@ -59,7 +59,6 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Child form name";
             this.button1.UseVisualStyleBackColor = true;
-            
             // 
             // button30
             // 

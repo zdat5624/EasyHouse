@@ -71,19 +71,6 @@ namespace DesignEasyHouse1
             }
         }
 
-        void loadForm()
-        {
-            string connectionSTR = @"Data Source=.\\SQLEXPRESS;Initial Catalog=EasyHouseDB;Integrated Security=True;Trust Server Certificate=True";
-            SqlConnection connection = new SqlConnection(connectionSTR);
-
-            string query = "SELECT PhanHoiYeuCau.* FROM  YeuCau, PhanHoiYeuCau\r\nWHERE YeuCau.YeuCauID = PhanHoiYeuCau.YeuCauID";
-            SqlCommand command = new SqlCommand(query, connection);
-
-            DataTable data =  new DataTable();
-
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-
-            adapter.Fill(data);
-        }
+      
     }
 }

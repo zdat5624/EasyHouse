@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="FormBanQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,7 +272,6 @@
     <None Include="Images\menu-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DAO\" />
     <Folder Include="DTO\" />
     <Folder Include="formsGiamDoc\" />
     <Folder Include="UC\" />
@@ -305,6 +305,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconlessthan-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_new.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
