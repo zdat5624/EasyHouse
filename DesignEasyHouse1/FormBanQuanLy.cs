@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignEasyHouse1.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,7 @@ namespace DesignEasyHouse1
         }
 
         #region Slide form
+
         private Form currentChildForm = null;
 
         private void OpenChildForm(Form childForm)
@@ -37,6 +39,22 @@ namespace DesignEasyHouse1
             childForm.Show();
         }
 
+
+
+        private void ptbHideMenu_Click(object sender, EventArgs e)
+        {
+            if (panelMenu.Visible)
+            {
+                panelMenu.Visible = false;
+                ptbHideMenu.Image = Resources.icons8_less_than_96__1_;
+            }
+            else
+            {
+                panelMenu.Visible = true;
+                ptbHideMenu.Image = Resources.iconlessthan_2;
+            }
+        }
+
         #endregion
 
         private void btnThongTinCuDan_Click(object sender, EventArgs e)
@@ -51,5 +69,6 @@ namespace DesignEasyHouse1
                 currentChildForm.Close();
             }
         }
+
     }
 }
