@@ -71,6 +71,5 @@ namespace DesignEasyHouse1
             }
         }
 
-      
     }
 }

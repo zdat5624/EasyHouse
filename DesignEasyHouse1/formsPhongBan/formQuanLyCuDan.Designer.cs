@@ -36,6 +36,7 @@
             this.dtgvThongTinCuDan = new System.Windows.Forms.DataGridView();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Details = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -43,9 +44,10 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button30 = new System.Windows.Forms.Button();
+            this.btnThemCuDan = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinCuDan)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -90,7 +92,8 @@
             this.dtgvThongTinCuDan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgvThongTinCuDan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Delete,
-            this.Edit});
+            this.Edit,
+            this.Details});
             this.dtgvThongTinCuDan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvThongTinCuDan.EnableHeadersVisualStyles = false;
             this.dtgvThongTinCuDan.Location = new System.Drawing.Point(40, 80);
@@ -110,6 +113,7 @@
             this.dtgvThongTinCuDan.RowTemplate.Height = 24;
             this.dtgvThongTinCuDan.Size = new System.Drawing.Size(1220, 540);
             this.dtgvThongTinCuDan.TabIndex = 1;
+            this.dtgvThongTinCuDan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvThongTinCuDan_CellContentClick);
             // 
             // Delete
             // 
@@ -131,6 +135,16 @@
             this.Edit.Name = "Edit";
             this.Edit.ReadOnly = true;
             this.Edit.Width = 6;
+            // 
+            // Details
+            // 
+            this.Details.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Details.HeaderText = "";
+            this.Details.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
+            this.Details.MinimumWidth = 6;
+            this.Details.Name = "Details";
+            this.Details.ReadOnly = true;
+            this.Details.Width = 6;
             // 
             // panel2
             // 
@@ -199,32 +213,33 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.button30);
+            this.panel7.Controls.Add(this.btnThemCuDan);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel7.Location = new System.Drawing.Point(40, 620);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1220, 80);
             this.panel7.TabIndex = 42;
             // 
-            // button30
+            // btnThemCuDan
             // 
-            this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
-            this.button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button30.FlatAppearance.BorderSize = 0;
-            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button30.ForeColor = System.Drawing.Color.White;
-            this.button30.Image = ((System.Drawing.Image)(resources.GetObject("button30.Image")));
-            this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button30.Location = new System.Drawing.Point(0, 19);
-            this.button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button30.Name = "button30";
-            this.button30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button30.Size = new System.Drawing.Size(177, 50);
-            this.button30.TabIndex = 31;
-            this.button30.Text = "Thêm cư dân";
-            this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button30.UseVisualStyleBackColor = false;
+            this.btnThemCuDan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.btnThemCuDan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnThemCuDan.FlatAppearance.BorderSize = 0;
+            this.btnThemCuDan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemCuDan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemCuDan.ForeColor = System.Drawing.Color.White;
+            this.btnThemCuDan.Image = ((System.Drawing.Image)(resources.GetObject("btnThemCuDan.Image")));
+            this.btnThemCuDan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemCuDan.Location = new System.Drawing.Point(0, 19);
+            this.btnThemCuDan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThemCuDan.Name = "btnThemCuDan";
+            this.btnThemCuDan.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnThemCuDan.Size = new System.Drawing.Size(177, 50);
+            this.btnThemCuDan.TabIndex = 31;
+            this.btnThemCuDan.Text = "Thêm cư dân";
+            this.btnThemCuDan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThemCuDan.UseVisualStyleBackColor = false;
+            this.btnThemCuDan.Click += new System.EventHandler(this.btnThemCuDan_Click);
             // 
             // dataGridViewImageColumn3
             // 
@@ -245,6 +260,15 @@
             this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
             this.dataGridViewImageColumn4.Width = 125;
             // 
+            // dataGridViewImageColumn5
+            // 
+            this.dataGridViewImageColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn5.HeaderText = "";
+            this.dataGridViewImageColumn5.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
+            this.dataGridViewImageColumn5.MinimumWidth = 6;
+            this.dataGridViewImageColumn5.Name = "dataGridViewImageColumn5";
+            this.dataGridViewImageColumn5.Width = 125;
+            // 
             // formQuanLyCuDan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -260,6 +284,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "formQuanLyCuDan";
             this.Text = "Quản lý cư dân";
+            this.Load += new System.EventHandler(this.formQuanLyCuDan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinCuDan)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -272,7 +297,7 @@
         #endregion
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
-        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button btnThemCuDan;
         private System.Windows.Forms.DataGridView dtgvThongTinCuDan;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBox2;
@@ -280,10 +305,12 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.DataGridViewImageColumn Delete;
-        private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn4;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewImageColumn Delete;
+        private System.Windows.Forms.DataGridViewImageColumn Edit;
+        private System.Windows.Forms.DataGridViewImageColumn Details;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn5;
     }
 }

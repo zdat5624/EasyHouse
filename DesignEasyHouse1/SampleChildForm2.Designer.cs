@@ -42,7 +42,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+
             this.button2 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -202,13 +202,6 @@
             this.label6.TabIndex = 39;
             this.label6.Text = "TEXT HERE";
             // 
-            // metroTextBox1
-            // 
-            this.metroTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.Size = new System.Drawing.Size(0, 22);
-            this.metroTextBox1.TabIndex = 0;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Silver;
@@ -303,7 +296,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Panel panel2;

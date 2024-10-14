@@ -9,7 +9,7 @@ CREATE TABLE CuDan (
     CuDanID INT IDENTITY PRIMARY KEY ,
     HoTen NVARCHAR(100),
     SoDienThoai NVARCHAR(15),
-	CMND NVARCHAR(15),
+	CCCD NVARCHAR(15),
 	Email NVARCHAR(255),
     DiaChi NVARCHAR(255),
 	TrangThai NVARCHAR(255), --'Còn ở' hoặc 'Chuyển đi'
@@ -139,7 +139,7 @@ VALUES
 GO
 
 -- Thêm dữ liệu mẫu vào bảng CuDan
-INSERT INTO CuDan (HoTen, SoDienThoai, Email, DiaChi, CMND, TrangThai, ThanhToan, NgayChuyenDen, HinhAnh)
+INSERT INTO CuDan (HoTen, SoDienThoai, Email, DiaChi, CCCD, TrangThai, ThanhToan, NgayChuyenDen, HinhAnh)
 VALUES 
 (N'Nguyễn Văn A', '0912345678', 'nguyenvana@example.com', N'123 Đường ABC, Phường 1, Quận 1, TP.HCM', '123456789', N'Còn ở', N'Trả đủ', '2023-05-01', NULL),
 (N'Trần Thị B', '0938765432', 'tranthib@example.com', N'456 Đường DEF, Phường 2, Quận 2, TP.HCM', '987654321', N'Còn ở', N'Nợ', '2023-06-10', NULL),
@@ -153,4 +153,4 @@ VALUES
 
 GO
 
-SELECT * FROM CuDan
+SELECT CuDanID, HoTen, SoDienThoai, CCCD, Email, DiaChi, TrangThai, ThanhToan FROM CuDan
