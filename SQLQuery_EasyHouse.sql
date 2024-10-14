@@ -9,11 +9,13 @@ CREATE TABLE CuDan (
     CuDanID INT IDENTITY PRIMARY KEY ,
     HoTen NVARCHAR(100),
     SoDienThoai NVARCHAR(15),
+	CMND NVARCHAR(15),
 	Email NVARCHAR(255),
     DiaChi NVARCHAR(255),
 	TrangThai NVARCHAR(255), --'Còn ở' hoặc 'Chuyển đi'
 	ThanhToan NVARCHAR(255) DEFAULT N'Trả đủ', --'Trả đủ' hoặc 'Nợ'
 	NgayChuyenDen DATETIME DEFAULT GETDATE(),
+	HinhAnh Image
 );
 GO
 
@@ -134,6 +136,21 @@ VALUES
 (1, null, N'Yêu cầu đã được chuyển đến bộ phận vệ sinh để xử lý.'),
 (1, null, N'Chúng tôi đã hoàn thành sửa chữa hệ thống nước tại phòng 302.');
 
+GO
 
-SELECT PhanHoiYeuCau.* FROM  YeuCau, PhanHoiYeuCau
-WHERE YeuCau.YeuCauID = PhanHoiYeuCau.YeuCauID
+-- Thêm dữ liệu mẫu vào bảng CuDan
+INSERT INTO CuDan (HoTen, SoDienThoai, Email, DiaChi, CMND, TrangThai, ThanhToan, NgayChuyenDen, HinhAnh)
+VALUES 
+(N'Nguyễn Văn A', '0912345678', 'nguyenvana@example.com', N'123 Đường ABC, Phường 1, Quận 1, TP.HCM', '123456789', N'Còn ở', N'Trả đủ', '2023-05-01', NULL),
+(N'Trần Thị B', '0938765432', 'tranthib@example.com', N'456 Đường DEF, Phường 2, Quận 2, TP.HCM', '987654321', N'Còn ở', N'Nợ', '2023-06-10', NULL),
+(N'Lê Văn C', '0987654321', 'levanc@example.com', N'789 Đường GHI, Phường 3, Quận 3, TP.HCM', '111222333', N'Chuyển đi', N'Trả đủ', '2023-04-15', NULL),
+(N'Phạm Thị D', '0909090909', 'phamthid@example.com', N'12 Đường JKL, Phường 4, Quận 4, TP.HCM', '444555666', N'Còn ở', N'Nợ', '2023-08-01', NULL),
+(N'Hoàng Văn E', '0922233344', 'hoangvane@example.com', N'56 Đường MNO, Phường 5, Quận 5, TP.HCM', '777888999', N'Còn ở', N'Trả đủ', '2023-09-05', NULL),
+(N'Ngô Thị F', '0945678901', 'ngothif@example.com', N'34 Đường PQR, Phường 6, Quận 6, TP.HCM', '112233445', N'Chuyển đi', N'Nợ', '2022-12-20', NULL),
+(N'Võ Văn G', '0911223344', 'vovang@example.com', N'99 Đường STU, Phường 7, Quận 7, TP.HCM', '556677889', N'Còn ở', N'Trả đủ', '2023-01-10', NULL),
+(N'Đinh Thị H', '0966677889', 'dinhthih@example.com', N'22 Đường VWX, Phường 8, Quận 8, TP.HCM', '334455667', N'Còn ở', N'Nợ', '2023-03-15', NULL);
+
+
+GO
+
+SELECT * FROM CuDan

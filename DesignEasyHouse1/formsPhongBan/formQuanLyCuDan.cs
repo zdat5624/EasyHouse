@@ -27,6 +27,8 @@ namespace DesignEasyHouse1.formsPhongBan
 
             dtgvThongTinCuDan.DataSource = DataProvider.Instance.ExecuteQuery(query);
 
+            
+            
             dtgvThongTinCuDan.Columns["Edit"].DisplayIndex = dtgvThongTinCuDan.Columns.Count - 1;
             dtgvThongTinCuDan.Columns["Delete"].DisplayIndex = dtgvThongTinCuDan.Columns.Count - 2;
             dtgvThongTinCuDan.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells; // Cột đầu tiên

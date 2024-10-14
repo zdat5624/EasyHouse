@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\dulieucuatoi\\nam3hk1\\congnghephanmem\\easyhouse\\easyhouse\\designeasyhouse1\\formsphongban\\formquanlycudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\designeasyhouse1\\formsphongban\\formquanlycudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formsphongban\\formquanlycudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\dulieucuatoi\\nam3hk1\\congnghephanmem\\easyhouse\\easyhouse\\designeasyhouse1\\formsphongban\\formquanlycudan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\designeasyhouse1\\formsphongban\\formquanlycudan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formsphongban\\formquanlycudan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -39,8 +39,7 @@
               "ViewState": "AgIAAAgAAAAAAAAAAIA6wBIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T16:12:24.478Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -52,8 +51,7 @@
               "RelativeToolTip": "DesignEasyHouse1\\formsPhongBan\\formQuanLyCuDan.Designer.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAYwDgAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T12:45:52.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T12:45:52.662Z"
             },
             {
               "$type": "Document",
@@ -63,7 +61,7 @@
               "RelativeDocumentMoniker": "DesignEasyHouse1\\DAO\\DataProvider.cs",
               "ToolTip": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\DAO\\DataProvider.cs",
               "RelativeToolTip": "DesignEasyHouse1\\DAO\\DataProvider.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAswDQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T11:35:42.717Z",
               "EditorCaption": ""
@@ -76,7 +74,7 @@
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsPhongBan\\formQuanLyCuDan.cs",
               "ToolTip": "C:\\dulieucuatoi\\Nam3Hk1\\CongNghePhanMem\\EasyHouse\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formQuanLyCuDan.cs",
               "RelativeToolTip": "DesignEasyHouse1\\formsPhongBan\\formQuanLyCuDan.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCIAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwB0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T11:35:46.543Z",
               "EditorCaption": ""
