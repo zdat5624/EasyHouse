@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formThemCuDan));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.btnThemCuDan = new System.Windows.Forms.Button();
@@ -249,6 +250,7 @@
             // 
             // ptbHinhAnh
             // 
+            this.ptbHinhAnh.Image = ((System.Drawing.Image)(resources.GetObject("ptbHinhAnh.Image")));
             this.ptbHinhAnh.Location = new System.Drawing.Point(35, 38);
             this.ptbHinhAnh.Name = "ptbHinhAnh";
             this.ptbHinhAnh.Size = new System.Drawing.Size(456, 533);
