@@ -74,13 +74,13 @@ namespace DesignEasyHouse1.formsPhongBan
         {
             LoadForm();
         }
-
-        #endregion
-
         private void btnThemCuDan_Click(object sender, EventArgs e)
         {
             formThemCuDan f = new formsPhongBan.formThemCuDan();
             f.ShowDialog();
         }
+
+        #endregion
+
     }
 }

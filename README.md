@@ -9,8 +9,4 @@ Lề trên dưới: 80
 font:
 Segoe UI, 12pt
 
-test pull vào nhánh lethanhdat
-
-test merge nhánh
-
-test merge nhánh 2*******
+Hạn chế lỗi SQL Injection: dùng store procedure

@@ -12,9 +12,11 @@ CREATE TABLE CuDan (
 	CCCD NVARCHAR(15),
 	Email NVARCHAR(255),
     DiaChi NVARCHAR(255),
-	TrangThai NVARCHAR(255), --'Còn ở' hoặc 'Chuyển đi'
+	GioiTinh NVARCHAR(10), -- N'Nam' hoặc 'Nữ'
+	NgaySinh DATE,
+	TrangThai NVARCHAR(255) DEFAULT N'Còn ở', --'Còn ở' hoặc 'Chuyển đi'
 	ThanhToan NVARCHAR(255) DEFAULT N'Trả đủ', --'Trả đủ' hoặc 'Nợ'
-	NgayChuyenDen DATETIME DEFAULT GETDATE(),
+	NgayChuyenDen DATE DEFAULT GETDATE(),
 	HinhAnh Image
 );
 GO
@@ -28,11 +30,13 @@ CREATE TABLE LichSuCapNhatCuDan (
     CuDanID INT,
     HoTen NVARCHAR(100),
     SoDienThoai NVARCHAR(15),
+	CCCD NVARCHAR(15),
 	Email NVARCHAR(255),
     DiaChi NVARCHAR(255),
-    SoCanHo NVARCHAR(10),
 	TrangThai NVARCHAR(255), --'Còn ở' hoặc 'Chuyển đi'
+	ThanhToan NVARCHAR(255),
 	NgayChuyenDen DATE,
+	HinhAnh Image,
     NgayLuu DATETIME DEFAULT GETDATE()
 );
 GO
