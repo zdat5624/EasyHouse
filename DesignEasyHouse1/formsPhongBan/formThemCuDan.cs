@@ -24,17 +24,15 @@ namespace DesignEasyHouse1.formsPhongBan
         #region Methods
         void ThemCuDan()
         {
-            CuDan cuDan = new CuDan()
-            {
-                HoTen = txtHoTen.Text,
-                SoDienThoai = txtSoDienThoai.Text,
-                CCCD = txtCCCD.Text,
-                Email = txtEmail.Text,
-                DiaChi = txtDiaChi.Text,
-                GioiTinh = cbGioiTinh.SelectedItem.ToString(),
-                NgaySinh = dtpNgaySinh.Value,
-                HinhAnh = ImageToByteArray(ptbHinhAnh.Image),
-            };
+            CuDan cuDan = new CuDan(
+                txtHoTen.Text,
+                txtSoDienThoai.Text,
+                txtCCCD.Text,
+                txtEmail.Text,
+                txtDiaChi.Text,
+                cbGioiTinh.SelectedItem.ToString(),
+                dtpNgaySinh.Value,
+                ImageToByteArray(ptbHinhAnh.Image));
 
             bool result = CuDanDAO.Instance.ThemCuDan(cuDan);
             if (result)

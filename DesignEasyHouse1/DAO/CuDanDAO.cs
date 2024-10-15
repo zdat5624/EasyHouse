@@ -44,7 +44,7 @@ namespace DesignEasyHouse1.DAO
                 cuDan.DiaChi,
                 cuDan.GioiTinh,
                 cuDan.NgaySinh,
-                cuDan.HinhAnh
+                cuDan.HinhAnh1
             };
 
             int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
