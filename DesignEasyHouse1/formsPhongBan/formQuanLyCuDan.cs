@@ -22,7 +22,7 @@ namespace DesignEasyHouse1.formsPhongBan
         }
 
         #region Methods
-        void LoadForm()
+        void LoadDtgvThongTinCuDan()
         {
             dtgvThongTinCuDan.DataSource = CuDanDAO.Instance.GetDanhSachCuDanKhongHoanChinh();
 
@@ -36,6 +36,11 @@ namespace DesignEasyHouse1.formsPhongBan
             dtgvThongTinCuDan.Columns["TrangThai"].HeaderText = "Trạng thái";
             dtgvThongTinCuDan.Columns["ThanhToan"].HeaderText = "Thanh toán";
         }
+        
+        bool XoaCuDanByCuDanID(int cuDanID)
+        {
+            return CuDanDAO.Instance.XoaCuDanByCuDanID(cuDanID);
+        }
 
         #endregion
 
@@ -43,37 +48,45 @@ namespace DesignEasyHouse1.formsPhongBan
 
         private void dtgvThongTinCuDan_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Kiểm tra xem người dùng có nhấp vào cột hình ảnh không
-            if (e.RowIndex >= 0) // Đảm bảo không nhấp vào hàng tiêu đề
+            // Xử lý Xóa, sửa, xem chi tiết
+            if (e.RowIndex >= 0)
             {
+                
                 if (e.ColumnIndex == dtgvThongTinCuDan.Columns["Edit"].Index)
                 {
-                    // Xử lý sự kiện nhấp vào nút "Edit"
+                    //Sửa cư dân
                     int cuDanID = Convert.ToInt32(dtgvThongTinCuDan.Rows[e.RowIndex].Cells["CuDanID"].Value);
-                    // Gọi hàm chỉnh sửa với cuDanID
                     MessageBox.Show($"Chỉnh sửa cư dân có ID: {cuDanID}");
                 }
                 else if (e.ColumnIndex == dtgvThongTinCuDan.Columns["Delete"].Index)
                 {
-                    // Xử lý sự kiện nhấp vào nút "Delete"
+                    //Xóa cư dân
                     int cuDanID = Convert.ToInt32(dtgvThongTinCuDan.Rows[e.RowIndex].Cells["CuDanID"].Value);
-                    // Gọi hàm xóa với cuDanID
-                    MessageBox.Show($"Xóa cư dân có ID: {cuDanID}");
+                    if (XoaCuDanByCuDanID(cuDanID))
+                    {
+                        MessageBox.Show($"Xóa thành công cư dân có ID: {cuDanID}");
+                        LoadDtgvThongTinCuDan();
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Xóa thất bại!");
+                    }
+                    
                 }
                 else if (e.ColumnIndex == dtgvThongTinCuDan.Columns["Details"].Index)
                 {
-                    // Xử lý sự kiện nhấp vào nút "Delete"
+                    //Xem chi tiết cư dân
                     int cuDanID = Convert.ToInt32(dtgvThongTinCuDan.Rows[e.RowIndex].Cells["CuDanID"].Value);
-                    // Gọi hàm xóa với cuDanID
                     MessageBox.Show($"Xem chi tiết cư dân có ID: {cuDanID}");
                 }
             }
         }
-
+        
         private void formQuanLyCuDan_Load(object sender, EventArgs e)
         {
-            LoadForm();
+            LoadDtgvThongTinCuDan();
         }
+        
         private void btnThemCuDan_Click(object sender, EventArgs e)
         {
             formThemCuDan f = new formsPhongBan.formThemCuDan();

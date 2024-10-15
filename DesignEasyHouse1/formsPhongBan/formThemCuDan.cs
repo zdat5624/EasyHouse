@@ -24,17 +24,17 @@ namespace DesignEasyHouse1.formsPhongBan
         #region Methods
         void ThemCuDan()
         {
-            CuDan cuDan = new CuDan(
-                txtHoTen.Text,
-                txtSoDienThoai.Text,
-                txtCCCD.Text,
-                txtEmail.Text,
-                txtDiaChi.Text,
-                cbGioiTinh.SelectedItem.ToString(),
-                dtpNgaySinh.Value,
-                ImageToByteArray(ptbHinhAnh.Image));
 
-            bool result = CuDanDAO.Instance.ThemCuDan(cuDan);
+            string HoTen = txtHoTen.Text;
+            string SoDienThoai = txtSoDienThoai.Text;
+            string CCCD = txtCCCD.Text;
+            string Email = txtEmail.Text;
+            string DiaChi = txtDiaChi.Text;
+            string GioiTinh = cbGioiTinh.SelectedItem.ToString();
+            DateTime NgaySinh = dtpNgaySinh.Value;
+            byte[] HinhAnh = ImageToByteArray(ptbHinhAnh.Image);
+
+            bool result = CuDanDAO.Instance.ThemCuDan(HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, HinhAnh);
             if (result)
             {
                 MessageBox.Show("Thêm cư dân thành công!");
@@ -42,7 +42,7 @@ namespace DesignEasyHouse1.formsPhongBan
             }
             else
             {
-                MessageBox.Show("Có lỗi xảy ra, vui lòng thử lại.");
+                MessageBox.Show("Có lỗi xảy ra, vui lòng kiểm tra lại.");
             }
         }
         private byte[] ImageToByteArray(Image image)
@@ -55,6 +55,7 @@ namespace DesignEasyHouse1.formsPhongBan
         }
 
         #endregion
+
 
         #region Events
         private void btnChonFileAnh_Click(object sender, EventArgs e)

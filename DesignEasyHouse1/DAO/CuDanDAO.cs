@@ -31,23 +31,20 @@ namespace DesignEasyHouse1.DAO
             return DataProvider.Instance.ExecuteQuery(query);
         }
 
-        public bool ThemCuDan(CuDan cuDan)
+        public bool ThemCuDan(string HoTen, string SoDienThoai, string CCCD, string Email, string DiaChi, string GioiTinh, DateTime NgaySinh, byte[] HinhAnh)
         {
-            string query = "INSERT INTO CuDan (HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, HinhAnh) VALUES ( @HoTen , @SoDienThoai , @CCCD , @Email , @DiaChi , @GioiTinh , @NgaySinh , @HinhAnh )";
+            string query = "INSERT INTO CuDan (HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, HinhAnh) VALUES ( @HoTen ,  @SoDienThoai , @CCCD , @Email , @DiaChi , @GioiTinh , @NgaySinh , @HinhAnh )";
 
-            object[] parameters = new object[]
-            {
-                cuDan.HoTen,
-                cuDan.SoDienThoai,
-                cuDan.CCCD,
-                cuDan.Email,
-                cuDan.DiaChi,
-                cuDan.GioiTinh,
-                cuDan.NgaySinh,
-                cuDan.HinhAnh1
-            };
+            object[] parameters = new object[]{HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, HinhAnh};
 
             int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
+            return result > 0;
+        }
+
+        public bool XoaCuDanByCuDanID(int CuDanID)
+        {
+            string query = "DELETE FROM CuDan WHERE CuDanID = @CuDanID";
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { CuDanID });
             return result > 0;
         }
     }

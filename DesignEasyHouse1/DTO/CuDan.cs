@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,17 +35,35 @@ namespace DesignEasyHouse1.DTO
         public DateTime NgayChuyenDen { get => ngayChuyenDen; set => ngayChuyenDen = value; }
         public byte[] HinhAnh1 { get => HinhAnh; set => HinhAnh = value; }
 
-        public CuDan(string hoTen, string soDienThoai, string cccd, string email, 
-            string diaChi, string gioiTinh, DateTime ngaySinh, byte[] hinhAnh)
+
+        //public CuDan(string hoTen, string soDienThoai, string cccd, string email, 
+        //    string diaChi, string gioiTinh, DateTime ngaySinh, byte[] hinhAnh)
+        //{
+        //    HoTen = hoTen;
+        //    SoDienThoai = soDienThoai;
+        //    CCCD = cccd;
+        //    Email = email;
+        //    DiaChi = diaChi;
+        //    GioiTinh = gioiTinh;
+        //    NgaySinh = ngaySinh;
+        //    HinhAnh1 = hinhAnh;
+        //}
+
+
+        public CuDan(DataRow row)
         {
-            HoTen = hoTen;
-            SoDienThoai = soDienThoai;
-            CCCD = cccd;
-            Email = email;
-            DiaChi = diaChi;
-            GioiTinh = gioiTinh;
-            NgaySinh = ngaySinh;
-            HinhAnh1 = hinhAnh;
+            cuDanID = (int)row["CuDanID"];
+            hoTen = row["HoTen"].ToString();
+            soDienThoai = row["SoDienThoai"].ToString();
+            cCCD = row["CCCD"].ToString();
+            email = row["Email"].ToString();
+            diaChi = row["DiaChi"].ToString();
+            gioiTinh = row["GioiTinh"].ToString();
+            ngaySinh = row["NgaySinh"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(row["NgaySinh"]);
+            trangThai = row["TrangThai"].ToString();
+            thanhToan = row["ThanhToan"].ToString();
+            ngayChuyenDen = row["NgayChuyenDen"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(row["NgayChuyenDen"]);
+            HinhAnh = row["HinhAnh"] == DBNull.Value ? null : (byte[])row["HinhAnh"];
         }
     }
 }
