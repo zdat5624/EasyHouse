@@ -2,7 +2,7 @@
 
 namespace DesignEasyHouse1.formsPhongBan
 {
-    partial class formSuaThongTinCuDan
+    partial class formXemChiTietThongTinCuDan
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,8 @@ namespace DesignEasyHouse1.formsPhongBan
         private void InitializeComponent()
         {
             this.panelTieuDe = new System.Windows.Forms.Panel();
-            this.btnThemCuDan = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.btnHuyBo = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtHoTen = new System.Windows.Forms.TextBox();
@@ -44,18 +45,28 @@ namespace DesignEasyHouse1.formsPhongBan
             this.lbEmail = new System.Windows.Forms.Label();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.lbDiaChi = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbHinhAnh = new System.Windows.Forms.GroupBox();
             this.ptbHinhAnh = new System.Windows.Forms.PictureBox();
             this.cbGioiTinh = new System.Windows.Forms.ComboBox();
             this.lbGioiTinh = new System.Windows.Forms.Label();
             this.lbNgaySinh = new System.Windows.Forms.Label();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.btnChonFileAnh = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.gbThongTinKhac = new System.Windows.Forms.GroupBox();
+            this.gbThongTinCaNhan = new System.Windows.Forms.GroupBox();
+            this.lbCuDanID = new System.Windows.Forms.Label();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.lbTrangThai = new System.Windows.Forms.Label();
+            this.cbTrangThai = new System.Windows.Forms.ComboBox();
+            this.lbThanhToan = new System.Windows.Forms.Label();
+            this.cbThanhToan = new System.Windows.Forms.ComboBox();
+            this.dtpNgayChuyenDen = new System.Windows.Forms.DateTimePicker();
+            this.lbNgayDen = new System.Windows.Forms.Label();
             this.panelTieuDe.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbHinhAnh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnh)).BeginInit();
+            this.gbThongTinCaNhan.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTieuDe
@@ -68,28 +79,38 @@ namespace DesignEasyHouse1.formsPhongBan
             this.panelTieuDe.Location = new System.Drawing.Point(0, 0);
             this.panelTieuDe.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.panelTieuDe.Name = "panelTieuDe";
-            this.panelTieuDe.Size = new System.Drawing.Size(1182, 70);
+            this.panelTieuDe.Size = new System.Drawing.Size(1282, 70);
             this.panelTieuDe.TabIndex = 0;
             // 
-            // btnThemCuDan
+            // label1
             // 
-            this.btnThemCuDan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
-            this.btnThemCuDan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnThemCuDan.FlatAppearance.BorderSize = 0;
-            this.btnThemCuDan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemCuDan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemCuDan.ForeColor = System.Drawing.Color.White;
-            this.btnThemCuDan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemCuDan.Location = new System.Drawing.Point(924, 2);
-            this.btnThemCuDan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThemCuDan.Name = "btnThemCuDan";
-            this.btnThemCuDan.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnThemCuDan.Size = new System.Drawing.Size(120, 40);
-            this.btnThemCuDan.TabIndex = 31;
-            this.btnThemCuDan.Text = "Thêm";
-            this.btnThemCuDan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnThemCuDan.UseVisualStyleBackColor = false;
-            this.btnThemCuDan.Click += new System.EventHandler(this.btnThemCuDan_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(466, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(250, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "THÔNG TIN CƯ DÂN";
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLuu.FlatAppearance.BorderSize = 0;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(1012, 2);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnLuu.Size = new System.Drawing.Size(120, 40);
+            this.btnLuu.TabIndex = 31;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Visible = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnHuyBo
             // 
@@ -100,7 +121,7 @@ namespace DesignEasyHouse1.formsPhongBan
             this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuyBo.ForeColor = System.Drawing.Color.White;
             this.btnHuyBo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuyBo.Location = new System.Drawing.Point(1050, 2);
+            this.btnHuyBo.Location = new System.Drawing.Point(1138, 2);
             this.btnHuyBo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHuyBo.Name = "btnHuyBo";
             this.btnHuyBo.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -113,12 +134,13 @@ namespace DesignEasyHouse1.formsPhongBan
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnThemCuDan);
+            this.panel2.Controls.Add(this.btnSua);
+            this.panel2.Controls.Add(this.btnLuu);
             this.panel2.Controls.Add(this.btnHuyBo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 703);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1182, 50);
+            this.panel2.Size = new System.Drawing.Size(1282, 50);
             this.panel2.TabIndex = 33;
             // 
             // txtHoTen
@@ -126,17 +148,18 @@ namespace DesignEasyHouse1.formsPhongBan
             this.txtHoTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtHoTen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHoTen.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.txtHoTen.Location = new System.Drawing.Point(69, 129);
+            this.txtHoTen.Location = new System.Drawing.Point(60, 58);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(423, 31);
+            this.txtHoTen.ReadOnly = true;
+            this.txtHoTen.Size = new System.Drawing.Size(228, 31);
             this.txtHoTen.TabIndex = 0;
             // 
             // lbHoTen
             // 
             this.lbHoTen.AutoSize = true;
             this.lbHoTen.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHoTen.Location = new System.Drawing.Point(69, 92);
+            this.lbHoTen.Location = new System.Drawing.Point(60, 29);
             this.lbHoTen.Name = "lbHoTen";
             this.lbHoTen.Size = new System.Drawing.Size(84, 23);
             this.lbHoTen.TabIndex = 7;
@@ -147,17 +170,18 @@ namespace DesignEasyHouse1.formsPhongBan
             this.txtSoDienThoai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtSoDienThoai.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSoDienThoai.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.txtSoDienThoai.Location = new System.Drawing.Point(69, 211);
+            this.txtSoDienThoai.Location = new System.Drawing.Point(60, 124);
             this.txtSoDienThoai.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
-            this.txtSoDienThoai.Size = new System.Drawing.Size(423, 31);
+            this.txtSoDienThoai.ReadOnly = true;
+            this.txtSoDienThoai.Size = new System.Drawing.Size(228, 31);
             this.txtSoDienThoai.TabIndex = 0;
             // 
             // lbSoDienThoai
             // 
             this.lbSoDienThoai.AutoSize = true;
             this.lbSoDienThoai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSoDienThoai.Location = new System.Drawing.Point(69, 174);
+            this.lbSoDienThoai.Location = new System.Drawing.Point(60, 95);
             this.lbSoDienThoai.Name = "lbSoDienThoai";
             this.lbSoDienThoai.Size = new System.Drawing.Size(111, 23);
             this.lbSoDienThoai.TabIndex = 5;
@@ -168,17 +192,18 @@ namespace DesignEasyHouse1.formsPhongBan
             this.txtCCCD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtCCCD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCCCD.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.txtCCCD.Location = new System.Drawing.Point(69, 293);
+            this.txtCCCD.Location = new System.Drawing.Point(60, 190);
             this.txtCCCD.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtCCCD.Name = "txtCCCD";
-            this.txtCCCD.Size = new System.Drawing.Size(423, 31);
+            this.txtCCCD.ReadOnly = true;
+            this.txtCCCD.Size = new System.Drawing.Size(228, 31);
             this.txtCCCD.TabIndex = 0;
             // 
             // lbCCCD
             // 
             this.lbCCCD.AutoSize = true;
             this.lbCCCD.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCCCD.Location = new System.Drawing.Point(69, 256);
+            this.lbCCCD.Location = new System.Drawing.Point(60, 161);
             this.lbCCCD.Name = "lbCCCD";
             this.lbCCCD.Size = new System.Drawing.Size(179, 23);
             this.lbCCCD.TabIndex = 37;
@@ -189,17 +214,18 @@ namespace DesignEasyHouse1.formsPhongBan
             this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.txtEmail.Location = new System.Drawing.Point(69, 375);
+            this.txtEmail.Location = new System.Drawing.Point(60, 268);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(423, 31);
+            this.txtEmail.ReadOnly = true;
+            this.txtEmail.Size = new System.Drawing.Size(421, 31);
             this.txtEmail.TabIndex = 0;
             // 
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
             this.lbEmail.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.Location = new System.Drawing.Point(69, 338);
+            this.lbEmail.Location = new System.Drawing.Point(60, 239);
             this.lbEmail.Name = "lbEmail";
             this.lbEmail.Size = new System.Drawing.Size(107, 23);
             this.lbEmail.TabIndex = 35;
@@ -210,38 +236,39 @@ namespace DesignEasyHouse1.formsPhongBan
             this.txtDiaChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.txtDiaChi.Location = new System.Drawing.Point(69, 457);
+            this.txtDiaChi.Location = new System.Drawing.Point(60, 334);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(423, 31);
+            this.txtDiaChi.ReadOnly = true;
+            this.txtDiaChi.Size = new System.Drawing.Size(421, 31);
             this.txtDiaChi.TabIndex = 0;
             // 
             // lbDiaChi
             // 
             this.lbDiaChi.AutoSize = true;
             this.lbDiaChi.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDiaChi.Location = new System.Drawing.Point(69, 420);
+            this.lbDiaChi.Location = new System.Drawing.Point(60, 305);
             this.lbDiaChi.Name = "lbDiaChi";
             this.lbDiaChi.Size = new System.Drawing.Size(118, 23);
             this.lbDiaChi.TabIndex = 41;
             this.lbDiaChi.Text = "Địa chỉ liên hệ";
             // 
-            // groupBox1
+            // gbHinhAnh
             // 
-            this.groupBox1.Controls.Add(this.ptbHinhAnh);
-            this.groupBox1.Location = new System.Drawing.Point(586, 89);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(539, 608);
-            this.groupBox1.TabIndex = 42;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Hình ảnh";
+            this.gbHinhAnh.Controls.Add(this.ptbHinhAnh);
+            this.gbHinhAnh.Location = new System.Drawing.Point(296, 29);
+            this.gbHinhAnh.Name = "gbHinhAnh";
+            this.gbHinhAnh.Size = new System.Drawing.Size(169, 192);
+            this.gbHinhAnh.TabIndex = 42;
+            this.gbHinhAnh.TabStop = false;
+            this.gbHinhAnh.Text = "Hình ảnh";
             // 
             // ptbHinhAnh
             // 
             this.ptbHinhAnh.Image = global::DesignEasyHouse1.Properties.Resources.user;
-            this.ptbHinhAnh.Location = new System.Drawing.Point(35, 38);
+            this.ptbHinhAnh.Location = new System.Drawing.Point(26, 25);
             this.ptbHinhAnh.Name = "ptbHinhAnh";
-            this.ptbHinhAnh.Size = new System.Drawing.Size(456, 533);
+            this.ptbHinhAnh.Size = new System.Drawing.Size(117, 160);
             this.ptbHinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbHinhAnh.TabIndex = 0;
             this.ptbHinhAnh.TabStop = false;
@@ -250,20 +277,21 @@ namespace DesignEasyHouse1.formsPhongBan
             // 
             this.cbGioiTinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbGioiTinh.Enabled = false;
             this.cbGioiTinh.FormattingEnabled = true;
             this.cbGioiTinh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cbGioiTinh.Location = new System.Drawing.Point(214, 498);
+            this.cbGioiTinh.Location = new System.Drawing.Point(170, 374);
             this.cbGioiTinh.Name = "cbGioiTinh";
-            this.cbGioiTinh.Size = new System.Drawing.Size(278, 31);
+            this.cbGioiTinh.Size = new System.Drawing.Size(311, 31);
             this.cbGioiTinh.TabIndex = 43;
             // 
             // lbGioiTinh
             // 
             this.lbGioiTinh.AutoSize = true;
             this.lbGioiTinh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGioiTinh.Location = new System.Drawing.Point(69, 502);
+            this.lbGioiTinh.Location = new System.Drawing.Point(60, 378);
             this.lbGioiTinh.Name = "lbGioiTinh";
             this.lbGioiTinh.Size = new System.Drawing.Size(75, 23);
             this.lbGioiTinh.TabIndex = 44;
@@ -273,7 +301,7 @@ namespace DesignEasyHouse1.formsPhongBan
             // 
             this.lbNgaySinh.AutoSize = true;
             this.lbNgaySinh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNgaySinh.Location = new System.Drawing.Point(67, 545);
+            this.lbNgaySinh.Location = new System.Drawing.Point(60, 414);
             this.lbNgaySinh.Name = "lbNgaySinh";
             this.lbNgaySinh.Size = new System.Drawing.Size(86, 23);
             this.lbNgaySinh.TabIndex = 45;
@@ -282,22 +310,24 @@ namespace DesignEasyHouse1.formsPhongBan
             // dtpNgaySinh
             // 
             this.dtpNgaySinh.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtpNgaySinh.Enabled = false;
             this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgaySinh.Location = new System.Drawing.Point(218, 541);
+            this.dtpNgaySinh.Location = new System.Drawing.Point(170, 410);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(274, 30);
+            this.dtpNgaySinh.Size = new System.Drawing.Size(311, 30);
             this.dtpNgaySinh.TabIndex = 46;
             // 
             // btnChonFileAnh
             // 
             this.btnChonFileAnh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnChonFileAnh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnChonFileAnh.Enabled = false;
             this.btnChonFileAnh.FlatAppearance.BorderSize = 0;
             this.btnChonFileAnh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChonFileAnh.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.btnChonFileAnh.ForeColor = System.Drawing.Color.Black;
             this.btnChonFileAnh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChonFileAnh.Location = new System.Drawing.Point(69, 589);
+            this.btnChonFileAnh.Location = new System.Drawing.Point(60, 557);
             this.btnChonFileAnh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChonFileAnh.Name = "btnChonFileAnh";
             this.btnChonFileAnh.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -308,71 +338,175 @@ namespace DesignEasyHouse1.formsPhongBan
             this.btnChonFileAnh.UseVisualStyleBackColor = false;
             this.btnChonFileAnh.Click += new System.EventHandler(this.btnChonFileAnh_Click);
             // 
-            // label1
+            // gbThongTinKhac
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(499, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "THÊM CƯ DÂN";
+            this.gbThongTinKhac.Location = new System.Drawing.Point(590, 79);
+            this.gbThongTinKhac.Name = "gbThongTinKhac";
+            this.gbThongTinKhac.Size = new System.Drawing.Size(668, 604);
+            this.gbThongTinKhac.TabIndex = 47;
+            this.gbThongTinKhac.TabStop = false;
+            this.gbThongTinKhac.Text = "Thông tin khác";
             // 
-            // formThemCuDan
+            // gbThongTinCaNhan
+            // 
+            this.gbThongTinCaNhan.Controls.Add(this.dtpNgayChuyenDen);
+            this.gbThongTinCaNhan.Controls.Add(this.lbNgayDen);
+            this.gbThongTinCaNhan.Controls.Add(this.lbThanhToan);
+            this.gbThongTinCaNhan.Controls.Add(this.cbThanhToan);
+            this.gbThongTinCaNhan.Controls.Add(this.lbTrangThai);
+            this.gbThongTinCaNhan.Controls.Add(this.cbTrangThai);
+            this.gbThongTinCaNhan.Controls.Add(this.lbCuDanID);
+            this.gbThongTinCaNhan.Controls.Add(this.gbHinhAnh);
+            this.gbThongTinCaNhan.Controls.Add(this.lbSoDienThoai);
+            this.gbThongTinCaNhan.Controls.Add(this.btnChonFileAnh);
+            this.gbThongTinCaNhan.Controls.Add(this.txtSoDienThoai);
+            this.gbThongTinCaNhan.Controls.Add(this.dtpNgaySinh);
+            this.gbThongTinCaNhan.Controls.Add(this.lbHoTen);
+            this.gbThongTinCaNhan.Controls.Add(this.lbNgaySinh);
+            this.gbThongTinCaNhan.Controls.Add(this.txtHoTen);
+            this.gbThongTinCaNhan.Controls.Add(this.lbGioiTinh);
+            this.gbThongTinCaNhan.Controls.Add(this.lbEmail);
+            this.gbThongTinCaNhan.Controls.Add(this.cbGioiTinh);
+            this.gbThongTinCaNhan.Controls.Add(this.txtEmail);
+            this.gbThongTinCaNhan.Controls.Add(this.lbCCCD);
+            this.gbThongTinCaNhan.Controls.Add(this.txtDiaChi);
+            this.gbThongTinCaNhan.Controls.Add(this.txtCCCD);
+            this.gbThongTinCaNhan.Controls.Add(this.lbDiaChi);
+            this.gbThongTinCaNhan.Location = new System.Drawing.Point(31, 79);
+            this.gbThongTinCaNhan.Name = "gbThongTinCaNhan";
+            this.gbThongTinCaNhan.Size = new System.Drawing.Size(553, 604);
+            this.gbThongTinCaNhan.TabIndex = 48;
+            this.gbThongTinCaNhan.TabStop = false;
+            this.gbThongTinCaNhan.Text = "Thông tin cá nhân";
+            // 
+            // lbCuDanID
+            // 
+            this.lbCuDanID.AutoSize = true;
+            this.lbCuDanID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbCuDanID.Location = new System.Drawing.Point(318, 224);
+            this.lbCuDanID.Name = "lbCuDanID";
+            this.lbCuDanID.Size = new System.Drawing.Size(36, 23);
+            this.lbCuDanID.TabIndex = 47;
+            this.lbCuDanID.Text = "ID: ";
+            // 
+            // btnSua
+            // 
+            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnSua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSua.FlatAppearance.BorderSize = 0;
+            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.Color.Black;
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(886, 2);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnSua.Size = new System.Drawing.Size(120, 40);
+            this.btnSua.TabIndex = 33;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // lbTrangThai
+            // 
+            this.lbTrangThai.AutoSize = true;
+            this.lbTrangThai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTrangThai.Location = new System.Drawing.Point(60, 452);
+            this.lbTrangThai.Name = "lbTrangThai";
+            this.lbTrangThai.Size = new System.Drawing.Size(87, 23);
+            this.lbTrangThai.TabIndex = 49;
+            this.lbTrangThai.Text = "Trạng thái";
+            // 
+            // cbTrangThai
+            // 
+            this.cbTrangThai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTrangThai.Enabled = false;
+            this.cbTrangThai.FormattingEnabled = true;
+            this.cbTrangThai.Items.AddRange(new object[] {
+            "Còn ở",
+            "Chuyển đi"});
+            this.cbTrangThai.Location = new System.Drawing.Point(170, 448);
+            this.cbTrangThai.Name = "cbTrangThai";
+            this.cbTrangThai.Size = new System.Drawing.Size(311, 31);
+            this.cbTrangThai.TabIndex = 48;
+            // 
+            // lbThanhToan
+            // 
+            this.lbThanhToan.AutoSize = true;
+            this.lbThanhToan.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbThanhToan.Location = new System.Drawing.Point(60, 489);
+            this.lbThanhToan.Name = "lbThanhToan";
+            this.lbThanhToan.Size = new System.Drawing.Size(98, 23);
+            this.lbThanhToan.TabIndex = 51;
+            this.lbThanhToan.Text = "Thanh toán";
+            // 
+            // cbThanhToan
+            // 
+            this.cbThanhToan.BackColor = System.Drawing.Color.White;
+            this.cbThanhToan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbThanhToan.Enabled = false;
+            this.cbThanhToan.FormattingEnabled = true;
+            this.cbThanhToan.Items.AddRange(new object[] {
+            "Trả đủ",
+            "Nợ"});
+            this.cbThanhToan.Location = new System.Drawing.Point(170, 485);
+            this.cbThanhToan.Name = "cbThanhToan";
+            this.cbThanhToan.Size = new System.Drawing.Size(311, 31);
+            this.cbThanhToan.TabIndex = 50;
+            // 
+            // dtpNgayChuyenDen
+            // 
+            this.dtpNgayChuyenDen.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtpNgayChuyenDen.Enabled = false;
+            this.dtpNgayChuyenDen.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayChuyenDen.Location = new System.Drawing.Point(170, 522);
+            this.dtpNgayChuyenDen.Name = "dtpNgayChuyenDen";
+            this.dtpNgayChuyenDen.Size = new System.Drawing.Size(311, 30);
+            this.dtpNgayChuyenDen.TabIndex = 53;
+            // 
+            // lbNgayDen
+            // 
+            this.lbNgayDen.AutoSize = true;
+            this.lbNgayDen.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNgayDen.Location = new System.Drawing.Point(60, 526);
+            this.lbNgayDen.Name = "lbNgayDen";
+            this.lbNgayDen.Size = new System.Drawing.Size(84, 23);
+            this.lbNgayDen.TabIndex = 52;
+            this.lbNgayDen.Text = "Ngày đến";
+            // 
+            // formXemChiTietThongTinCuDan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 753);
-            this.Controls.Add(this.btnChonFileAnh);
-            this.Controls.Add(this.dtpNgaySinh);
-            this.Controls.Add(this.lbNgaySinh);
-            this.Controls.Add(this.lbGioiTinh);
-            this.Controls.Add(this.cbGioiTinh);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.txtDiaChi);
-            this.Controls.Add(this.lbDiaChi);
-            this.Controls.Add(this.txtCCCD);
-            this.Controls.Add(this.lbCCCD);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.lbEmail);
-            this.Controls.Add(this.txtHoTen);
-            this.Controls.Add(this.lbHoTen);
+            this.ClientSize = new System.Drawing.Size(1282, 753);
+            this.Controls.Add(this.gbThongTinCaNhan);
+            this.Controls.Add(this.gbThongTinKhac);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.txtSoDienThoai);
             this.Controls.Add(this.panelTieuDe);
-            this.Controls.Add(this.lbSoDienThoai);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.Name = "formThemCuDan";
+            this.Name = "formXemChiTietThongTinCuDan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.formXemChiTietThongTinCuDan_Load);
             this.panelTieuDe.ResumeLayout(false);
             this.panelTieuDe.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.gbHinhAnh.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnh)).EndInit();
+            this.gbThongTinCaNhan.ResumeLayout(false);
+            this.gbThongTinCaNhan.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
-        private void btnChonFileAnh_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void btnHuyBo_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void btnThemCuDan_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
 
         #endregion
 
         private System.Windows.Forms.Panel panelTieuDe;
-        private System.Windows.Forms.Button btnThemCuDan;
+        private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnHuyBo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtHoTen;
@@ -385,7 +519,7 @@ namespace DesignEasyHouse1.formsPhongBan
         private System.Windows.Forms.Label lbEmail;
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.Label lbDiaChi;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbHinhAnh;
         private System.Windows.Forms.PictureBox ptbHinhAnh;
         private System.Windows.Forms.ComboBox cbGioiTinh;
         private System.Windows.Forms.Label lbGioiTinh;
@@ -393,5 +527,15 @@ namespace DesignEasyHouse1.formsPhongBan
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.Button btnChonFileAnh;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox gbThongTinKhac;
+        private System.Windows.Forms.GroupBox gbThongTinCaNhan;
+        private System.Windows.Forms.Label lbCuDanID;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Label lbTrangThai;
+        private System.Windows.Forms.ComboBox cbTrangThai;
+        private System.Windows.Forms.Label lbThanhToan;
+        private System.Windows.Forms.ComboBox cbThanhToan;
+        private System.Windows.Forms.DateTimePicker dtpNgayChuyenDen;
+        private System.Windows.Forms.Label lbNgayDen;
     }
 }

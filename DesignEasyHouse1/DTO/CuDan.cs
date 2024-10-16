@@ -20,7 +20,7 @@ namespace DesignEasyHouse1.DTO
         private string trangThai;
         private string thanhToan;
         private DateTime ngayChuyenDen;
-        private byte[] HinhAnh;
+        private byte[] hinhAnh;
 
         public int CuDanID { get => cuDanID; set => cuDanID = value; }
         public string HoTen { get => hoTen; set => hoTen = value; }
@@ -33,22 +33,25 @@ namespace DesignEasyHouse1.DTO
         public string TrangThai { get => trangThai; set => trangThai = value; }
         public string ThanhToan { get => thanhToan; set => thanhToan = value; }
         public DateTime NgayChuyenDen { get => ngayChuyenDen; set => ngayChuyenDen = value; }
-        public byte[] HinhAnh1 { get => HinhAnh; set => HinhAnh = value; }
+        public byte[] HinhAnh { get => hinhAnh; set => hinhAnh = value; }
 
-
-        //public CuDan(string hoTen, string soDienThoai, string cccd, string email, 
-        //    string diaChi, string gioiTinh, DateTime ngaySinh, byte[] hinhAnh)
-        //{
-        //    HoTen = hoTen;
-        //    SoDienThoai = soDienThoai;
-        //    CCCD = cccd;
-        //    Email = email;
-        //    DiaChi = diaChi;
-        //    GioiTinh = gioiTinh;
-        //    NgaySinh = ngaySinh;
-        //    HinhAnh1 = hinhAnh;
-        //}
-
+        public CuDan(int cuDanID, string hoTen, string soDienThoai, string cCCD, string email,
+                     string diaChi, string gioiTinh, DateTime ngaySinh, string trangThai,
+                     string thanhToan, DateTime ngayChuyenDen, byte[] hinhAnh)
+        {
+            this.cuDanID = cuDanID;
+            this.hoTen = hoTen;
+            this.soDienThoai = soDienThoai;
+            this.cCCD = cCCD;
+            this.email = email;
+            this.diaChi = diaChi;
+            this.gioiTinh = gioiTinh;
+            this.ngaySinh = ngaySinh;
+            this.trangThai = trangThai;
+            this.thanhToan = thanhToan;
+            this.ngayChuyenDen = ngayChuyenDen;
+            this.hinhAnh = hinhAnh;
+        }
 
         public CuDan(DataRow row)
         {

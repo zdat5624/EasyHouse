@@ -2,9 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace DesignEasyHouse1.DAO
 {
@@ -57,6 +59,21 @@ namespace DesignEasyHouse1.DAO
                 return new CuDan(data.Rows[0]);
             }
             return null;
+        }
+
+        public bool SuaCuDan(CuDan cd)
+        {
+
+        string query = "UPDATE CuDan SET HoTen = @HoTen , SoDienThoai = @SoDienThoai , CCCD = @CCCD , Email = @Email , " +
+                               "DiaChi = @DiaChi , GioiTinh = @GioiTinh , NgaySinh = @NgaySinh , TrangThai = @TrangThai , " +
+                               "ThanhToan = @ThanhToan , NgayChuyenDen = @NgayChuyenDen , HinhAnh = @HinhAnh " +
+                               "WHERE CuDanID = @CuDanID";
+
+            object[] parameters = new object[] { cd.HoTen, cd.SoDienThoai, cd.CCCD, cd.Email, cd.DiaChi, cd.GioiTinh, cd.NgaySinh, cd.TrangThai, cd.ThanhToan, cd.NgayChuyenDen, cd.HinhAnh, cd.CuDanID };
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
+
+            return result > 0;
         }
     }
 }
