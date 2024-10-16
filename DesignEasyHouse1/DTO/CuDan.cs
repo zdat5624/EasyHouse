@@ -59,10 +59,10 @@ namespace DesignEasyHouse1.DTO
             email = row["Email"].ToString();
             diaChi = row["DiaChi"].ToString();
             gioiTinh = row["GioiTinh"].ToString();
-            ngaySinh = row["NgaySinh"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(row["NgaySinh"]);
+            ngaySinh = Convert.ToDateTime(row["NgaySinh"]);
             trangThai = row["TrangThai"].ToString();
             thanhToan = row["ThanhToan"].ToString();
-            ngayChuyenDen = row["NgayChuyenDen"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(row["NgayChuyenDen"]);
+            ngayChuyenDen = Convert.ToDateTime(row["NgayChuyenDen"]);
             HinhAnh = row["HinhAnh"] == DBNull.Value ? null : (byte[])row["HinhAnh"];
         }
     }

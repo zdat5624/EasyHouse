@@ -213,9 +213,6 @@
     <EmbeddedResource Include="formsPhongBan\formSuaHopDongThueCanHo.resx">
       <DependentUpon>formSuaHopDongThueCanHo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formsPhongBan\formSuaThongTinCuDan.resx">
-      <DependentUpon>formSuaThongTinCuDan.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formThemCuDan.resx">
       <DependentUpon>formThemCuDan.cs</DependentUpon>
     </EmbeddedResource>
