@@ -4,33 +4,35 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DesignEasyHouse1.formsCuDan
+namespace DesignEasyHouse1.formsPhongBan
 {
-    public partial class formGuiYeuCauDichVuCuDan : Form
+    public partial class formPhanHoiYeuCau : Form
     {
-        public formGuiYeuCauDichVuCuDan()
+        public formPhanHoiYeuCau()
         {
             InitializeComponent();
         }
 
         #region Methods
-        void GuiYeuCau()
+        void GuiPhanHoi()
         {
-            int CuDanID = Convert.ToInt32(txtCuDanID.Text);
-            int LoaiYeuCauID = Convert.ToInt32(txtLoaiYeuCauID.Text); 
-            string TieuDe = txtTieuDe.Text;
+            int YeuCauID = Convert.ToInt32(txtYeuCauID.Text);
+            if (string.IsNullOrEmpty(txtNguoiPhanHoiID.Text))
+            {
+                txtNguoiPhanHoiID.Text = "-1";
+            }
+            int NguoiPhanHoiID = Convert.ToInt32(txtNguoiPhanHoiID.Text);
             string NoiDung = txtNoiDung.Text;
 
-            bool result = YeuCauDAO.Instance.ThemYeuCau(CuDanID, LoaiYeuCauID, TieuDe, NoiDung);
+            bool result = PhanHoiDAO.Instance.ThemPhanHoi(YeuCauID, NguoiPhanHoiID, NoiDung);
             if (result)
             {
-                MessageBox.Show("Gửi yêu cầu thành công!");
+                MessageBox.Show("Gửi phản hồi thành công!");
                 //this.Close();
             }
             else
@@ -41,9 +43,9 @@ namespace DesignEasyHouse1.formsCuDan
 
         #endregion
 
-        private void btnXacNhan_Click(object sender, EventArgs e)
+        private void btnGuiPhanHoi_Click(object sender, EventArgs e)
         {
-            GuiYeuCau();
+            GuiPhanHoi();
         }
 
         private void btnHuy_Click(object sender, EventArgs e)

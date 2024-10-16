@@ -87,14 +87,14 @@ CREATE TABLE YeuCau (
     TieuDe NVARCHAR(255),
     NoiDung NVARCHAR(MAX),
     NgayGui DATETIME DEFAULT GETDATE(),
-    TrangThai NVARCHAR(50) DEFAULT 'Đang chờ xử lý', --'Đang xử lý' hoặc 'Hoàn thành'
+    TrangThai NVARCHAR(50) DEFAULT N'Đang chờ xử lý', --'Đang xử lý' hoặc 'Hoàn thành'
 );
 GO
 
 CREATE TABLE PhanHoiYeuCau (
     PhanHoiID INT IDENTITY PRIMARY KEY,
     YeuCauID INT,
-    NguoiPhanHoiID INT, -- Nếu người phản hồi là cư dân thì NguoiPhanHoiID = null
+    NguoiPhanHoiID INT DEFAULT NULL, -- Nếu người phản hồi là cư dân thì NguoiPhanHoiID = null
     NoiDung NVARCHAR(MAX),
     NgayPhanHoi DATETIME DEFAULT GETDATE()
 );

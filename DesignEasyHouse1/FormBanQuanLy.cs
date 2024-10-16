@@ -71,5 +71,9 @@ namespace DesignEasyHouse1
             }
         }
 
+        private void btnYeuCauCuDan_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.formQuanLyYeuCauTuCuDan());
+        }
     }
 }
