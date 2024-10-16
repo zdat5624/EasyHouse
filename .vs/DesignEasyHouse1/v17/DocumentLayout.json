@@ -3,31 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formbanquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formbanquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formsphongban\\formphanhoiyeucau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formsphongban\\formphanhoiyeucau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formsphongban\\formphanhoiyeucau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formsphongban\\formphanhoiyeucau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formsphongban\\formphanhoiyeucau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formsphongban\\formphanhoiyeucau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\dao\\phanhoidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\dao\\phanhoidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\dao\\phanhoidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formscudan\\formphanhoidanhgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formscudan\\formphanhoidanhgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formscudan\\formphanhoidanhgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formscudan\\formphanhoidanhgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formscudan\\formphanhoidanhgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formscudan\\formphanhoidanhgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formsphongban\\formthemcudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formsphongban\\formthemcudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formsphongban\\formthemcudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,7 +39,7 @@
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formsphongban\\formthemcudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formscudan\\formguiyeucaudichvucudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formscudan\\formguiyeucaudichvucudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formscudan\\formguiyeucaudichvucudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,7 +47,7 @@
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formscudan\\formguiyeucaudichvucudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formsphongban\\formquanlyyeucautucudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formsphongban\\formquanlyyeucautucudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formsphongban\\formquanlyyeucautucudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -55,7 +59,7 @@
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formcudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formcudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formcudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formcudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -67,15 +71,15 @@
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formscudan\\formyeucaudichvucudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\dao\\yeucaudao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\dao\\yeucaudao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\dao\\yeucaudao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\dto\\phanhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\dto\\phanhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\dto\\phanhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\dto\\yeucau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\dto\\yeucau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\dto\\yeucau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -83,7 +87,7 @@
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\dto\\cudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formscudan\\formphanhoidanhgia.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formscudan\\formphanhoidanhgia.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formscudan\\formphanhoidanhgia.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -95,11 +99,11 @@
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formscudan\\formthongbao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\dao\\cudandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\dao\\cudandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\dao\\cudandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formscudan\\formguiyeucaudichvucudan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formscudan\\formguiyeucaudichvucudan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formscudan\\formguiyeucaudichvucudan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -107,7 +111,7 @@
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formsphongban\\formquanlycudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formsphongban\\formsuathongtincudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formsphongban\\formsuathongtincudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formsphongban\\formsuathongtincudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -115,7 +119,7 @@
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formsphongban\\formquanlycudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\mygui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\mygui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\mygui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -123,15 +127,11 @@
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formbanquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formbanquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formbanquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formsphongban\\formthemthongbaodencudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formsphongban\\formthemthongbaodencudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formsphongban\\formthemthongbaodencudan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formsphongban\\formphanhoiyeucau.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formsphongban\\formphanhoiyeucau.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formsphongban\\formphanhoiyeucau.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -139,7 +139,7 @@
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\samplechildform2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\formsphongban\\formthemcudan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\formsphongban\\formthemcudan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\formsphongban\\formthemcudan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -147,7 +147,7 @@
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\samplechildform2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|c:\\users\\lenovo\\source\\repos\\zdat5624\\easyhouse\\designeasyhouse1\\samplechildform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\designeasyhouse1\\samplechildform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3AAAF170-A3E3-4DDD-A880-99FC9D5EF4FB}|DesignEasyHouse1\\DesignEasyHouse1.csproj|solutionrelative:designeasyhouse1\\samplechildform1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -170,11 +170,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "formQuanLyCuDan.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formQuanLyCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsPhongBan\\formQuanLyCuDan.cs",
@@ -183,12 +183,24 @@
               "ViewState": "AgIAAB8AAAAAAAAAAAASwBcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T11:35:46.543Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormBanQuanLy.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\FormBanQuanLy.cs",
+              "RelativeDocumentMoniker": "DesignEasyHouse1\\FormBanQuanLy.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\FormBanQuanLy.cs",
+              "RelativeToolTip": "DesignEasyHouse1\\FormBanQuanLy.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwD8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T11:30:10.9Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -196,7 +208,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\Program.cs",
+              "RelativeDocumentMoniker": "DesignEasyHouse1\\Program.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\Program.cs",
+              "RelativeToolTip": "DesignEasyHouse1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T06:16:30.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "PhanHoi.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\DTO\\PhanHoi.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\DTO\\PhanHoi.cs",
@@ -204,12 +228,11 @@
               "RelativeToolTip": "DesignEasyHouse1\\DTO\\PhanHoi.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAB6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T14:45:19.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T14:45:19.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PhanHoiDAO.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\DAO\\PhanHoiDAO.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\DAO\\PhanHoiDAO.cs",
@@ -217,12 +240,11 @@
               "RelativeToolTip": "DesignEasyHouse1\\DAO\\PhanHoiDAO.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAQwCMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T14:44:58.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T14:44:58.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "formPhanHoiDanhGia.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formPhanHoiDanhGia.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsCuDan\\formPhanHoiDanhGia.cs",
@@ -230,62 +252,57 @@
               "RelativeToolTip": "DesignEasyHouse1\\formsCuDan\\formPhanHoiDanhGia.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T14:38:30.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T14:38:30.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "formPhanHoiDanhGia.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Source\\Repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formPhanHoiDanhGia.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formPhanHoiDanhGia.Designer.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsCuDan\\formPhanHoiDanhGia.Designer.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Source\\Repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formPhanHoiDanhGia.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formPhanHoiDanhGia.Designer.cs",
               "RelativeToolTip": "DesignEasyHouse1\\formsCuDan\\formPhanHoiDanhGia.Designer.cs",
               "ViewState": "AgIAAG0AAAAAAAAAAAAqwOYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T14:35:56.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T14:35:56.512Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "formPhanHoiDanhGia.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formPhanHoiDanhGia.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsCuDan\\formPhanHoiDanhGia.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formPhanHoiDanhGia.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\formsCuDan\\formPhanHoiDanhGia.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T14:35:26.412Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-16T14:35:26.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "formGuiYeuCauDichVuCuDan.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Source\\Repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formGuiYeuCauDichVuCuDan.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formGuiYeuCauDichVuCuDan.Designer.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsCuDan\\formGuiYeuCauDichVuCuDan.Designer.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Source\\Repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formGuiYeuCauDichVuCuDan.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formGuiYeuCauDichVuCuDan.Designer.cs",
               "RelativeToolTip": "DesignEasyHouse1\\formsCuDan\\formGuiYeuCauDichVuCuDan.Designer.cs",
               "ViewState": "AgIAALcAAAAAAAAAAAAAABQBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T13:02:42.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T13:02:42.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "formSuaThongTinCuDan.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formSuaThongTinCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsPhongBan\\formSuaThongTinCuDan.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formSuaThongTinCuDan.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\formsPhongBan\\formSuaThongTinCuDan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T12:50:10.085Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-16T12:50:10.085Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "MyGUI.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\MyGUI.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\MyGUI.cs",
@@ -293,12 +310,11 @@
               "RelativeToolTip": "DesignEasyHouse1\\MyGUI.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAIAxwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T09:46:04.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T09:46:04.08Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "formPhanHoiYeuCau.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formPhanHoiYeuCau.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsPhongBan\\formPhanHoiYeuCau.cs",
@@ -306,46 +322,42 @@
               "RelativeToolTip": "DesignEasyHouse1\\formsPhongBan\\formPhanHoiYeuCau.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAqwBoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T08:49:28.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T08:49:28.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "formPhanHoiYeuCau.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formPhanHoiYeuCau.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsPhongBan\\formPhanHoiYeuCau.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formPhanHoiYeuCau.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\formsPhongBan\\formPhanHoiYeuCau.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T08:31:59.857Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-16T08:31:59.857Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
               "Title": "formPhanHoiYeuCau.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Source\\Repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formPhanHoiYeuCau.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formPhanHoiYeuCau.Designer.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsPhongBan\\formPhanHoiYeuCau.Designer.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Source\\Repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formPhanHoiYeuCau.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formPhanHoiYeuCau.Designer.cs",
               "RelativeToolTip": "DesignEasyHouse1\\formsPhongBan\\formPhanHoiYeuCau.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAN8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T08:31:04.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T08:31:04.663Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 34,
               "Title": "formThemCuDan.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\Source\\Repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formThemCuDan.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formThemCuDan.Designer.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsPhongBan\\formThemCuDan.Designer.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\Source\\Repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formThemCuDan.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formThemCuDan.Designer.cs",
               "RelativeToolTip": "DesignEasyHouse1\\formsPhongBan\\formThemCuDan.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T08:24:26.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T08:24:26.33Z"
             },
             {
               "$type": "Document",
@@ -356,8 +368,7 @@
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\SampleChildForm1.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\SampleChildForm1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T08:22:20.313Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-16T08:22:20.313Z"
             },
             {
               "$type": "Document",
@@ -368,12 +379,11 @@
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formThemThongBaoDenCuDan.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\formsPhongBan\\formThemThongBaoDenCuDan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T08:20:32.245Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-16T08:20:32.245Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "formQuanLyYeuCauTuCuDan.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formQuanLyYeuCauTuCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsPhongBan\\formQuanLyYeuCauTuCuDan.cs",
@@ -381,12 +391,11 @@
               "RelativeToolTip": "DesignEasyHouse1\\formsPhongBan\\formQuanLyYeuCauTuCuDan.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAvwDgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T08:15:00.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T08:15:00.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "YeuCau.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\DTO\\YeuCau.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\DTO\\YeuCau.cs",
@@ -394,12 +403,11 @@
               "RelativeToolTip": "DesignEasyHouse1\\DTO\\YeuCau.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAwCYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:53:05.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T06:53:05.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "CuDanDAO.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\DAO\\CuDanDAO.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\DAO\\CuDanDAO.cs",
@@ -407,12 +415,11 @@
               "RelativeToolTip": "DesignEasyHouse1\\DAO\\CuDanDAO.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAwwCwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:39:21.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T06:39:21.481Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "YeuCauDAO.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\DAO\\YeuCauDAO.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\DAO\\YeuCauDAO.cs",
@@ -420,25 +427,11 @@
               "RelativeToolTip": "DesignEasyHouse1\\DAO\\YeuCauDAO.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAAAD4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:43:27.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T06:43:27.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\Program.cs",
-              "RelativeDocumentMoniker": "DesignEasyHouse1\\Program.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\Program.cs",
-              "RelativeToolTip": "DesignEasyHouse1\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBMAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:16:30.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "formGuiYeuCauDichVuCuDan.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formGuiYeuCauDichVuCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsCuDan\\formGuiYeuCauDichVuCuDan.cs",
@@ -446,12 +439,11 @@
               "RelativeToolTip": "DesignEasyHouse1\\formsCuDan\\formGuiYeuCauDichVuCuDan.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAEwBcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:08:08.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T06:08:08.164Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "FormCuDan.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\FormCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\FormCuDan.cs",
@@ -459,12 +451,11 @@
               "RelativeToolTip": "DesignEasyHouse1\\FormCuDan.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAnwD0AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:59:16.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T05:59:16.143Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "formThemCuDan.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formThemCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsPhongBan\\formThemCuDan.cs",
@@ -472,36 +463,33 @@
               "RelativeToolTip": "DesignEasyHouse1\\formsPhongBan\\formThemCuDan.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAUwFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T18:09:33.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T18:09:33.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "formThemCuDan.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formThemCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsPhongBan\\formThemCuDan.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formThemCuDan.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\formsPhongBan\\formThemCuDan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:31:16.094Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-15T17:31:16.094Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "formQuanLyYeuCauTuCuDan.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formQuanLyYeuCauTuCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsPhongBan\\formQuanLyYeuCauTuCuDan.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formQuanLyYeuCauTuCuDan.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\formsPhongBan\\formQuanLyYeuCauTuCuDan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T12:31:45.219Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-15T12:31:45.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "formYeuCauDichVuCuDan.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formYeuCauDichVuCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsCuDan\\formYeuCauDichVuCuDan.cs",
@@ -509,33 +497,18 @@
               "RelativeToolTip": "DesignEasyHouse1\\formsCuDan\\formYeuCauDichVuCuDan.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:53:17.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T11:53:17.715Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 30,
-              "Title": "FormBanQuanLy.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\FormBanQuanLy.cs",
-              "RelativeDocumentMoniker": "DesignEasyHouse1\\FormBanQuanLy.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\FormBanQuanLy.cs",
-              "RelativeToolTip": "DesignEasyHouse1\\FormBanQuanLy.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAhwD8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:30:10.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
               "Title": "FormBanQuanLy.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\FormBanQuanLy.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\FormBanQuanLy.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\FormBanQuanLy.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\FormBanQuanLy.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:27:41.462Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-15T11:27:41.462Z"
             },
             {
               "$type": "Document",
@@ -546,8 +519,7 @@
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\SampleChildForm.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\SampleChildForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:27:33.64Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-15T11:27:33.64Z"
             },
             {
               "$type": "Document",
@@ -559,12 +531,11 @@
               "RelativeToolTip": "DesignEasyHouse1\\formsCuDan\\formYeuCauDichVuCuDan.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T06:27:31.441Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T06:27:31.441Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "formThongBao.Designer.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formThongBao.Designer.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsCuDan\\formThongBao.Designer.cs",
@@ -572,44 +543,40 @@
               "RelativeToolTip": "DesignEasyHouse1\\formsCuDan\\formThongBao.Designer.cs",
               "ViewState": "AgIAAA8BAAAAAAAAAAAAABkBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T06:27:07.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T06:27:07.545Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "formYeuCauDichVuCuDan.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formYeuCauDichVuCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsCuDan\\formYeuCauDichVuCuDan.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formYeuCauDichVuCuDan.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\formsCuDan\\formYeuCauDichVuCuDan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T06:26:27.615Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-15T06:26:27.615Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "formThongBao.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formThongBao.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsCuDan\\formThongBao.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formThongBao.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\formsCuDan\\formThongBao.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T06:26:18.06Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-15T06:26:18.06Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "formGuiYeuCauDichVuCuDan.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formGuiYeuCauDichVuCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsCuDan\\formGuiYeuCauDichVuCuDan.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsCuDan\\formGuiYeuCauDichVuCuDan.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\formsCuDan\\formGuiYeuCauDichVuCuDan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T06:26:10.801Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-15T06:26:10.801Z"
             },
             {
               "$type": "Document",
@@ -621,20 +588,18 @@
               "RelativeToolTip": "DesignEasyHouse1\\FormCuDan.Designer.cs",
               "ViewState": "AgIAAM8DAAAAAAAAAAAvwOUDAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T06:25:05.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T06:25:05.244Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "FormCuDan.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\FormCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\FormCuDan.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\FormCuDan.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\FormCuDan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T06:24:52.567Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-15T06:24:52.567Z"
             },
             {
               "$type": "Document",
@@ -645,8 +610,7 @@
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\SampleChildForm2.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\SampleChildForm2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T17:52:53.401Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-14T17:52:53.401Z"
             },
             {
               "$type": "Document",
@@ -658,24 +622,22 @@
               "RelativeToolTip": "DesignEasyHouse1\\SampleChildForm2.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T17:52:18.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T17:52:18.347Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "formQuanLyCuDan.cs [Design]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formQuanLyCuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\formsPhongBan\\formQuanLyCuDan.cs",
               "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\formsPhongBan\\formQuanLyCuDan.cs [Design]",
               "RelativeToolTip": "DesignEasyHouse1\\formsPhongBan\\formQuanLyCuDan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T15:05:40.757Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-14T15:05:40.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "CuDan.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\zdat5624\\EasyHouse\\DesignEasyHouse1\\DTO\\CuDan.cs",
               "RelativeDocumentMoniker": "DesignEasyHouse1\\DTO\\CuDan.cs",
@@ -683,8 +645,7 @@
               "RelativeToolTip": "DesignEasyHouse1\\DTO\\CuDan.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwEIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T15:05:29.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T15:05:29.361Z"
             }
           ]
         }

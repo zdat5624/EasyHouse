@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.panelTieuDe = new System.Windows.Forms.Panel();
             this.btnThemCuDan = new System.Windows.Forms.Button();
             this.btnHuyBo = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -50,37 +49,25 @@
             this.lbNgaySinh = new System.Windows.Forms.Label();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.btnChonFileAnh = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelTieuDe.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnh)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelTieuDe
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1182, 70);
-            this.panel1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1182, 70);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "THÊM CƯ DÂN";
-            this.button1.UseVisualStyleBackColor = true;
+            this.panelTieuDe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.panelTieuDe.Controls.Add(this.label1);
+            this.panelTieuDe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTieuDe.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelTieuDe.ForeColor = System.Drawing.Color.White;
+            this.panelTieuDe.Location = new System.Drawing.Point(0, 0);
+            this.panelTieuDe.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.panelTieuDe.Name = "panelTieuDe";
+            this.panelTieuDe.Size = new System.Drawing.Size(1182, 70);
+            this.panelTieuDe.TabIndex = 0;
             // 
             // btnThemCuDan
             // 
@@ -141,7 +128,7 @@
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(423, 31);
-            this.txtHoTen.TabIndex = 6;
+            this.txtHoTen.TabIndex = 0;
             // 
             // lbHoTen
             // 
@@ -162,7 +149,7 @@
             this.txtSoDienThoai.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Size = new System.Drawing.Size(423, 31);
-            this.txtSoDienThoai.TabIndex = 4;
+            this.txtSoDienThoai.TabIndex = 0;
             // 
             // lbSoDienThoai
             // 
@@ -183,7 +170,7 @@
             this.txtCCCD.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.Size = new System.Drawing.Size(423, 31);
-            this.txtCCCD.TabIndex = 36;
+            this.txtCCCD.TabIndex = 0;
             // 
             // lbCCCD
             // 
@@ -204,7 +191,7 @@
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(423, 31);
-            this.txtEmail.TabIndex = 34;
+            this.txtEmail.TabIndex = 0;
             // 
             // lbEmail
             // 
@@ -225,7 +212,7 @@
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(423, 31);
-            this.txtDiaChi.TabIndex = 40;
+            this.txtDiaChi.TabIndex = 0;
             // 
             // lbDiaChi
             // 
@@ -260,11 +247,12 @@
             // cbGioiTinh
             // 
             this.cbGioiTinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGioiTinh.FormattingEnabled = true;
             this.cbGioiTinh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cbGioiTinh.Location = new System.Drawing.Point(218, 492);
+            this.cbGioiTinh.Location = new System.Drawing.Point(214, 498);
             this.cbGioiTinh.Name = "cbGioiTinh";
             this.cbGioiTinh.Size = new System.Drawing.Size(278, 31);
             this.cbGioiTinh.TabIndex = 43;
@@ -283,7 +271,7 @@
             // 
             this.lbNgaySinh.AutoSize = true;
             this.lbNgaySinh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNgaySinh.Location = new System.Drawing.Point(69, 539);
+            this.lbNgaySinh.Location = new System.Drawing.Point(67, 545);
             this.lbNgaySinh.Name = "lbNgaySinh";
             this.lbNgaySinh.Size = new System.Drawing.Size(86, 23);
             this.lbNgaySinh.TabIndex = 45;
@@ -291,8 +279,9 @@
             // 
             // dtpNgaySinh
             // 
+            this.dtpNgaySinh.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgaySinh.Location = new System.Drawing.Point(218, 536);
+            this.dtpNgaySinh.Location = new System.Drawing.Point(218, 541);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(274, 30);
             this.dtpNgaySinh.TabIndex = 46;
@@ -317,6 +306,15 @@
             this.btnChonFileAnh.UseVisualStyleBackColor = false;
             this.btnChonFileAnh.Click += new System.EventHandler(this.btnChonFileAnh_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(499, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(184, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "THÊM CƯ DÂN";
+            // 
             // formThemCuDan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -338,13 +336,14 @@
             this.Controls.Add(this.lbHoTen);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtSoDienThoai);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelTieuDe);
             this.Controls.Add(this.lbSoDienThoai);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "formThemCuDan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.panel1.ResumeLayout(false);
+            this.panelTieuDe.ResumeLayout(false);
+            this.panelTieuDe.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnh)).EndInit();
@@ -355,8 +354,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panelTieuDe;
         private System.Windows.Forms.Button btnThemCuDan;
         private System.Windows.Forms.Button btnHuyBo;
         private System.Windows.Forms.Panel panel2;
@@ -377,5 +375,6 @@
         private System.Windows.Forms.Label lbNgaySinh;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.Button btnChonFileAnh;
+        private System.Windows.Forms.Label label1;
     }
 }

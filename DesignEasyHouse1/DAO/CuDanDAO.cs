@@ -47,5 +47,16 @@ namespace DesignEasyHouse1.DAO
             int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { CuDanID });
             return result > 0;
         }
+
+        public CuDan GetCuDanByCuDanID(int cuDanID)
+        {
+            string query = "SELECT * FROM CuDan WHERE CuDanID = @CuDanID";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { cuDanID });
+            if (data.Rows.Count > 0)
+            {
+                return new CuDan(data.Rows[0]);
+            }
+            return null;
+        }
     }
 }

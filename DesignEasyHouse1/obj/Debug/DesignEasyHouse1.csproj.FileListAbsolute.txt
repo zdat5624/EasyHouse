@@ -35,7 +35,6 @@ C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.SampleChildForm1.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formQuanLyHopDongThueCanHo.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formSuaHopDongThueCanHo.resources
-C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formSuaThongTinCuDan.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formThemCuDan.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formThemHopDongThueCanHo.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsCuDan.formGuiYeuCauDichVuCuDan.resources
