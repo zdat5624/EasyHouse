@@ -26,7 +26,7 @@ namespace DesignEasyHouse1.formsPhongBan
         {
             dtgvThongTinCuDan.DataSource = CuDanDAO.Instance.GetDanhSachCuDanKhongHoanChinh();
 
-            MyGUI.chuyenCotDenCuoiDTGV(dtgvThongTinCuDan, new List<string> { "Delete", "Edit", "Details"});
+            MyGUI.chuyenCotDenCuoiDTGV(dtgvThongTinCuDan, new List<string> { "Delete", "Details"});
             MyGUI.dinhDangCotAllCellsDTGV(dtgvThongTinCuDan, new List<string> { "CuDanID", "TrangThai", "ThanhToan" });
 
             dtgvThongTinCuDan.Columns["CuDanID"].HeaderText = "ID Cư Dân";
@@ -51,12 +51,12 @@ namespace DesignEasyHouse1.formsPhongBan
             // Xử lý Xóa, sửa, xem chi tiết
             if (e.RowIndex >= 0)
             {
-                
-                if (e.ColumnIndex == dtgvThongTinCuDan.Columns["Edit"].Index)
+                if (e.ColumnIndex == dtgvThongTinCuDan.Columns["Details"].Index)
                 {
-                    //Sửa cư dân
+                    //Xem chi tiết cư dân
                     int cuDanID = Convert.ToInt32(dtgvThongTinCuDan.Rows[e.RowIndex].Cells["CuDanID"].Value);
-                    MessageBox.Show($"Chỉnh sửa cư dân có ID: {cuDanID}");
+                    Form f = new formsPhongBan.formXemChiTietThongTinCuDan(cuDanID);
+                    f.ShowDialog();
                 }
                 else if (e.ColumnIndex == dtgvThongTinCuDan.Columns["Delete"].Index)
                 {
@@ -73,12 +73,6 @@ namespace DesignEasyHouse1.formsPhongBan
                     }
                     
                 }
-                else if (e.ColumnIndex == dtgvThongTinCuDan.Columns["Details"].Index)
-                {
-                    //Xem chi tiết cư dân
-                    int cuDanID = Convert.ToInt32(dtgvThongTinCuDan.Rows[e.RowIndex].Cells["CuDanID"].Value);
-                    MessageBox.Show($"Xem chi tiết cư dân có ID: {cuDanID}");
-                }
             }
         }
         
@@ -91,6 +85,7 @@ namespace DesignEasyHouse1.formsPhongBan
         {
             formThemCuDan f = new formsPhongBan.formThemCuDan();
             f.ShowDialog();
+            LoadDtgvThongTinCuDan();
         }
 
         #endregion

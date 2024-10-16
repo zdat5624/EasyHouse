@@ -45,7 +45,7 @@ namespace DesignEasyHouse1.formsPhongBan
                 MessageBox.Show("Có lỗi xảy ra, vui lòng kiểm tra lại.");
             }
         }
-        private byte[] ImageToByteArray(Image image)
+        public byte[] ImageToByteArray(Image image)
         {
             using (MemoryStream ms = new MemoryStream())
             {

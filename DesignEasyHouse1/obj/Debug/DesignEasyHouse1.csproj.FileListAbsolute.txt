@@ -44,3 +44,4 @@ C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formQuanLyYeuCauTuCuDan.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formThemThongBaoDenCuDan.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.FormBanQuanLy.resources
+C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formXemChiTietThongTinCuDan.resources
