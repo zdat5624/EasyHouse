@@ -48,7 +48,11 @@
   <ItemGroup>
     <Compile Include="DAO\CuDanDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\PhanHoiDAO.cs" />
+    <Compile Include="DAO\YeuCauDAO.cs" />
     <Compile Include="DTO\CuDan.cs" />
+    <Compile Include="DTO\PhanHoi.cs" />
+    <Compile Include="DTO\YeuCau.cs" />
     <Compile Include="FormBanQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +83,12 @@
     <Compile Include="formsCuDan\formGuiYeuCauDichVuCuDan.Designer.cs">
       <DependentUpon>formGuiYeuCauDichVuCuDan.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsCuDan\formPhanHoiDanhGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCuDan\formPhanHoiDanhGia.Designer.cs">
+      <DependentUpon>formPhanHoiDanhGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsCuDan\formYeuCauDichVuCuDan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +100,12 @@
     </Compile>
     <Compile Include="formsCuDan\formThongBao.Designer.cs">
       <DependentUpon>formThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\formPhanHoiYeuCau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\formPhanHoiYeuCau.Designer.cs">
+      <DependentUpon>formPhanHoiYeuCau.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\formQuanLyCuDan.cs">
       <SubType>Form</SubType>
@@ -192,11 +208,17 @@
     <EmbeddedResource Include="formsCuDan\formGuiYeuCauDichVuCuDan.resx">
       <DependentUpon>formGuiYeuCauDichVuCuDan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsCuDan\formPhanHoiDanhGia.resx">
+      <DependentUpon>formPhanHoiDanhGia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsCuDan\formYeuCauDichVuCuDan.resx">
       <DependentUpon>formYeuCauDichVuCuDan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsCuDan\formThongBao.resx">
       <DependentUpon>formThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\formPhanHoiYeuCau.resx">
+      <DependentUpon>formPhanHoiYeuCau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formQuanLyCuDan.resx">
       <DependentUpon>formQuanLyCuDan.cs</DependentUpon>

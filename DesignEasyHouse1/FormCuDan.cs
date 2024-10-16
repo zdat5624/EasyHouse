@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignEasyHouse1.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,5 +38,28 @@ namespace DesignEasyHouse1
         }
 
         #endregion
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+        }
+
+        private void btnYeuCauSuaChua_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsCuDan.formGuiYeuCauDichVuCuDan());
+        }
+
+        private void btnTheoDoiYeuCau_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsCuDan.formYeuCauDichVuCuDan());
+        }
+
+        private void btnPhanHoiDanhGia_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsCuDan.formPhanHoiDanhGia());
+        }
     }
 }
