@@ -31,11 +31,6 @@ namespace DesignEasyHouse1.formsCuDan
             dtgvPhanHoiDanhGia.Columns["NoiDung"].HeaderText = "Nội Dung";
             dtgvPhanHoiDanhGia.Columns["NgayPhanHoi"].HeaderText = "Ngày Phản Hồi";
         }
-        private void btnGuiYeuCau_Click(object sender, EventArgs e)
-        {
-            formGuiYeuCauDichVuCuDan f = new formsCuDan.formGuiYeuCauDichVuCuDan();
-            f.ShowDialog();
-        }
         private void btnGuiPhanHoi_Click(object sender, EventArgs e)
         {
             formsPhongBan.formPhanHoiYeuCau f = new formsPhongBan.formPhanHoiYeuCau();
