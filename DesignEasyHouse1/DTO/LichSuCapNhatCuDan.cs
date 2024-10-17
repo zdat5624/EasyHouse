@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -56,6 +57,24 @@ namespace DesignEasyHouse1.DTO
             this.ngayChuyenDen = ngayChuyenDen;
             this.hinhAnh = hinhAnh;
             this.ngayLuu = ngayLuu;
+        }
+
+        public LichSuCapNhatCuDan(DataRow row)
+        {
+            this.capNhatID = (int)row["CapNhatID"];
+            this.cuDanID = (int)row["CuDanID"];
+            this.hoTen = row["HoTen"].ToString();
+            this.soDienThoai = row["SoDienThoai"].ToString();
+            this.cCCD = row["CCCD"].ToString();
+            this.email = row["Email"].ToString();
+            this.diaChi = row["DiaChi"].ToString();
+            this.gioiTinh = row["GioiTinh"].ToString();
+            this.ngaySinh = Convert.ToDateTime(row["NgaySinh"]);
+            this.trangThai = row["TrangThai"].ToString();
+            this.thanhToan = row["ThanhToan"].ToString();
+            this.ngayChuyenDen = Convert.ToDateTime(row["NgayChuyenDen"]);
+            this.HinhAnh = row["HinhAnh"] == DBNull.Value ? null : (byte[])row["HinhAnh"];
+            this.NgayLuu = Convert.ToDateTime(row["NgayLuu"]);
         }
     }
 }

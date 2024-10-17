@@ -139,6 +139,12 @@
     <Compile Include="formsPhongBan\formSuaHopDongThueCanHo.Designer.cs">
       <DependentUpon>formSuaHopDongThueCanHo.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsPhongBan\formXemLichSuCapNhatCuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\formXemLichSuCapNhatCuDan.Designer.cs">
+      <DependentUpon>formXemLichSuCapNhatCuDan.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsPhongBan\formXemChiTietThongTinCuDan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formThemThongBaoDenCuDan.resx">
       <DependentUpon>formThemThongBaoDenCuDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\formXemLichSuCapNhatCuDan.resx">
+      <DependentUpon>formXemLichSuCapNhatCuDan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formXemChiTietThongTinCuDan.resx">
       <DependentUpon>formXemChiTietThongTinCuDan.cs</DependentUpon>

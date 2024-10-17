@@ -1,6 +1,7 @@
 ﻿using DesignEasyHouse1.DTO;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Principal;
 using System.Text;
@@ -9,6 +10,8 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace DesignEasyHouse1.DAO
 {
+
+
     public class LichSuCapNhatCuDanDAO
     {
         private static LichSuCapNhatCuDanDAO instance;
@@ -34,6 +37,31 @@ namespace DesignEasyHouse1.DAO
             int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
 
             return result > 0;
+        }
+
+        //public DataTable GetLichSuCapNhatCuDanKhongHoanChinh(int cuDanID)
+        //{
+        //    string query = "SELECT CapNhatID, NgayLuu FROM LichSuCapNhatCuDan WHERE CuDanID = @cuDanID ";
+        //    object[] parameters = new object[] {cuDanID};
+
+        //    return DataProvider.Instance.ExecuteQuery(query, parameters);
+        //}
+
+        public List<LichSuCapNhatCuDan> GetDanhSachLichSuCapNhatCuDan(int cuDanID)
+        {
+            string query = "SELECT * FROM LichSuCapNhatCuDan WHERE CuDanID = @cuDanID ";
+            object[] parameters = new object[] { cuDanID };
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, parameters);
+
+            List<LichSuCapNhatCuDan> lst = new List<LichSuCapNhatCuDan>();
+
+            foreach (DataRow row in data.Rows)
+            {
+                lst.Add(new LichSuCapNhatCuDan(row));
+            }
+
+            return lst;
         }
 
     }

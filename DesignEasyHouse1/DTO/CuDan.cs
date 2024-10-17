@@ -35,7 +35,6 @@ namespace DesignEasyHouse1.DTO
         public DateTime NgayChuyenDen { get => ngayChuyenDen; set => ngayChuyenDen = value; }
         public byte[] HinhAnh { get => hinhAnh; set => hinhAnh = value; }
 
-        //CuDan cd = new CuDan(cuDan.CuDanID, txtHoTen.Text, txtSoDienThoai.Text, txtCCCD.Text, txtEmail.Text, txtDiaChi.Text, cbGioiTinh.SelectedItem.ToString(), dtpNgaySinh.Value, cbTrangThai.SelectedItem.ToString(), cbThanhToan.SelectedItem.ToString(), dtpNgayChuyenDen.Value, MyGUI.ImageToByteArray(ptbHinhAnh.Image));
         public CuDan(int cuDanID, string hoTen, string soDienThoai, string cCCD, string email,
                      string diaChi, string gioiTinh, DateTime ngaySinh, string trangThai,
                      string thanhToan, DateTime ngayChuyenDen, byte[] hinhAnh)

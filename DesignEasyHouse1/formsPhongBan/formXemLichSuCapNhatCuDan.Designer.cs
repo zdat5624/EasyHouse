@@ -2,7 +2,7 @@
 
 namespace DesignEasyHouse1.formsPhongBan
 {
-    partial class formXemChiTietThongTinCuDan
+    partial class formXemLichSuCapNhatCuDan
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,12 @@ namespace DesignEasyHouse1.formsPhongBan
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelTieuDe = new System.Windows.Forms.Panel();
             this.btnTieuDe = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.btnHuyBo = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnLichSuCapNhat = new System.Windows.Forms.Button();
-            this.btnCapNhat = new System.Windows.Forms.Button();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.lbHoTen = new System.Windows.Forms.Label();
             this.txtSoDienThoai = new System.Windows.Forms.TextBox();
@@ -53,8 +52,6 @@ namespace DesignEasyHouse1.formsPhongBan
             this.lbGioiTinh = new System.Windows.Forms.Label();
             this.lbNgaySinh = new System.Windows.Forms.Label();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.btnChonFileAnh = new System.Windows.Forms.Button();
-            this.gbThongTinKhac = new System.Windows.Forms.GroupBox();
             this.gbThongTinCaNhan = new System.Windows.Forms.GroupBox();
             this.dtpNgayChuyenDen = new System.Windows.Forms.DateTimePicker();
             this.lbNgayDen = new System.Windows.Forms.Label();
@@ -63,11 +60,13 @@ namespace DesignEasyHouse1.formsPhongBan
             this.lbTrangThai = new System.Windows.Forms.Label();
             this.cbTrangThai = new System.Windows.Forms.ComboBox();
             this.lbCuDanID = new System.Windows.Forms.Label();
+            this.dtgvLichSuCapNhatCuDan = new System.Windows.Forms.DataGridView();
             this.panelTieuDe.SuspendLayout();
             this.panel2.SuspendLayout();
             this.gbHinhAnh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnh)).BeginInit();
             this.gbThongTinCaNhan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvLichSuCapNhatCuDan)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTieuDe
@@ -99,30 +98,9 @@ namespace DesignEasyHouse1.formsPhongBan
             this.btnTieuDe.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnTieuDe.Size = new System.Drawing.Size(1282, 50);
             this.btnTieuDe.TabIndex = 35;
-            this.btnTieuDe.Text = "THÔNG TIN CHI TIẾT";
+            this.btnTieuDe.Text = "LỊCH SỬ CẬP NHẬT THÔNG TIN CƯ DÂN";
             this.btnTieuDe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTieuDe.UseVisualStyleBackColor = false;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLuu.FlatAppearance.BorderSize = 0;
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(1012, 5);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnLuu.Size = new System.Drawing.Size(120, 40);
-            this.btnLuu.TabIndex = 31;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLuu.UseVisualStyleBackColor = false;
-            this.btnLuu.Visible = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnHuyBo
             // 
@@ -146,55 +124,12 @@ namespace DesignEasyHouse1.formsPhongBan
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnLichSuCapNhat);
-            this.panel2.Controls.Add(this.btnCapNhat);
-            this.panel2.Controls.Add(this.btnLuu);
             this.panel2.Controls.Add(this.btnHuyBo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 703);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1282, 50);
             this.panel2.TabIndex = 33;
-            // 
-            // btnLichSuCapNhat
-            // 
-            this.btnLichSuCapNhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnLichSuCapNhat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLichSuCapNhat.FlatAppearance.BorderSize = 0;
-            this.btnLichSuCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLichSuCapNhat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLichSuCapNhat.ForeColor = System.Drawing.Color.White;
-            this.btnLichSuCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLichSuCapNhat.Location = new System.Drawing.Point(31, 5);
-            this.btnLichSuCapNhat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLichSuCapNhat.Name = "btnLichSuCapNhat";
-            this.btnLichSuCapNhat.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnLichSuCapNhat.Size = new System.Drawing.Size(179, 40);
-            this.btnLichSuCapNhat.TabIndex = 34;
-            this.btnLichSuCapNhat.Text = "Lịch sử cập nhật";
-            this.btnLichSuCapNhat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLichSuCapNhat.UseVisualStyleBackColor = false;
-            this.btnLichSuCapNhat.Click += new System.EventHandler(this.btnLichSuCapNhat_Click);
-            // 
-            // btnCapNhat
-            // 
-            this.btnCapNhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnCapNhat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCapNhat.FlatAppearance.BorderSize = 0;
-            this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapNhat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhat.ForeColor = System.Drawing.Color.White;
-            this.btnCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhat.Location = new System.Drawing.Point(886, 5);
-            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCapNhat.Size = new System.Drawing.Size(120, 40);
-            this.btnCapNhat.TabIndex = 33;
-            this.btnCapNhat.Text = "Cập nhật";
-            this.btnCapNhat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCapNhat.UseVisualStyleBackColor = false;
-            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // txtHoTen
             // 
@@ -370,36 +305,6 @@ namespace DesignEasyHouse1.formsPhongBan
             this.dtpNgaySinh.Size = new System.Drawing.Size(311, 30);
             this.dtpNgaySinh.TabIndex = 46;
             // 
-            // btnChonFileAnh
-            // 
-            this.btnChonFileAnh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnChonFileAnh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnChonFileAnh.Enabled = false;
-            this.btnChonFileAnh.FlatAppearance.BorderSize = 0;
-            this.btnChonFileAnh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChonFileAnh.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.btnChonFileAnh.ForeColor = System.Drawing.Color.Black;
-            this.btnChonFileAnh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChonFileAnh.Location = new System.Drawing.Point(60, 557);
-            this.btnChonFileAnh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnChonFileAnh.Name = "btnChonFileAnh";
-            this.btnChonFileAnh.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnChonFileAnh.Size = new System.Drawing.Size(120, 40);
-            this.btnChonFileAnh.TabIndex = 33;
-            this.btnChonFileAnh.Text = "Chọn file ảnh";
-            this.btnChonFileAnh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnChonFileAnh.UseVisualStyleBackColor = false;
-            this.btnChonFileAnh.Click += new System.EventHandler(this.btnChonFileAnh_Click);
-            // 
-            // gbThongTinKhac
-            // 
-            this.gbThongTinKhac.Location = new System.Drawing.Point(590, 79);
-            this.gbThongTinKhac.Name = "gbThongTinKhac";
-            this.gbThongTinKhac.Size = new System.Drawing.Size(668, 604);
-            this.gbThongTinKhac.TabIndex = 47;
-            this.gbThongTinKhac.TabStop = false;
-            this.gbThongTinKhac.Text = "Thông tin khác";
-            // 
             // gbThongTinCaNhan
             // 
             this.gbThongTinCaNhan.Controls.Add(this.dtpNgayChuyenDen);
@@ -411,7 +316,6 @@ namespace DesignEasyHouse1.formsPhongBan
             this.gbThongTinCaNhan.Controls.Add(this.lbCuDanID);
             this.gbThongTinCaNhan.Controls.Add(this.gbHinhAnh);
             this.gbThongTinCaNhan.Controls.Add(this.lbSoDienThoai);
-            this.gbThongTinCaNhan.Controls.Add(this.btnChonFileAnh);
             this.gbThongTinCaNhan.Controls.Add(this.txtSoDienThoai);
             this.gbThongTinCaNhan.Controls.Add(this.dtpNgaySinh);
             this.gbThongTinCaNhan.Controls.Add(this.lbHoTen);
@@ -425,9 +329,9 @@ namespace DesignEasyHouse1.formsPhongBan
             this.gbThongTinCaNhan.Controls.Add(this.txtDiaChi);
             this.gbThongTinCaNhan.Controls.Add(this.txtCCCD);
             this.gbThongTinCaNhan.Controls.Add(this.lbDiaChi);
-            this.gbThongTinCaNhan.Location = new System.Drawing.Point(31, 79);
+            this.gbThongTinCaNhan.Location = new System.Drawing.Point(551, 80);
             this.gbThongTinCaNhan.Name = "gbThongTinCaNhan";
-            this.gbThongTinCaNhan.Size = new System.Drawing.Size(553, 604);
+            this.gbThongTinCaNhan.Size = new System.Drawing.Size(695, 604);
             this.gbThongTinCaNhan.TabIndex = 48;
             this.gbThongTinCaNhan.TabStop = false;
             this.gbThongTinCaNhan.Text = "Thông tin cá nhân";
@@ -510,26 +414,65 @@ namespace DesignEasyHouse1.formsPhongBan
             this.lbCuDanID.TabIndex = 47;
             this.lbCuDanID.Text = "ID: ";
             // 
-            // formXemChiTietThongTinCuDan
+            // dtgvLichSuCapNhatCuDan
+            // 
+            this.dtgvLichSuCapNhatCuDan.AllowUserToAddRows = false;
+            this.dtgvLichSuCapNhatCuDan.AllowUserToDeleteRows = false;
+            this.dtgvLichSuCapNhatCuDan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvLichSuCapNhatCuDan.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dtgvLichSuCapNhatCuDan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvLichSuCapNhatCuDan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvLichSuCapNhatCuDan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvLichSuCapNhatCuDan.ColumnHeadersHeight = 30;
+            this.dtgvLichSuCapNhatCuDan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvLichSuCapNhatCuDan.EnableHeadersVisualStyles = false;
+            this.dtgvLichSuCapNhatCuDan.Location = new System.Drawing.Point(107, 84);
+            this.dtgvLichSuCapNhatCuDan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtgvLichSuCapNhatCuDan.Name = "dtgvLichSuCapNhatCuDan";
+            this.dtgvLichSuCapNhatCuDan.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvLichSuCapNhatCuDan.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvLichSuCapNhatCuDan.RowHeadersVisible = false;
+            this.dtgvLichSuCapNhatCuDan.RowHeadersWidth = 51;
+            this.dtgvLichSuCapNhatCuDan.RowTemplate.Height = 24;
+            this.dtgvLichSuCapNhatCuDan.Size = new System.Drawing.Size(387, 600);
+            this.dtgvLichSuCapNhatCuDan.TabIndex = 49;
+            this.dtgvLichSuCapNhatCuDan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvLichSuCapNhatCuDan_CellClick);
+            // 
+            // formXemLichSuCapNhatCuDan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 753);
+            this.Controls.Add(this.dtgvLichSuCapNhatCuDan);
             this.Controls.Add(this.gbThongTinCaNhan);
-            this.Controls.Add(this.gbThongTinKhac);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelTieuDe);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.Name = "formXemChiTietThongTinCuDan";
+            this.Name = "formXemLichSuCapNhatCuDan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.formXemChiTietThongTinCuDan_Load);
+            this.Load += new System.EventHandler(this.formXemLichSuCapNhatCuDan_Load);
             this.panelTieuDe.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.gbHinhAnh.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnh)).EndInit();
             this.gbThongTinCaNhan.ResumeLayout(false);
             this.gbThongTinCaNhan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvLichSuCapNhatCuDan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -538,7 +481,6 @@ namespace DesignEasyHouse1.formsPhongBan
         #endregion
 
         private System.Windows.Forms.Panel panelTieuDe;
-        private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnHuyBo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtHoTen;
@@ -557,18 +499,15 @@ namespace DesignEasyHouse1.formsPhongBan
         private System.Windows.Forms.Label lbGioiTinh;
         private System.Windows.Forms.Label lbNgaySinh;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
-        private System.Windows.Forms.Button btnChonFileAnh;
-        private System.Windows.Forms.GroupBox gbThongTinKhac;
         private System.Windows.Forms.GroupBox gbThongTinCaNhan;
         private System.Windows.Forms.Label lbCuDanID;
-        private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Label lbTrangThai;
         private System.Windows.Forms.ComboBox cbTrangThai;
         private System.Windows.Forms.Label lbThanhToan;
         private System.Windows.Forms.ComboBox cbThanhToan;
         private System.Windows.Forms.DateTimePicker dtpNgayChuyenDen;
         private System.Windows.Forms.Label lbNgayDen;
-        private System.Windows.Forms.Button btnLichSuCapNhat;
         private System.Windows.Forms.Button btnTieuDe;
+        private System.Windows.Forms.DataGridView dtgvLichSuCapNhatCuDan;
     }
 }

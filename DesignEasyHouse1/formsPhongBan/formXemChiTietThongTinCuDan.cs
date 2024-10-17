@@ -120,8 +120,13 @@ namespace DesignEasyHouse1.formsPhongBan
             CapNhatThongTinCuDan();
         }
 
+
         #endregion
 
-
+        private void btnLichSuCapNhat_Click(object sender, EventArgs e)
+        {
+            formXemLichSuCapNhatCuDan f = new formsPhongBan.formXemLichSuCapNhatCuDan(cuDan.CuDanID);
+            f.ShowDialog();
+        }
     }
 }

@@ -4,7 +4,7 @@ https://coolors.co/palette/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8
 
 ChildForm
 Lề trái phải: 40
-Lề trên dưới: 80
+Lề trên dưới: 50 hoặc 80
 
 font:
 Segoe UI, 12pt
