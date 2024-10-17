@@ -451,6 +451,7 @@ namespace DesignEasyHouse1.formsPhongBan
             this.dtgvLichSuCapNhatCuDan.Size = new System.Drawing.Size(387, 600);
             this.dtgvLichSuCapNhatCuDan.TabIndex = 49;
             this.dtgvLichSuCapNhatCuDan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvLichSuCapNhatCuDan_CellClick);
+            this.dtgvLichSuCapNhatCuDan.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvLichSuCapNhatCuDan_CellClick);
             // 
             // formXemLichSuCapNhatCuDan
             // 
