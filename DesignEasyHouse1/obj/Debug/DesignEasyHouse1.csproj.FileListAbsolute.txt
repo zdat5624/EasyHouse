@@ -80,3 +80,4 @@ C:\Users\LENOVO\Source\Repos\zdat5624\EasyHouse\DesignEasyHouse1\obj\Debug\Desig
 >>>>>>> 776db7768fec46d25b190f418c36979ae5b54ef5
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsCuDan.formPhanHoiDanhGia.resources
 C:\dulieucuatoi\Nam3Hk1\CongNghePhanMem\EasyHouse\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formPhanHoiYeuCau.resources
+C:\Users\LENOVO\Source\Repos\zdat5624\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formXemChiTietThongTinCuDan.resources
