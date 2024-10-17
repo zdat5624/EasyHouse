@@ -63,7 +63,6 @@ C:\Users\LENOVO\Source\Repos\zdat5624\EasyHouse\DesignEasyHouse1\obj\Debug\Desig
 C:\Users\LENOVO\Source\Repos\zdat5624\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formQuanLyThongBaoDenCuDan.resources
 C:\Users\LENOVO\Source\Repos\zdat5624\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formQuanLyYeuCauTuCuDan.resources
 C:\Users\LENOVO\Source\Repos\zdat5624\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formSuaHopDongThueCanHo.resources
-C:\Users\LENOVO\Source\Repos\zdat5624\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formSuaThongTinCuDan.resources
 C:\Users\LENOVO\Source\Repos\zdat5624\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formThemCuDan.resources
 C:\Users\LENOVO\Source\Repos\zdat5624\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formThemHopDongThueCanHo.resources
 C:\Users\LENOVO\Source\Repos\zdat5624\EasyHouse\DesignEasyHouse1\obj\Debug\DesignEasyHouse1.formsPhongBan.formThemThongBaoDenCuDan.resources
