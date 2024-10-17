@@ -67,12 +67,6 @@ AppPackages/
 *.tmp
 *.csproj.user
 
-# Các tệp git, như commit message, template, và tệp index lock
-.git/
-.gitmodules
-.gitconfig
-.git/refs/
-
 # Các tệp IDE khác của Visual Studio
 *.opensdf
 *.VC.db
