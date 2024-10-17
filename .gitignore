@@ -35,13 +35,6 @@ obj/
 log/
 *.log
 
-# NuGet thư mục và package
-packages/
-*.nupkg
-project.lock.json
-project.fragment.lock.json
-artifacts/
-
 # Thư viện ngoại vi và tệp dựng
 *.dll
 *.exe
