@@ -37,20 +37,20 @@
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.Details = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.tbTimKiem = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.panelTren = new System.Windows.Forms.Panel();
+            this.panelDuoi = new System.Windows.Forms.Panel();
             this.btnThemCuDan = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinCuDan)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.panelTren.SuspendLayout();
+            this.panelDuoi.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewImageColumn1
@@ -136,43 +136,43 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.btnTimKiem);
+            this.panel2.Controls.Add(this.tbTimKiem);
             this.panel2.Location = new System.Drawing.Point(970, 47);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 25);
             this.panel2.TabIndex = 36;
             // 
-            // button2
+            // btnTimKiem
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::DesignEasyHouse1.Properties.Resources.Search_new;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(215, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button2.Size = new System.Drawing.Size(35, 25);
-            this.button2.TabIndex = 32;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnTimKiem.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnTimKiem.FlatAppearance.BorderSize = 0;
+            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Image = global::DesignEasyHouse1.Properties.Resources.Search_new;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(215, 0);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnTimKiem.Size = new System.Drawing.Size(35, 25);
+            this.btnTimKiem.TabIndex = 32;
+            this.btnTimKiem.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // tbTimKiem
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.textBox2.Location = new System.Drawing.Point(0, 0);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(214, 31);
-            this.textBox2.TabIndex = 32;
+            this.tbTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tbTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTimKiem.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tbTimKiem.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.tbTimKiem.Location = new System.Drawing.Point(0, 0);
+            this.tbTimKiem.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tbTimKiem.Name = "tbTimKiem";
+            this.tbTimKiem.Size = new System.Drawing.Size(214, 31);
+            this.tbTimKiem.TabIndex = 32;
             // 
             // panel1
             // 
@@ -190,23 +190,23 @@
             this.panel5.Size = new System.Drawing.Size(40, 700);
             this.panel5.TabIndex = 40;
             // 
-            // panel6
+            // panelTren
             // 
-            this.panel6.Controls.Add(this.panel2);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(40, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1220, 80);
-            this.panel6.TabIndex = 41;
+            this.panelTren.Controls.Add(this.panel2);
+            this.panelTren.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTren.Location = new System.Drawing.Point(40, 0);
+            this.panelTren.Name = "panelTren";
+            this.panelTren.Size = new System.Drawing.Size(1220, 80);
+            this.panelTren.TabIndex = 41;
             // 
-            // panel7
+            // panelDuoi
             // 
-            this.panel7.Controls.Add(this.btnThemCuDan);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(40, 620);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1220, 80);
-            this.panel7.TabIndex = 42;
+            this.panelDuoi.Controls.Add(this.btnThemCuDan);
+            this.panelDuoi.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelDuoi.Location = new System.Drawing.Point(40, 620);
+            this.panelDuoi.Name = "panelDuoi";
+            this.panelDuoi.Size = new System.Drawing.Size(1220, 80);
+            this.panelDuoi.TabIndex = 42;
             // 
             // btnThemCuDan
             // 
@@ -218,11 +218,11 @@
             this.btnThemCuDan.ForeColor = System.Drawing.Color.White;
             this.btnThemCuDan.Image = ((System.Drawing.Image)(resources.GetObject("btnThemCuDan.Image")));
             this.btnThemCuDan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemCuDan.Location = new System.Drawing.Point(0, 19);
+            this.btnThemCuDan.Location = new System.Drawing.Point(0, 20);
             this.btnThemCuDan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemCuDan.Name = "btnThemCuDan";
             this.btnThemCuDan.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnThemCuDan.Size = new System.Drawing.Size(177, 50);
+            this.btnThemCuDan.Size = new System.Drawing.Size(180, 40);
             this.btnThemCuDan.TabIndex = 31;
             this.btnThemCuDan.Text = "Thêm cư dân";
             this.btnThemCuDan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -263,8 +263,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1300, 700);
             this.Controls.Add(this.dtgvThongTinCuDan);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panelDuoi);
+            this.Controls.Add(this.panelTren);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -276,8 +276,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinCuDan)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
+            this.panelTren.ResumeLayout(false);
+            this.panelDuoi.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -288,14 +288,14 @@
         private System.Windows.Forms.Button btnThemCuDan;
         private System.Windows.Forms.DataGridView dtgvThongTinCuDan;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbTimKiem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panelTren;
+        private System.Windows.Forms.Panel panelDuoi;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn5;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
         private System.Windows.Forms.DataGridViewImageColumn Details;

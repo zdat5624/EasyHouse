@@ -24,21 +24,11 @@ namespace DesignEasyHouse1.formsPhongBan
 
         #region Methods
 
-        private Image ByteArrayToImage(byte[] byteArray)
-        {
-            if (byteArray == null || byteArray.Length == 0)
-                return null;
-
-            using (MemoryStream ms = new MemoryStream(byteArray))
-            {
-                return Image.FromStream(ms);
-            }
-        }
 
         void BatTatChinhSua()
         {
             btnLuu.Visible = !btnLuu.Visible;
-            btnSua.Visible = !btnSua.Visible;
+            btnCapNhat.Visible = !btnCapNhat.Visible;
 
             foreach (Control control in gbThongTinCaNhan.Controls)
             {
@@ -67,7 +57,31 @@ namespace DesignEasyHouse1.formsPhongBan
             cbTrangThai.SelectedItem = cuDan.TrangThai;
             cbThanhToan.SelectedItem = cuDan.ThanhToan;
             dtpNgayChuyenDen.Value = cuDan.NgayChuyenDen;
-            ptbHinhAnh.Image = ByteArrayToImage(cuDan.HinhAnh);
+            ptbHinhAnh.Image = MyGUI.ByteArrayToImage(cuDan.HinhAnh);
+        }
+
+        void CapNhatThongTinCuDan()
+        {
+            CuDan cd = new CuDan(cuDan.CuDanID, txtHoTen.Text, txtSoDienThoai.Text, txtCCCD.Text, txtEmail.Text, txtDiaChi.Text, cbGioiTinh.SelectedItem.ToString(), dtpNgaySinh.Value, cbTrangThai.SelectedItem.ToString(), cbThanhToan.SelectedItem.ToString(), dtpNgayChuyenDen.Value, MyGUI.ImageToByteArray(ptbHinhAnh.Image));
+            if (CuDanDAO.Instance.CapNhatThongTinCuDan(cd))
+            {
+                MessageBox.Show("Sửa thông tin cư dân thành công");
+            }
+            else
+            {
+                MessageBox.Show("Sửa thông tin cư dân thất bại!");
+            }
+
+            if (LichSuCapNhatCuDanDAO.Instance.ThemLichSuCapNhatCuDan(cd))
+            {
+                MessageBox.Show("Thêm lịch sử cập nhật thông tin cư dân thành công");
+            }
+            else
+            {
+                MessageBox.Show("Thêm lịch sử cập nhật thông tin cư dân thất bại!");
+            }
+
+            BatTatChinhSua();
         }
 
         #endregion
@@ -95,27 +109,15 @@ namespace DesignEasyHouse1.formsPhongBan
         {
             this.Close();
         }
-        private void btnSua_Click(object sender, EventArgs e)
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
         {
             BatTatChinhSua();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            //lbCuDanID.Text = "ID: " + cuDan.CuDanID;
-            //txtHoTen.Text = cuDan.HoTen;
-            //txtSoDienThoai.Text = cuDan.SoDienThoai;
-            //txtCCCD.Text = cuDan.CCCD;
-            //txtEmail.Text = cuDan.Email;
-            //txtDiaChi.Text = cuDan.DiaChi;
-            //cbGioiTinh.SelectedItem = cuDan.GioiTinh;
-            //dtpNgaySinh.Value = cuDan.NgaySinh;
-            //cbTrangThai.SelectedItem = cuDan.TrangThai;
-            //cbThanhToan.SelectedItem = cuDan.ThanhToan;
-            //dtpNgayChuyenDen.Value = cuDan.NgayChuyenDen;
-            //ptbHinhAnh.Image = ByteArrayToImage(cuDan.HinhAnh);
-            //CuDan cd = new CuDan(cuDan.CuDanID, txtHoTen.Text, txtSoDienThoai.Text, txtCCCD.Text, txtEmail.Text, txtDiaChi.Text, cbGioiTinh.SelectedItem, dtpNgaySinh.Value, cbTrangThai.SelectedItem, cbThanhToan.SelectedItem, dtpNgayChuyenDen.Value, ImageToByteArray(ptbHinhAnh.Image));
-            BatTatChinhSua();
+            CapNhatThongTinCuDan();
         }
 
         #endregion

@@ -33,6 +33,8 @@ CREATE TABLE LichSuCapNhatCuDan (
 	CCCD NVARCHAR(15),
 	Email NVARCHAR(255),
     DiaChi NVARCHAR(255),
+	GioiTinh NVARCHAR(10), -- N'Nam' hoặc 'Nữ'
+	NgaySinh DATE,
 	TrangThai NVARCHAR(255), --'Còn ở' hoặc 'Chuyển đi'
 	ThanhToan NVARCHAR(255),
 	NgayChuyenDen DATE,
@@ -137,4 +139,4 @@ GO
 
 
 
-SELECT * FROM CuDan
+select * from LichSuCapNhatCuDan

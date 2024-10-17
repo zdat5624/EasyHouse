@@ -32,7 +32,7 @@ namespace DesignEasyHouse1.formsPhongBan
             string DiaChi = txtDiaChi.Text;
             string GioiTinh = cbGioiTinh.SelectedItem.ToString();
             DateTime NgaySinh = dtpNgaySinh.Value;
-            byte[] HinhAnh = ImageToByteArray(ptbHinhAnh.Image);
+            byte[] HinhAnh = MyGUI.ImageToByteArray(ptbHinhAnh.Image);
 
             bool result = CuDanDAO.Instance.ThemCuDan(HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, HinhAnh);
             if (result)
@@ -43,14 +43,6 @@ namespace DesignEasyHouse1.formsPhongBan
             else
             {
                 MessageBox.Show("Có lỗi xảy ra, vui lòng kiểm tra lại.");
-            }
-        }
-        public byte[] ImageToByteArray(Image image)
-        {
-            using (MemoryStream ms = new MemoryStream())
-            {
-                image.Save(ms, image.RawFormat);
-                return ms.ToArray();
             }
         }
 

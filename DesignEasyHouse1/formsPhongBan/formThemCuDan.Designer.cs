@@ -49,7 +49,7 @@
             this.lbNgaySinh = new System.Windows.Forms.Label();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.btnChonFileAnh = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelTieuDe.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -59,14 +59,14 @@
             // panelTieuDe
             // 
             this.panelTieuDe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.panelTieuDe.Controls.Add(this.label1);
+            this.panelTieuDe.Controls.Add(this.button1);
             this.panelTieuDe.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTieuDe.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelTieuDe.ForeColor = System.Drawing.Color.White;
             this.panelTieuDe.Location = new System.Drawing.Point(0, 0);
             this.panelTieuDe.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.panelTieuDe.Name = "panelTieuDe";
-            this.panelTieuDe.Size = new System.Drawing.Size(1182, 70);
+            this.panelTieuDe.Size = new System.Drawing.Size(1182, 50);
             this.panelTieuDe.TabIndex = 0;
             // 
             // btnThemCuDan
@@ -78,7 +78,7 @@
             this.btnThemCuDan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemCuDan.ForeColor = System.Drawing.Color.White;
             this.btnThemCuDan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemCuDan.Location = new System.Drawing.Point(924, 2);
+            this.btnThemCuDan.Location = new System.Drawing.Point(924, 5);
             this.btnThemCuDan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemCuDan.Name = "btnThemCuDan";
             this.btnThemCuDan.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -98,7 +98,7 @@
             this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuyBo.ForeColor = System.Drawing.Color.White;
             this.btnHuyBo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuyBo.Location = new System.Drawing.Point(1050, 2);
+            this.btnHuyBo.Location = new System.Drawing.Point(1050, 5);
             this.btnHuyBo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHuyBo.Name = "btnHuyBo";
             this.btnHuyBo.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -306,14 +306,25 @@
             this.btnChonFileAnh.UseVisualStyleBackColor = false;
             this.btnChonFileAnh.Click += new System.EventHandler(this.btnChonFileAnh_Click);
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(499, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "THÊM CƯ DÂN";
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button1.Size = new System.Drawing.Size(1182, 50);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "THÊM CƯ DÂN MỚI";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // formThemCuDan
             // 
@@ -343,7 +354,6 @@
             this.Name = "formThemCuDan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panelTieuDe.ResumeLayout(false);
-            this.panelTieuDe.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnh)).EndInit();
@@ -375,6 +385,6 @@
         private System.Windows.Forms.Label lbNgaySinh;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.Button btnChonFileAnh;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DesignEasyHouse1.DTO
 {
-    public class CuDan
+    public class LichSuCapNhatCuDan
     {
+        private int capNhatID;
         private int cuDanID;
         private string hoTen;
         private string soDienThoai;
@@ -21,7 +21,9 @@ namespace DesignEasyHouse1.DTO
         private string thanhToan;
         private DateTime ngayChuyenDen;
         private byte[] hinhAnh;
+        private DateTime ngayLuu;
 
+        public int CapNhatID { get => capNhatID; set => capNhatID = value; }
         public int CuDanID { get => cuDanID; set => cuDanID = value; }
         public string HoTen { get => hoTen; set => hoTen = value; }
         public string SoDienThoai { get => soDienThoai; set => soDienThoai = value; }
@@ -34,12 +36,13 @@ namespace DesignEasyHouse1.DTO
         public string ThanhToan { get => thanhToan; set => thanhToan = value; }
         public DateTime NgayChuyenDen { get => ngayChuyenDen; set => ngayChuyenDen = value; }
         public byte[] HinhAnh { get => hinhAnh; set => hinhAnh = value; }
+        public DateTime NgayLuu { get => ngayLuu; set => ngayLuu = value; }
 
-        //CuDan cd = new CuDan(cuDan.CuDanID, txtHoTen.Text, txtSoDienThoai.Text, txtCCCD.Text, txtEmail.Text, txtDiaChi.Text, cbGioiTinh.SelectedItem.ToString(), dtpNgaySinh.Value, cbTrangThai.SelectedItem.ToString(), cbThanhToan.SelectedItem.ToString(), dtpNgayChuyenDen.Value, MyGUI.ImageToByteArray(ptbHinhAnh.Image));
-        public CuDan(int cuDanID, string hoTen, string soDienThoai, string cCCD, string email,
+        public LichSuCapNhatCuDan(int capNhatID, int cuDanID, string hoTen, string soDienThoai, string cCCD, string email,
                      string diaChi, string gioiTinh, DateTime ngaySinh, string trangThai,
-                     string thanhToan, DateTime ngayChuyenDen, byte[] hinhAnh)
+                     string thanhToan, DateTime ngayChuyenDen, byte[] hinhAnh, DateTime ngayLuu)
         {
+            this.CapNhatID = capNhatID;
             this.cuDanID = cuDanID;
             this.hoTen = hoTen;
             this.soDienThoai = soDienThoai;
@@ -52,22 +55,7 @@ namespace DesignEasyHouse1.DTO
             this.thanhToan = thanhToan;
             this.ngayChuyenDen = ngayChuyenDen;
             this.hinhAnh = hinhAnh;
-        }
-
-        public CuDan(DataRow row)
-        {
-            cuDanID = (int)row["CuDanID"];
-            hoTen = row["HoTen"].ToString();
-            soDienThoai = row["SoDienThoai"].ToString();
-            cCCD = row["CCCD"].ToString();
-            email = row["Email"].ToString();
-            diaChi = row["DiaChi"].ToString();
-            gioiTinh = row["GioiTinh"].ToString();
-            ngaySinh = Convert.ToDateTime(row["NgaySinh"]);
-            trangThai = row["TrangThai"].ToString();
-            thanhToan = row["ThanhToan"].ToString();
-            ngayChuyenDen = Convert.ToDateTime(row["NgayChuyenDen"]);
-            HinhAnh = row["HinhAnh"] == DBNull.Value ? null : (byte[])row["HinhAnh"];
+            this.ngayLuu = ngayLuu;
         }
     }
 }

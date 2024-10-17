@@ -61,13 +61,9 @@ namespace DesignEasyHouse1.DAO
             return null;
         }
 
-        public bool SuaCuDan(CuDan cd)
+        public bool CapNhatThongTinCuDan(CuDan cd)
         {
-
-        string query = "UPDATE CuDan SET HoTen = @HoTen , SoDienThoai = @SoDienThoai , CCCD = @CCCD , Email = @Email , " +
-                               "DiaChi = @DiaChi , GioiTinh = @GioiTinh , NgaySinh = @NgaySinh , TrangThai = @TrangThai , " +
-                               "ThanhToan = @ThanhToan , NgayChuyenDen = @NgayChuyenDen , HinhAnh = @HinhAnh " +
-                               "WHERE CuDanID = @CuDanID";
+        string query = "UPDATE CuDan SET HoTen = @HoTen , SoDienThoai = @SoDienThoai , CCCD = @CCCD , Email = @Email , DiaChi = @DiaChi , GioiTinh = @GioiTinh , NgaySinh = @NgaySinh , TrangThai = @TrangThai , ThanhToan = @ThanhToan , NgayChuyenDen = @NgayChuyenDen , HinhAnh = @HinhAnh WHERE CuDanID = @CuDanID";
 
             object[] parameters = new object[] { cd.HoTen, cd.SoDienThoai, cd.CCCD, cd.Email, cd.DiaChi, cd.GioiTinh, cd.NgaySinh, cd.TrangThai, cd.ThanhToan, cd.NgayChuyenDen, cd.HinhAnh, cd.CuDanID };
 

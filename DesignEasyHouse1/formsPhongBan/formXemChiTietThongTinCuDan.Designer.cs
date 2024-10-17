@@ -31,10 +31,10 @@ namespace DesignEasyHouse1.formsPhongBan
         private void InitializeComponent()
         {
             this.panelTieuDe = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnHuyBo = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCapNhat = new System.Windows.Forms.Button();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.lbHoTen = new System.Windows.Forms.Label();
             this.txtSoDienThoai = new System.Windows.Forms.TextBox();
@@ -54,14 +54,15 @@ namespace DesignEasyHouse1.formsPhongBan
             this.btnChonFileAnh = new System.Windows.Forms.Button();
             this.gbThongTinKhac = new System.Windows.Forms.GroupBox();
             this.gbThongTinCaNhan = new System.Windows.Forms.GroupBox();
-            this.lbCuDanID = new System.Windows.Forms.Label();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.lbTrangThai = new System.Windows.Forms.Label();
-            this.cbTrangThai = new System.Windows.Forms.ComboBox();
-            this.lbThanhToan = new System.Windows.Forms.Label();
-            this.cbThanhToan = new System.Windows.Forms.ComboBox();
             this.dtpNgayChuyenDen = new System.Windows.Forms.DateTimePicker();
             this.lbNgayDen = new System.Windows.Forms.Label();
+            this.lbThanhToan = new System.Windows.Forms.Label();
+            this.cbThanhToan = new System.Windows.Forms.ComboBox();
+            this.lbTrangThai = new System.Windows.Forms.Label();
+            this.cbTrangThai = new System.Windows.Forms.ComboBox();
+            this.lbCuDanID = new System.Windows.Forms.Label();
+            this.btnLichSuCapNhat = new System.Windows.Forms.Button();
+            this.btnTieuDe = new System.Windows.Forms.Button();
             this.panelTieuDe.SuspendLayout();
             this.panel2.SuspendLayout();
             this.gbHinhAnh.SuspendLayout();
@@ -72,24 +73,15 @@ namespace DesignEasyHouse1.formsPhongBan
             // panelTieuDe
             // 
             this.panelTieuDe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.panelTieuDe.Controls.Add(this.label1);
+            this.panelTieuDe.Controls.Add(this.btnTieuDe);
             this.panelTieuDe.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTieuDe.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelTieuDe.ForeColor = System.Drawing.Color.White;
             this.panelTieuDe.Location = new System.Drawing.Point(0, 0);
             this.panelTieuDe.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.panelTieuDe.Name = "panelTieuDe";
-            this.panelTieuDe.Size = new System.Drawing.Size(1282, 70);
+            this.panelTieuDe.Size = new System.Drawing.Size(1282, 50);
             this.panelTieuDe.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(466, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(250, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "THÔNG TIN CƯ DÂN";
             // 
             // btnLuu
             // 
@@ -100,7 +92,7 @@ namespace DesignEasyHouse1.formsPhongBan
             this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(1012, 2);
+            this.btnLuu.Location = new System.Drawing.Point(1012, 5);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -121,7 +113,7 @@ namespace DesignEasyHouse1.formsPhongBan
             this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuyBo.ForeColor = System.Drawing.Color.White;
             this.btnHuyBo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuyBo.Location = new System.Drawing.Point(1138, 2);
+            this.btnHuyBo.Location = new System.Drawing.Point(1138, 5);
             this.btnHuyBo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHuyBo.Name = "btnHuyBo";
             this.btnHuyBo.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -134,7 +126,8 @@ namespace DesignEasyHouse1.formsPhongBan
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnSua);
+            this.panel2.Controls.Add(this.btnLichSuCapNhat);
+            this.panel2.Controls.Add(this.btnCapNhat);
             this.panel2.Controls.Add(this.btnLuu);
             this.panel2.Controls.Add(this.btnHuyBo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -142,6 +135,26 @@ namespace DesignEasyHouse1.formsPhongBan
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1282, 50);
             this.panel2.TabIndex = 33;
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnCapNhat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCapNhat.FlatAppearance.BorderSize = 0;
+            this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapNhat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhat.ForeColor = System.Drawing.Color.White;
+            this.btnCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCapNhat.Location = new System.Drawing.Point(886, 5);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnCapNhat.Size = new System.Drawing.Size(120, 40);
+            this.btnCapNhat.TabIndex = 33;
+            this.btnCapNhat.Text = "Cập nhật";
+            this.btnCapNhat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCapNhat.UseVisualStyleBackColor = false;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // txtHoTen
             // 
@@ -331,7 +344,7 @@ namespace DesignEasyHouse1.formsPhongBan
             this.btnChonFileAnh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChonFileAnh.Name = "btnChonFileAnh";
             this.btnChonFileAnh.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnChonFileAnh.Size = new System.Drawing.Size(146, 40);
+            this.btnChonFileAnh.Size = new System.Drawing.Size(120, 40);
             this.btnChonFileAnh.TabIndex = 33;
             this.btnChonFileAnh.Text = "Chọn file ảnh";
             this.btnChonFileAnh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -379,59 +392,25 @@ namespace DesignEasyHouse1.formsPhongBan
             this.gbThongTinCaNhan.TabStop = false;
             this.gbThongTinCaNhan.Text = "Thông tin cá nhân";
             // 
-            // lbCuDanID
+            // dtpNgayChuyenDen
             // 
-            this.lbCuDanID.AutoSize = true;
-            this.lbCuDanID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lbCuDanID.Location = new System.Drawing.Point(318, 224);
-            this.lbCuDanID.Name = "lbCuDanID";
-            this.lbCuDanID.Size = new System.Drawing.Size(36, 23);
-            this.lbCuDanID.TabIndex = 47;
-            this.lbCuDanID.Text = "ID: ";
+            this.dtpNgayChuyenDen.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtpNgayChuyenDen.Enabled = false;
+            this.dtpNgayChuyenDen.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayChuyenDen.Location = new System.Drawing.Point(170, 522);
+            this.dtpNgayChuyenDen.Name = "dtpNgayChuyenDen";
+            this.dtpNgayChuyenDen.Size = new System.Drawing.Size(311, 30);
+            this.dtpNgayChuyenDen.TabIndex = 53;
             // 
-            // btnSua
+            // lbNgayDen
             // 
-            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnSua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSua.FlatAppearance.BorderSize = 0;
-            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.ForeColor = System.Drawing.Color.Black;
-            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(886, 2);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnSua.Size = new System.Drawing.Size(120, 40);
-            this.btnSua.TabIndex = 33;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSua.UseVisualStyleBackColor = false;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
-            // 
-            // lbTrangThai
-            // 
-            this.lbTrangThai.AutoSize = true;
-            this.lbTrangThai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTrangThai.Location = new System.Drawing.Point(60, 452);
-            this.lbTrangThai.Name = "lbTrangThai";
-            this.lbTrangThai.Size = new System.Drawing.Size(87, 23);
-            this.lbTrangThai.TabIndex = 49;
-            this.lbTrangThai.Text = "Trạng thái";
-            // 
-            // cbTrangThai
-            // 
-            this.cbTrangThai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTrangThai.Enabled = false;
-            this.cbTrangThai.FormattingEnabled = true;
-            this.cbTrangThai.Items.AddRange(new object[] {
-            "Còn ở",
-            "Chuyển đi"});
-            this.cbTrangThai.Location = new System.Drawing.Point(170, 448);
-            this.cbTrangThai.Name = "cbTrangThai";
-            this.cbTrangThai.Size = new System.Drawing.Size(311, 31);
-            this.cbTrangThai.TabIndex = 48;
+            this.lbNgayDen.AutoSize = true;
+            this.lbNgayDen.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNgayDen.Location = new System.Drawing.Point(60, 526);
+            this.lbNgayDen.Name = "lbNgayDen";
+            this.lbNgayDen.Size = new System.Drawing.Size(84, 23);
+            this.lbNgayDen.TabIndex = 52;
+            this.lbNgayDen.Text = "Ngày đến";
             // 
             // lbThanhToan
             // 
@@ -457,25 +436,78 @@ namespace DesignEasyHouse1.formsPhongBan
             this.cbThanhToan.Size = new System.Drawing.Size(311, 31);
             this.cbThanhToan.TabIndex = 50;
             // 
-            // dtpNgayChuyenDen
+            // lbTrangThai
             // 
-            this.dtpNgayChuyenDen.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dtpNgayChuyenDen.Enabled = false;
-            this.dtpNgayChuyenDen.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayChuyenDen.Location = new System.Drawing.Point(170, 522);
-            this.dtpNgayChuyenDen.Name = "dtpNgayChuyenDen";
-            this.dtpNgayChuyenDen.Size = new System.Drawing.Size(311, 30);
-            this.dtpNgayChuyenDen.TabIndex = 53;
+            this.lbTrangThai.AutoSize = true;
+            this.lbTrangThai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTrangThai.Location = new System.Drawing.Point(60, 452);
+            this.lbTrangThai.Name = "lbTrangThai";
+            this.lbTrangThai.Size = new System.Drawing.Size(87, 23);
+            this.lbTrangThai.TabIndex = 49;
+            this.lbTrangThai.Text = "Trạng thái";
             // 
-            // lbNgayDen
+            // cbTrangThai
             // 
-            this.lbNgayDen.AutoSize = true;
-            this.lbNgayDen.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNgayDen.Location = new System.Drawing.Point(60, 526);
-            this.lbNgayDen.Name = "lbNgayDen";
-            this.lbNgayDen.Size = new System.Drawing.Size(84, 23);
-            this.lbNgayDen.TabIndex = 52;
-            this.lbNgayDen.Text = "Ngày đến";
+            this.cbTrangThai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTrangThai.Enabled = false;
+            this.cbTrangThai.FormattingEnabled = true;
+            this.cbTrangThai.Items.AddRange(new object[] {
+            "Còn ở",
+            "Chuyển đi"});
+            this.cbTrangThai.Location = new System.Drawing.Point(170, 448);
+            this.cbTrangThai.Name = "cbTrangThai";
+            this.cbTrangThai.Size = new System.Drawing.Size(311, 31);
+            this.cbTrangThai.TabIndex = 48;
+            // 
+            // lbCuDanID
+            // 
+            this.lbCuDanID.AutoSize = true;
+            this.lbCuDanID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lbCuDanID.Location = new System.Drawing.Point(318, 224);
+            this.lbCuDanID.Name = "lbCuDanID";
+            this.lbCuDanID.Size = new System.Drawing.Size(36, 23);
+            this.lbCuDanID.TabIndex = 47;
+            this.lbCuDanID.Text = "ID: ";
+            // 
+            // btnLichSuCapNhat
+            // 
+            this.btnLichSuCapNhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnLichSuCapNhat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLichSuCapNhat.FlatAppearance.BorderSize = 0;
+            this.btnLichSuCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLichSuCapNhat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLichSuCapNhat.ForeColor = System.Drawing.Color.White;
+            this.btnLichSuCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLichSuCapNhat.Location = new System.Drawing.Point(31, 5);
+            this.btnLichSuCapNhat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLichSuCapNhat.Name = "btnLichSuCapNhat";
+            this.btnLichSuCapNhat.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnLichSuCapNhat.Size = new System.Drawing.Size(179, 40);
+            this.btnLichSuCapNhat.TabIndex = 34;
+            this.btnLichSuCapNhat.Text = "Lịch sử cập nhật";
+            this.btnLichSuCapNhat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLichSuCapNhat.UseVisualStyleBackColor = false;
+            // 
+            // btnTieuDe
+            // 
+            this.btnTieuDe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnTieuDe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnTieuDe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTieuDe.FlatAppearance.BorderSize = 0;
+            this.btnTieuDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTieuDe.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTieuDe.ForeColor = System.Drawing.Color.White;
+            this.btnTieuDe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTieuDe.Location = new System.Drawing.Point(0, 0);
+            this.btnTieuDe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTieuDe.Name = "btnTieuDe";
+            this.btnTieuDe.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnTieuDe.Size = new System.Drawing.Size(1282, 50);
+            this.btnTieuDe.TabIndex = 35;
+            this.btnTieuDe.Text = "THÔNG TIN CHI TIẾT";
+            this.btnTieuDe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTieuDe.UseVisualStyleBackColor = false;
             // 
             // formXemChiTietThongTinCuDan
             // 
@@ -492,7 +524,6 @@ namespace DesignEasyHouse1.formsPhongBan
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.formXemChiTietThongTinCuDan_Load);
             this.panelTieuDe.ResumeLayout(false);
-            this.panelTieuDe.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.gbHinhAnh.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbHinhAnh)).EndInit();
@@ -526,16 +557,17 @@ namespace DesignEasyHouse1.formsPhongBan
         private System.Windows.Forms.Label lbNgaySinh;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.Button btnChonFileAnh;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox gbThongTinKhac;
         private System.Windows.Forms.GroupBox gbThongTinCaNhan;
         private System.Windows.Forms.Label lbCuDanID;
-        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Label lbTrangThai;
         private System.Windows.Forms.ComboBox cbTrangThai;
         private System.Windows.Forms.Label lbThanhToan;
         private System.Windows.Forms.ComboBox cbThanhToan;
         private System.Windows.Forms.DateTimePicker dtpNgayChuyenDen;
         private System.Windows.Forms.Label lbNgayDen;
+        private System.Windows.Forms.Button btnLichSuCapNhat;
+        private System.Windows.Forms.Button btnTieuDe;
     }
 }

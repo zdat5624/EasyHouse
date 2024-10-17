@@ -22,6 +22,32 @@ namespace DesignEasyHouse1.formsPhongBan
         }
 
         #region Methods
+
+        void XemChiTietThongTinCuDan(int cuDanID)
+        {
+            //int cuDanID = Convert.ToInt32(dtgvThongTinCuDan.Rows[e.RowIndex].Cells["CuDanID"].Value);
+            Form f = new formsPhongBan.formXemChiTietThongTinCuDan(cuDanID);
+            f.ShowDialog();
+        }
+
+        void XoaThongTinCuDan(int cuDanID)
+        {
+            DialogResult result = MessageBox.Show($"Bạn có chắc chắn muốn xóa cư dân ID '{cuDanID}' không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                if (XoaCuDanByCuDanID(cuDanID))
+                {
+                    MessageBox.Show($"Xóa thành công cư dân có ID: {cuDanID}");
+                    LoadDtgvThongTinCuDan();
+                }
+                else
+                {
+                    MessageBox.Show($"Xóa thất bại!");
+                }
+            }
+        }
+
         void LoadDtgvThongTinCuDan()
         {
             dtgvThongTinCuDan.DataSource = CuDanDAO.Instance.GetDanhSachCuDanKhongHoanChinh();
@@ -48,30 +74,20 @@ namespace DesignEasyHouse1.formsPhongBan
 
         private void dtgvThongTinCuDan_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Xử lý Xóa, sửa, xem chi tiết
+            // Xử lý xóa, xem chi tiết
             if (e.RowIndex >= 0)
             {
                 if (e.ColumnIndex == dtgvThongTinCuDan.Columns["Details"].Index)
                 {
                     //Xem chi tiết cư dân
                     int cuDanID = Convert.ToInt32(dtgvThongTinCuDan.Rows[e.RowIndex].Cells["CuDanID"].Value);
-                    Form f = new formsPhongBan.formXemChiTietThongTinCuDan(cuDanID);
-                    f.ShowDialog();
+                    XemChiTietThongTinCuDan(cuDanID);
                 }
                 else if (e.ColumnIndex == dtgvThongTinCuDan.Columns["Delete"].Index)
                 {
                     //Xóa cư dân
                     int cuDanID = Convert.ToInt32(dtgvThongTinCuDan.Rows[e.RowIndex].Cells["CuDanID"].Value);
-                    if (XoaCuDanByCuDanID(cuDanID))
-                    {
-                        MessageBox.Show($"Xóa thành công cư dân có ID: {cuDanID}");
-                        LoadDtgvThongTinCuDan();
-                    }
-                    else
-                    {
-                        MessageBox.Show($"Xóa thất bại!");
-                    }
-                    
+                    XoaThongTinCuDan(cuDanID);
                 }
             }
         }
