@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dtgvYeuCauCuDan = new System.Windows.Forms.DataGridView();
+            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Details = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -44,8 +46,6 @@
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Details = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvYeuCauCuDan)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -60,6 +60,7 @@
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewImageColumn1.Width = 125;
             // 
             // dataGridViewImageColumn2
             // 
@@ -67,6 +68,7 @@
             this.dataGridViewImageColumn2.HeaderText = "";
             this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Width = 125;
             // 
             // dtgvYeuCauCuDan
             // 
@@ -76,14 +78,14 @@
             this.dtgvYeuCauCuDan.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dtgvYeuCauCuDan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvYeuCauCuDan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvYeuCauCuDan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvYeuCauCuDan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvYeuCauCuDan.ColumnHeadersHeight = 30;
             this.dtgvYeuCauCuDan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgvYeuCauCuDan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -95,20 +97,40 @@
             this.dtgvYeuCauCuDan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgvYeuCauCuDan.Name = "dtgvYeuCauCuDan";
             this.dtgvYeuCauCuDan.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvYeuCauCuDan.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvYeuCauCuDan.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvYeuCauCuDan.RowHeadersVisible = false;
             this.dtgvYeuCauCuDan.RowHeadersWidth = 51;
             this.dtgvYeuCauCuDan.RowTemplate.Height = 24;
             this.dtgvYeuCauCuDan.Size = new System.Drawing.Size(1220, 540);
             this.dtgvYeuCauCuDan.TabIndex = 1;
             this.dtgvYeuCauCuDan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvYeuCauCuDan_CellContentClick);
+            // 
+            // Edit
+            // 
+            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Edit.HeaderText = "";
+            this.Edit.Image = global::DesignEasyHouse1.Properties.Resources.Edit1;
+            this.Edit.MinimumWidth = 6;
+            this.Edit.Name = "Edit";
+            this.Edit.ReadOnly = true;
+            this.Edit.Width = 6;
+            // 
+            // Details
+            // 
+            this.Details.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Details.HeaderText = "";
+            this.Details.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
+            this.Details.MinimumWidth = 6;
+            this.Details.Name = "Details";
+            this.Details.ReadOnly = true;
+            this.Details.Width = 6;
             // 
             // panel2
             // 
@@ -147,7 +169,7 @@
             this.textBox2.Location = new System.Drawing.Point(0, 0);
             this.textBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(214, 25);
+            this.textBox2.Size = new System.Drawing.Size(214, 31);
             this.textBox2.TabIndex = 32;
             // 
             // panel1
@@ -212,6 +234,7 @@
             this.dataGridViewImageColumn3.MinimumWidth = 6;
             this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
             this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn3.Width = 125;
             // 
             // dataGridViewImageColumn4
             // 
@@ -220,6 +243,7 @@
             this.dataGridViewImageColumn4.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
             this.dataGridViewImageColumn4.MinimumWidth = 6;
             this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
+            this.dataGridViewImageColumn4.Width = 125;
             // 
             // dataGridViewImageColumn5
             // 
@@ -228,30 +252,11 @@
             this.dataGridViewImageColumn5.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
             this.dataGridViewImageColumn5.MinimumWidth = 6;
             this.dataGridViewImageColumn5.Name = "dataGridViewImageColumn5";
-            // 
-            // Edit
-            // 
-            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Edit.HeaderText = "";
-            this.Edit.Image = global::DesignEasyHouse1.Properties.Resources.Edit1;
-            this.Edit.MinimumWidth = 6;
-            this.Edit.Name = "Edit";
-            this.Edit.ReadOnly = true;
-            this.Edit.Width = 6;
-            // 
-            // Details
-            // 
-            this.Details.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Details.HeaderText = "";
-            this.Details.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
-            this.Details.MinimumWidth = 6;
-            this.Details.Name = "Details";
-            this.Details.ReadOnly = true;
-            this.Details.Width = 6;
+            this.dataGridViewImageColumn5.Width = 125;
             // 
             // formQuanLyYeuCauTuCuDan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1300, 700);
             this.Controls.Add(this.dtgvYeuCauCuDan);
