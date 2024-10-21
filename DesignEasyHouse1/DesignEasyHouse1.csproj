@@ -199,6 +199,57 @@
     <Compile Include="formsPhongBan\formThemThongBaoDenCuDan.Designer.cs">
       <DependentUpon>formThemThongBaoDenCuDan.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\formDeXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\formDeXuat.Designer.cs">
+      <DependentUpon>formDeXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tableBaoCaoKhuVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tableBaoCaoKhuVuc.Designer.cs">
+      <DependentUpon>tableBaoCaoKhuVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tableChatLuongNVVeSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tableDeXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tableDeXuat.Designer.cs">
+      <DependentUpon>tableDeXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tableKhoVatTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tableKhoVatTu.Designer.cs">
+      <DependentUpon>tableKhoVatTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tableNhanYeuCau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tableNhanYeuCau.Designer.cs">
+      <DependentUpon>tableNhanYeuCau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tablePhanHoiTuCuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tablePhanHoiTuCuDan.Designer.cs">
+      <DependentUpon>tablePhanHoiTuCuDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tableQuanLyVeSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tableQuanLyVeSinh.Designer.cs">
+      <DependentUpon>tableQuanLyVeSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tableTheoDoiHieuSuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\tableTheoDoiHieuSuat.Designer.cs">
+      <DependentUpon>tableTheoDoiHieuSuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyGUI.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -302,6 +353,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formXemChiTietThongTinCuDan.resx">
       <DependentUpon>formXemChiTietThongTinCuDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongVeSinh\formDeXuat.resx">
+      <DependentUpon>formDeXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongVeSinh\tableBaoCaoKhuVuc.resx">
+      <DependentUpon>tableBaoCaoKhuVuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongVeSinh\tableChatLuongNVVeSinh.resx">
+      <DependentUpon>tableChatLuongNVVeSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongVeSinh\tableDeXuat.resx">
+      <DependentUpon>tableDeXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongVeSinh\tableKhoVatTu.resx">
+      <DependentUpon>tableKhoVatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongVeSinh\tableNhanYeuCau.resx">
+      <DependentUpon>tableNhanYeuCau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongVeSinh\tablePhanHoiTuCuDan.resx">
+      <DependentUpon>tablePhanHoiTuCuDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongVeSinh\tableQuanLyVeSinh.resx">
+      <DependentUpon>tableQuanLyVeSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongVeSinh\tableTheoDoiHieuSuat.resx">
+      <DependentUpon>tableTheoDoiHieuSuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SampleChildForm.resx">
       <DependentUpon>SampleChildForm.cs</DependentUpon>
