@@ -103,6 +103,36 @@
     <Compile Include="formsCuDan\formThongBao.Designer.cs">
       <DependentUpon>formThongBao.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsCuDan\moduleVeSinh\formDanhGiaChatLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCuDan\moduleVeSinh\formDanhGiaChatLuong.Designer.cs">
+      <DependentUpon>formDanhGiaChatLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCuDan\moduleVeSinh\formDKDinhKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCuDan\moduleVeSinh\formDKDinhKy.Designer.cs">
+      <DependentUpon>formDKDinhKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCuDan\moduleVeSinh\formYeuCauVeSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCuDan\moduleVeSinh\formYeuCauVeSinh.Designer.cs">
+      <DependentUpon>formYeuCauVeSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCuDan\moduleVeSinh\tableTheoDoiyeuCauVeSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCuDan\moduleVeSinh\tableTheoDoiyeuCauVeSinh.Designer.cs">
+      <DependentUpon>tableTheoDoiyeuCauVeSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCuDan\moduleVeSinh\tableVeSinhDinhKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCuDan\moduleVeSinh\tableVeSinhDinhKy.Designer.cs">
+      <DependentUpon>tableVeSinhDinhKy.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsPhongBan\formPhanHoiYeuCau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +254,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsCuDan\formThongBao.resx">
       <DependentUpon>formThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCuDan\moduleVeSinh\formDanhGiaChatLuong.resx">
+      <DependentUpon>formDanhGiaChatLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCuDan\moduleVeSinh\formDKDinhKy.resx">
+      <DependentUpon>formDKDinhKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCuDan\moduleVeSinh\formYeuCauVeSinh.resx">
+      <DependentUpon>formYeuCauVeSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCuDan\moduleVeSinh\tableTheoDoiyeuCauVeSinh.resx">
+      <DependentUpon>tableTheoDoiyeuCauVeSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCuDan\moduleVeSinh\tableVeSinhDinhKy.resx">
+      <DependentUpon>tableVeSinhDinhKy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formPhanHoiYeuCau.resx">
       <DependentUpon>formPhanHoiYeuCau.cs</DependentUpon>
