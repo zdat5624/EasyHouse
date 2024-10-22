@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -132,6 +133,24 @@
     </Compile>
     <Compile Include="formsCuDan\moduleVeSinh\tableVeSinhDinhKy.Designer.cs">
       <DependentUpon>tableVeSinhDinhKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsGiamDoc\moduleVeSinh\bieuDoHoatDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsGiamDoc\moduleVeSinh\bieuDoHoatDong.Designer.cs">
+      <DependentUpon>bieuDoHoatDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsGiamDoc\moduleVeSinh\formBaoCaoChiPhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsGiamDoc\moduleVeSinh\formBaoCaoChiPhi.Designer.cs">
+      <DependentUpon>formBaoCaoChiPhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsGiamDoc\moduleVeSinh\tableDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsGiamDoc\moduleVeSinh\tableDoanhThu.Designer.cs">
+      <DependentUpon>tableDoanhThu.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\formPhanHoiYeuCau.cs">
       <SubType>Form</SubType>
@@ -321,6 +340,15 @@
     <EmbeddedResource Include="formsCuDan\moduleVeSinh\tableVeSinhDinhKy.resx">
       <DependentUpon>tableVeSinhDinhKy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsGiamDoc\moduleVeSinh\bieuDoHoatDong.resx">
+      <DependentUpon>bieuDoHoatDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsGiamDoc\moduleVeSinh\formBaoCaoChiPhi.resx">
+      <DependentUpon>formBaoCaoChiPhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsGiamDoc\moduleVeSinh\tableDoanhThu.resx">
+      <DependentUpon>tableDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formPhanHoiYeuCau.resx">
       <DependentUpon>formPhanHoiYeuCau.cs</DependentUpon>
     </EmbeddedResource>
@@ -421,7 +449,6 @@
     <None Include="Images\menu-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="formsGiamDoc\" />
     <Folder Include="UC\" />
   </ItemGroup>
   <ItemGroup>

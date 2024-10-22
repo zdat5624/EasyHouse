@@ -188,7 +188,7 @@
         private System.Windows.Forms.Button lblYeuCauMuaVatTu;
         private System.Windows.Forms.Label lblTenVatTu;
         private System.Windows.Forms.GroupBox grbMuaVatTu;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        //private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lblGiaTungSanPham;
         private System.Windows.Forms.TextBox textBox2;

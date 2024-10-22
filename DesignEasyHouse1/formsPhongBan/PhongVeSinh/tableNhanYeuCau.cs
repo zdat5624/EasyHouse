@@ -24,11 +24,11 @@ namespace DesignEasyHouse1.formsPhongBan.PhongVeSinh
 
         private void formNhanYeuCau_Load(object sender, EventArgs e)
         {
-            dgrYeuCauVeSinh.AutoGenerateColumns=false;
-            dgrYeuCauVeSinh.Rows.Add(1, "Nguyen Van A", "Khu A", "Đã xử lý", "Cư dân hài lòng");
-            dgrYeuCauVeSinh.Rows.Add(2, "Le Thi B", "Khu B", "Đang xử lý", "Chưa phản hồi");
-            dgrYeuCauVeSinh.Rows.Add(3, "Tran Van C", "Khu C", "Chưa xử lý", "Yêu cầu khẩn cấp");
-            dgrYeuCauVeSinh.Rows.Add(4, "Pham Thi D", "Khu D", "Đã xử lý", "Cần xem xét lại");
+            //dgrYeuCauVeSinh.AutoGenerateColumns=false;
+            //dgrYeuCauVeSinh.Rows.Add(1, "Nguyen Van A", "Khu A", "Đã xử lý", "Cư dân hài lòng");
+            //dgrYeuCauVeSinh.Rows.Add(2, "Le Thi B", "Khu B", "Đang xử lý", "Chưa phản hồi");
+            //dgrYeuCauVeSinh.Rows.Add(3, "Tran Van C", "Khu C", "Chưa xử lý", "Yêu cầu khẩn cấp");
+            //dgrYeuCauVeSinh.Rows.Add(4, "Pham Thi D", "Khu D", "Đã xử lý", "Cần xem xét lại");
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

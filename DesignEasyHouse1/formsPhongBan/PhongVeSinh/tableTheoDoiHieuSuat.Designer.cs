@@ -226,7 +226,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblTheoDoiHieuSuat;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
+        //private MetroFramework.Controls.MetroLabel metroLabel1;
         private System.Windows.Forms.DateTimePicker dtpChonThoiGian;
         private System.Windows.Forms.GroupBox grbChonthoiGian;
         private System.Windows.Forms.Button btnChonThoiGian;
