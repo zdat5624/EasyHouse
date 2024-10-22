@@ -182,11 +182,11 @@
             // 
             // panelDuoi
             // 
-            this.panelDuoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panelDuoi.Controls.Add(this.btnThemCuDan);
-            this.panelDuoi.Location = new System.Drawing.Point(40, 620);
+            this.panelDuoi.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelDuoi.Location = new System.Drawing.Point(0, 620);
             this.panelDuoi.Name = "panelDuoi";
-            this.panelDuoi.Size = new System.Drawing.Size(1220, 80);
+            this.panelDuoi.Size = new System.Drawing.Size(1300, 80);
             this.panelDuoi.TabIndex = 42;
             // 
             // btnThemCuDan
@@ -200,7 +200,7 @@
             this.btnThemCuDan.ForeColor = System.Drawing.Color.White;
             this.btnThemCuDan.Image = ((System.Drawing.Image)(resources.GetObject("btnThemCuDan.Image")));
             this.btnThemCuDan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemCuDan.Location = new System.Drawing.Point(0, 19);
+            this.btnThemCuDan.Location = new System.Drawing.Point(40, 29);
             this.btnThemCuDan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemCuDan.Name = "btnThemCuDan";
             this.btnThemCuDan.RightToLeft = System.Windows.Forms.RightToLeft.No;

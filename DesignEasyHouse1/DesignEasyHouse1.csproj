@@ -448,9 +448,7 @@
   <ItemGroup>
     <None Include="Images\menu-32.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UC\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Images\Close.png" />
   </ItemGroup>

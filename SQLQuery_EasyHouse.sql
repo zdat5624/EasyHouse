@@ -43,18 +43,35 @@ CREATE TABLE LichSuCapNhatCuDan (
 );
 GO
 
--- Bảng hợp đồng thuê căn hộ
-CREATE TABLE HopDongThue (
-    HopDongID INT IDENTITY PRIMARY KEY,
-    CuDanID INT,
-	NoiDungDieuKhoan NVARCHAR(MAX),
-	TienThueMoiThang FLOAT,
-	SoTienCoc FLOAT,
-	NgayBatDau DATE,
-    NgayHetHan DATE,
-);
+
+CREATE TABLE CanHo (
+    MaCanHo NVARCHAR(50) PRIMARY KEY,    -- Mã căn hộ
+    ViTri NVARCHAR(255) NOT NULL,    -- Địa chỉ căn hộ
+    DienTich FLOAT,                   -- Diện tích căn hộ
+    SoPhongNgu INT,                   -- Số phòng ngủ
+    SoPhongTam INT,                   -- Số phòng tắm
+    TrangThai NVARCHAR(50) DEFAULT N'Trống'            -- Trạng thái căn hộ (Trống, Đang thuê, ...)
+)
 GO
 
+CREATE TABLE HopDongThue (
+    HopDongID INT IDENTITY PRIMARY KEY,
+    CanHoID INT NOT NULL,             -- Khóa ngoại tới bảng CanHo
+    NgayBatDau DATE NOT NULL,         -- Ngày bắt đầu hợp đồng
+    NgayKetThuc DATE,                 -- Ngày kết thúc hợp đồng
+    TienThue FLOAT,                   -- Số tiền thuê
+    DieuKhoan NVARCHAR(MAX),          -- Điều khoản hợp đồng
+	NgayKetThucSom DATE,
+)
+GO
+
+CREATE TABLE ThueCanHo (
+    ThueCanHoID INT IDENTITY PRIMARY KEY,
+    CuDanID INT NOT NULL,             -- Khóa ngoại tới bảng CuDan
+    HopDongID INT NOT NULL,           -- Khóa ngoại tới bảng HopDongThue
+    VaiTro NVARCHAR(50),              -- Vai trò của cư dân (Người thuê, Người ở ghép,...)
+)
+GO
 
 -- Bảng quản lý thông báo
 CREATE TABLE ThongBao (
@@ -137,6 +154,13 @@ VALUES
 
 GO
 
+INSERT INTO CanHo (MaCanHo, ViTri, DienTich, SoPhongNgu, SoPhongTam, TrangThai)
+VALUES 
+('CH101', 'Tòa nhà A', 85.5, 2, 2, N'Trống'),
+('CH102', 'Tòa nhà B', 90.0, 3, 2, N'Trống'),
+('CH103', 'Tòa nhà C', 75.0, 2, 1, N'Trống'),
+('CH104', 'Tòa nhà D', 60.0, 1, 1, N'Trống'),
+('CH105', 'Tòa nhà E', 120.0, 4, 3, N'Trống');
 
 
-select * from LichSuCapNhatCuDan
+select * from CanHo
