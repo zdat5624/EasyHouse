@@ -77,7 +77,7 @@
             this.txtYeuCauID.Location = new System.Drawing.Point(51, 121);
             this.txtYeuCauID.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtYeuCauID.Name = "txtYeuCauID";
-            this.txtYeuCauID.Size = new System.Drawing.Size(491, 25);
+            this.txtYeuCauID.Size = new System.Drawing.Size(491, 31);
             this.txtYeuCauID.TabIndex = 6;
             // 
             // label2
@@ -86,7 +86,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(47, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 19);
+            this.label2.Size = new System.Drawing.Size(94, 23);
             this.label2.TabIndex = 7;
             this.label2.Text = "ID Yêu Cầu";
             // 
@@ -98,7 +98,7 @@
             this.txtNguoiPhanHoiID.Location = new System.Drawing.Point(51, 206);
             this.txtNguoiPhanHoiID.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtNguoiPhanHoiID.Name = "txtNguoiPhanHoiID";
-            this.txtNguoiPhanHoiID.Size = new System.Drawing.Size(491, 25);
+            this.txtNguoiPhanHoiID.Size = new System.Drawing.Size(491, 31);
             this.txtNguoiPhanHoiID.TabIndex = 4;
             // 
             // label1
@@ -107,7 +107,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(47, 177);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 19);
+            this.label1.Size = new System.Drawing.Size(154, 23);
             this.label1.TabIndex = 5;
             this.label1.Text = "ID Người Phản Hồi";
             // 
@@ -129,7 +129,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(47, 275);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 19);
+            this.label3.Size = new System.Drawing.Size(84, 23);
             this.label3.TabIndex = 37;
             this.label3.Text = "Nội Dung";
             // 
@@ -139,7 +139,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(468, 2);
@@ -159,7 +159,7 @@
             this.button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button30.FlatAppearance.BorderSize = 0;
             this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button30.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.button30.ForeColor = System.Drawing.Color.White;
             this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button30.Location = new System.Drawing.Point(342, 2);
@@ -168,7 +168,7 @@
             this.button30.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button30.Size = new System.Drawing.Size(120, 40);
             this.button30.TabIndex = 31;
-            this.button30.Text = "Gửi Phản Hồi";
+            this.button30.Text = "Gửi";
             this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button30.UseVisualStyleBackColor = false;
             this.button30.Click += new System.EventHandler(this.btnGuiPhanHoi_Click);
@@ -185,7 +185,7 @@
             // 
             // formPhanHoiYeuCau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 689);
             this.Controls.Add(this.panel2);

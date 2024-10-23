@@ -158,6 +158,7 @@
             this.btnHopDongThue.Text = "Hợp đồng thuê";
             this.btnHopDongThue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHopDongThue.UseVisualStyleBackColor = false;
+            this.btnHopDongThue.Click += new System.EventHandler(this.btnHopDongThue_Click);
             // 
             // btnThongTinCuDan
             // 
@@ -239,7 +240,7 @@
             this.button29.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button29.ForeColor = System.Drawing.Color.Silver;
             this.button29.Location = new System.Drawing.Point(0, 6);
-            this.button29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button29.Margin = new System.Windows.Forms.Padding(4);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(269, 33);
             this.button29.TabIndex = 1;
@@ -254,7 +255,7 @@
             this.button28.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button28.ForeColor = System.Drawing.Color.Silver;
             this.button28.Location = new System.Drawing.Point(0, 39);
-            this.button28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button28.Margin = new System.Windows.Forms.Padding(4);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(269, 34);
             this.button28.TabIndex = 0;

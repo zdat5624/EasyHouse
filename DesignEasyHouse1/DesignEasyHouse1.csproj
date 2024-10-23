@@ -47,11 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ChiTietHopDongTheCanHoDAO.cs" />
     <Compile Include="DAO\CuDanDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\LichSuCapNhatCuDanDAO.cs" />
     <Compile Include="DAO\PhanHoiDAO.cs" />
     <Compile Include="DAO\YeuCauDAO.cs" />
+    <Compile Include="DTO\CanHo.cs" />
+    <Compile Include="DTO\ChiTietHopDongThueCanHo.cs" />
     <Compile Include="DTO\CuDan.cs" />
     <Compile Include="DTO\LichSuCapNhatCuDan.cs" />
     <Compile Include="DTO\PhanHoi.cs" />

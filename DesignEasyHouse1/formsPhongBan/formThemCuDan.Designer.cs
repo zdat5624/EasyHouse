@@ -98,7 +98,7 @@
             this.btnThemCuDan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnThemCuDan.FlatAppearance.BorderSize = 0;
             this.btnThemCuDan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemCuDan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemCuDan.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnThemCuDan.ForeColor = System.Drawing.Color.White;
             this.btnThemCuDan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemCuDan.Location = new System.Drawing.Point(669, 2);
@@ -119,7 +119,7 @@
             this.btnHuyBo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnHuyBo.FlatAppearance.BorderSize = 0;
             this.btnHuyBo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnHuyBo.ForeColor = System.Drawing.Color.White;
             this.btnHuyBo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHuyBo.Location = new System.Drawing.Point(795, 2);

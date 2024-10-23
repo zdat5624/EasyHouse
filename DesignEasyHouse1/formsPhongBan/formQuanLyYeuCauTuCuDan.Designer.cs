@@ -212,14 +212,14 @@
             this.btnGuiYeuCau.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnGuiYeuCau.FlatAppearance.BorderSize = 0;
             this.btnGuiYeuCau.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuiYeuCau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuiYeuCau.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnGuiYeuCau.ForeColor = System.Drawing.Color.White;
             this.btnGuiYeuCau.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuiYeuCau.Location = new System.Drawing.Point(0, 19);
             this.btnGuiYeuCau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuiYeuCau.Name = "btnGuiYeuCau";
             this.btnGuiYeuCau.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnGuiYeuCau.Size = new System.Drawing.Size(177, 50);
+            this.btnGuiYeuCau.Size = new System.Drawing.Size(120, 40);
             this.btnGuiYeuCau.TabIndex = 31;
             this.btnGuiYeuCau.Text = "Gửi Phản Hồi";
             this.btnGuiYeuCau.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

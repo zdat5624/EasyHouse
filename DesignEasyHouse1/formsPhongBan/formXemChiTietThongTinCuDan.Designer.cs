@@ -109,7 +109,7 @@ namespace DesignEasyHouse1.formsPhongBan
             this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLuu.FlatAppearance.BorderSize = 0;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLuu.Location = new System.Drawing.Point(1012, 5);
@@ -130,7 +130,7 @@ namespace DesignEasyHouse1.formsPhongBan
             this.btnHuyBo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnHuyBo.FlatAppearance.BorderSize = 0;
             this.btnHuyBo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnHuyBo.ForeColor = System.Drawing.Color.White;
             this.btnHuyBo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHuyBo.Location = new System.Drawing.Point(1138, 5);
@@ -162,14 +162,14 @@ namespace DesignEasyHouse1.formsPhongBan
             this.btnLichSuCapNhat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLichSuCapNhat.FlatAppearance.BorderSize = 0;
             this.btnLichSuCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLichSuCapNhat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLichSuCapNhat.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnLichSuCapNhat.ForeColor = System.Drawing.Color.White;
             this.btnLichSuCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLichSuCapNhat.Location = new System.Drawing.Point(31, 5);
             this.btnLichSuCapNhat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLichSuCapNhat.Name = "btnLichSuCapNhat";
             this.btnLichSuCapNhat.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnLichSuCapNhat.Size = new System.Drawing.Size(179, 40);
+            this.btnLichSuCapNhat.Size = new System.Drawing.Size(160, 40);
             this.btnLichSuCapNhat.TabIndex = 34;
             this.btnLichSuCapNhat.Text = "Lịch sử cập nhật";
             this.btnLichSuCapNhat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -182,7 +182,7 @@ namespace DesignEasyHouse1.formsPhongBan
             this.btnCapNhat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnCapNhat.FlatAppearance.BorderSize = 0;
             this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapNhat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhat.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnCapNhat.ForeColor = System.Drawing.Color.White;
             this.btnCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCapNhat.Location = new System.Drawing.Point(886, 5);
@@ -514,6 +514,7 @@ namespace DesignEasyHouse1.formsPhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1282, 753);
             this.Controls.Add(this.gbThongTinCaNhan);
             this.Controls.Add(this.gbThongTinKhac);
