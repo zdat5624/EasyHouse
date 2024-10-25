@@ -216,6 +216,53 @@ INSERT INTO ThueCanHo (CuDanID, HopDongID, VaiTro) VALUES
 (15, 15, N'Người thuê chính'); -- Giả sử CuDanID 15 là cư dân thứ mười lăm
 
 
+
+
+
+--Bảng thuộc module vệ sinh 
+
+--bảng doanh thu 
+CREATE TABLE DoanhThu (
+    DoanhThuId INT PRIMARY KEY,        -- Khóa chính
+    YeuCauID INT,                      -- Khóa ngoại tham chiếu đến bảng Yêu Cầu
+    loaiDv NVARCHAR(100),               -- Loại dịch vụ
+    SoTien DECIMAL(15, 2),             -- Số tiền doanh thu
+    thoiGian DATETIME,                 -- Thời gian phát sinh doanh thu
+    --CONSTRAINT FK_YeuCau FOREIGN KEY (YeuCauID) REFERENCES YeuCau(YeuCauID)  -- Khóa ngoại tham chiếu đến bảng YeuCau
+);
+GO 
+
+
+
+--Thêm dữ liệu mẫu vào bảng doanh thu 
+INSERT INTO DoanhThu (DoanhThuId, YeuCauID, loaiDv, SoTien, thoiGian)
+VALUES 
+(1, 101, N'Dịch vụ vệ sinh', 500000, '2024-10-01'),
+(2, 102, N'Thi công sửa chữa', 1200000, '2024-10-02'),
+(3, 103, N'Gửi xe', 2500000, '2024-10-03 11:00:00'),
+(4, 104, N'Dịch vụ vệ sinh', 500000, '2024-10-03');
+
+
+drop table DoanhThu 
+
+--Bảng Chi phí 
+
+CREATE TABLE ChiPhi (
+    ChiPhiId INT PRIMARY KEY IDENTITY(1,1),
+    TenVatTu NVARCHAR(100) NOT NULL,
+    PhanLoai NVARCHAR(50),
+    ChiPhiDuKien DECIMAL(18, 2),
+    ChiPhiThucTe DECIMAL(18, 2),
+    Mota NVARCHAR(255),
+    ThoiGian DATETIME
+);
+
+INSERT INTO ChiPhi VALUES
+	(N'Xi măng', N'Vật liệu xây dựng', 500000, 520000, N'Xi măng dùng cho móng nhà', '2024-01-15'),
+    (N'Gạch đỏ', N'Vật liệu xây dựng', 300000, 290000, N'Gạch xây tường', '2024-02-10'),
+    (N'Sắt thép', N'Vật liệu xây dựng', 800000, 850000, N'Sắt thép cho khung nhà', '2024-03-05'),
+	(N'Chổi nhà vệ sinh', N'vật tư vệ sinh', 800000, 850000, N'Chổi cho nhà vệ sinh', '2024-03-05');
+
 SELECT * FROM HopDongThue
 
 SELECT * FROM ThueCanHo
