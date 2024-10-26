@@ -188,7 +188,6 @@
             this.panelDuoi.Name = "panelDuoi";
             this.panelDuoi.Size = new System.Drawing.Size(1300, 80);
             this.panelDuoi.TabIndex = 42;
-            this.panelDuoi.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDuoi_Paint);
             // 
             // btnThemCuDan
             // 

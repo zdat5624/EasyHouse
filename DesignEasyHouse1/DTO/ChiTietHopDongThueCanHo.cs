@@ -14,7 +14,7 @@ namespace DesignEasyHouse1.DTO
         private int hopDongID;
         private string maCanHo;
         private DateTime ngayBatDau;
-        private DateTime? ngayKetThuc;
+        private DateTime ngayKetThuc;
         private double tienThue;
         private string dieuKhoan;
         private DateTime? ngayKetThucSom;
@@ -24,7 +24,7 @@ namespace DesignEasyHouse1.DTO
         public int HopDongID { get => hopDongID; set => hopDongID = value; }
         public string MaCanHo { get => maCanHo; set => maCanHo = value; }
         public DateTime NgayBatDau { get => ngayBatDau; set => ngayBatDau = value; }
-        public DateTime? NgayKetThuc { get => ngayKetThuc; set => ngayKetThuc = value; }
+        public DateTime NgayKetThuc { get => ngayKetThuc; set => ngayKetThuc = value; }
         public double TienThue { get => tienThue; set => tienThue = value; }
         public string DieuKhoan { get => dieuKhoan; set => dieuKhoan = value; }
         public DateTime? NgayKetThucSom { get => ngayKetThucSom; set => ngayKetThucSom = value; }
@@ -36,7 +36,7 @@ namespace DesignEasyHouse1.DTO
             DanhSachThueCanHo = new List<ThueCanHo>();
         }
 
-        public ChiTietHopDongThueCanHo(int hopDongID, string maCanHo, DateTime ngayBatDau, DateTime? ngayKetThuc, float tienThue,
+        public ChiTietHopDongThueCanHo(int hopDongID, string maCanHo, DateTime ngayBatDau, DateTime ngayKetThuc, float tienThue,
             string dieuKhoan, DateTime? ngayKetThucSom, string trangThai)
         {
             HopDongID = hopDongID;

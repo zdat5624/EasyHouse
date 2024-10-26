@@ -78,7 +78,7 @@ namespace DesignEasyHouse1
 
         private void btnHopDongThue_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new formsPhongBan.formQuanLyHopDongThueCanHo());
+            OpenChildForm(new formsPhongBan.PhongCuDan.formQuanLyHopDongThueCanHo());
         }
     }
 }

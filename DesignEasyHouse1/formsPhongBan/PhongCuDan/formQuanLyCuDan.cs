@@ -105,10 +105,5 @@ namespace DesignEasyHouse1.formsPhongBan
         }
 
         #endregion
-
-        private void panelDuoi_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
