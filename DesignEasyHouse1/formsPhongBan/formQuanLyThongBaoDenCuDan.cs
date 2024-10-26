@@ -16,5 +16,10 @@ namespace DesignEasyHouse1.formsPhongBan
         {
             InitializeComponent();
         }
+
+        private void formQuanLyThongBaoDenCuDan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

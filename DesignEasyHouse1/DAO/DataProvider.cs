@@ -25,7 +25,7 @@ namespace DesignEasyHouse1.DAO
 
         private DataProvider() { }
 
-        private string connectionSTR = @"Data Source=.\SQLEXPRESS;Initial Catalog=EasyHouseDB;Integrated Security=True;Encrypt=False";
+        private string connectionSTR = @"Data Source=DESKTOP-ND1DPEF\SQLEXPRESS;Initial Catalog=EasyHouseDB;Integrated Security=True;Encrypt=False";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
@@ -43,6 +43,7 @@ namespace DesignEasyHouse1.DAO
                     int i = 0;
                     foreach (string item in listPara)
                     {
+                        Console.WriteLine(item);
                         if (item.Contains('@'))
                         {
                             command.Parameters.AddWithValue(item, parameter[i]);

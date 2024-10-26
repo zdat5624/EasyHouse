@@ -36,7 +36,6 @@
             this.btnChonThoiGian = new System.Windows.Forms.Button();
             this.dtpChonThoiGian = new System.Windows.Forms.DateTimePicker();
             this.lblTongChiPhi = new System.Windows.Forms.Label();
-            this.btnTroLai = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.materials = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +44,7 @@
             this.realCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblChiPhi = new System.Windows.Forms.Button();
+            this.Describe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbChonthoiGian.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -56,7 +56,7 @@
             this.grbChonthoiGian.Controls.Add(this.dateTimePicker1);
             this.grbChonthoiGian.Controls.Add(this.btnChonThoiGian);
             this.grbChonthoiGian.Controls.Add(this.dtpChonThoiGian);
-            this.grbChonthoiGian.Location = new System.Drawing.Point(138, 106);
+            this.grbChonthoiGian.Location = new System.Drawing.Point(101, 102);
             this.grbChonthoiGian.Name = "grbChonthoiGian";
             this.grbChonthoiGian.Size = new System.Drawing.Size(915, 74);
             this.grbChonthoiGian.TabIndex = 24;
@@ -103,21 +103,9 @@
             this.lblTongChiPhi.ForeColor = System.Drawing.Color.Red;
             this.lblTongChiPhi.Location = new System.Drawing.Point(26, 483);
             this.lblTongChiPhi.Name = "lblTongChiPhi";
-            this.lblTongChiPhi.Size = new System.Drawing.Size(100, 16);
+            this.lblTongChiPhi.Size = new System.Drawing.Size(80, 16);
             this.lblTongChiPhi.TabIndex = 23;
-            this.lblTongChiPhi.Text = "Tổng doanh thu";
-            // 
-            // btnTroLai
-            // 
-            this.btnTroLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnTroLai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTroLai.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTroLai.Location = new System.Drawing.Point(29, 77);
-            this.btnTroLai.Name = "btnTroLai";
-            this.btnTroLai.Size = new System.Drawing.Size(75, 33);
-            this.btnTroLai.TabIndex = 22;
-            this.btnTroLai.Text = "Trở lại";
-            this.btnTroLai.UseVisualStyleBackColor = false;
+            this.lblTongChiPhi.Text = "Tổng chi phí";
             // 
             // dataGridView2
             // 
@@ -141,7 +129,8 @@
             this.materials,
             this.classification,
             this.expectedCost,
-            this.realCost});
+            this.realCost,
+            this.Describe});
             this.dataGridView2.EnableHeadersVisualStyles = false;
             this.dataGridView2.Location = new System.Drawing.Point(29, 204);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -217,14 +206,19 @@
             this.lblChiPhi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblChiPhi.UseVisualStyleBackColor = true;
             // 
+            // Describe
+            // 
+            this.Describe.HeaderText = "Mô tả";
+            this.Describe.MinimumWidth = 6;
+            this.Describe.Name = "Describe";
+            // 
             // formBaoCaoChiPhi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 514);
+            this.ClientSize = new System.Drawing.Size(1067, 580);
             this.Controls.Add(this.grbChonthoiGian);
             this.Controls.Add(this.lblTongChiPhi);
-            this.Controls.Add(this.btnTroLai);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.panel1);
             this.Name = "formBaoCaoChiPhi";
@@ -246,7 +240,6 @@
         private System.Windows.Forms.Button btnChonThoiGian;
         private System.Windows.Forms.DateTimePicker dtpChonThoiGian;
         private System.Windows.Forms.Label lblTongChiPhi;
-        private System.Windows.Forms.Button btnTroLai;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button lblChiPhi;
@@ -255,5 +248,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn classification;
         private System.Windows.Forms.DataGridViewTextBoxColumn expectedCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn realCost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Describe;
     }
 }
