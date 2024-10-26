@@ -266,3 +266,5 @@ INSERT INTO ChiPhi VALUES
 SELECT * FROM HopDongThue
 
 SELECT * FROM ThueCanHo
+
+SELECT ThueCanHo.*, CuDan.HoTen FROM ThueCanHo, CuDan WHERE ThueCanHo.CuDanID = CuDan.CuDanID

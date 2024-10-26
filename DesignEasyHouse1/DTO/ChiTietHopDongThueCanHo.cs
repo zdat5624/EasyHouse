@@ -1,7 +1,9 @@
-﻿using System;
+﻿using DesignEasyHouse1.DAO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -66,6 +68,26 @@ namespace DesignEasyHouse1.DTO
             this.DanhSachThueCanHo.Add(tch);
         }
 
+        public string ToStringNguoiThue()
+        {
+            string str = null;
+            bool flag = false;
+            foreach (ThueCanHo tch in danhSachThueCanHo) 
+            {
+                if (!flag)
+                {
+                    str = tch.ToString();
+                }
+                else 
+                {
+                    str += ", " + tch.ToSring();
+
+                }
+            }
+
+            return str;
+        }
+
         //public ChiTietHopDongThueCanHo(DataTable dataTable)
         //{
         //    DanhSachThueCanHo = new List<ThueCanHo>();
@@ -106,14 +128,17 @@ namespace DesignEasyHouse1.DTO
         public int HopDongID { get; set; }
         public string VaiTro { get; set; }
 
+        public string HoTen { get; set; }
+
         public ThueCanHo() { }
 
-        public ThueCanHo(int thueCanHoID, int cuDanID, int hopDongID, string vaiTro)
+        public ThueCanHo(int thueCanHoID, int cuDanID, int hopDongID, string vaiTro, string Hoten)
         {
             ThueCanHoID = thueCanHoID;
             CuDanID = cuDanID;
             HopDongID = hopDongID;
             VaiTro = vaiTro;
+            HoTen = Hoten;
         }
         public ThueCanHo(DataRow row)
         {
@@ -121,6 +146,13 @@ namespace DesignEasyHouse1.DTO
             CuDanID = (int)row["CuDanID"];
             HopDongID = (int)row["HopDongID"];
             VaiTro = row["vaiTro"].ToString();
+            HoTen = row["HoTen"].ToString();
+
+        }
+
+        public string ToSring()
+        {
+            return  HoTen + " (" + CuDanID + ") " + VaiTro;
         }
     }
 }
