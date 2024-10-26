@@ -1,4 +1,5 @@
 ﻿using DesignEasyHouse1.DAO;
+using DesignEasyHouse1.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,16 +14,21 @@ namespace DesignEasyHouse1.formsPhongBan
 {
     public partial class formQuanLyHopDongThueCanHo : Form
     {
+        List<ChiTietHopDongThueCanHo> dsChiTietHopDong;
+
         public formQuanLyHopDongThueCanHo()
         {
             InitializeComponent();
-            loadDtgvHopDongThue();
+            dsChiTietHopDong = ChiTietHopDongThueCanHoDAO.Instance.GetDanhSachChiTietHopDongThueCanHo();
+            LoadDtgvHopDongThue(dsChiTietHopDong);
         }
 
         #region Methods
-        void loadDtgvHopDongThue()
+
+        void LoadDtgvHopDongThue(List<ChiTietHopDongThueCanHo> lst)
         {
-            dtgvHopDongThue.DataSource = ChiTietHopDongTheCanHoDAO.Instance.GetDanhSachChiTietHopDongThueCanHo();
+            dtgvHopDongThue.DataSource = lst;
+
             MyGUI.chuyenCotDenCuoiDTGV(dtgvHopDongThue, new List<string> { "Delete", "Details" });
 
             dtgvHopDongThue.Columns["HopDongID"].HeaderText = "ID Hợp Đồng";
@@ -32,6 +38,8 @@ namespace DesignEasyHouse1.formsPhongBan
             dtgvHopDongThue.Columns["TienThue"].HeaderText = "Tiền Thuê";
             dtgvHopDongThue.Columns["DieuKhoan"].HeaderText = "Điều khoản";
             dtgvHopDongThue.Columns["NgayKetThucSom"].HeaderText = "Ngày kết thúc sớm";
+            dtgvHopDongThue.Columns["TrangThai"].HeaderText = "Trạng thái";
+
         }
         #endregion
 

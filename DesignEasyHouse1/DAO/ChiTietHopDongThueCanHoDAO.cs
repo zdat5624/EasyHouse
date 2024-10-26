@@ -8,22 +8,22 @@ using System.Threading.Tasks;
 
 namespace DesignEasyHouse1.DAO
 {
-    public class ChiTietHopDongTheCanHoDAO
+    public class ChiTietHopDongThueCanHoDAO
     {
-        private static ChiTietHopDongTheCanHoDAO instance;
+        private static ChiTietHopDongThueCanHoDAO instance;
 
-        public static ChiTietHopDongTheCanHoDAO Instance
+        public static ChiTietHopDongThueCanHoDAO Instance
         {
             get
             {
                 if (instance == null)
-                    instance = new ChiTietHopDongTheCanHoDAO();
+                    instance = new ChiTietHopDongThueCanHoDAO();
                 return instance;
             }
             private set => instance = value;
         }
 
-        private ChiTietHopDongTheCanHoDAO() { }
+        private ChiTietHopDongThueCanHoDAO() { }
 
         public List<ChiTietHopDongThueCanHo> GetDanhSachChiTietHopDongThueCanHo()
         {
@@ -38,7 +38,7 @@ namespace DesignEasyHouse1.DAO
                 lst.Add(ct);
             }
 
-            string query2 = "SELECT * FROM ThueCanHo";
+            string query2 = "SELECT ThueCanHo.*, CuDan.HoTen FROM ThueCanHo, CuDan WHERE ThueCanHo.CuDanID = CuDan.CuDanID";
             DataTable data2 = DataProvider.Instance.ExecuteQuery(query2);
 
             foreach (DataRow row in data2.Rows)
