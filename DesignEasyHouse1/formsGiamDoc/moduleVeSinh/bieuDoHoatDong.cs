@@ -26,5 +26,20 @@ namespace DesignEasyHouse1.formsGiamDoc.moduleVeSinh
         {
 
         }
+
+        private void chartSoSanhCPVaDT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChonThoiGian_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

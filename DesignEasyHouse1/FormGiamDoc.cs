@@ -42,5 +42,10 @@ namespace DesignEasyHouse1
         {
             OpenChildForm(new formsGiamDoc.moduleVeSinh.tableDoanhThu());
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsGiamDoc.moduleVeSinh.formBaoCaoChiPhi());
+        }
     }
 }

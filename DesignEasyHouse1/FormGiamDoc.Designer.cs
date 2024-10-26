@@ -920,6 +920,7 @@
             this.button9.Text = "Chi phí vệ sinh";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 

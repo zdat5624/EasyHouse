@@ -51,11 +51,12 @@
     <Compile Include="DAO\CuDanDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\LichSuCapNhatCuDanDAO.cs" />
-    <Compile Include="DAO\ChiPhiDAO.cs" />
+    <Compile Include="DAO\ChiPhiVeSinhDAO.cs" />
     <Compile Include="DAO\DoanhThuDAO.cs" />
     <Compile Include="DAO\PhanHoiDAO.cs" />
     <Compile Include="DAO\YeuCauDAO.cs" />
     <Compile Include="DTO\CanHo.cs" />
+    <Compile Include="DTO\ChiPhi.cs" />
     <Compile Include="DTO\ChiTietHopDongThueCanHo.cs" />
     <Compile Include="DTO\CuDan.cs" />
     <Compile Include="DTO\DoanhThu.cs" />
