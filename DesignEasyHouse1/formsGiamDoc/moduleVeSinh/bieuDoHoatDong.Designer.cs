@@ -36,32 +36,29 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartChiPhi = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartSoSanhCPVaDT = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.grbChonthoiGian = new System.Windows.Forms.GroupBox();
-            this.lblChonThoiGian = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btnChonThoiGian = new System.Windows.Forms.Button();
-            this.dtpChonThoiGian = new System.Windows.Forms.DateTimePicker();
-            this.btnTroLai = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblDoanhThu = new System.Windows.Forms.Button();
             this.lblDanhGiaQuaChiPhi = new System.Windows.Forms.Label();
-            this.txtDanhGia = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            ((System.ComponentModel.ISupportInitialize)(this.chartChiPhi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSoSanhCPVaDT)).BeginInit();
             this.grbChonthoiGian.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // chart1
+            // chartChiPhi
             // 
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            this.chartChiPhi.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(159, 204);
-            this.chart1.Name = "chart1";
+            this.chartChiPhi.Legends.Add(legend1);
+            this.chartChiPhi.Location = new System.Drawing.Point(123, 208);
+            this.chartChiPhi.Name = "chartChiPhi";
             series1.BorderColor = System.Drawing.Color.White;
             series1.ChartArea = "ChartArea1";
             series1.Color = System.Drawing.Color.Yellow;
@@ -71,21 +68,21 @@
             series2.Color = System.Drawing.Color.Red;
             series2.Legend = "Legend1";
             series2.Name = "Chi phí thực tế";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(370, 220);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
-            this.chart1.Click += new System.EventHandler(this.chart1_Click);
+            this.chartChiPhi.Series.Add(series1);
+            this.chartChiPhi.Series.Add(series2);
+            this.chartChiPhi.Size = new System.Drawing.Size(418, 263);
+            this.chartChiPhi.TabIndex = 0;
+            this.chartChiPhi.Text = "chart1";
+            this.chartChiPhi.Click += new System.EventHandler(this.chart1_Click);
             // 
-            // chart2
+            // chartSoSanhCPVaDT
             // 
             chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
+            this.chartSoSanhCPVaDT.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(568, 204);
-            this.chart2.Name = "chart2";
+            this.chartSoSanhCPVaDT.Legends.Add(legend2);
+            this.chartSoSanhCPVaDT.Location = new System.Drawing.Point(123, 208);
+            this.chartSoSanhCPVaDT.Name = "chartSoSanhCPVaDT";
             series3.ChartArea = "ChartArea1";
             series3.Color = System.Drawing.Color.Red;
             series3.Legend = "Legend1";
@@ -94,70 +91,35 @@
             series4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             series4.Legend = "Legend1";
             series4.Name = "Doanh thu";
-            this.chart2.Series.Add(series3);
-            this.chart2.Series.Add(series4);
-            this.chart2.Size = new System.Drawing.Size(370, 220);
-            this.chart2.TabIndex = 1;
-            this.chart2.Text = "chart2";
+            this.chartSoSanhCPVaDT.Series.Add(series3);
+            this.chartSoSanhCPVaDT.Series.Add(series4);
+            this.chartSoSanhCPVaDT.Size = new System.Drawing.Size(418, 263);
+            this.chartSoSanhCPVaDT.TabIndex = 1;
+            this.chartSoSanhCPVaDT.Text = "chart2";
+            this.chartSoSanhCPVaDT.Click += new System.EventHandler(this.chartSoSanhCPVaDT_Click);
             // 
             // grbChonthoiGian
             // 
-            this.grbChonthoiGian.Controls.Add(this.lblChonThoiGian);
-            this.grbChonthoiGian.Controls.Add(this.dateTimePicker1);
+            this.grbChonthoiGian.Controls.Add(this.listBox1);
             this.grbChonthoiGian.Controls.Add(this.btnChonThoiGian);
-            this.grbChonthoiGian.Controls.Add(this.dtpChonThoiGian);
-            this.grbChonthoiGian.Location = new System.Drawing.Point(137, 107);
+            this.grbChonthoiGian.Location = new System.Drawing.Point(293, 103);
             this.grbChonthoiGian.Name = "grbChonthoiGian";
-            this.grbChonthoiGian.Size = new System.Drawing.Size(915, 74);
+            this.grbChonthoiGian.Size = new System.Drawing.Size(514, 74);
             this.grbChonthoiGian.TabIndex = 22;
             this.grbChonthoiGian.TabStop = false;
             this.grbChonthoiGian.Text = "Hãy chọn mốc thời gian bạn muốn xem";
-            // 
-            // lblChonThoiGian
-            // 
-            this.lblChonThoiGian.AutoSize = true;
-            this.lblChonThoiGian.Location = new System.Drawing.Point(361, 37);
-            this.lblChonThoiGian.Name = "lblChonThoiGian";
-            this.lblChonThoiGian.Size = new System.Drawing.Size(31, 16);
-            this.lblChonThoiGian.TabIndex = 5;
-            this.lblChonThoiGian.Text = "Đến";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(433, 35);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(315, 22);
-            this.dateTimePicker1.TabIndex = 4;
             // 
             // btnChonThoiGian
             // 
             this.btnChonThoiGian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.btnChonThoiGian.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnChonThoiGian.Location = new System.Drawing.Point(769, 28);
+            this.btnChonThoiGian.Location = new System.Drawing.Point(420, 25);
             this.btnChonThoiGian.Name = "btnChonThoiGian";
-            this.btnChonThoiGian.Size = new System.Drawing.Size(82, 34);
+            this.btnChonThoiGian.Size = new System.Drawing.Size(82, 40);
             this.btnChonThoiGian.TabIndex = 3;
             this.btnChonThoiGian.Text = "xem";
             this.btnChonThoiGian.UseVisualStyleBackColor = false;
-            // 
-            // dtpChonThoiGian
-            // 
-            this.dtpChonThoiGian.Location = new System.Drawing.Point(6, 35);
-            this.dtpChonThoiGian.Name = "dtpChonThoiGian";
-            this.dtpChonThoiGian.Size = new System.Drawing.Size(315, 22);
-            this.dtpChonThoiGian.TabIndex = 2;
-            // 
-            // btnTroLai
-            // 
-            this.btnTroLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnTroLai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTroLai.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTroLai.Location = new System.Drawing.Point(28, 78);
-            this.btnTroLai.Name = "btnTroLai";
-            this.btnTroLai.Size = new System.Drawing.Size(75, 33);
-            this.btnTroLai.TabIndex = 21;
-            this.btnTroLai.Text = "Trở lại";
-            this.btnTroLai.UseVisualStyleBackColor = false;
+            this.btnChonThoiGian.Click += new System.EventHandler(this.btnChonThoiGian_Click);
             // 
             // panel1
             // 
@@ -187,39 +149,53 @@
             // lblDanhGiaQuaChiPhi
             // 
             this.lblDanhGiaQuaChiPhi.AutoSize = true;
-            this.lblDanhGiaQuaChiPhi.Location = new System.Drawing.Point(156, 448);
+            this.lblDanhGiaQuaChiPhi.Location = new System.Drawing.Point(567, 208);
             this.lblDanhGiaQuaChiPhi.Name = "lblDanhGiaQuaChiPhi";
-            this.lblDanhGiaQuaChiPhi.Size = new System.Drawing.Size(114, 16);
+            this.lblDanhGiaQuaChiPhi.Size = new System.Drawing.Size(181, 16);
             this.lblDanhGiaQuaChiPhi.TabIndex = 23;
-            this.lblDanhGiaQuaChiPhi.Text = "Đánh giá hiệu quả";
+            this.lblDanhGiaQuaChiPhi.Text = "Đánh giá hiệu quả từ hệ thống";
             this.lblDanhGiaQuaChiPhi.Click += new System.EventHandler(this.lblDanhGiaQuaChiPhi_Click);
             // 
-            // txtDanhGia
+            // richTextBox1
             // 
-            this.txtDanhGia.Location = new System.Drawing.Point(276, 448);
-            this.txtDanhGia.Name = "txtDanhGia";
-            this.txtDanhGia.Size = new System.Drawing.Size(662, 22);
-            this.txtDanhGia.TabIndex = 24;
-            this.txtDanhGia.Text = "Hệ thống sẽ thực hiện và cho đánh giá ở đây";
+            this.richTextBox1.Location = new System.Drawing.Point(570, 244);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(462, 213);
+            this.richTextBox1.TabIndex = 25;
+            this.richTextBox1.Text = "";
+            // 
+            // listBox1
+            // 
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 25;
+            this.listBox1.Items.AddRange(new object[] {
+            "1 tuần ",
+            "1 tháng ",
+            "6 tháng ",
+            "1 năm "});
+            this.listBox1.Location = new System.Drawing.Point(144, 32);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(259, 29);
+            this.listBox1.TabIndex = 4;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // bieuDoHoatDong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1065, 534);
-            this.Controls.Add(this.txtDanhGia);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.lblDanhGiaQuaChiPhi);
             this.Controls.Add(this.grbChonthoiGian);
-            this.Controls.Add(this.btnTroLai);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.chart2);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.chartSoSanhCPVaDT);
+            this.Controls.Add(this.chartChiPhi);
             this.Name = "bieuDoHoatDong";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartChiPhi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSoSanhCPVaDT)).EndInit();
             this.grbChonthoiGian.ResumeLayout(false);
-            this.grbChonthoiGian.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -228,17 +204,14 @@
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartChiPhi;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSoSanhCPVaDT;
         private System.Windows.Forms.GroupBox grbChonthoiGian;
-        private System.Windows.Forms.Label lblChonThoiGian;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button btnChonThoiGian;
-        private System.Windows.Forms.DateTimePicker dtpChonThoiGian;
-        private System.Windows.Forms.Button btnTroLai;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button lblDoanhThu;
         private System.Windows.Forms.Label lblDanhGiaQuaChiPhi;
-        private System.Windows.Forms.TextBox txtDanhGia;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
