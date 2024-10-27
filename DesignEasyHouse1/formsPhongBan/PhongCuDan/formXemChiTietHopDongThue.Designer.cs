@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnKetThucHopDong = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.btnHuyBo = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
@@ -56,10 +57,9 @@
             this.lbCCCD = new System.Windows.Forms.Label();
             this.txtDieuKhoan = new System.Windows.Forms.TextBox();
             this.lbEmail = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tbTrangThai = new System.Windows.Forms.TextBox();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.panelTieuDe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCuDanThue)).BeginInit();
@@ -68,6 +68,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnKetThucHopDong);
             this.panel1.Controls.Add(this.btnCapNhat);
             this.panel1.Controls.Add(this.btnHuyBo);
             this.panel1.Controls.Add(this.btnLuu);
@@ -76,6 +77,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1015, 50);
             this.panel1.TabIndex = 70;
+            // 
+            // btnKetThucHopDong
+            // 
+            this.btnKetThucHopDong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnKetThucHopDong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.btnKetThucHopDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnKetThucHopDong.FlatAppearance.BorderSize = 0;
+            this.btnKetThucHopDong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKetThucHopDong.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnKetThucHopDong.ForeColor = System.Drawing.Color.White;
+            this.btnKetThucHopDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKetThucHopDong.Location = new System.Drawing.Point(45, 2);
+            this.btnKetThucHopDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnKetThucHopDong.Name = "btnKetThucHopDong";
+            this.btnKetThucHopDong.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnKetThucHopDong.Size = new System.Drawing.Size(170, 40);
+            this.btnKetThucHopDong.TabIndex = 34;
+            this.btnKetThucHopDong.Text = "Kết thúc hợp đồng";
+            this.btnKetThucHopDong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnKetThucHopDong.UseVisualStyleBackColor = false;
+            this.btnKetThucHopDong.Click += new System.EventHandler(this.btnKetThucHopDong_Click);
             // 
             // btnCapNhat
             // 
@@ -286,36 +308,38 @@
             this.dtgvCuDanThue.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dtgvCuDanThue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvCuDanThue.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvCuDanThue.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvCuDanThue.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvCuDanThue.ColumnHeadersHeight = 30;
             this.dtgvCuDanThue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgvCuDanThue.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Delete});
+            this.dtgvCuDanThue.Enabled = false;
             this.dtgvCuDanThue.EnableHeadersVisualStyles = false;
-            this.dtgvCuDanThue.Location = new System.Drawing.Point(45, 381);
+            this.dtgvCuDanThue.Location = new System.Drawing.Point(45, 337);
             this.dtgvCuDanThue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgvCuDanThue.Name = "dtgvCuDanThue";
             this.dtgvCuDanThue.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvCuDanThue.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvCuDanThue.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvCuDanThue.RowHeadersVisible = false;
             this.dtgvCuDanThue.RowHeadersWidth = 51;
             this.dtgvCuDanThue.RowTemplate.Height = 24;
-            this.dtgvCuDanThue.Size = new System.Drawing.Size(416, 133);
+            this.dtgvCuDanThue.Size = new System.Drawing.Size(416, 177);
             this.dtgvCuDanThue.TabIndex = 73;
+            this.dtgvCuDanThue.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvCuDanThue_CellContentClick);
             // 
             // Delete
             // 
@@ -334,7 +358,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 354);
+            this.label1.Location = new System.Drawing.Point(41, 310);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 23);
             this.label1.TabIndex = 72;
@@ -401,6 +425,7 @@
             this.btnThemCuDan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThemCuDan.UseVisualStyleBackColor = false;
             this.btnThemCuDan.Visible = false;
+            this.btnThemCuDan.Click += new System.EventHandler(this.btnThemCuDan_Click);
             // 
             // lbSoDienThoai
             // 
@@ -450,30 +475,11 @@
             this.lbEmail.TabIndex = 68;
             this.lbEmail.Text = "Ghi chú điều khoản";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(182, 276);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(283, 30);
-            this.dateTimePicker1.TabIndex = 84;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(41, 282);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 23);
-            this.label5.TabIndex = 83;
-            this.label5.Text = "Kết thúc sớm";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(41, 319);
+            this.label3.Location = new System.Drawing.Point(41, 277);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 23);
             this.label3.TabIndex = 85;
@@ -485,12 +491,23 @@
             this.tbTrangThai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.tbTrangThai.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbTrangThai.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.tbTrangThai.Location = new System.Drawing.Point(182, 319);
+            this.tbTrangThai.Location = new System.Drawing.Point(182, 273);
             this.tbTrangThai.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tbTrangThai.Name = "tbTrangThai";
             this.tbTrangThai.ReadOnly = true;
             this.tbTrangThai.Size = new System.Drawing.Size(283, 31);
             this.tbTrangThai.TabIndex = 86;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
+            this.dataGridViewImageColumn1.MinimumWidth = 6;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.Width = 125;
             // 
             // formXemChiTietHopDongThue
             // 
@@ -500,8 +517,6 @@
             this.ClientSize = new System.Drawing.Size(1015, 616);
             this.Controls.Add(this.tbTrangThai);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.tbHopDongID);
             this.Controls.Add(this.lbHopDongID);
             this.Controls.Add(this.panel1);
@@ -566,9 +581,9 @@
         private System.Windows.Forms.Label lbCCCD;
         private System.Windows.Forms.TextBox txtDieuKhoan;
         private System.Windows.Forms.Label lbEmail;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbTrangThai;
+        private System.Windows.Forms.Button btnKetThucHopDong;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
     }
 }

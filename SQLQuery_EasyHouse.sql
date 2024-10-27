@@ -59,7 +59,6 @@ CREATE TABLE HopDongThue (
     MaCanHo NVARCHAR(50),             -- Khóa ngoại tới bảng CanHo
     NgayBatDau DATE NOT NULL,         -- Ngày bắt đầu hợp đồng
     NgayKetThuc DATE,                 -- Ngày kết thúc hợp đồng
-	NgayKetThucSom DATE DEFAULT null,
     TienThue FLOAT,                   -- Số tiền thuê
     DieuKhoan NVARCHAR(MAX),          -- Điều khoản hợp đồng
 	TrangThai NVARCHAR(50) DEFAULT N'Hiệu lực' -- "Hiệu lực" - "Kết thúc"
@@ -174,6 +173,48 @@ BEGIN
 END
 GO
 
+CREATE PROCEDURE sp_UpdateNgayKetThuc
+    @HopDongID INT,
+    @NgayKetThuc DATE
+AS
+BEGIN
+    -- Cập nhật ngày kết thúc
+    UPDATE HopDongThue SET HopDongThue.NgayKetThuc = @NgayKetThuc WHERE HopDongThue.HopDongID = @HopDongID;
+
+    -- Cập nhật trạng thái hợp đồng nếu ngày kết thúc nhỏ hơn hoặc bằng ngày hiện tại
+    UPDATE HopDongThue
+    SET TrangThai = N'Kết thúc'
+    WHERE HopDongID = @HopDongID AND @NgayKetThuc <= GETDATE();
+END;
+GO
+
+CREATE PROCEDURE sp_CapNhatHopDongThue
+    @HopDongID INT,
+    @MaCanHo NVARCHAR(50),
+    @NgayBatDau DATE,
+    @NgayKetThuc DATE,
+    @TienThue FLOAT,
+    @DieuKhoan NVARCHAR(MAX)
+AS
+BEGIN
+    -- Cập nhật thông tin hợp đồng
+    UPDATE HopDongThue
+    SET MaCanHo = @MaCanHo,
+        NgayBatDau = @NgayBatDau,
+        NgayKetThuc = @NgayKetThuc,
+        TienThue = @TienThue,
+        DieuKhoan = @DieuKhoan,
+        TrangThai = CASE 
+            WHEN @NgayKetThuc <= GETDATE() THEN N'Kết thúc'
+            ELSE N'Hiệu lực'
+        END
+    WHERE HopDongID = @HopDongID;
+END;
+GO
+
+
+
+
 INSERT INTO YeuCau (CuDanID, LoaiYeuCauID, TieuDe, NoiDung)
 VALUES 
 (1, 101, N'Yêu cầu sửa chữa', N'Xin vui lòng sửa chữa hệ thống điện ở tầng 2.'),
@@ -272,10 +313,6 @@ INSERT INTO ChiPhi VALUES
     (N'Sắt thép', N'Vật liệu xây dựng', 800000, 850000, N'Sắt thép cho khung nhà', '2024-03-05'),
 	(N'Chổi nhà vệ sinh', N'vật tư vệ sinh', 800000, 850000, N'Chổi cho nhà vệ sinh', '2024-03-05');
 
-SELECT * FROM HopDongThue, ThueCanHo Where HopDongThue.HopDongID=ThueCanHo.HopDongID
+SELECT * FROM HopDongThue;
 
-
-SELECT * FROM HopDongThue
-
-SELECT * FROM CanHo
-
+exec sp_UpdateNgayKetThuc 1, '2025-5-5'

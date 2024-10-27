@@ -116,5 +116,30 @@ namespace DesignEasyHouse1.DAO
             return result > 0;
         }
 
+        public bool CapNhatNgayKetThuc(int hopDongID, DateTime ngayKetThuc)
+        {
+            string query = "EXEC sp_UpdateNgayKetThuc @HopDongID , @NgayKetThuc ";
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { hopDongID, ngayKetThuc });
+            return result > 0;
+        }
+
+        public bool CapNhatHopDongThue(int HopDongID, string MaCanHo, DateTime NgayBatDau, DateTime NgayKetThuc, double TienThue, string DieuKhoan)
+        {
+            string query = @"EXEC sp_CapNhatHopDongThue @HopDongID , @MaCanHo , @NgayBatDau , @NgayKetThuc , @TienThue , @DieuKhoan ";
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] {HopDongID, MaCanHo, NgayBatDau, NgayKetThuc, TienThue, DieuKhoan });
+
+            return result> 0;
+        }
+
+        public bool XoaThueCanHoByHopDongID(int hopDongID)
+        {
+            string query = "DELETE FROM ThueCanHo WHERE ThueCanHo.HopDongID = @HopDongID ";
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { hopDongID });
+
+            return result > 0;
+        }
+
     }
 }

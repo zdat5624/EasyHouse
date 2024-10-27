@@ -43,7 +43,6 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
             dtgvHopDongThue.Columns["NgayKetThuc"].HeaderText = "Ngày kết thúc";
             dtgvHopDongThue.Columns["TienThue"].HeaderText = "Tiền Thuê";
             dtgvHopDongThue.Columns["DieuKhoan"].HeaderText = "Điều khoản";
-            dtgvHopDongThue.Columns["NgayKetThucSom"].HeaderText = "Ngày kết thúc sớm";
             dtgvHopDongThue.Columns["TrangThai"].HeaderText = "Trạng thái";
 
         }

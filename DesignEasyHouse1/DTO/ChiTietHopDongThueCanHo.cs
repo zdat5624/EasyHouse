@@ -17,7 +17,6 @@ namespace DesignEasyHouse1.DTO
         private DateTime ngayKetThuc;
         private double tienThue;
         private string dieuKhoan;
-        private DateTime? ngayKetThucSom;
         private string trangThai;
         private List<ThueCanHo> danhSachThueCanHo;
 
@@ -27,7 +26,6 @@ namespace DesignEasyHouse1.DTO
         public DateTime NgayKetThuc { get => ngayKetThuc; set => ngayKetThuc = value; }
         public double TienThue { get => tienThue; set => tienThue = value; }
         public string DieuKhoan { get => dieuKhoan; set => dieuKhoan = value; }
-        public DateTime? NgayKetThucSom { get => ngayKetThucSom; set => ngayKetThucSom = value; }
         public List<ThueCanHo> DanhSachThueCanHo { get => danhSachThueCanHo; set => danhSachThueCanHo = value; }
         public string TrangThai { get => trangThai; set => trangThai = value; }
 
@@ -37,7 +35,7 @@ namespace DesignEasyHouse1.DTO
         }
 
         public ChiTietHopDongThueCanHo(int hopDongID, string maCanHo, DateTime ngayBatDau, DateTime ngayKetThuc, float tienThue,
-            string dieuKhoan, DateTime? ngayKetThucSom, string trangThai)
+            string dieuKhoan, string trangThai)
         {
             HopDongID = hopDongID;
             MaCanHo = maCanHo;
@@ -45,7 +43,6 @@ namespace DesignEasyHouse1.DTO
             NgayKetThuc = ngayKetThuc;
             TienThue = tienThue;
             DieuKhoan = dieuKhoan;
-            NgayKetThucSom = ngayKetThucSom;
             TrangThai = trangThai;
             DanhSachThueCanHo = new List<ThueCanHo>();
         }
@@ -58,7 +55,6 @@ namespace DesignEasyHouse1.DTO
             NgayKetThuc = Convert.ToDateTime(row["NgayKetThuc"]);
             TienThue = Convert.ToDouble(row["TienThue"]);
             DieuKhoan = row["DieuKhoan"].ToString();
-            NgayKetThucSom = row["NgayKetThucSom"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(row["NgayKetThucSom"]);
             TrangThai = row["TrangThai"].ToString();
             DanhSachThueCanHo = new List<ThueCanHo>();
         }
@@ -102,7 +98,6 @@ namespace DesignEasyHouse1.DTO
         //            NgayKetThuc = row["NgayKetThuc"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(row["NgayKetThuc"]);
         //            TienThue = Convert.ToDouble(row["TienThue"]);
         //            DieuKhoan = row["DieuKhoan"].ToString();
-        //            NgayKetThucSom = row["NgayKetThucSom"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(row["NgayKetThucSom"]);
         //        }
 
         //        if (row["ThueCanHoID"] != DBNull.Value)
@@ -137,6 +132,13 @@ namespace DesignEasyHouse1.DTO
             ThueCanHoID = thueCanHoID;
             CuDanID = cuDanID;
             HopDongID = hopDongID;
+            VaiTro = vaiTro;
+            HoTen = Hoten;
+        }
+
+        public ThueCanHo(int cuDanID, string Hoten, string vaiTro)
+        {
+            CuDanID = cuDanID;
             VaiTro = vaiTro;
             HoTen = Hoten;
         }
