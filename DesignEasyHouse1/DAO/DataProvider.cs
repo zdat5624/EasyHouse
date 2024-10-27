@@ -43,7 +43,6 @@ namespace DesignEasyHouse1.DAO
                     int i = 0;
                     foreach (string item in listPara)
                     {
-                        Console.WriteLine(item);
                         if (item.Contains('@'))
                         {
                             command.Parameters.AddWithValue(item, parameter[i]);

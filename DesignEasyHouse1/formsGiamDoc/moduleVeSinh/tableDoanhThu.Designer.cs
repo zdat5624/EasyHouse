@@ -30,7 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnTroLai = new System.Windows.Forms.Button();
             this.dgvDoanhThuVeSinh = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblDoanhThu = new System.Windows.Forms.Button();
@@ -44,18 +43,6 @@
             this.panel1.SuspendLayout();
             this.grbChonthoiGian.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnTroLai
-            // 
-            this.btnTroLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnTroLai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTroLai.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTroLai.Location = new System.Drawing.Point(29, 79);
-            this.btnTroLai.Name = "btnTroLai";
-            this.btnTroLai.Size = new System.Drawing.Size(75, 33);
-            this.btnTroLai.TabIndex = 17;
-            this.btnTroLai.Text = "Trở lại";
-            this.btnTroLai.UseVisualStyleBackColor = false;
             // 
             // dgvDoanhThuVeSinh
             // 
@@ -134,7 +121,7 @@
             this.grbChonthoiGian.Controls.Add(this.dtpThoiGianKetThuc);
             this.grbChonthoiGian.Controls.Add(this.btnChonThoiGian);
             this.grbChonthoiGian.Controls.Add(this.dtpThoiGianBatDau);
-            this.grbChonthoiGian.Location = new System.Drawing.Point(138, 108);
+            this.grbChonthoiGian.Location = new System.Drawing.Point(80, 104);
             this.grbChonthoiGian.Name = "grbChonthoiGian";
             this.grbChonthoiGian.Size = new System.Drawing.Size(915, 74);
             this.grbChonthoiGian.TabIndex = 19;
@@ -183,7 +170,6 @@
             this.ClientSize = new System.Drawing.Size(1066, 614);
             this.Controls.Add(this.grbChonthoiGian);
             this.Controls.Add(this.lblTongDoanhThu);
-            this.Controls.Add(this.btnTroLai);
             this.Controls.Add(this.dgvDoanhThuVeSinh);
             this.Controls.Add(this.panel1);
             this.Name = "tableDoanhThu";
@@ -199,8 +185,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnTroLai;
         private System.Windows.Forms.DataGridView dgvDoanhThuVeSinh;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button lblDoanhThu;

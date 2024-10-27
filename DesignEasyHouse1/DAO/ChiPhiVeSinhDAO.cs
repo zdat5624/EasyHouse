@@ -77,6 +77,15 @@ namespace DesignEasyHouse1.DAO
             }
             return total;
         }
+        public double GetChiPhiDuKien(List<ChiPhi> lst)
+        {
+            double total = 0;
+            foreach (var item in lst)
+            {
+                total += item.chiPhiDuKien;
+            }
+            return total;
+        }
 
     }
 }
