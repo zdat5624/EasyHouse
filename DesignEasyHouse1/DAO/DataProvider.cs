@@ -80,6 +80,7 @@ namespace DesignEasyHouse1.DAO
                         if (item.Contains('@'))
                         {
                             command.Parameters.AddWithValue(item, parameter[i]);
+                            Console.WriteLine(item);
                             i++;
                         }
                     }

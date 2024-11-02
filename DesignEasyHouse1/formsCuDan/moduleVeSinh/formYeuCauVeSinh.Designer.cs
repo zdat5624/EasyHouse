@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblYeuCauVeSinh = new System.Windows.Forms.Button();
             this.grbMuaVatTu = new System.Windows.Forms.GroupBox();
+            this.cbKhuVucVeSinh = new System.Windows.Forms.ComboBox();
+            this.cbLoaiVeSinh = new System.Windows.Forms.ComboBox();
             this.lblKhuVucCuThe = new System.Windows.Forms.Label();
             this.txtKhuVucCuThe = new System.Windows.Forms.TextBox();
             this.dtpThoiGianVeSinh = new System.Windows.Forms.DateTimePicker();
@@ -38,37 +38,8 @@
             this.btnGuiYeuCau = new System.Windows.Forms.Button();
             this.lblChonThoiGian = new System.Windows.Forms.Label();
             this.lblLoaiVeSinh = new System.Windows.Forms.Label();
-            this.cbLoaiVeSinh = new System.Windows.Forms.ComboBox();
-            this.cbKhuVucVeSinh = new System.Windows.Forms.ComboBox();
-            this.panel1.SuspendLayout();
             this.grbMuaVatTu.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.panel1.Controls.Add(this.lblYeuCauVeSinh);
-            this.panel1.Location = new System.Drawing.Point(1, -4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1066, 76);
-            this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // lblYeuCauVeSinh
-            // 
-            this.lblYeuCauVeSinh.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblYeuCauVeSinh.FlatAppearance.BorderSize = 0;
-            this.lblYeuCauVeSinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblYeuCauVeSinh.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYeuCauVeSinh.ForeColor = System.Drawing.Color.Transparent;
-            this.lblYeuCauVeSinh.Location = new System.Drawing.Point(0, 0);
-            this.lblYeuCauVeSinh.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.lblYeuCauVeSinh.Name = "lblYeuCauVeSinh";
-            this.lblYeuCauVeSinh.Size = new System.Drawing.Size(311, 76);
-            this.lblYeuCauVeSinh.TabIndex = 1;
-            this.lblYeuCauVeSinh.Text = "Yêu cầu vệ sinh";
-            this.lblYeuCauVeSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblYeuCauVeSinh.UseVisualStyleBackColor = true;
             // 
             // grbMuaVatTu
             // 
@@ -82,17 +53,43 @@
             this.grbMuaVatTu.Controls.Add(this.btnGuiYeuCau);
             this.grbMuaVatTu.Controls.Add(this.lblChonThoiGian);
             this.grbMuaVatTu.Controls.Add(this.lblLoaiVeSinh);
-            this.grbMuaVatTu.Location = new System.Drawing.Point(65, 111);
+            this.grbMuaVatTu.Location = new System.Drawing.Point(65, 119);
             this.grbMuaVatTu.Name = "grbMuaVatTu";
-            this.grbMuaVatTu.Size = new System.Drawing.Size(941, 368);
+            this.grbMuaVatTu.Size = new System.Drawing.Size(941, 483);
             this.grbMuaVatTu.TabIndex = 5;
             this.grbMuaVatTu.TabStop = false;
             this.grbMuaVatTu.Text = "Thông tin yêu cầu vệ sinh";
             // 
+            // cbKhuVucVeSinh
+            // 
+            this.cbKhuVucVeSinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbKhuVucVeSinh.FormattingEnabled = true;
+            this.cbKhuVucVeSinh.Items.AddRange(new object[] {
+            "phòng khách",
+            "phòng ngủ",
+            "nhà bếp"});
+            this.cbKhuVucVeSinh.Location = new System.Drawing.Point(228, 156);
+            this.cbKhuVucVeSinh.Name = "cbKhuVucVeSinh";
+            this.cbKhuVucVeSinh.Size = new System.Drawing.Size(503, 24);
+            this.cbKhuVucVeSinh.TabIndex = 16;
+            // 
+            // cbLoaiVeSinh
+            // 
+            this.cbLoaiVeSinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbLoaiVeSinh.FormattingEnabled = true;
+            this.cbLoaiVeSinh.Items.AddRange(new object[] {
+            "Căn hộ riêng",
+            "Khu vực chung"});
+            this.cbLoaiVeSinh.Location = new System.Drawing.Point(231, 95);
+            this.cbLoaiVeSinh.Name = "cbLoaiVeSinh";
+            this.cbLoaiVeSinh.Size = new System.Drawing.Size(503, 24);
+            this.cbLoaiVeSinh.TabIndex = 15;
+            // 
             // lblKhuVucCuThe
             // 
+            this.lblKhuVucCuThe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblKhuVucCuThe.AutoSize = true;
-            this.lblKhuVucCuThe.Location = new System.Drawing.Point(228, 179);
+            this.lblKhuVucCuThe.Location = new System.Drawing.Point(228, 201);
             this.lblKhuVucCuThe.Name = "lblKhuVucCuThe";
             this.lblKhuVucCuThe.Size = new System.Drawing.Size(151, 16);
             this.lblKhuVucCuThe.TabIndex = 14;
@@ -100,22 +97,25 @@
             // 
             // txtKhuVucCuThe
             // 
-            this.txtKhuVucCuThe.Location = new System.Drawing.Point(231, 198);
+            this.txtKhuVucCuThe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtKhuVucCuThe.Location = new System.Drawing.Point(231, 220);
             this.txtKhuVucCuThe.Name = "txtKhuVucCuThe";
             this.txtKhuVucCuThe.Size = new System.Drawing.Size(503, 22);
             this.txtKhuVucCuThe.TabIndex = 13;
             // 
             // dtpThoiGianVeSinh
             // 
-            this.dtpThoiGianVeSinh.Location = new System.Drawing.Point(231, 264);
+            this.dtpThoiGianVeSinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtpThoiGianVeSinh.Location = new System.Drawing.Point(231, 294);
             this.dtpThoiGianVeSinh.Name = "dtpThoiGianVeSinh";
             this.dtpThoiGianVeSinh.Size = new System.Drawing.Size(503, 22);
             this.dtpThoiGianVeSinh.TabIndex = 12;
             // 
             // lblKhuVucVeSinh
             // 
+            this.lblKhuVucVeSinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblKhuVucVeSinh.AutoSize = true;
-            this.lblKhuVucVeSinh.Location = new System.Drawing.Point(228, 115);
+            this.lblKhuVucVeSinh.Location = new System.Drawing.Point(225, 137);
             this.lblKhuVucVeSinh.Name = "lblKhuVucVeSinh";
             this.lblKhuVucVeSinh.Size = new System.Drawing.Size(131, 16);
             this.lblKhuVucVeSinh.TabIndex = 10;
@@ -123,10 +123,11 @@
             // 
             // btnGuiYeuCau
             // 
+            this.btnGuiYeuCau.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGuiYeuCau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.btnGuiYeuCau.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuiYeuCau.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnGuiYeuCau.Location = new System.Drawing.Point(373, 304);
+            this.btnGuiYeuCau.Location = new System.Drawing.Point(389, 387);
             this.btnGuiYeuCau.Name = "btnGuiYeuCau";
             this.btnGuiYeuCau.Size = new System.Drawing.Size(158, 41);
             this.btnGuiYeuCau.TabIndex = 8;
@@ -136,8 +137,9 @@
             // 
             // lblChonThoiGian
             // 
+            this.lblChonThoiGian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblChonThoiGian.AutoSize = true;
-            this.lblChonThoiGian.Location = new System.Drawing.Point(228, 245);
+            this.lblChonThoiGian.Location = new System.Drawing.Point(228, 266);
             this.lblChonThoiGian.Name = "lblChonThoiGian";
             this.lblChonThoiGian.Size = new System.Drawing.Size(128, 16);
             this.lblChonThoiGian.TabIndex = 6;
@@ -145,48 +147,24 @@
             // 
             // lblLoaiVeSinh
             // 
+            this.lblLoaiVeSinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLoaiVeSinh.AutoSize = true;
-            this.lblLoaiVeSinh.Location = new System.Drawing.Point(228, 51);
+            this.lblLoaiVeSinh.Location = new System.Drawing.Point(228, 76);
             this.lblLoaiVeSinh.Name = "lblLoaiVeSinh";
             this.lblLoaiVeSinh.Size = new System.Drawing.Size(108, 16);
             this.lblLoaiVeSinh.TabIndex = 2;
             this.lblLoaiVeSinh.Text = "Chọn loại vệ sinh";
             // 
-            // cbLoaiVeSinh
-            // 
-            this.cbLoaiVeSinh.FormattingEnabled = true;
-            this.cbLoaiVeSinh.Items.AddRange(new object[] {
-            "Căn hộ riêng",
-            "Khu vực chung"});
-            this.cbLoaiVeSinh.Location = new System.Drawing.Point(231, 70);
-            this.cbLoaiVeSinh.Name = "cbLoaiVeSinh";
-            this.cbLoaiVeSinh.Size = new System.Drawing.Size(503, 24);
-            this.cbLoaiVeSinh.TabIndex = 15;
-            // 
-            // cbKhuVucVeSinh
-            // 
-            this.cbKhuVucVeSinh.FormattingEnabled = true;
-            this.cbKhuVucVeSinh.Items.AddRange(new object[] {
-            "phòng khách",
-            "phòng ngủ",
-            "nhà bếp"});
-            this.cbKhuVucVeSinh.Location = new System.Drawing.Point(231, 134);
-            this.cbKhuVucVeSinh.Name = "cbKhuVucVeSinh";
-            this.cbKhuVucVeSinh.Size = new System.Drawing.Size(503, 24);
-            this.cbKhuVucVeSinh.TabIndex = 16;
-            // 
             // formYeuCauVeSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1060, 606);
+            this.ClientSize = new System.Drawing.Size(1060, 623);
             this.Controls.Add(this.grbMuaVatTu);
-            this.Controls.Add(this.panel1);
             this.Name = "formYeuCauVeSinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panel1.ResumeLayout(false);
             this.grbMuaVatTu.ResumeLayout(false);
             this.grbMuaVatTu.PerformLayout();
             this.ResumeLayout(false);
@@ -194,9 +172,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button lblYeuCauVeSinh;
         private System.Windows.Forms.GroupBox grbMuaVatTu;
         private System.Windows.Forms.Button btnGuiYeuCau;
         private System.Windows.Forms.Label lblChonThoiGian;

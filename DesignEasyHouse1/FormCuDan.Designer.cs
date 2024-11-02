@@ -83,6 +83,9 @@
             this.button29 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.panelTieuDe = new System.Windows.Forms.Panel();
+            this.labelTieuDe = new System.Windows.Forms.Label();
+            this.ptbHideMenu = new System.Windows.Forms.PictureBox();
             this.panel1Menu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -93,6 +96,8 @@
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panelTieuDe.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbHideMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1Menu
@@ -1018,7 +1023,7 @@
             this.button29.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button29.ForeColor = System.Drawing.Color.Silver;
             this.button29.Location = new System.Drawing.Point(0, 6);
-            this.button29.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button29.Margin = new System.Windows.Forms.Padding(4);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(248, 33);
             this.button29.TabIndex = 1;
@@ -1033,7 +1038,7 @@
             this.button28.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button28.ForeColor = System.Drawing.Color.Silver;
             this.button28.Location = new System.Drawing.Point(0, 39);
-            this.button28.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button28.Margin = new System.Windows.Forms.Padding(4);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(248, 34);
             this.button28.TabIndex = 0;
@@ -1042,20 +1047,60 @@
             // 
             // panelMain
             // 
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panelMain.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelMain.Location = new System.Drawing.Point(269, 0);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMain.Location = new System.Drawing.Point(276, 6);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(883, 629);
             this.panelMain.TabIndex = 1;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
+            // 
+            // panelTieuDe
+            // 
+            this.panelTieuDe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.panelTieuDe.Controls.Add(this.labelTieuDe);
+            this.panelTieuDe.Controls.Add(this.ptbHideMenu);
+            this.panelTieuDe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTieuDe.Location = new System.Drawing.Point(269, 0);
+            this.panelTieuDe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelTieuDe.Name = "panelTieuDe";
+            this.panelTieuDe.Size = new System.Drawing.Size(883, 92);
+            this.panelTieuDe.TabIndex = 3;
+            // 
+            // labelTieuDe
+            // 
+            this.labelTieuDe.AutoSize = true;
+            this.labelTieuDe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelTieuDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelTieuDe.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold);
+            this.labelTieuDe.ForeColor = System.Drawing.Color.White;
+            this.labelTieuDe.Location = new System.Drawing.Point(66, 33);
+            this.labelTieuDe.Name = "labelTieuDe";
+            this.labelTieuDe.Size = new System.Drawing.Size(85, 28);
+            this.labelTieuDe.TabIndex = 1;
+            this.labelTieuDe.Text = "Tiêu đề";
+            this.labelTieuDe.Click += new System.EventHandler(this.labelTieuDe_Click);
+            // 
+            // ptbHideMenu
+            // 
+            this.ptbHideMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbHideMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ptbHideMenu.Image = global::DesignEasyHouse1.Properties.Resources.iconlessthan_2;
+            this.ptbHideMenu.Location = new System.Drawing.Point(0, 0);
+            this.ptbHideMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbHideMenu.Name = "ptbHideMenu";
+            this.ptbHideMenu.Size = new System.Drawing.Size(60, 92);
+            this.ptbHideMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbHideMenu.TabIndex = 0;
+            this.ptbHideMenu.TabStop = false;
             // 
             // FormCuDan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1152, 629);
+            this.Controls.Add(this.panelTieuDe);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel1Menu);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1073,6 +1118,9 @@
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panelTieuDe.ResumeLayout(false);
+            this.panelTieuDe.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbHideMenu)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1132,5 +1180,8 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Panel panelTieuDe;
+        private System.Windows.Forms.Label labelTieuDe;
+        private System.Windows.Forms.PictureBox ptbHideMenu;
     }
 }

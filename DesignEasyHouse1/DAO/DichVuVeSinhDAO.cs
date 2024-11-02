@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignEasyHouse1.DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,19 +20,17 @@ namespace DesignEasyHouse1.DAO
             }
             private set => instance = value;
         }
-        public bool ThemYeuCau(int cuDanId , string loaiVeSinh, int loaiYeuCauId, string khuVucVeSinh, string khuVucTuyChon, DateTime thoiGianVeSinh)
+        public bool ThemYeuCau(string KhuVucVeSinh,string LoaiVeSinh, string KhuVucCuThe, DateTime ThoiGianVeSinh, int CuDanID)
         {
 
-            //string query = "INSERT INTO YeuCau (CuDanID, LoaiYeuCauID, TieuDe, NoiDung) VALUES ( @CuDanID ,  @LoaiYeuCauID , @TieuDe , @NoiDung )";
+            string query = "INSERT INTO DichVuVeSinh  (KhuVucVeSinh, LoaiVeSinh, KhuVucCuThe, ThoiGianVeSinh, CuDanID)" +
+                " VALUES ( @KhuVucVeSinh ,  @LoaiVeSinh , @KhuVucCuThe , @ThoiGianVeSinh , @CuDanID )";
+            object[] parameters = new object[] { KhuVucVeSinh, LoaiVeSinh, KhuVucCuThe, ThoiGianVeSinh, CuDanID };
 
-            //object[] parameters = new object[] {loaiVeSinh, loaiYeuCauId, khuVucVeSinh, khuVucTuyChon, thoiGianVeSinh };
-
-            //int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
+            int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
             
             
-            
-            Console.WriteLine("Them yeu cau");
-            return 1 > 0;
+            return result > 0;
         }
     }
 }
