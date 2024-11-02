@@ -293,8 +293,6 @@ VALUES
 (4, 104, N'Dịch vụ vệ sinh', 500000, '2024-10-03');
 
 
-drop table DoanhThu 
-
 --Bảng Chi phí 
 
 CREATE TABLE ChiPhi (
