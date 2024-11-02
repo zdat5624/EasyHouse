@@ -16,5 +16,10 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
         {
             InitializeComponent();
         }
+
+        private void tableVeSinhDinhKy_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\ChiTietHopDongThueCanHoDAO.cs" />
+    <Compile Include="DAO\YeuCauVeSinhDAO.cs" />
     <Compile Include="DAO\DichVuVeSinhDAO.cs" />
     <Compile Include="DAO\CuDanDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
@@ -59,6 +60,8 @@
     <Compile Include="DTO\CanHo.cs" />
     <Compile Include="DTO\ChiPhi.cs" />
     <Compile Include="DTO\ChiTietHopDongThueCanHo.cs" />
+    <Compile Include="DTO\YeuCauVeSinh.cs" />
+    <Compile Include="DTO\DichVuVeSinh.cs" />
     <Compile Include="DTO\CuDan.cs" />
     <Compile Include="DTO\DoanhThu.cs" />
     <Compile Include="DTO\LichSuCapNhatCuDan.cs" />
