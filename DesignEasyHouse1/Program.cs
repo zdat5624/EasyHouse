@@ -17,9 +17,19 @@ namespace DesignEasyHouse1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new formsPhongBan.formQuanLyHopDongThueCanHo());
+            //phân quyền 
+
+            //Ban quản lý 
             //Application.Run(new FormBanQuanLy());
+
             //Application.Run(new SampleChildForm1());
-            Application.Run(new FormGiamDoc());
+
+            //Giám đốc 
+            //Application.Run(new FormGiamDoc());
+
+
+            //Cư dân 
+            Application.Run(new FormCuDan());
         }
     }
 }

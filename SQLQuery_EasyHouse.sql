@@ -91,24 +91,32 @@ CREATE TABLE ThongBaoCuDan (
 );
 GO
 
--- Bảng yêu cầu cư dân
-CREATE TABLE LoaiYeuCau (
-    LoaiYeuCauID INT IDENTITY PRIMARY KEY,
-    TenLoaiYeuCau NVARCHAR(100),
-    MoTa NVARCHAR(255)
-);
-GO
 
 CREATE TABLE YeuCau (
     YeuCauID INT IDENTITY PRIMARY KEY,
     CuDanID INT,
-	LoaiYeuCauID INT,
+	DichvuId INT,
     TieuDe NVARCHAR(255),
     NoiDung NVARCHAR(MAX),
     NgayGui DATETIME DEFAULT GETDATE(),
     TrangThai NVARCHAR(50) DEFAULT N'Đang chờ xử lý', --'Đang xử lý' hoặc 'Hoàn thành'
 );
 GO
+
+
+CREATE TABLE DichVuVeSinh (
+    DichVuVeSinhID INT PRIMARY KEY IDENTITY(1,1),  -- ID tự tăng
+    KhuVucVeSinh NVARCHAR(100),                     -- Khu vực vệ sinh chung
+    YeuCauID INT,                                   -- Khóa ngoại tham chiếu đến bảng Loại Yêu Cầu
+    LoaiVeSinh NVARCHAR(50),                        -- Loại vệ sinh (Vệ sinh hàng ngày, vệ sinh định kỳ...)
+    KhuVucCuThe NVARCHAR(255),                      -- Khu vực cụ thể cần vệ sinh
+    ThoiGianVeSinh DATETIME,                        -- Thời gian vệ sinh
+    CuDanID INT                                      -- ID của cư dân
+);
+
+
+
+
 
 CREATE TABLE PhanHoiYeuCau (
     PhanHoiID INT IDENTITY PRIMARY KEY,
@@ -221,6 +229,15 @@ VALUES
 (2, 102, N'Yêu cầu vệ sinh', N'Vui lòng dọn vệ sinh khu vực công cộng tầng 1.'),
 (3, 101, N'Yêu cầu sửa chữa', N'Hệ thống nước bị rò rỉ ở phòng 302.');
 
+
+
+
+
+
+
+
+
+
 INSERT INTO PhanHoiYeuCau (YeuCauID, NguoiPhanHoiID, NoiDung)
 VALUES 
 (1, 201, N'Chúng tôi đã tiếp nhận yêu cầu và sẽ xử lý trong thời gian sớm nhất.'),
@@ -269,7 +286,34 @@ INSERT INTO ThueCanHo (CuDanID, HopDongID, VaiTro) VALUES
 (3, 3, N'Người thuê chính')   -- Giả sử CuDanID 3 là cư dân thứ ba
 GO
 
---Bảng thuộc module vệ sinh 
+
+
+---trigger thêm yêu cầu- dịch vụ vệ sinh 
+CREATE TRIGGER trg_AfterInsertDichVuVeSinh
+ON DichVuVeSinh
+AFTER INSERT
+AS
+BEGIN
+    INSERT INTO YeuCau (CuDanID, DichvuId, TieuDe, NoiDung, NgayGui)
+    SELECT 
+        CuDanID,
+        DichVuVeSinhID,  -- Giả sử DichVuVeSinhID là ID của dịch vụ vệ sinh tương ứng
+        N'Yêu cầu vệ sinh - ' + CAST(GETDATE() AS NVARCHAR(20)),
+        KhuVucCuThe + N' cần được vệ sinh vào ' + CONVERT(NVARCHAR(20), ThoiGianVeSinh, 120),
+        GETDATE()
+    FROM 
+        inserted;  -- Bảng ảo chứa các bản ghi mới được thêm vào
+END;
+
+
+
+ --drop trigger trg_AfterInsertDichVuVeSinh
+
+ --delete from YeuCau
+
+
+
+
 
 --bảng doanh thu 
 CREATE TABLE DoanhThu (
@@ -293,7 +337,7 @@ VALUES
 (4, 104, N'Dịch vụ vệ sinh', 500000, '2024-10-03');
 
 
-drop table DoanhThu 
+
 
 --Bảng Chi phí 
 

@@ -32,8 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnTroLai = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblDangKyVeSinhDinhKy = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cleanArea = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.registerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,6 +39,8 @@
             this.residentId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.frequency = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblDangKyVeSinhDinhKy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -100,31 +100,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(1028, 381);
             this.dataGridView2.TabIndex = 15;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.panel1.Controls.Add(this.lblDangKyVeSinhDinhKy);
-            this.panel1.Location = new System.Drawing.Point(0, -3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1066, 70);
-            this.panel1.TabIndex = 17;
-            // 
-            // lblDangKyVeSinhDinhKy
-            // 
-            this.lblDangKyVeSinhDinhKy.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblDangKyVeSinhDinhKy.FlatAppearance.BorderSize = 0;
-            this.lblDangKyVeSinhDinhKy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblDangKyVeSinhDinhKy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDangKyVeSinhDinhKy.ForeColor = System.Drawing.Color.Transparent;
-            this.lblDangKyVeSinhDinhKy.Location = new System.Drawing.Point(0, 0);
-            this.lblDangKyVeSinhDinhKy.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.lblDangKyVeSinhDinhKy.Name = "lblDangKyVeSinhDinhKy";
-            this.lblDangKyVeSinhDinhKy.Size = new System.Drawing.Size(311, 70);
-            this.lblDangKyVeSinhDinhKy.TabIndex = 1;
-            this.lblDangKyVeSinhDinhKy.Text = "Lịch vệ sinh định kỳ";
-            this.lblDangKyVeSinhDinhKy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblDangKyVeSinhDinhKy.UseVisualStyleBackColor = true;
-            // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -169,6 +144,31 @@
             this.frequency.MinimumWidth = 6;
             this.frequency.Name = "frequency";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.panel1.Controls.Add(this.lblDangKyVeSinhDinhKy);
+            this.panel1.Location = new System.Drawing.Point(0, -3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1066, 70);
+            this.panel1.TabIndex = 17;
+            // 
+            // lblDangKyVeSinhDinhKy
+            // 
+            this.lblDangKyVeSinhDinhKy.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblDangKyVeSinhDinhKy.FlatAppearance.BorderSize = 0;
+            this.lblDangKyVeSinhDinhKy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDangKyVeSinhDinhKy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDangKyVeSinhDinhKy.ForeColor = System.Drawing.Color.Transparent;
+            this.lblDangKyVeSinhDinhKy.Location = new System.Drawing.Point(0, 0);
+            this.lblDangKyVeSinhDinhKy.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.lblDangKyVeSinhDinhKy.Name = "lblDangKyVeSinhDinhKy";
+            this.lblDangKyVeSinhDinhKy.Size = new System.Drawing.Size(311, 70);
+            this.lblDangKyVeSinhDinhKy.TabIndex = 1;
+            this.lblDangKyVeSinhDinhKy.Text = "Lịch vệ sinh định kỳ";
+            this.lblDangKyVeSinhDinhKy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDangKyVeSinhDinhKy.UseVisualStyleBackColor = true;
+            // 
             // tableVeSinhDinhKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -179,6 +179,7 @@
             this.Controls.Add(this.dataGridView2);
             this.Name = "tableVeSinhDinhKy";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

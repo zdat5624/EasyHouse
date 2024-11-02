@@ -30,17 +30,16 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblYeuCauVeSinh = new System.Windows.Forms.Button();
-            this.btnTroLai = new System.Windows.Forms.Button();
             this.grbMuaVatTu = new System.Windows.Forms.GroupBox();
             this.lblKhuVucCuThe = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.txtKhuVucCuThe = new System.Windows.Forms.TextBox();
+            this.dtpThoiGianVeSinh = new System.Windows.Forms.DateTimePicker();
             this.lblKhuVucVeSinh = new System.Windows.Forms.Label();
-            this.lstLoaiVeSinh = new System.Windows.Forms.ListBox();
             this.btnGuiYeuCau = new System.Windows.Forms.Button();
             this.lblChonThoiGian = new System.Windows.Forms.Label();
             this.lblLoaiVeSinh = new System.Windows.Forms.Label();
+            this.cbLoaiVeSinh = new System.Windows.Forms.ComboBox();
+            this.cbKhuVucVeSinh = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.grbMuaVatTu.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +52,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1066, 76);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lblYeuCauVeSinh
             // 
@@ -70,110 +70,74 @@
             this.lblYeuCauVeSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblYeuCauVeSinh.UseVisualStyleBackColor = true;
             // 
-            // btnTroLai
-            // 
-            this.btnTroLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnTroLai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTroLai.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTroLai.Location = new System.Drawing.Point(43, 81);
-            this.btnTroLai.Name = "btnTroLai";
-            this.btnTroLai.Size = new System.Drawing.Size(151, 32);
-            this.btnTroLai.TabIndex = 6;
-            this.btnTroLai.Text = "Trở lại";
-            this.btnTroLai.UseVisualStyleBackColor = false;
-            // 
             // grbMuaVatTu
             // 
+            this.grbMuaVatTu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.grbMuaVatTu.Controls.Add(this.cbKhuVucVeSinh);
+            this.grbMuaVatTu.Controls.Add(this.cbLoaiVeSinh);
             this.grbMuaVatTu.Controls.Add(this.lblKhuVucCuThe);
-            this.grbMuaVatTu.Controls.Add(this.textBox1);
-            this.grbMuaVatTu.Controls.Add(this.dateTimePicker1);
-            this.grbMuaVatTu.Controls.Add(this.listBox1);
+            this.grbMuaVatTu.Controls.Add(this.txtKhuVucCuThe);
+            this.grbMuaVatTu.Controls.Add(this.dtpThoiGianVeSinh);
             this.grbMuaVatTu.Controls.Add(this.lblKhuVucVeSinh);
-            this.grbMuaVatTu.Controls.Add(this.lstLoaiVeSinh);
             this.grbMuaVatTu.Controls.Add(this.btnGuiYeuCau);
             this.grbMuaVatTu.Controls.Add(this.lblChonThoiGian);
             this.grbMuaVatTu.Controls.Add(this.lblLoaiVeSinh);
-            this.grbMuaVatTu.Location = new System.Drawing.Point(193, 197);
+            this.grbMuaVatTu.Location = new System.Drawing.Point(65, 111);
             this.grbMuaVatTu.Name = "grbMuaVatTu";
-            this.grbMuaVatTu.Size = new System.Drawing.Size(704, 293);
+            this.grbMuaVatTu.Size = new System.Drawing.Size(941, 368);
             this.grbMuaVatTu.TabIndex = 5;
             this.grbMuaVatTu.TabStop = false;
-            this.grbMuaVatTu.Text = "groupBox1";
+            this.grbMuaVatTu.Text = "Thông tin yêu cầu vệ sinh";
             // 
             // lblKhuVucCuThe
             // 
             this.lblKhuVucCuThe.AutoSize = true;
-            this.lblKhuVucCuThe.Location = new System.Drawing.Point(11, 120);
+            this.lblKhuVucCuThe.Location = new System.Drawing.Point(228, 179);
             this.lblKhuVucCuThe.Name = "lblKhuVucCuThe";
             this.lblKhuVucCuThe.Size = new System.Drawing.Size(151, 16);
             this.lblKhuVucCuThe.TabIndex = 14;
             this.lblKhuVucCuThe.Text = "Khu vực cụ thể (tùy chọn)";
             // 
-            // textBox1
+            // txtKhuVucCuThe
             // 
-            this.textBox1.Location = new System.Drawing.Point(186, 117);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(465, 22);
-            this.textBox1.TabIndex = 13;
+            this.txtKhuVucCuThe.Location = new System.Drawing.Point(231, 198);
+            this.txtKhuVucCuThe.Name = "txtKhuVucCuThe";
+            this.txtKhuVucCuThe.Size = new System.Drawing.Size(503, 22);
+            this.txtKhuVucCuThe.TabIndex = 13;
             // 
-            // dateTimePicker1
+            // dtpThoiGianVeSinh
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(148, 163);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(503, 22);
-            this.dateTimePicker1.TabIndex = 12;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Items.AddRange(new object[] {
-            "phòng khách",
-            "phòng ngủ",
-            "nhà bếp",
-            ""});
-            this.listBox1.Location = new System.Drawing.Point(148, 79);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(503, 20);
-            this.listBox1.TabIndex = 11;
+            this.dtpThoiGianVeSinh.Location = new System.Drawing.Point(231, 264);
+            this.dtpThoiGianVeSinh.Name = "dtpThoiGianVeSinh";
+            this.dtpThoiGianVeSinh.Size = new System.Drawing.Size(503, 22);
+            this.dtpThoiGianVeSinh.TabIndex = 12;
             // 
             // lblKhuVucVeSinh
             // 
             this.lblKhuVucVeSinh.AutoSize = true;
-            this.lblKhuVucVeSinh.Location = new System.Drawing.Point(11, 79);
+            this.lblKhuVucVeSinh.Location = new System.Drawing.Point(228, 115);
             this.lblKhuVucVeSinh.Name = "lblKhuVucVeSinh";
             this.lblKhuVucVeSinh.Size = new System.Drawing.Size(131, 16);
             this.lblKhuVucVeSinh.TabIndex = 10;
             this.lblKhuVucVeSinh.Text = "Chọn khu vực vệ sinh";
-            // 
-            // lstLoaiVeSinh
-            // 
-            this.lstLoaiVeSinh.FormattingEnabled = true;
-            this.lstLoaiVeSinh.ItemHeight = 16;
-            this.lstLoaiVeSinh.Items.AddRange(new object[] {
-            "Căn hộ riêng",
-            "Khu vực chung"});
-            this.lstLoaiVeSinh.Location = new System.Drawing.Point(148, 40);
-            this.lstLoaiVeSinh.Name = "lstLoaiVeSinh";
-            this.lstLoaiVeSinh.Size = new System.Drawing.Size(503, 20);
-            this.lstLoaiVeSinh.TabIndex = 9;
             // 
             // btnGuiYeuCau
             // 
             this.btnGuiYeuCau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.btnGuiYeuCau.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuiYeuCau.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnGuiYeuCau.Location = new System.Drawing.Point(265, 235);
+            this.btnGuiYeuCau.Location = new System.Drawing.Point(373, 304);
             this.btnGuiYeuCau.Name = "btnGuiYeuCau";
             this.btnGuiYeuCau.Size = new System.Drawing.Size(158, 41);
             this.btnGuiYeuCau.TabIndex = 8;
             this.btnGuiYeuCau.Text = "Gửi yêu cầu";
             this.btnGuiYeuCau.UseVisualStyleBackColor = false;
+            this.btnGuiYeuCau.Click += new System.EventHandler(this.btnGuiYeuCau_Click);
             // 
             // lblChonThoiGian
             // 
             this.lblChonThoiGian.AutoSize = true;
-            this.lblChonThoiGian.Location = new System.Drawing.Point(11, 163);
+            this.lblChonThoiGian.Location = new System.Drawing.Point(228, 245);
             this.lblChonThoiGian.Name = "lblChonThoiGian";
             this.lblChonThoiGian.Size = new System.Drawing.Size(128, 16);
             this.lblChonThoiGian.TabIndex = 6;
@@ -182,22 +146,46 @@
             // lblLoaiVeSinh
             // 
             this.lblLoaiVeSinh.AutoSize = true;
-            this.lblLoaiVeSinh.Location = new System.Drawing.Point(11, 40);
+            this.lblLoaiVeSinh.Location = new System.Drawing.Point(228, 51);
             this.lblLoaiVeSinh.Name = "lblLoaiVeSinh";
             this.lblLoaiVeSinh.Size = new System.Drawing.Size(108, 16);
             this.lblLoaiVeSinh.TabIndex = 2;
             this.lblLoaiVeSinh.Text = "Chọn loại vệ sinh";
+            // 
+            // cbLoaiVeSinh
+            // 
+            this.cbLoaiVeSinh.FormattingEnabled = true;
+            this.cbLoaiVeSinh.Items.AddRange(new object[] {
+            "Căn hộ riêng",
+            "Khu vực chung"});
+            this.cbLoaiVeSinh.Location = new System.Drawing.Point(231, 70);
+            this.cbLoaiVeSinh.Name = "cbLoaiVeSinh";
+            this.cbLoaiVeSinh.Size = new System.Drawing.Size(503, 24);
+            this.cbLoaiVeSinh.TabIndex = 15;
+            // 
+            // cbKhuVucVeSinh
+            // 
+            this.cbKhuVucVeSinh.FormattingEnabled = true;
+            this.cbKhuVucVeSinh.Items.AddRange(new object[] {
+            "phòng khách",
+            "phòng ngủ",
+            "nhà bếp"});
+            this.cbKhuVucVeSinh.Location = new System.Drawing.Point(231, 134);
+            this.cbKhuVucVeSinh.Name = "cbKhuVucVeSinh";
+            this.cbKhuVucVeSinh.Size = new System.Drawing.Size(503, 24);
+            this.cbKhuVucVeSinh.TabIndex = 16;
             // 
             // formYeuCauVeSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 606);
-            this.Controls.Add(this.btnTroLai);
             this.Controls.Add(this.grbMuaVatTu);
             this.Controls.Add(this.panel1);
             this.Name = "formYeuCauVeSinh";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.grbMuaVatTu.ResumeLayout(false);
             this.grbMuaVatTu.PerformLayout();
@@ -209,16 +197,15 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button lblYeuCauVeSinh;
-        private System.Windows.Forms.Button btnTroLai;
         private System.Windows.Forms.GroupBox grbMuaVatTu;
-        private System.Windows.Forms.ListBox lstLoaiVeSinh;
         private System.Windows.Forms.Button btnGuiYeuCau;
         private System.Windows.Forms.Label lblChonThoiGian;
         private System.Windows.Forms.Label lblLoaiVeSinh;
         private System.Windows.Forms.Label lblKhuVucVeSinh;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.DateTimePicker dtpThoiGianVeSinh;
         private System.Windows.Forms.Label lblKhuVucCuThe;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtKhuVucCuThe;
+        private System.Windows.Forms.ComboBox cbLoaiVeSinh;
+        private System.Windows.Forms.ComboBox cbKhuVucVeSinh;
     }
 }

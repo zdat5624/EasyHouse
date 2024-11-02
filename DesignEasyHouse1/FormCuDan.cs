@@ -61,5 +61,30 @@ namespace DesignEasyHouse1
         {
             OpenChildForm(new formsCuDan.formPhanHoiDanhGia());
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsCuDan.moduleVeSinh.formYeuCauVeSinh());
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsCuDan.moduleVeSinh.tableVeSinhDinhKy());
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsCuDan.moduleVeSinh.tableTheoDoiyeuCauVeSinh());
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsCuDan.moduleVeSinh.formDanhGiaChatLuong());
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
