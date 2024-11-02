@@ -118,12 +118,6 @@
     <Compile Include="formsCuDan\moduleVeSinh\formDanhGiaChatLuong.Designer.cs">
       <DependentUpon>formDanhGiaChatLuong.cs</DependentUpon>
     </Compile>
-    <Compile Include="formsCuDan\moduleVeSinh\formDKDinhKy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formsCuDan\moduleVeSinh\formDKDinhKy.Designer.cs">
-      <DependentUpon>formDKDinhKy.cs</DependentUpon>
-    </Compile>
     <Compile Include="formsCuDan\moduleVeSinh\formYeuCauVeSinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -335,9 +329,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsCuDan\moduleVeSinh\formDanhGiaChatLuong.resx">
       <DependentUpon>formDanhGiaChatLuong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formsCuDan\moduleVeSinh\formDKDinhKy.resx">
-      <DependentUpon>formDKDinhKy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsCuDan\moduleVeSinh\formYeuCauVeSinh.resx">
       <DependentUpon>formYeuCauVeSinh.cs</DependentUpon>

@@ -20,12 +20,12 @@ namespace DesignEasyHouse1.DAO
             }
             private set => instance = value;
         }
-        public bool ThemYeuCau(string KhuVucVeSinh,string LoaiVeSinh, string KhuVucCuThe, DateTime ThoiGianVeSinh, int CuDanID)
+        public bool ThemYeuCau(string KhuVucVeSinh,string LoaiVeSinh, string KieuVeSinh, string KhuVucCuThe, DateTime ThoiGianVeSinh, int CuDanID)
         {
 
-            string query = "INSERT INTO DichVuVeSinh  (KhuVucVeSinh, LoaiVeSinh, KhuVucCuThe, ThoiGianVeSinh, CuDanID)" +
-                " VALUES ( @KhuVucVeSinh ,  @LoaiVeSinh , @KhuVucCuThe , @ThoiGianVeSinh , @CuDanID )";
-            object[] parameters = new object[] { KhuVucVeSinh, LoaiVeSinh, KhuVucCuThe, ThoiGianVeSinh, CuDanID };
+            string query = "INSERT INTO DichVuVeSinh  (KhuVucVeSinh, LoaiVeSinh ,KieuVeSinh, KhuVucCuThe, ThoiGianVeSinh, CuDanID)" +
+                " VALUES ( @KhuVucVeSinh ,  @LoaiVeSinh , @KieuVeSinh , @KhuVucCuThe , @ThoiGianVeSinh , @CuDanID )";
+            object[] parameters = new object[] { KhuVucVeSinh, LoaiVeSinh, KieuVeSinh,  KhuVucCuThe, ThoiGianVeSinh, CuDanID };
 
             int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
             

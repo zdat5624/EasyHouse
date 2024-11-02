@@ -26,11 +26,23 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
             string KhuVucVeSinh = cbKhuVucVeSinh.Text.Trim();
             string KhuVucCuThe = txtKhuVucCuThe.Text.Trim();
             DateTime ThoiGianVeSinh = dtpThoiGianVeSinh.Value;
-
+            string KieuVeSinh;
             //Khi Đăng nhập ta sẽ lấy đc cuDanid 
             int CuDanID = 1;
+            if (radVeSinhThuong.Checked)
+            {
+                KieuVeSinh = "Thường";
+            }
+            else if(radVeSinhDinhKyTuan.Checked)
+            {
+                KieuVeSinh = "Định kỳ theo tuần";
+            }
+            else
+            {
+               KieuVeSinh = "Định kỳ theo tháng";
+            }
 
-            if(DichVuVeSinhDAO.Instance.ThemYeuCau(KhuVucVeSinh, LoaiVeSinh, KhuVucCuThe, ThoiGianVeSinh, CuDanID))
+            if(DichVuVeSinhDAO.Instance.ThemYeuCau(KhuVucVeSinh, LoaiVeSinh,KieuVeSinh, KhuVucCuThe, ThoiGianVeSinh, CuDanID))
             {
                 MessageBox.Show("Thêm yêu cầu vệ sinh vào " + ThoiGianVeSinh + " thành công");
 

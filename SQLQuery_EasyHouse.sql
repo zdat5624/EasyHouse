@@ -104,11 +104,12 @@ CREATE TABLE YeuCau (
 GO
 
 
+drop table DichVuVeSinh
 CREATE TABLE DichVuVeSinh (
     DichVuVeSinhID INT PRIMARY KEY IDENTITY(1,1),  -- ID tự tăng
     KhuVucVeSinh NVARCHAR(100),                     -- Khu vực vệ sinh chung
-    YeuCauID INT,                                   -- Khóa ngoại tham chiếu đến bảng Loại Yêu Cầu
-    LoaiVeSinh NVARCHAR(50),                        -- Loại vệ sinh (Vệ sinh hàng ngày, vệ sinh định kỳ...)
+    LoaiVeSinh NVARCHAR(50), 
+	KieuVeSinh NVARCHAR(50)                       -- Loại vệ sinh (Vệ sinh hàng ngày, vệ sinh định kỳ...)
     KhuVucCuThe NVARCHAR(255),                      -- Khu vực cụ thể cần vệ sinh
     ThoiGianVeSinh DATETIME,                        -- Thời gian vệ sinh
     CuDanID INT                                      -- ID của cư dân
@@ -219,19 +220,6 @@ BEGIN
     WHERE HopDongID = @HopDongID;
 END;
 GO
-
-
-
-
-INSERT INTO YeuCau (CuDanID, LoaiYeuCauID, TieuDe, NoiDung)
-VALUES 
-(1, 101, N'Yêu cầu sửa chữa', N'Xin vui lòng sửa chữa hệ thống điện ở tầng 2.'),
-(2, 102, N'Yêu cầu vệ sinh', N'Vui lòng dọn vệ sinh khu vực công cộng tầng 1.'),
-(3, 101, N'Yêu cầu sửa chữa', N'Hệ thống nước bị rò rỉ ở phòng 302.');
-
-
-
-
 
 
 
