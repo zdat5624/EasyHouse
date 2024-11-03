@@ -68,11 +68,6 @@ namespace DesignEasyHouse1
             //labelTieuDe.Text = "Yêu Cầu Vệ Sinh";
         }
 
-        private void button8_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new formsCuDan.moduleVeSinh.tableVeSinhDinhKy());
-            //labelTieuDe.Text = "Vệ Sinh Định Kỳ";
-        }
 
         private void button9_Click(object sender, EventArgs e)
         {

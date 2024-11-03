@@ -133,12 +133,6 @@
     <Compile Include="formsCuDan\moduleVeSinh\tableTheoDoiyeuCauVeSinh.Designer.cs">
       <DependentUpon>tableTheoDoiyeuCauVeSinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="formsCuDan\moduleVeSinh\tableVeSinhDinhKy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formsCuDan\moduleVeSinh\tableVeSinhDinhKy.Designer.cs">
-      <DependentUpon>tableVeSinhDinhKy.cs</DependentUpon>
-    </Compile>
     <Compile Include="formsGiamDoc\moduleVeSinh\bieuDoHoatDong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -338,9 +332,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsCuDan\moduleVeSinh\tableTheoDoiyeuCauVeSinh.resx">
       <DependentUpon>tableTheoDoiyeuCauVeSinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formsCuDan\moduleVeSinh\tableVeSinhDinhKy.resx">
-      <DependentUpon>tableVeSinhDinhKy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsGiamDoc\moduleVeSinh\bieuDoHoatDong.resx">
       <DependentUpon>bieuDoHoatDong.cs</DependentUpon>

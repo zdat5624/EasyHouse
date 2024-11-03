@@ -136,5 +136,10 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

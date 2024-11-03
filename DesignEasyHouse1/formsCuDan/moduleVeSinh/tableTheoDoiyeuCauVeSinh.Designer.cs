@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelTieuDe = new System.Windows.Forms.Panel();
             this.labelTieuDe = new System.Windows.Forms.Label();
             this.ptbHideMenu = new System.Windows.Forms.PictureBox();
@@ -75,9 +75,9 @@
             this.labelTieuDe.ForeColor = System.Drawing.Color.White;
             this.labelTieuDe.Location = new System.Drawing.Point(66, 22);
             this.labelTieuDe.Name = "labelTieuDe";
-            this.labelTieuDe.Size = new System.Drawing.Size(85, 28);
+            this.labelTieuDe.Size = new System.Drawing.Size(221, 28);
             this.labelTieuDe.TabIndex = 1;
-            this.labelTieuDe.Text = "Tiêu đề";
+            this.labelTieuDe.Text = "Xem Yêu Cầu Vệ Sinh";
             // 
             // ptbHideMenu
             // 
@@ -129,18 +129,18 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.Controls.Add(this.lblDen, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.btnXemYeuCau, 4, 1);
             this.tableLayoutPanel2.Controls.Add(this.dtpTu, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.cbDinhKy, 3, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblDinhKy, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.dtpDen, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblDen, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblDinhKy, 3, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 18);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.77778F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72.22222F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.76471F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.23529F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1117, 68);
             this.tableLayoutPanel2.TabIndex = 0;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
@@ -148,7 +148,7 @@
             // dtpDen
             // 
             this.dtpDen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtpDen.Location = new System.Drawing.Point(303, 21);
+            this.dtpDen.Location = new System.Drawing.Point(303, 28);
             this.dtpDen.Name = "dtpDen";
             this.dtpDen.Size = new System.Drawing.Size(257, 22);
             this.dtpDen.TabIndex = 2;
@@ -170,7 +170,7 @@
             "Không định kỳ",
             "Tuần",
             "Tháng"});
-            this.cbDinhKy.Location = new System.Drawing.Point(566, 21);
+            this.cbDinhKy.Location = new System.Drawing.Point(566, 28);
             this.cbDinhKy.Name = "cbDinhKy";
             this.cbDinhKy.Size = new System.Drawing.Size(333, 24);
             this.cbDinhKy.TabIndex = 4;
@@ -178,7 +178,7 @@
             // dtpTu
             // 
             this.dtpTu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtpTu.Location = new System.Drawing.Point(3, 21);
+            this.dtpTu.Location = new System.Drawing.Point(3, 28);
             this.dtpTu.Name = "dtpTu";
             this.dtpTu.Size = new System.Drawing.Size(257, 22);
             this.dtpTu.TabIndex = 1;
@@ -192,10 +192,10 @@
             this.btnXemYeuCau.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnXemYeuCau.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXemYeuCau.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnXemYeuCau.Location = new System.Drawing.Point(905, 21);
+            this.btnXemYeuCau.Location = new System.Drawing.Point(905, 28);
             this.btnXemYeuCau.MaximumSize = new System.Drawing.Size(200, 45);
             this.btnXemYeuCau.Name = "btnXemYeuCau";
-            this.btnXemYeuCau.Size = new System.Drawing.Size(200, 44);
+            this.btnXemYeuCau.Size = new System.Drawing.Size(200, 37);
             this.btnXemYeuCau.TabIndex = 10;
             this.btnXemYeuCau.Text = "Xem Yêu Cầu";
             this.btnXemYeuCau.UseVisualStyleBackColor = false;
@@ -203,9 +203,8 @@
             // 
             // lblDen
             // 
-            this.lblDen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDen.AutoSize = true;
-            this.lblDen.Location = new System.Drawing.Point(266, 35);
+            this.lblDen.Location = new System.Drawing.Point(266, 25);
             this.lblDen.Name = "lblDen";
             this.lblDen.Size = new System.Drawing.Size(31, 16);
             this.lblDen.TabIndex = 0;
@@ -230,14 +229,14 @@
             this.dtgvTheoDoiVeSinh.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dtgvTheoDoiVeSinh.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvTheoDoiVeSinh.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvTheoDoiVeSinh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvTheoDoiVeSinh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dtgvTheoDoiVeSinh.ColumnHeadersHeight = 30;
             this.dtgvTheoDoiVeSinh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgvTheoDoiVeSinh.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -245,14 +244,14 @@
             this.dtgvTheoDoiVeSinh.Location = new System.Drawing.Point(3, 99);
             this.dtgvTheoDoiVeSinh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgvTheoDoiVeSinh.Name = "dtgvTheoDoiVeSinh";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvTheoDoiVeSinh.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvTheoDoiVeSinh.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.dtgvTheoDoiVeSinh.RowHeadersVisible = false;
             this.dtgvTheoDoiVeSinh.RowHeadersWidth = 51;
             this.dtgvTheoDoiVeSinh.RowTemplate.Height = 24;
