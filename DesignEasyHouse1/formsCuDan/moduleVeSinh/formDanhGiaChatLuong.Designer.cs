@@ -330,9 +330,9 @@
             this.btnGuiYeuCau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.btnGuiYeuCau.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuiYeuCau.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnGuiYeuCau.Location = new System.Drawing.Point(325, 334);
+            this.btnGuiYeuCau.Location = new System.Drawing.Point(329, 335);
             this.btnGuiYeuCau.Name = "btnGuiYeuCau";
-            this.btnGuiYeuCau.Size = new System.Drawing.Size(158, 41);
+            this.btnGuiYeuCau.Size = new System.Drawing.Size(114, 41);
             this.btnGuiYeuCau.TabIndex = 8;
             this.btnGuiYeuCau.Text = "Gửi yêu cầu";
             this.btnGuiYeuCau.UseVisualStyleBackColor = false;

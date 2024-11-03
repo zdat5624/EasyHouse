@@ -21,5 +21,10 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
         {
 
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

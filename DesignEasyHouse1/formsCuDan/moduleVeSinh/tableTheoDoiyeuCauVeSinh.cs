@@ -19,12 +19,43 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
         {
             InitializeComponent();
         }
+        public DataTable DanhSachVeSinh(int cuDanId)
+        {
+            return YeuCauVeSinhDAO.Instance.GetDanhSachVeSinh(cuDanId);
+        }
 
+        public DataTable DanhSachVeSinhThang(int cuDanId)
+        {
+            return YeuCauVeSinhDAO.Instance.GetDanhSachVeSinhThang(cuDanId);
+        }
+        public DataTable DanhSachVeSinhTuan(int cuDanId)
+        {
+            return YeuCauVeSinhDAO.Instance.GetDanhSachVeSinhTuan(cuDanId);
+        }
         private void tableTheoDoiyeuCauVeSinh_Load(object sender, EventArgs e)
         {
-            DataTable dt = YeuCauVeSinhDAO.Instance.GetDanhSachVeSinh(1);
-            dtgvTheoDoiVeSinh.DataSource = dt;
 
+            int cuDanId = 1;
+            DataTable dt = null;
+
+            if (cbDinhKy.Text == "Tuần")
+            {
+                dt = DanhSachVeSinhTuan(cuDanId);
+            }
+            else if (cbDinhKy.Text == "Tháng")
+            {
+                dt = DanhSachVeSinhThang(cuDanId);
+            }
+            else
+            {
+                dt = DanhSachVeSinh(cuDanId);
+            }
+
+            dtgvTheoDoiVeSinh.DataSource = dt;
+            //if(dtgvTheoDoiVeSinh.Rows.Count == 0)
+            //{
+            //    MessageBox.Show("Chưa có yêu cầu nào ");
+            //}
             // Đặt tiêu đề cột cho DataGridView
             dtgvTheoDoiVeSinh.Columns["MaYeuCau"].HeaderText = "Mã Yêu Cầu";
             dtgvTheoDoiVeSinh.Columns["TrangThai"].HeaderText = "Trạng Thái";
@@ -93,6 +124,31 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
                 // Đánh dấu rằng chúng ta đã xử lý sự kiện vẽ
                 e.Handled = true;
             }
+        }
+
+        private void dtpThoiGianKetThuc_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnKieuVeSinh_Click(object sender, EventArgs e)
+        {
+            tableTheoDoiyeuCauVeSinh_Load(sender,e);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
  }
