@@ -19,36 +19,39 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
         {
             InitializeComponent();
         }
-        public DataTable DanhSachVeSinh(int cuDanId)
+        public DataTable DanhSachVeSinh(int cuDanId, DateTime tuNgay, DateTime denNgay)
         {
-            return YeuCauVeSinhDAO.Instance.GetDanhSachVeSinh(cuDanId);
+            return YeuCauVeSinhDAO.Instance.GetDanhSachVeSinh(cuDanId, tuNgay, denNgay);
         }
 
-        public DataTable DanhSachVeSinhThang(int cuDanId)
+        public DataTable DanhSachVeSinhThang(int cuDanId, DateTime tuNgay, DateTime denNgay)
         {
-            return YeuCauVeSinhDAO.Instance.GetDanhSachVeSinhThang(cuDanId);
+            return YeuCauVeSinhDAO.Instance.GetDanhSachVeSinhThang(cuDanId, tuNgay, denNgay);
         }
-        public DataTable DanhSachVeSinhTuan(int cuDanId)
+        public DataTable DanhSachVeSinhTuan(int cuDanId, DateTime tuNgay, DateTime denNgay)
         {
-            return YeuCauVeSinhDAO.Instance.GetDanhSachVeSinhTuan(cuDanId);
+            return YeuCauVeSinhDAO.Instance.GetDanhSachVeSinhTuan(cuDanId, tuNgay, denNgay);
         }
         private void tableTheoDoiyeuCauVeSinh_Load(object sender, EventArgs e)
         {
 
             int cuDanId = 1;
             DataTable dt = null;
+            DateTime tuNgay = dtpTu.Value;
+            DateTime denNgay = dtpDen.Value;
+
 
             if (cbDinhKy.Text == "Tuần")
             {
-                dt = DanhSachVeSinhTuan(cuDanId);
+                dt = DanhSachVeSinhTuan(cuDanId,tuNgay,denNgay);
             }
             else if (cbDinhKy.Text == "Tháng")
             {
-                dt = DanhSachVeSinhThang(cuDanId);
+                dt = DanhSachVeSinhThang(cuDanId, tuNgay, denNgay);
             }
             else
             {
-                dt = DanhSachVeSinh(cuDanId);
+                dt = DanhSachVeSinh(cuDanId, tuNgay, denNgay);
             }
 
             dtgvTheoDoiVeSinh.DataSource = dt;

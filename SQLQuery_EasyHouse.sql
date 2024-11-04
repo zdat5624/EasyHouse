@@ -115,6 +115,23 @@ CREATE TABLE DichVuVeSinh (
     CuDanID INT                                      -- ID của cư dân
 );
 
+CREATE TABLE DanhGia (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    YeuCauId INT NOT NULL,
+    ThaiDoPhucVu VARCHAR(255),
+    PhanHoiChiTiet TEXT,
+    ThoiGianHoanThanh DATETIME
+    --FOREIGN KEY (YeuCauId) REFERENCES YeuCau(id)
+);
+CREATE TABLE PhanCong (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    YeuCauId INT NOT NULL,
+    NhanVienId INT NOT NULL,
+    --FOREIGN KEY (YeuCauId) REFERENCES YeuCau(id),
+    --FOREIGN KEY (NhanVienId) REFERENCES NhanVien(id)
+);
+
+
 
 
 

@@ -50,12 +50,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblLoaiVeSinh = new System.Windows.Forms.Label();
             this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panelTieuDe = new System.Windows.Forms.Panel();
             this.labelTieuDe = new System.Windows.Forms.Label();
             this.ptbHideMenu = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -150,7 +150,7 @@
             this.tableLayoutPanel2.Controls.Add(this.groupBox1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblPhanHoi, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.richTextBox1, 0, 4);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(222, 57);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(261, 57);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
@@ -159,7 +159,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.16783F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.163168F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(718, 448);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(716, 448);
             this.tableLayoutPanel2.TabIndex = 41;
             // 
             // groupBox2
@@ -359,6 +359,14 @@
             this.radioButton11.UseVisualStyleBackColor = true;
             this.radioButton11.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(3, 300);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(712, 145);
+            this.richTextBox1.TabIndex = 45;
+            this.richTextBox1.Text = "";
+            // 
             // panelTieuDe
             // 
             this.panelTieuDe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
@@ -367,7 +375,7 @@
             this.panelTieuDe.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTieuDe.Location = new System.Drawing.Point(0, 0);
             this.panelTieuDe.Name = "panelTieuDe";
-            this.panelTieuDe.Size = new System.Drawing.Size(1204, 105);
+            this.panelTieuDe.Size = new System.Drawing.Size(1202, 105);
             this.panelTieuDe.TabIndex = 43;
             // 
             // labelTieuDe
@@ -403,7 +411,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 105);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1204, 781);
+            this.panel1.Size = new System.Drawing.Size(1202, 781);
             this.panel1.TabIndex = 44;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -420,19 +428,11 @@
             this.button1.Text = "Gửi yêu cầu";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(3, 300);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(712, 145);
-            this.richTextBox1.TabIndex = 45;
-            this.richTextBox1.Text = "";
-            // 
             // formDanhGiaChatLuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1204, 886);
+            this.ClientSize = new System.Drawing.Size(1202, 886);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelTieuDe);
             this.Controls.Add(this.label1);
