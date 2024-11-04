@@ -122,6 +122,10 @@ namespace DesignEasyHouse1.DAO
 
                 connection.Close();
             }
+            if(data == null)
+            {
+                data = 0;
+            }
 
             return data;
         }

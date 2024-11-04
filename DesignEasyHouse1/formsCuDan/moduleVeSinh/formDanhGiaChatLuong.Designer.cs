@@ -56,6 +56,9 @@
             this.ptbHideMenu = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.cbDanhSachYeuCauDaHoanThanh = new System.Windows.Forms.ComboBox();
+            this.btnChonYeuCau = new System.Windows.Forms.Button();
+            this.grbDanhGia = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -63,13 +66,14 @@
             this.panelTieuDe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHideMenu)).BeginInit();
             this.panel1.SuspendLayout();
+            this.grbDanhGia.SuspendLayout();
             this.SuspendLayout();
             // 
             // radRatTot
             // 
             this.radRatTot.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radRatTot.AutoSize = true;
-            this.radRatTot.Location = new System.Drawing.Point(529, 30);
+            this.radRatTot.Location = new System.Drawing.Point(529, 34);
             this.radRatTot.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radRatTot.Name = "radRatTot";
             this.radRatTot.Size = new System.Drawing.Size(79, 27);
@@ -83,7 +87,7 @@
             // 
             this.radTamDuoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radTamDuoc.AutoSize = true;
-            this.radTamDuoc.Location = new System.Drawing.Point(303, 30);
+            this.radTamDuoc.Location = new System.Drawing.Point(303, 34);
             this.radTamDuoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radTamDuoc.Name = "radTamDuoc";
             this.radTamDuoc.Size = new System.Drawing.Size(107, 27);
@@ -97,7 +101,7 @@
             // 
             this.radTot.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radTot.AutoSize = true;
-            this.radTot.Location = new System.Drawing.Point(429, 30);
+            this.radTot.Location = new System.Drawing.Point(429, 34);
             this.radTot.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radTot.Name = "radTot";
             this.radTot.Size = new System.Drawing.Size(56, 27);
@@ -111,7 +115,7 @@
             // 
             this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(142, 30);
+            this.radioButton2.Location = new System.Drawing.Point(142, 34);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(131, 27);
@@ -150,7 +154,7 @@
             this.tableLayoutPanel2.Controls.Add(this.groupBox1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblPhanHoi, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.richTextBox1, 0, 4);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(261, 57);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(261, 134);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
@@ -171,7 +175,7 @@
             this.groupBox2.Controls.Add(this.radioButton16);
             this.groupBox2.Location = new System.Drawing.Point(3, 183);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(712, 75);
+            this.groupBox2.Size = new System.Drawing.Size(712, 84);
             this.groupBox2.TabIndex = 43;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chất lượng làm sạch";
@@ -180,7 +184,7 @@
             // 
             this.radioButton12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(303, 30);
+            this.radioButton12.Location = new System.Drawing.Point(303, 34);
             this.radioButton12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Size = new System.Drawing.Size(107, 27);
@@ -193,7 +197,7 @@
             // 
             this.radioButton13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton13.AutoSize = true;
-            this.radioButton13.Location = new System.Drawing.Point(142, 30);
+            this.radioButton13.Location = new System.Drawing.Point(142, 34);
             this.radioButton13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton13.Name = "radioButton13";
             this.radioButton13.Size = new System.Drawing.Size(131, 27);
@@ -206,7 +210,7 @@
             // 
             this.radioButton14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton14.AutoSize = true;
-            this.radioButton14.Location = new System.Drawing.Point(429, 30);
+            this.radioButton14.Location = new System.Drawing.Point(429, 34);
             this.radioButton14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton14.Name = "radioButton14";
             this.radioButton14.Size = new System.Drawing.Size(56, 27);
@@ -219,7 +223,7 @@
             // 
             this.radioButton15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton15.AutoSize = true;
-            this.radioButton15.Location = new System.Drawing.Point(55, 30);
+            this.radioButton15.Location = new System.Drawing.Point(55, 34);
             this.radioButton15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton15.Name = "radioButton15";
             this.radioButton15.Size = new System.Drawing.Size(65, 27);
@@ -232,7 +236,7 @@
             // 
             this.radioButton16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton16.AutoSize = true;
-            this.radioButton16.Location = new System.Drawing.Point(529, 30);
+            this.radioButton16.Location = new System.Drawing.Point(529, 34);
             this.radioButton16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton16.Name = "radioButton16";
             this.radioButton16.Size = new System.Drawing.Size(79, 27);
@@ -250,7 +254,7 @@
             this.groupBox3.Controls.Add(this.radioButton21);
             this.groupBox3.Location = new System.Drawing.Point(3, 93);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(712, 75);
+            this.groupBox3.Size = new System.Drawing.Size(712, 84);
             this.groupBox3.TabIndex = 44;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tốc độ hoàn thành";
@@ -259,7 +263,7 @@
             // 
             this.radioButton17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton17.AutoSize = true;
-            this.radioButton17.Location = new System.Drawing.Point(303, 30);
+            this.radioButton17.Location = new System.Drawing.Point(303, 34);
             this.radioButton17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton17.Name = "radioButton17";
             this.radioButton17.Size = new System.Drawing.Size(107, 27);
@@ -272,7 +276,7 @@
             // 
             this.radioButton18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton18.AutoSize = true;
-            this.radioButton18.Location = new System.Drawing.Point(142, 30);
+            this.radioButton18.Location = new System.Drawing.Point(142, 34);
             this.radioButton18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton18.Name = "radioButton18";
             this.radioButton18.Size = new System.Drawing.Size(131, 27);
@@ -285,7 +289,7 @@
             // 
             this.radioButton19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton19.AutoSize = true;
-            this.radioButton19.Location = new System.Drawing.Point(429, 30);
+            this.radioButton19.Location = new System.Drawing.Point(429, 34);
             this.radioButton19.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton19.Name = "radioButton19";
             this.radioButton19.Size = new System.Drawing.Size(56, 27);
@@ -298,7 +302,7 @@
             // 
             this.radioButton20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton20.AutoSize = true;
-            this.radioButton20.Location = new System.Drawing.Point(55, 30);
+            this.radioButton20.Location = new System.Drawing.Point(55, 34);
             this.radioButton20.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton20.Name = "radioButton20";
             this.radioButton20.Size = new System.Drawing.Size(65, 27);
@@ -311,7 +315,7 @@
             // 
             this.radioButton21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton21.AutoSize = true;
-            this.radioButton21.Location = new System.Drawing.Point(529, 30);
+            this.radioButton21.Location = new System.Drawing.Point(529, 34);
             this.radioButton21.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton21.Name = "radioButton21";
             this.radioButton21.Size = new System.Drawing.Size(79, 27);
@@ -330,7 +334,7 @@
             this.groupBox1.Controls.Add(this.radRatTot);
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(712, 75);
+            this.groupBox1.Size = new System.Drawing.Size(712, 84);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thái độ nhân viên";
@@ -339,7 +343,7 @@
             // 
             this.lblLoaiVeSinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLoaiVeSinh.AutoSize = true;
-            this.lblLoaiVeSinh.Location = new System.Drawing.Point(35, 23);
+            this.lblLoaiVeSinh.Location = new System.Drawing.Point(35, 27);
             this.lblLoaiVeSinh.Name = "lblLoaiVeSinh";
             this.lblLoaiVeSinh.Size = new System.Drawing.Size(0, 23);
             this.lblLoaiVeSinh.TabIndex = 2;
@@ -349,7 +353,7 @@
             // 
             this.radioButton11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(55, 30);
+            this.radioButton11.Location = new System.Drawing.Point(55, 34);
             this.radioButton11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Size = new System.Drawing.Size(65, 27);
@@ -405,6 +409,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.grbDanhGia);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -420,13 +425,45 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(528, 513);
+            this.button1.Location = new System.Drawing.Point(567, 590);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 55);
             this.button1.TabIndex = 42;
             this.button1.Text = "Gửi yêu cầu";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // cbDanhSachYeuCauDaHoanThanh
+            // 
+            this.cbDanhSachYeuCauDaHoanThanh.FormattingEnabled = true;
+            this.cbDanhSachYeuCauDaHoanThanh.Location = new System.Drawing.Point(6, 37);
+            this.cbDanhSachYeuCauDaHoanThanh.Name = "cbDanhSachYeuCauDaHoanThanh";
+            this.cbDanhSachYeuCauDaHoanThanh.Size = new System.Drawing.Size(338, 31);
+            this.cbDanhSachYeuCauDaHoanThanh.TabIndex = 43;
+            // 
+            // btnChonYeuCau
+            // 
+            this.btnChonYeuCau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnChonYeuCau.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChonYeuCau.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnChonYeuCau.Location = new System.Drawing.Point(350, 24);
+            this.btnChonYeuCau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnChonYeuCau.Name = "btnChonYeuCau";
+            this.btnChonYeuCau.Size = new System.Drawing.Size(116, 55);
+            this.btnChonYeuCau.TabIndex = 44;
+            this.btnChonYeuCau.Text = "Chọn";
+            this.btnChonYeuCau.UseVisualStyleBackColor = false;
+            // 
+            // grbDanhGia
+            // 
+            this.grbDanhGia.Controls.Add(this.cbDanhSachYeuCauDaHoanThanh);
+            this.grbDanhGia.Controls.Add(this.btnChonYeuCau);
+            this.grbDanhGia.Location = new System.Drawing.Point(505, 27);
+            this.grbDanhGia.Name = "grbDanhGia";
+            this.grbDanhGia.Size = new System.Drawing.Size(472, 100);
+            this.grbDanhGia.TabIndex = 45;
+            this.grbDanhGia.TabStop = false;
+            this.grbDanhGia.Text = "Chọn yêu cầu đã hoàn thành để đánh giá";
             // 
             // formDanhGiaChatLuong
             // 
@@ -453,6 +490,7 @@
             this.panelTieuDe.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHideMenu)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.grbDanhGia.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -487,5 +525,8 @@
         private System.Windows.Forms.Label lblLoaiVeSinh;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.GroupBox grbDanhGia;
+        private System.Windows.Forms.ComboBox cbDanhSachYeuCauDaHoanThanh;
+        private System.Windows.Forms.Button btnChonYeuCau;
     }
 }

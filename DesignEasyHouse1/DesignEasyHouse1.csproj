@@ -47,7 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formsGiamDoc\QuanLyNhanVien\DanhSachNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsGiamDoc\QuanLyNhanVien\DanhSachNhanVien.Designer.cs">
+      <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsGiamDoc\QuanLyNhanVien\ThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsGiamDoc\QuanLyNhanVien\ThemNhanVien.Designer.cs">
+      <DependentUpon>ThemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs" />
     <Compile Include="DAO\ChiTietHopDongThueCanHoDAO.cs" />
+    <Compile Include="DAO\UsersDAO.cs" />
     <Compile Include="DAO\YeuCauVeSinhDAO.cs" />
     <Compile Include="DAO\DichVuVeSinhDAO.cs" />
     <Compile Include="DAO\CuDanDAO.cs" />
@@ -341,6 +355,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsGiamDoc\moduleVeSinh\tableDoanhThu.resx">
       <DependentUpon>tableDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsGiamDoc\QuanLyNhanVien\DanhSachNhanVien.resx">
+      <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsGiamDoc\QuanLyNhanVien\ThemNhanVien.resx">
+      <DependentUpon>ThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formPhanHoiYeuCau.resx">
       <DependentUpon>formPhanHoiYeuCau.cs</DependentUpon>

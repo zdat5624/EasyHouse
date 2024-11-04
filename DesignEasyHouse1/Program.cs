@@ -1,35 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using DesignEasyHouse1.DAO;
+using System;
 using System.Windows.Forms;
 
 namespace DesignEasyHouse1
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new formsPhongBan.formQuanLyHopDongThueCanHo());
-            //phân quyền 
 
-            //Ban quản lý 
-            //Application.Run(new FormBanQuanLy());
+            // Đăng nhập
+            FormDangNhap loginForm = new FormDangNhap();
+            loginForm.ShowDialog(); // Hiện form đăng nhập và chờ người dùng tương tác
 
-            //Application.Run(new SampleChildForm1());
+            // Kiểm tra xem người dùng đã đăng nhập chưa
+            if (Session.TenDangNhap != null)
+            {
+                // Lấy quyền người dùng
+                int quyenNguoiDung = UsersDAO.Instance.PhanQuyenNguoiDung(Session.UserId);
 
-            //Giám đốc 
-            //Application.Run(new FormGiamDoc());
+                // Phân quyền và mở form tương ứng
+                Form mainForm;
+                switch (quyenNguoiDung)
+                {
+                    case 0:
+                        mainForm = new FormGiamDoc();
+                        break;
+                    case 1:
+                        mainForm = new FormBanQuanLy();
+                        break;
+                    default:
+                        mainForm = new FormCuDan();
+                        break;
+                }
 
-
-            //Cư dân 
-            Application.Run(new FormCuDan());
+                // Mở form chính
+                Application.Run(mainForm);
+            }
+            else
+            {
+                // Nếu không đăng nhập, có thể thoát ứng dụng
+                Application.Exit();
+            }
         }
     }
 }

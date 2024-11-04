@@ -31,23 +31,23 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelDuoi = new System.Windows.Forms.Panel();
-            this.btnThemHopDong = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnTimKiem = new System.Windows.Forms.Button();
             this.tbTimKiem = new System.Windows.Forms.TextBox();
-            this.dtgvHopDongThue = new System.Windows.Forms.DataGridView();
-            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Details = new System.Windows.Forms.DataGridViewImageColumn();
             this.panelTren = new System.Windows.Forms.Panel();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnThemHopDong = new System.Windows.Forms.Button();
+            this.btnTimKiem = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Details = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dtgvHopDongThue = new System.Windows.Forms.DataGridView();
             this.panelDuoi.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvHopDongThue)).BeginInit();
             this.panelTren.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHopDongThue)).BeginInit();
             this.SuspendLayout();
             // 
             // panelDuoi
@@ -58,28 +58,6 @@
             this.panelDuoi.Name = "panelDuoi";
             this.panelDuoi.Size = new System.Drawing.Size(1300, 80);
             this.panelDuoi.TabIndex = 45;
-            // 
-            // btnThemHopDong
-            // 
-            this.btnThemHopDong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnThemHopDong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
-            this.btnThemHopDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnThemHopDong.FlatAppearance.BorderSize = 0;
-            this.btnThemHopDong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemHopDong.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemHopDong.ForeColor = System.Drawing.Color.White;
-            this.btnThemHopDong.Image = global::DesignEasyHouse1.Properties.Resources.Add;
-            this.btnThemHopDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemHopDong.Location = new System.Drawing.Point(40, 29);
-            this.btnThemHopDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThemHopDong.Name = "btnThemHopDong";
-            this.btnThemHopDong.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnThemHopDong.Size = new System.Drawing.Size(160, 40);
-            this.btnThemHopDong.TabIndex = 31;
-            this.btnThemHopDong.Text = "Thêm hợp đồng";
-            this.btnThemHopDong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnThemHopDong.UseVisualStyleBackColor = false;
-            this.btnThemHopDong.Click += new System.EventHandler(this.btnThemHopDong_Click);
             // 
             // dataGridViewImageColumn1
             // 
@@ -108,6 +86,70 @@
             this.panel2.Size = new System.Drawing.Size(250, 25);
             this.panel2.TabIndex = 36;
             // 
+            // tbTimKiem
+            // 
+            this.tbTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tbTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTimKiem.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tbTimKiem.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.tbTimKiem.Location = new System.Drawing.Point(0, 0);
+            this.tbTimKiem.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tbTimKiem.Name = "tbTimKiem";
+            this.tbTimKiem.Size = new System.Drawing.Size(214, 31);
+            this.tbTimKiem.TabIndex = 32;
+            // 
+            // panelTren
+            // 
+            this.panelTren.Controls.Add(this.panel2);
+            this.panelTren.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTren.Location = new System.Drawing.Point(0, 0);
+            this.panelTren.Name = "panelTren";
+            this.panelTren.Size = new System.Drawing.Size(1300, 80);
+            this.panelTren.TabIndex = 44;
+            // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn3.HeaderText = "";
+            this.dataGridViewImageColumn3.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
+            this.dataGridViewImageColumn3.MinimumWidth = 6;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.ReadOnly = true;
+            this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn3.Width = 6;
+            // 
+            // dataGridViewImageColumn4
+            // 
+            this.dataGridViewImageColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn4.HeaderText = "";
+            this.dataGridViewImageColumn4.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
+            this.dataGridViewImageColumn4.MinimumWidth = 6;
+            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
+            this.dataGridViewImageColumn4.ReadOnly = true;
+            this.dataGridViewImageColumn4.Width = 6;
+            // 
+            // btnThemHopDong
+            // 
+            this.btnThemHopDong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnThemHopDong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.btnThemHopDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnThemHopDong.FlatAppearance.BorderSize = 0;
+            this.btnThemHopDong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemHopDong.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemHopDong.ForeColor = System.Drawing.Color.White;
+            this.btnThemHopDong.Image = global::DesignEasyHouse1.Properties.Resources.Add;
+            this.btnThemHopDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemHopDong.Location = new System.Drawing.Point(40, 29);
+            this.btnThemHopDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThemHopDong.Name = "btnThemHopDong";
+            this.btnThemHopDong.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnThemHopDong.Size = new System.Drawing.Size(160, 40);
+            this.btnThemHopDong.TabIndex = 31;
+            this.btnThemHopDong.Text = "Thêm hợp đồng";
+            this.btnThemHopDong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThemHopDong.UseVisualStyleBackColor = false;
+            this.btnThemHopDong.Click += new System.EventHandler(this.btnThemHopDong_Click);
+            // 
             // btnTimKiem
             // 
             this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
@@ -127,17 +169,35 @@
             this.btnTimKiem.TabIndex = 32;
             this.btnTimKiem.UseVisualStyleBackColor = false;
             // 
-            // tbTimKiem
+            // dataGridViewImageColumn5
             // 
-            this.tbTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tbTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbTimKiem.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tbTimKiem.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.tbTimKiem.Location = new System.Drawing.Point(0, 0);
-            this.tbTimKiem.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tbTimKiem.Name = "tbTimKiem";
-            this.tbTimKiem.Size = new System.Drawing.Size(214, 31);
-            this.tbTimKiem.TabIndex = 32;
+            this.dataGridViewImageColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn5.HeaderText = "";
+            this.dataGridViewImageColumn5.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
+            this.dataGridViewImageColumn5.MinimumWidth = 6;
+            this.dataGridViewImageColumn5.Name = "dataGridViewImageColumn5";
+            this.dataGridViewImageColumn5.Width = 125;
+            // 
+            // Details
+            // 
+            this.Details.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Details.HeaderText = "";
+            this.Details.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
+            this.Details.MinimumWidth = 6;
+            this.Details.Name = "Details";
+            this.Details.ReadOnly = true;
+            this.Details.Width = 6;
+            // 
+            // Delete
+            // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Delete.HeaderText = "";
+            this.Delete.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.ReadOnly = true;
+            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Delete.Width = 6;
             // 
             // dtgvHopDongThue
             // 
@@ -180,64 +240,6 @@
             this.dtgvHopDongThue.TabIndex = 43;
             this.dtgvHopDongThue.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvHopDongThue_CellContentClick);
             // 
-            // Delete
-            // 
-            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Delete.HeaderText = "";
-            this.Delete.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.ReadOnly = true;
-            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Delete.Width = 6;
-            // 
-            // Details
-            // 
-            this.Details.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Details.HeaderText = "";
-            this.Details.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
-            this.Details.MinimumWidth = 6;
-            this.Details.Name = "Details";
-            this.Details.ReadOnly = true;
-            this.Details.Width = 6;
-            // 
-            // panelTren
-            // 
-            this.panelTren.Controls.Add(this.panel2);
-            this.panelTren.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTren.Location = new System.Drawing.Point(0, 0);
-            this.panelTren.Name = "panelTren";
-            this.panelTren.Size = new System.Drawing.Size(1300, 80);
-            this.panelTren.TabIndex = 44;
-            // 
-            // dataGridViewImageColumn3
-            // 
-            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn3.HeaderText = "";
-            this.dataGridViewImageColumn3.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
-            this.dataGridViewImageColumn3.MinimumWidth = 6;
-            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
-            this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn3.Width = 125;
-            // 
-            // dataGridViewImageColumn4
-            // 
-            this.dataGridViewImageColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn4.HeaderText = "";
-            this.dataGridViewImageColumn4.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
-            this.dataGridViewImageColumn4.MinimumWidth = 6;
-            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
-            this.dataGridViewImageColumn4.Width = 125;
-            // 
-            // dataGridViewImageColumn5
-            // 
-            this.dataGridViewImageColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn5.HeaderText = "";
-            this.dataGridViewImageColumn5.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
-            this.dataGridViewImageColumn5.MinimumWidth = 6;
-            this.dataGridViewImageColumn5.Name = "dataGridViewImageColumn5";
-            this.dataGridViewImageColumn5.Width = 125;
-            // 
             // formQuanLyHopDongThueCanHo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -254,8 +256,8 @@
             this.panelDuoi.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvHopDongThue)).EndInit();
             this.panelTren.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHopDongThue)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -269,12 +271,12 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.TextBox tbTimKiem;
-        private System.Windows.Forms.DataGridView dtgvHopDongThue;
         private System.Windows.Forms.Panel panelTren;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn4;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn5;
-        private System.Windows.Forms.DataGridViewImageColumn Delete;
         private System.Windows.Forms.DataGridViewImageColumn Details;
+        private System.Windows.Forms.DataGridViewImageColumn Delete;
+        private System.Windows.Forms.DataGridView dtgvHopDongThue;
     }
 }

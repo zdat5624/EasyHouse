@@ -3,6 +3,17 @@ GO
 
 USE EasyHouseDB;
 GO
+--Bảng user lưu thông tin đăng nhập của toàn bộ người dùng 
+CREATE TABLE users (
+    id INT IDENTITY PRIMARY KEY,
+    TenDangNhap VARCHAR(255) NOT NULL,
+    MatKhau VARCHAR(255) NOT NULL
+);
+INSERT INTO users (TenDangNhap, MatKhau)
+VALUES ('admin', 'adminpassword')
+
+
+
 
 -- Bảng thông tin cư dân
 CREATE TABLE CuDan (
@@ -18,8 +29,26 @@ CREATE TABLE CuDan (
 	ThanhToan NVARCHAR(255) DEFAULT N'Trả đủ', --'Trả đủ' hoặc 'Nợ'
 	NgayChuyenDen DATE DEFAULT GETDATE(),
 	HinhAnh Image
+
 );
 GO
+CREATE TABLE NhanVien (
+    id INT PRIMARY KEY IDENTITY(1,1),  -- Khóa chính, tự tăng
+    Ten NVARCHAR(100) NOT NULL,        -- Tên nhân viên
+    ChucVu NVARCHAR(50) NOT NULL,      -- Chức vụ
+    NgaySinh DATE,                     -- Ngày sinh
+    DiaChi NVARCHAR(255),              -- Địa chỉ
+    DienThoai NVARCHAR(15),            -- Số điện thoại
+    Email NVARCHAR(100),                -- Email
+    NgayTuyenDung DATE,                -- Ngày tuyển dụng
+    Luong DECIMAL(18, 2),              -- Lương
+    PhongBan NVARCHAR(50),             -- Phòng ban
+    UserId INT                         -- ID người dùng, có thể là khóa ngoại tham chiếu đến bảng users
+);
+INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan, UserId)
+VALUES 
+    ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '0123456789', 'vana@example.com', '2020-01-01', 10000.00, 'Phòng Kinh Doanh', 1),
+    ('Tran Thi B', 'Nhân viên', '1990-10-15', 'Hà Nội', '0987654321', 'thib@example.com', '2021-02-15', 8000.00, 'Phòng Hành Chính', 2);
 
 --SoCanHo NVARCHAR(10),
 --ThanhToan NVARCHAR(255) DEFAULT N'Trả đủ', --'Trả đủ' hoặc 'Nợ'
@@ -116,15 +145,16 @@ CREATE TABLE DichVuVeSinh (
 );
 
 CREATE TABLE DanhGia (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY ,
     YeuCauId INT NOT NULL,
     ThaiDoPhucVu VARCHAR(255),
     PhanHoiChiTiet TEXT,
     ThoiGianHoanThanh DATETIME
     --FOREIGN KEY (YeuCauId) REFERENCES YeuCau(id)
 );
+
 CREATE TABLE PhanCong (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY ,
     YeuCauId INT NOT NULL,
     NhanVienId INT NOT NULL,
     --FOREIGN KEY (YeuCauId) REFERENCES YeuCau(id),
