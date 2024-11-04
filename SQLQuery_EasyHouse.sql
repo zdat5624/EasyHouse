@@ -9,8 +9,9 @@ CREATE TABLE users (
     TenDangNhap VARCHAR(255) NOT NULL,
     MatKhau VARCHAR(255) NOT NULL
 );
-INSERT INTO users (TenDangNhap, MatKhau)
-VALUES ('admin', 'adminpassword')
+--INSERT INTO users (TenDangNhap, MatKhau)
+--VALUES ('vana@example.com', '123')
+--,('thib@example.com', '123');
 
 
 
@@ -28,10 +29,12 @@ CREATE TABLE CuDan (
 	TrangThai NVARCHAR(255) DEFAULT N'Còn ở', --'Còn ở' hoặc 'Chuyển đi'
 	ThanhToan NVARCHAR(255) DEFAULT N'Trả đủ', --'Trả đủ' hoặc 'Nợ'
 	NgayChuyenDen DATE DEFAULT GETDATE(),
-	HinhAnh Image
-
+	HinhAnh Image,
+	UserId INT  
 );
 GO
+
+
 CREATE TABLE NhanVien (
     id INT PRIMARY KEY IDENTITY(1,1),  -- Khóa chính, tự tăng
     Ten NVARCHAR(100) NOT NULL,        -- Tên nhân viên
@@ -47,8 +50,8 @@ CREATE TABLE NhanVien (
 );
 INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan, UserId)
 VALUES 
-    ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '0123456789', 'vana@example.com', '2020-01-01', 10000.00, 'Phòng Kinh Doanh', 1),
-    ('Tran Thi B', 'Nhân viên', '1990-10-15', 'Hà Nội', '0987654321', 'thib@example.com', '2021-02-15', 8000.00, 'Phòng Hành Chính', 2);
+    ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '0123456789', 'vana@example.com', '2020-01-01', 10000000, 'Phòng Kinh Doanh', 1),
+    ('Tran Thi B', 'Nhân viên', '1990-10-15', 'Hà Nội', '0987654321', 'thib@example.com', '2021-02-15', 8000000, 'Phòng Hành Chính', 2);
 
 --SoCanHo NVARCHAR(10),
 --ThanhToan NVARCHAR(255) DEFAULT N'Trả đủ', --'Trả đủ' hoặc 'Nợ'
@@ -341,11 +344,54 @@ BEGIN
 END;
 
 
+--khi thêm nhân viên vào thì tự động cũng sẽ có account đăng nhập, tên đăng nhập là email , mật khẩu là số điện thoại  
+CREATE TRIGGER trg_AfterInsertNhanVien
+ON NhanVien
+AFTER INSERT
+AS
+BEGIN
+    -- Tạo bảng tạm để lưu ID vừa được tạo từ bảng Users
+    DECLARE @InsertedUsers TABLE (UserId INT);
 
- --drop trigger trg_AfterInsertDichVuVeSinh
+    -- Thêm dữ liệu vào bảng Users và lưu ID vào bảng tạm
+    INSERT INTO Users (TenDangNhap, MatKhau)
+    OUTPUT INSERTED.Id INTO @InsertedUsers(UserId)
+    SELECT i.Email, i.DienThoai
+    FROM inserted i
+    WHERE i.Email IS NOT NULL AND i.DienThoai IS NOT NULL;
 
- --delete from YeuCau
+    -- Cập nhật UserId trong bảng NhanVien bằng giá trị từ bảng tạm
+    UPDATE NhanVien
+    SET UserId = (SELECT UserId FROM @InsertedUsers)
+    FROM inserted i
+    WHERE NhanVien.id = i.id;
+END;
 
+
+CREATE TRIGGER trg_AfterInsertCuDan
+ON CuDan
+AFTER INSERT
+AS
+BEGIN
+    -- Tạo bảng tạm để lưu ID vừa được tạo từ bảng Users
+    DECLARE @InsertedUsers TABLE (UserId INT);
+
+    -- Thêm dữ liệu vào bảng Users và lưu ID vào bảng tạm
+    INSERT INTO Users (TenDangNhap, MatKhau)
+    OUTPUT INSERTED.Id INTO @InsertedUsers(UserId)
+    SELECT i.Email, i.DienThoai
+    FROM inserted i
+    WHERE i.Email IS NOT NULL AND i.DienThoai IS NOT NULL;
+
+    -- Cập nhật UserId trong bảng CuDan bằng giá trị từ bảng tạm
+    UPDATE CuDan
+    SET UserId = (SELECT UserId FROM @InsertedUsers)
+    FROM inserted i
+    WHERE CuDan.id = i.id;
+END;
+
+
+drop trigger trg_AfterInsertNhanVien
 
 
 

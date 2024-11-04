@@ -32,6 +32,19 @@ namespace DesignEasyHouse1.DAO
         }
         public int PhanQuyenNguoiDung(int userId)
         {
+            int result = -1;
+            //trả về 2 cho cư dân 
+            string query = "SELECT CuDanID FROM CuDan WHERE UserId  = @userId ";
+            object[] parameters = new object[] { userId };
+            result = (int)DataProvider.Instance.ExecuteScalar(query, parameters);
+            if (result > 0) return 2;
+
+            //trả về 1 cho nhân viên 
+            query = "SELECT id FROM NhanVien WHERE UserId  = @userId ";
+            result = (int)DataProvider.Instance.ExecuteScalar(query, parameters);
+            if (result > 0) return 1;
+
+            //trả về 0 cho admin
             return 0;
         }
 

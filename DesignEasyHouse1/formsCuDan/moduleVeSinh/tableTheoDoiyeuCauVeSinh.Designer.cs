@@ -45,6 +45,7 @@
             this.lblDen = new System.Windows.Forms.Label();
             this.lblDinhKy = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnDanhGia = new System.Windows.Forms.Button();
             this.panelTieuDe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbHideMenu)).BeginInit();
             this.panel1.SuspendLayout();
@@ -94,11 +95,12 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnDanhGia);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 73);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1166, 598);
+            this.panel1.Size = new System.Drawing.Size(1166, 640);
             this.panel1.TabIndex = 27;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -112,12 +114,12 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.dtgvTheoDoiVeSinh, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.grbChonthoiGian, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(25, 25);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(25, 17);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 444F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1129, 539);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 434F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1129, 529);
             this.tableLayoutPanel1.TabIndex = 26;
             // 
             // dtgvTheoDoiVeSinh
@@ -153,7 +155,7 @@
             this.dtgvTheoDoiVeSinh.RowHeadersVisible = false;
             this.dtgvTheoDoiVeSinh.RowHeadersWidth = 51;
             this.dtgvTheoDoiVeSinh.RowTemplate.Height = 24;
-            this.dtgvTheoDoiVeSinh.Size = new System.Drawing.Size(1123, 436);
+            this.dtgvTheoDoiVeSinh.Size = new System.Drawing.Size(1123, 426);
             this.dtgvTheoDoiVeSinh.TabIndex = 9;
             this.dtgvTheoDoiVeSinh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvTheoDoiVeSinh_CellContentClick);
             this.dtgvTheoDoiVeSinh.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dtgvTheoDoiVeSinh_CellPainting);
@@ -260,12 +262,32 @@
             this.lblDinhKy.TabIndex = 3;
             this.lblDinhKy.Text = "Định kỳ theo";
             // 
+            // btnDanhGia
+            // 
+            this.btnDanhGia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.btnDanhGia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDanhGia.FlatAppearance.BorderSize = 0;
+            this.btnDanhGia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDanhGia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDanhGia.ForeColor = System.Drawing.Color.White;
+            this.btnDanhGia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDanhGia.Location = new System.Drawing.Point(25, 551);
+            this.btnDanhGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDanhGia.Name = "btnDanhGia";
+            this.btnDanhGia.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnDanhGia.Size = new System.Drawing.Size(230, 50);
+            this.btnDanhGia.TabIndex = 32;
+            this.btnDanhGia.Text = "Gửi đánh giá dịch vụ ";
+            this.btnDanhGia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDanhGia.UseVisualStyleBackColor = false;
+            this.btnDanhGia.Click += new System.EventHandler(this.btnDanhGia_Click);
+            // 
             // tableTheoDoiyeuCauVeSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1166, 671);
+            this.ClientSize = new System.Drawing.Size(1166, 713);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelTieuDe);
             this.Name = "tableTheoDoiyeuCauVeSinh";
@@ -301,5 +323,6 @@
         private System.Windows.Forms.Label lblDinhKy;
         private System.Windows.Forms.DateTimePicker dtpDen;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button btnDanhGia;
     }
 }

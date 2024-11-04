@@ -31,15 +31,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelDuoi = new System.Windows.Forms.Panel();
+            this.btnThemHopDong = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnTimKiem = new System.Windows.Forms.Button();
             this.tbTimKiem = new System.Windows.Forms.TextBox();
             this.panelTren = new System.Windows.Forms.Panel();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnThemHopDong = new System.Windows.Forms.Button();
-            this.btnTimKiem = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Details = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
@@ -58,6 +58,28 @@
             this.panelDuoi.Name = "panelDuoi";
             this.panelDuoi.Size = new System.Drawing.Size(1300, 80);
             this.panelDuoi.TabIndex = 45;
+            // 
+            // btnThemHopDong
+            // 
+            this.btnThemHopDong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnThemHopDong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.btnThemHopDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnThemHopDong.FlatAppearance.BorderSize = 0;
+            this.btnThemHopDong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemHopDong.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemHopDong.ForeColor = System.Drawing.Color.White;
+            this.btnThemHopDong.Image = global::DesignEasyHouse1.Properties.Resources.Add;
+            this.btnThemHopDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemHopDong.Location = new System.Drawing.Point(40, 29);
+            this.btnThemHopDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThemHopDong.Name = "btnThemHopDong";
+            this.btnThemHopDong.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnThemHopDong.Size = new System.Drawing.Size(160, 40);
+            this.btnThemHopDong.TabIndex = 31;
+            this.btnThemHopDong.Text = "Thêm hợp đồng";
+            this.btnThemHopDong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThemHopDong.UseVisualStyleBackColor = false;
+            this.btnThemHopDong.Click += new System.EventHandler(this.btnThemHopDong_Click);
             // 
             // dataGridViewImageColumn1
             // 
@@ -85,6 +107,25 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 25);
             this.panel2.TabIndex = 36;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnTimKiem.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnTimKiem.FlatAppearance.BorderSize = 0;
+            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Image = global::DesignEasyHouse1.Properties.Resources.Search_new;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(215, 0);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnTimKiem.Size = new System.Drawing.Size(35, 25);
+            this.btnTimKiem.TabIndex = 32;
+            this.btnTimKiem.UseVisualStyleBackColor = false;
             // 
             // tbTimKiem
             // 
@@ -116,7 +157,7 @@
             this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
             this.dataGridViewImageColumn3.ReadOnly = true;
             this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn3.Width = 6;
+            this.dataGridViewImageColumn3.Width = 125;
             // 
             // dataGridViewImageColumn4
             // 
@@ -126,48 +167,7 @@
             this.dataGridViewImageColumn4.MinimumWidth = 6;
             this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
             this.dataGridViewImageColumn4.ReadOnly = true;
-            this.dataGridViewImageColumn4.Width = 6;
-            // 
-            // btnThemHopDong
-            // 
-            this.btnThemHopDong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnThemHopDong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
-            this.btnThemHopDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnThemHopDong.FlatAppearance.BorderSize = 0;
-            this.btnThemHopDong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemHopDong.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemHopDong.ForeColor = System.Drawing.Color.White;
-            this.btnThemHopDong.Image = global::DesignEasyHouse1.Properties.Resources.Add;
-            this.btnThemHopDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemHopDong.Location = new System.Drawing.Point(40, 29);
-            this.btnThemHopDong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThemHopDong.Name = "btnThemHopDong";
-            this.btnThemHopDong.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnThemHopDong.Size = new System.Drawing.Size(160, 40);
-            this.btnThemHopDong.TabIndex = 31;
-            this.btnThemHopDong.Text = "Thêm hợp đồng";
-            this.btnThemHopDong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnThemHopDong.UseVisualStyleBackColor = false;
-            this.btnThemHopDong.Click += new System.EventHandler(this.btnThemHopDong_Click);
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
-            this.btnTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnTimKiem.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnTimKiem.FlatAppearance.BorderSize = 0;
-            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Image = global::DesignEasyHouse1.Properties.Resources.Search_new;
-            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(215, 0);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnTimKiem.Size = new System.Drawing.Size(35, 25);
-            this.btnTimKiem.TabIndex = 32;
-            this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.dataGridViewImageColumn4.Width = 125;
             // 
             // dataGridViewImageColumn5
             // 

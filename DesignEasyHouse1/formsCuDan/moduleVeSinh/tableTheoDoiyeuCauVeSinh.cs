@@ -65,15 +65,14 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
             dtgvTheoDoiVeSinh.Columns["KhuVucVeSinh"].HeaderText = "Khu Vực Vệ Sinh";
             dtgvTheoDoiVeSinh.Columns["ThoiGianVeSinh"].HeaderText = "Thời Gian Vệ Sinh";
             // Xóa cột "Thao Tác" nếu đã tồn tại
-            if (dtgvTheoDoiVeSinh.Columns.Contains("Xóa"))
+            if (dtgvTheoDoiVeSinh.Columns.Contains("Chỉnh sửa"))
             {
-                dtgvTheoDoiVeSinh.Columns.Remove("Xóa");
+                dtgvTheoDoiVeSinh.Columns.Remove("Chỉnh sửa");
             }
             // Tạo cột mới cho nút chỉnh sửa và xóa
             DataGridViewButtonColumn DeleteColumn = new DataGridViewButtonColumn();
-            DeleteColumn.Name = "Xóa";
-            DeleteColumn.HeaderText = "Thao Tác";
-            DeleteColumn.Text = "Xóa";
+            DeleteColumn.Name = "Chỉnh sửa";
+            DeleteColumn.HeaderText = "Chỉnh sửa";
             DeleteColumn.UseColumnTextForButtonValue = true;
             // Sử dụng cùng một giá trị cho tất cả các nút
             dtgvTheoDoiVeSinh.Columns.Add(DeleteColumn);
@@ -86,30 +85,46 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
 
         private void dtgvTheoDoiVeSinh_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-                // Lấy mã yêu cầu từ hàng tương ứng
-                int maYeuCau = Convert.ToInt32(dtgvTheoDoiVeSinh.Rows[e.RowIndex].Cells["MaYeuCau"].Value);
-
-                // Thực hiện hành động xóa yêu cầu
-                if (MessageBox.Show("Bạn có muốn xóa yêu cầu này không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            // Lấy mã yêu cầu từ hàng tương ứng
+            //int maYeuCau = Convert.ToInt32(dtgvTheoDoiVeSinh.Rows[e.RowIndex].Cells["MaYeuCau"].Value);
+            // Kiểm tra nếu hàng và cột đều hợp lệ
+            if (e.RowIndex >= 0 && e.ColumnIndex == dtgvTheoDoiVeSinh.Columns["Chỉnh sửa"].Index)
+            {
+                // Kiểm tra xem ô có giá trị không
+                if (dtgvTheoDoiVeSinh.Rows[e.RowIndex].Cells["MaYeuCau"].Value != null &&
+                    int.TryParse(dtgvTheoDoiVeSinh.Rows[e.RowIndex].Cells["MaYeuCau"].Value.ToString(), out int maYeuCau) &&
+                    (dtgvTheoDoiVeSinh.Rows[e.RowIndex].Cells["TrangThai"].Value.ToString() == "Đang chờ xử lý"))
                 {
-                    //// Xóa yêu cầu từ cơ sở dữ liệu
-                    if (YeuCauVeSinhDAO.Instance.DeleteYeuCauVeSinh(maYeuCau))
-                    {
-                        MessageBox.Show("Xóa thành công yêu cầu");
-                            
-                        dtgvTheoDoiVeSinh.DataSource = null; // Xóa nguồn dữ liệu
-                        tableTheoDoiyeuCauVeSinh_Load(sender, e);
-                    }
+                    // Xử lý với maYeuCau
+                    // Ví dụ: sử dụng maYeuCau để thực hiện các hành động khác
+                   
+                    MessageBox.Show("Yêu cầu vẫn đang xử lý , bạn có muốn thay đổi yêu cầu này", "Xác nhận", MessageBoxButtons.YesNo);
+                }
             }
         }
 
         private void dtgvTheoDoiVeSinh_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
         {
-            // Kiểm tra xem cột có phải là cột xóa không
-            if (e.ColumnIndex == dtgvTheoDoiVeSinh.Columns["Xóa"].Index && e.RowIndex >= 0)
+            // Kiểm tra xem cột có phải là cột "Chỉnh sửa" không
+            if (e.ColumnIndex == dtgvTheoDoiVeSinh.Columns["Chỉnh sửa"].Index && e.RowIndex >= 0)
             {
-                // Vẽ nền màu đỏ
-                e.Graphics.FillRectangle(new SolidBrush(Color.Red), e.CellBounds);
+                // Tạo hình ảnh biểu tượng
+                Image icon = Properties.Resources.Edit1; ; // Đường dẫn đến tệp hình ảnh
+
+                // Đặt kích thước cho icon
+                int iconWidth = 16; // Chiều rộng của biểu tượng
+                int iconHeight = 16; // Chiều cao của biểu tượng
+
+                // Tính toán vị trí để vẽ icon
+                Rectangle iconRect = new Rectangle(
+                    e.CellBounds.Left + 5, // Khoảng cách từ bên trái
+                    e.CellBounds.Top + (e.CellBounds.Height - iconHeight) / 2, // Giữa theo chiều dọc
+                    iconWidth,
+                    iconHeight
+                );
+
+                // Vẽ icon
+                e.Graphics.DrawImage(icon, iconRect);
 
                 // Căn giữa văn bản
                 StringFormat stringFormat = new StringFormat
@@ -118,8 +133,9 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
                     LineAlignment = StringAlignment.Center
                 };
 
-                // Vẽ văn bản
-                e.Graphics.DrawString("Xóa", e.CellStyle.Font, Brushes.White, e.CellBounds, stringFormat);
+                // Vẽ văn bản (có thể điều chỉnh vị trí để tránh bị che khuất bởi icon)
+                e.Graphics.DrawString("", e.CellStyle.Font, Brushes.White,
+                    new Rectangle(iconRect.Right + 5, e.CellBounds.Top, e.CellBounds.Width - iconRect.Width - 10, e.CellBounds.Height), stringFormat);
 
                 // Vẽ viền dưới
                 e.Graphics.DrawLine(Pens.Black, e.CellBounds.Left, e.CellBounds.Bottom - 1, e.CellBounds.Right, e.CellBounds.Bottom - 1);
@@ -152,6 +168,12 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnDanhGia_Click(object sender, EventArgs e)
+        {
+            Form form = new formDanhGiaChatLuong();
+            form.ShowDialog();
         }
     }
  }
