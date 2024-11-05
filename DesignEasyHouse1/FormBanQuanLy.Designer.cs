@@ -152,9 +152,9 @@
             this.labelTieuDe.ForeColor = System.Drawing.Color.White;
             this.labelTieuDe.Location = new System.Drawing.Point(67, 6);
             this.labelTieuDe.Name = "labelTieuDe";
-            this.labelTieuDe.Size = new System.Drawing.Size(85, 28);
+            this.labelTieuDe.Size = new System.Drawing.Size(20, 28);
             this.labelTieuDe.TabIndex = 1;
-            this.labelTieuDe.Text = "Tiêu đề";
+            this.labelTieuDe.Text = "-";
             // 
             // ptbHideMenu
             // 

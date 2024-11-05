@@ -38,6 +38,20 @@ namespace DesignEasyHouse1
             childForm.Show();
         }
 
+        private void ptbHideMenu_Click(object sender, EventArgs e)
+        {
+            if (panelMenu.Visible)
+            {
+                panelMenu.Visible = false;
+                ptbHideMenu.Image = Resources.icons8_less_than_96__1_;
+            }
+            else
+            {
+                panelMenu.Visible = true;
+                ptbHideMenu.Image = Resources.iconlessthan_2;
+            }
+        }
+
         #endregion
 
         private void btnHome_Click(object sender, EventArgs e)

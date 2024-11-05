@@ -444,6 +444,10 @@ VALUES
 INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
 VALUES 
     ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '2', '2', '2020-01-01', 10000000, N'Vệ Sinh');
+
+INSERT INTO CuDan (HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, TrangThai, ThanhToan, NgayChuyenDen, HinhAnh)
+VALUES 
+('Nguyen Van A', '0', '123456789012', '0', '123 Nguyen Trai, Ha Noi', N'Nam', '1990-01-01', N'Còn ở', N'Trả đủ', GETDATE(), NULL);
 GO
 
 
