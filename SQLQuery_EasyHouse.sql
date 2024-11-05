@@ -48,10 +48,11 @@ CREATE TABLE NhanVien (
     PhongBan NVARCHAR(50),             -- Phòng ban
     UserId INT                         -- ID người dùng, có thể là khóa ngoại tham chiếu đến bảng users
 );
-INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan, UserId)
+
+--Thêm nhân viên 
+INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
 VALUES 
-    ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '0123456789', 'vana@example.com', '2020-01-01', 10000000, 'Phòng Kinh Doanh', 1),
-    ('Tran Thi B', 'Nhân viên', '1990-10-15', 'Hà Nội', '0987654321', 'thib@example.com', '2021-02-15', 8000000, 'Phòng Hành Chính', 2);
+    ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '0123456789', 'vana@example.com', '2020-01-01', 10000000, N'Vệ Sinh');
 
 --SoCanHo NVARCHAR(10),
 --ThanhToan NVARCHAR(255) DEFAULT N'Trả đủ', --'Trả đủ' hoặc 'Nợ'

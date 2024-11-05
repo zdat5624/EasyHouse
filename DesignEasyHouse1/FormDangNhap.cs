@@ -18,7 +18,8 @@ namespace DesignEasyHouse1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
         {
             string TenDangNhap = txtTenDangNhap.Text.Trim();
             string MatKhau = txtMatKhau.Text.Trim();
@@ -29,10 +30,35 @@ namespace DesignEasyHouse1
                 //lưu thông tin người dùng tạm thời trong phiên đăng nhập 
                 Session.TenDangNhap = TenDangNhap;
                 Session.UserId = userId;
-                
-                // đăng nhập vào form 
-                this.Close();
+                this.Hide();
+                // Kiểm tra xem người dùng đã đăng nhập chưa
+                if (Session.TenDangNhap != null)
+                {
+                    // Lấy quyền người dùng
+                    int quyenNguoiDung = UsersDAO.Instance.PhanQuyenNguoiDung(Session.UserId);
+
+                    // Phân quyền và mở form tương ứng
+                    Form mainForm;
+                    switch (quyenNguoiDung)
+                    {
+                        case 0:
+                            mainForm = new FormGiamDoc();
+                            break;
+                        case 1:
+                            mainForm = new FormBanQuanLy();
+                            break;
+                        default:
+                            mainForm = new FormCuDan();
+                            break;
+                    }
+                    mainForm.Show();
+                }
             }
+        }
+
+        private void FormDangNhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

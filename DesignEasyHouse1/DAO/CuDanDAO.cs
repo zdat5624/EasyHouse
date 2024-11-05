@@ -32,6 +32,19 @@ namespace DesignEasyHouse1.DAO
             string query = "SELECT CuDanID, HoTen, SoDienThoai, CCCD, Email, DiaChi, TrangThai, ThanhToan FROM CuDan";
             return DataProvider.Instance.ExecuteQuery(query);
         }
+        public int GetCuDanID(int userId)
+        {
+            string query = "SELECT CuDanID FROM CuDan WHERE CuDanID = @userId";
+            object[] parameters = new object[] { userId };
+            int result =  (int)DataProvider.Instance.ExecuteScalar(query, parameters);
+            return result;
+        }
+        public string GetTenCuDan(int userId)
+        {
+            string query = "SELECT HoTen FROM CuDan WHERE CuDanID = @userId";
+            object[] parameters = new object[] { userId };
+            return (string)DataProvider.Instance.ExecuteScalar(query, parameters);
+        }
 
         public bool ThemCuDan(string HoTen, string SoDienThoai, string CCCD, string Email, string DiaChi, string GioiTinh, DateTime NgaySinh, byte[] HinhAnh)
         {

@@ -47,6 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="SessionNhanVien.cs" />
+    <Compile Include="SessionCuDan.cs" />
     <Compile Include="formsGiamDoc\QuanLyNhanVien\DanhSachNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>

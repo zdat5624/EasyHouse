@@ -70,14 +70,23 @@ namespace DesignEasyHouse1
             Session.UserId = -1;
 
             // Ẩn form chính
-            this.Hide();
+            this.Close();
 
             // Tạo và hiển thị lại form đăng nhập
             FormDangNhap loginForm = new FormDangNhap();
-            loginForm.FormClosed += (s, args) => Application.Exit(); // Đảm bảo form chính sẽ hiển thị lại khi form đăng nhập đóng
+            //loginForm.FormClosed += (s, args) => Application.Exit(); // Đảm bảo form chính sẽ hiển thị lại khi form đăng nhập đóng
+            
             loginForm.Show(); // Hiện form đăng nhập
         }
-        
 
+        private void FormGiamDoc_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormGiamDoc_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

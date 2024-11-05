@@ -28,7 +28,7 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
             DateTime ThoiGianVeSinh = dtpThoiGianVeSinh.Value;
             string KieuVeSinh;
             //Khi Đăng nhập ta sẽ lấy đc cuDanid 
-            int CuDanID = 1;
+            int CuDanID = SessionCuDan.CuDanID;
             if (radVeSinhThuong.Checked)
             {
                 KieuVeSinh = "Thường";

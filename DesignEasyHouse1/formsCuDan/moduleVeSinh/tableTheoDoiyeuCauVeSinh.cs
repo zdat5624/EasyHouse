@@ -35,7 +35,7 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
         private void tableTheoDoiyeuCauVeSinh_Load(object sender, EventArgs e)
         {
 
-            int cuDanId = 1;
+            int cuDanId = SessionCuDan.CuDanID;
             DataTable dt = null;
             DateTime tuNgay = dtpTu.Value;
             DateTime denNgay = dtpDen.Value;
