@@ -446,9 +446,53 @@ INSERT INTO NhanVien(Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenD
 VALUES 
 ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '1', '1', '2020-01-01', 10000000, N'Quản lý cư dân');
 
+INSERT INTO NhanVien(Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '3', '3', '2020-01-01', 10000000, N'Quản lý dự án thi công');
+
 
 GO
 
+CREATE TABLE DuAnThiCong (
+    DuAnThiCongID INT PRIMARY KEY IDENTITY(1,1),
+    TenDuDan NVARCHAR(100) NOT NULL,
+    TenNhaThau NVARCHAR(100) NOT NULL,
+    NgayBatDau DATE,
+    NgayKetThuc DATE,
+    TrangThai NVARCHAR(50) DEFAULT 'Đang thi công', -- Đang thi công, Hoàn thành, Tạm dừng
+    FileTaiLieu NVARCHAR(255) -- Lưu đường dẫn của file zip/rar
+);
+
+
+
+CREATE TABLE GiaiDoanThiCong (
+    GiaiDoanID INT PRIMARY KEY IDENTITY(1,1),
+    DuAnThiCongID INT, -- Tham chiếu không có khóa ngoại
+    ThuTu INT, -- Thứ tự 1, 2, 3
+    NgayKetThucDuKien DATE,
+    NgayKetThuc DATE DEFAULT NULL,
+    TrangThai NVARCHAR(50) DEFAULT 'Đang thi công', -- Đang thi công, Hoàn thành
+    NoiDung NVARCHAR(MAX)
+);
+GO
+
+CREATE TABLE VatTuThiCong (
+    VatTuThiCongID INT PRIMARY KEY IDENTITY(1,1),
+    DuAnThiCongID INT, -- Tham chiếu không có khóa ngoại
+    TenVatTu NVARCHAR(100),
+    LoaiVatTu NVARCHAR(100),
+    SoLuong INT,
+	DonVi NVARCHAR(100)
+);
+GO
+
+CREATE TABLE ThoThiCong (
+    ThoThiCongID INT PRIMARY KEY IDENTITY(1,1),
+    DuAnThiCongID INT, -- Tham chiếu không có khóa ngoại
+    HoTen NVARCHAR(100),
+    CCCD NVARCHAR(100) UNIQUE,
+    NhiemVu NVARCHAR(100)
+);
 
 
 GO

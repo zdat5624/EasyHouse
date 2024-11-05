@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formQuanLyDuAnThiCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formQuanLyDuAnThiCong.Designer.cs">
+      <DependentUpon>formQuanLyDuAnThiCong.cs</DependentUpon>
+    </Compile>
     <Compile Include="SessionNhanVien.cs" />
     <Compile Include="SessionCuDan.cs" />
     <Compile Include="formsGiamDoc\QuanLyNhanVien\DanhSachNhanVien.cs">
@@ -397,6 +403,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formXemChiTietThongTinCuDan.resx">
       <DependentUpon>formXemChiTietThongTinCuDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formQuanLyDuAnThiCong.resx">
+      <DependentUpon>formQuanLyDuAnThiCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongVeSinh\formDeXuat.resx">
       <DependentUpon>formDeXuat.cs</DependentUpon>

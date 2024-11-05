@@ -1,6 +1,6 @@
-﻿namespace DesignEasyHouse1
+﻿namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
 {
-    partial class SampleChildForm
+    partial class formQuanLyDuAnThiCong
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SampleChildForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -48,7 +47,6 @@
             // 
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
             this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -59,36 +57,36 @@
             // 
             this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn2.Image")));
             this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 125;
             // 
             // button30
             // 
+            this.button30.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
             this.button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button30.FlatAppearance.BorderSize = 0;
             this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button30.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.button30.ForeColor = System.Drawing.Color.White;
-            this.button30.Image = ((System.Drawing.Image)(resources.GetObject("button30.Image")));
             this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button30.Location = new System.Drawing.Point(39, 573);
+            this.button30.Location = new System.Drawing.Point(39, 593);
             this.button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button30.Name = "button30";
             this.button30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button30.Size = new System.Drawing.Size(177, 56);
+            this.button30.Size = new System.Drawing.Size(160, 40);
             this.button30.TabIndex = 31;
-            this.button30.Text = "Thêm cư dân";
+            this.button30.Text = "Thêm dự án";
             this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button30.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Location = new System.Drawing.Point(778, 95);
+            this.panel2.Location = new System.Drawing.Point(755, 36);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 25);
             this.panel2.TabIndex = 37;
@@ -128,6 +126,7 @@
             // 
             this.dtgvThongTinCuDan.AllowUserToAddRows = false;
             this.dtgvThongTinCuDan.AllowUserToDeleteRows = false;
+            this.dtgvThongTinCuDan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgvThongTinCuDan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvThongTinCuDan.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dtgvThongTinCuDan.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -146,7 +145,7 @@
             this.Delete,
             this.Edit});
             this.dtgvThongTinCuDan.EnableHeadersVisualStyles = false;
-            this.dtgvThongTinCuDan.Location = new System.Drawing.Point(199, 136);
+            this.dtgvThongTinCuDan.Location = new System.Drawing.Point(39, 77);
             this.dtgvThongTinCuDan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgvThongTinCuDan.Name = "dtgvThongTinCuDan";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -160,7 +159,7 @@
             this.dtgvThongTinCuDan.RowHeadersVisible = false;
             this.dtgvThongTinCuDan.RowHeadersWidth = 51;
             this.dtgvThongTinCuDan.RowTemplate.Height = 24;
-            this.dtgvThongTinCuDan.Size = new System.Drawing.Size(668, 370);
+            this.dtgvThongTinCuDan.Size = new System.Drawing.Size(966, 409);
             this.dtgvThongTinCuDan.TabIndex = 38;
             // 
             // Delete
@@ -182,10 +181,11 @@
             this.Edit.Name = "Edit";
             this.Edit.Width = 6;
             // 
-            // SampleChildForm
+            // formQuanLyDuAnThiCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1061, 654);
             this.Controls.Add(this.dtgvThongTinCuDan);
             this.Controls.Add(this.panel2);
@@ -193,7 +193,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.Name = "SampleChildForm";
+            this.Name = "formQuanLyDuAnThiCong";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinCuDan)).EndInit();

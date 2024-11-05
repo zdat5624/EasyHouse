@@ -1,4 +1,5 @@
 ﻿using DesignEasyHouse1.DAO;
+using DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong;
 using DesignEasyHouse1.Properties;
 using System;
 using System.Collections.Generic;
@@ -101,6 +102,9 @@ namespace DesignEasyHouse1
                 case "Vệ Sinh":
                     showVeSinhModule();
                     break;
+                case "Quản lý dự án thi công":
+                    showDuAnThiCongModule();
+                    break;
                 case "Quản lý cư dân":
                     showQuanLyCuDanModule();
                     break;
@@ -121,6 +125,11 @@ namespace DesignEasyHouse1
             //btnDichVuVeSinh.Visible = true;
             panelQuanLyVeSinh.Visible = true;
         }
+        private void showDuAnThiCongModule()
+        {
+            //btnDichVuVeSinh.Visible = true;
+            panelDuAnThiCong.Visible = true;
+        }
 
         private void button30_Click(object sender, EventArgs e)
         {
@@ -135,6 +144,12 @@ namespace DesignEasyHouse1
             FormDangNhap loginForm = new FormDangNhap();
             //loginForm.FormClosed += (s, args) => Application.Exit(); // Đảm bảo form chính sẽ hiển thị lại khi form đăng nhập đóng
             loginForm.Show(); // Hiện form đăng nhập
+        }
+
+        private void btnQuanLyDuAnThiCong_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongDuAnThiCong.formQuanLyDuAnThiCong());
+            
         }
     }
 }
