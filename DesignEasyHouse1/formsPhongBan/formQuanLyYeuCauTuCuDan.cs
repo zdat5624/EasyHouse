@@ -30,7 +30,7 @@ namespace DesignEasyHouse1.formsPhongBan
 
             dtgvYeuCauCuDan.Columns["YeuCauID"].HeaderText = "ID Yêu Cầu";
             dtgvYeuCauCuDan.Columns["CuDanID"].HeaderText = "ID Cư Dân";
-            dtgvYeuCauCuDan.Columns["LoaiYeuCauID"].HeaderText = "Id Loại Yêu Cầu";
+            //dtgvYeuCauCuDan.Columns["LoaiYeuCauID"].HeaderText = "Id Loại Yêu Cầu";
             dtgvYeuCauCuDan.Columns["TieuDe"].HeaderText = "Tiêu Đề";
             dtgvYeuCauCuDan.Columns["NoiDung"].HeaderText = "Nội Dung";
             dtgvYeuCauCuDan.Columns["NgayGui"].HeaderText = "Ngày Gửi";

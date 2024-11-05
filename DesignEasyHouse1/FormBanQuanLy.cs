@@ -33,7 +33,7 @@ namespace DesignEasyHouse1
             currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
-            //childForm.Dock = DockStyle.Fill;
+            childForm.Dock = DockStyle.Fill;
             labelTieuDe.Text = childForm.Text;
             panelMain.Controls.Add(childForm);
             panelMain.Tag = childForm;
@@ -112,13 +112,13 @@ namespace DesignEasyHouse1
 
         private void showQuanLyCuDanModule()
         {
-            btnDichVuCuDan.Visible = true;
+            //btnDichVuCuDan.Visible = true;
             panelQuanLyCuDan.Visible = true;
         }
 
         private void showVeSinhModule()
         {
-            btnDichVuVeSinh.Visible = true;
+            //btnDichVuVeSinh.Visible = true;
             panelQuanLyVeSinh.Visible = true;
         }
 

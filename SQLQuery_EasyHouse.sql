@@ -50,10 +50,16 @@ CREATE TABLE NhanVien (
     UserId INT                         -- ID người dùng, có thể là khóa ngoại tham chiếu đến bảng users
 );
 
---Thêm nhân viên 
+--Thêm nhân viên
+INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+    ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '1', '1', '2020-01-01', 10000000, N'Quản lý cư dân');
+
+
 INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
 VALUES 
     ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '0123456789', 'vana@example.com', '2020-01-01', 10000000, N'Vệ Sinh');
+
 
 --SoCanHo NVARCHAR(10),
 --ThanhToan NVARCHAR(255) DEFAULT N'Trả đủ', --'Trả đủ' hoặc 'Nợ'
@@ -434,6 +440,10 @@ VALUES
 ('Nguyen Van A', '0123456789', '123456789012', 'nguyenvana@example.com', '123 Nguyen Trai, Ha Noi', N'Nam', '1990-01-01', N'Còn ở', N'Trả đủ', GETDATE(), NULL),
 ('Tran Thi B', '0987654321', '987654321098', 'tranthib@example.com', '456 Le Loi, Da Nang', N'Nữ', '1992-02-02', N'Còn ở', N'Nợ', GETDATE(), NULL),
 ('Le Van C', '0345678901', '567890123456', 'levanc@example.com', '789 Tran Phu, Ho Chi Minh', N'Nam', '1995-03-03', N'Chuyển đi', N'Trả đủ', '2023-01-01', NULL);
+
+INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+    ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '2', '2', '2020-01-01', 10000000, N'Vệ Sinh');
 GO
 
 
