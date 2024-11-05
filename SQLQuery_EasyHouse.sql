@@ -382,7 +382,7 @@ BEGIN
     UPDATE CuDan
     SET UserId = (SELECT UserId FROM @InsertedUsers)
     FROM inserted i
-    WHERE CuDan.CuDanID = i.CuDanID;
+    WHERE CuDan.UserId = i.UserId;
 END;
 
 GO
