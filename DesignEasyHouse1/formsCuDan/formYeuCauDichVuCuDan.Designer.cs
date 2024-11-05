@@ -112,7 +112,7 @@ namespace DesignEasyHouse1.formsCuDan
             // 
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Location = new System.Drawing.Point(825, 55);
+            this.panel2.Location = new System.Drawing.Point(960, 48);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(211, 25);
             this.panel2.TabIndex = 36;

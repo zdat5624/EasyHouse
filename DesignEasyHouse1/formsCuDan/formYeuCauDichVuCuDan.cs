@@ -27,10 +27,11 @@ namespace DesignEasyHouse1.formsCuDan
             MyGUI.dinhDangCotAllCellsDTGV(dtgvThongTinYeuCau, new List<string> { "YeuCauID", "CuDanID", "LoaiYeuCauID", "TieuDe", "NoiDung", "TrangThai", "NgayGui" });
 
             dtgvThongTinYeuCau.Columns["YeuCauID"].HeaderText = "ID Yêu Cầu";
-            dtgvThongTinYeuCau.Columns["CuDanID"].HeaderText = "ID Cư Dân";
-            dtgvThongTinYeuCau.Columns["LoaiYeuCauID"].HeaderText = "Id Loại Yêu Cầu";
+            dtgvThongTinYeuCau.Columns["CuDanID"].Visible = false;
+            dtgvThongTinYeuCau.Columns["LoaiYeuCauID"].Visible = false;
             dtgvThongTinYeuCau.Columns["TieuDe"].HeaderText = "Tiêu Đề";
             dtgvThongTinYeuCau.Columns["NoiDung"].HeaderText = "Nội Dung";
+            dtgvThongTinYeuCau.Columns["NoiDung"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dtgvThongTinYeuCau.Columns["NgayGui"].HeaderText = "Ngày Gửi";
             dtgvThongTinYeuCau.Columns["TrangThai"].HeaderText = "Trạng thái";
         }

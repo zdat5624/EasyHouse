@@ -20,6 +20,8 @@ namespace DesignEasyHouse1
             Application.Run(new FormBanQuanLy());
             //Application.Run(new SampleChildForm1());
             Application.Run(new FormGiamDoc());
+            Application.Run(new FormDangNhap());
+            Application.Run(new FormCuDan());
         }
     }
 }

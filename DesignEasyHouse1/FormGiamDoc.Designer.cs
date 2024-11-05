@@ -318,7 +318,7 @@
             this.button38.FlatAppearance.BorderSize = 0;
             this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button38.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button38.ForeColor = System.Drawing.Color.Silver;
+            this.button38.ForeColor = System.Drawing.Color.White;
             this.button38.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button38.Location = new System.Drawing.Point(0, 1600);
             this.button38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -405,7 +405,7 @@
             this.button34.FlatAppearance.BorderSize = 0;
             this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button34.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button34.ForeColor = System.Drawing.Color.Silver;
+            this.button34.ForeColor = System.Drawing.Color.White;
             this.button34.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button34.Location = new System.Drawing.Point(0, 1422);
             this.button34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -492,7 +492,7 @@
             this.button23.FlatAppearance.BorderSize = 0;
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button23.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.ForeColor = System.Drawing.Color.Silver;
+            this.button23.ForeColor = System.Drawing.Color.White;
             this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button23.Location = new System.Drawing.Point(0, 1244);
             this.button23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -579,7 +579,7 @@
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Silver;
+            this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.Location = new System.Drawing.Point(0, 1066);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -666,7 +666,7 @@
             this.button27.FlatAppearance.BorderSize = 0;
             this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button27.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.ForeColor = System.Drawing.Color.Silver;
+            this.button27.ForeColor = System.Drawing.Color.White;
             this.button27.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button27.Location = new System.Drawing.Point(0, 888);
             this.button27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -753,7 +753,7 @@
             this.button20.FlatAppearance.BorderSize = 0;
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button20.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.Silver;
+            this.button20.ForeColor = System.Drawing.Color.White;
             this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button20.Location = new System.Drawing.Point(0, 710);
             this.button20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -860,7 +860,7 @@
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.Silver;
+            this.button15.ForeColor = System.Drawing.Color.White;
             this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button15.Location = new System.Drawing.Point(0, 492);
             this.button15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -950,7 +950,7 @@
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.Silver;
+            this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.Location = new System.Drawing.Point(0, 314);
             this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1037,7 +1037,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Silver;
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(0, 136);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
