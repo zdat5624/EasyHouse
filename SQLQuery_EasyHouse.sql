@@ -3,6 +3,7 @@ GO
 
 USE EasyHouseDB;
 GO
+
 --Bảng user lưu thông tin đăng nhập của toàn bộ người dùng 
 CREATE TABLE users (
     id INT IDENTITY PRIMARY KEY,
@@ -12,7 +13,7 @@ CREATE TABLE users (
 --INSERT INTO users (TenDangNhap, MatKhau)
 --VALUES ('vana@example.com', '123')
 --,('thib@example.com', '123');
-
+GO
 
 
 
@@ -137,12 +138,11 @@ CREATE TABLE YeuCau (
 GO
 
 
-drop table DichVuVeSinh
 CREATE TABLE DichVuVeSinh (
     DichVuVeSinhID INT PRIMARY KEY IDENTITY(1,1),  -- ID tự tăng
     KhuVucVeSinh NVARCHAR(100),                     -- Khu vực vệ sinh chung
     LoaiVeSinh NVARCHAR(50), 
-	KieuVeSinh NVARCHAR(50)                       -- Loại vệ sinh (Vệ sinh hàng ngày, vệ sinh định kỳ...)
+	KieuVeSinh NVARCHAR(50),                       -- Loại vệ sinh (Vệ sinh hàng ngày, vệ sinh định kỳ...)
     KhuVucCuThe NVARCHAR(255),                      -- Khu vực cụ thể cần vệ sinh
     ThoiGianVeSinh DATETIME,                        -- Thời gian vệ sinh
     CuDanID INT                                      -- ID của cư dân
@@ -288,13 +288,7 @@ VALUES
 
 GO
 
--- Dữ liệu mẫu cho bảng CuDan
-INSERT INTO CuDan (HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, TrangThai, ThanhToan, NgayChuyenDen, HinhAnh)
-VALUES 
-('Nguyen Van A', '0123456789', '123456789012', 'nguyenvana@example.com', '123 Nguyen Trai, Ha Noi', N'Nam', '1990-01-01', N'Còn ở', N'Trả đủ', GETDATE(), NULL),
-('Tran Thi B', '0987654321', '987654321098', 'tranthib@example.com', '456 Le Loi, Da Nang', N'Nữ', '1992-02-02', N'Còn ở', N'Nợ', GETDATE(), NULL),
-('Le Van C', '0345678901', '567890123456', 'levanc@example.com', '789 Tran Phu, Ho Chi Minh', N'Nam', '1995-03-03', N'Chuyển đi', N'Trả đủ', '2023-01-01', NULL);
-GO
+
 
 INSERT INTO CanHo (MaCanHo, ViTri, DienTich, SoPhongNgu, SoPhongTam, TrangThai) VALUES
 ('CH001', N'Tầng 1, Block A', 50.0, 1, 1, N'Trống'),
@@ -344,7 +338,7 @@ BEGIN
         inserted;  -- Bảng ảo chứa các bản ghi mới được thêm vào
 END;
 
-
+GO
 --khi thêm nhân viên vào thì tự động cũng sẽ có account đăng nhập, tên đăng nhập là email , mật khẩu là số điện thoại  
 CREATE TRIGGER trg_AfterInsertNhanVien
 ON NhanVien
@@ -367,7 +361,7 @@ BEGIN
     FROM inserted i
     WHERE NhanVien.id = i.id;
 END;
-
+GO
 
 CREATE TRIGGER trg_AfterInsertCuDan
 ON CuDan
@@ -380,23 +374,18 @@ BEGIN
     -- Thêm dữ liệu vào bảng Users và lưu ID vào bảng tạm
     INSERT INTO Users (TenDangNhap, MatKhau)
     OUTPUT INSERTED.Id INTO @InsertedUsers(UserId)
-    SELECT i.Email, i.DienThoai
+    SELECT i.Email, i.SoDienThoai
     FROM inserted i
-    WHERE i.Email IS NOT NULL AND i.DienThoai IS NOT NULL;
+    WHERE i.Email IS NOT NULL AND i.SoDienThoai IS NOT NULL;
 
     -- Cập nhật UserId trong bảng CuDan bằng giá trị từ bảng tạm
     UPDATE CuDan
     SET UserId = (SELECT UserId FROM @InsertedUsers)
     FROM inserted i
-    WHERE CuDan.id = i.id;
+    WHERE CuDan.CuDanID = i.CuDanID;
 END;
 
-
-drop trigger trg_AfterInsertNhanVien
-
-
-
-
+GO
 --bảng doanh thu 
 CREATE TABLE DoanhThu (
     DoanhThuId INT PRIMARY KEY,        -- Khóa chính
@@ -438,6 +427,15 @@ INSERT INTO ChiPhi VALUES
     (N'Gạch đỏ', N'Vật liệu xây dựng', 300000, 290000, N'Gạch xây tường', '2024-02-10'),
     (N'Sắt thép', N'Vật liệu xây dựng', 800000, 850000, N'Sắt thép cho khung nhà', '2024-03-05'),
 	(N'Chổi nhà vệ sinh', N'vật tư vệ sinh', 800000, 850000, N'Chổi cho nhà vệ sinh', '2024-03-05');
+GO
+-- Dữ liệu mẫu cho bảng CuDan
+INSERT INTO CuDan (HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, TrangThai, ThanhToan, NgayChuyenDen, HinhAnh)
+VALUES 
+('Nguyen Van A', '0123456789', '123456789012', 'nguyenvana@example.com', '123 Nguyen Trai, Ha Noi', N'Nam', '1990-01-01', N'Còn ở', N'Trả đủ', GETDATE(), NULL),
+('Tran Thi B', '0987654321', '987654321098', 'tranthib@example.com', '456 Le Loi, Da Nang', N'Nữ', '1992-02-02', N'Còn ở', N'Nợ', GETDATE(), NULL),
+('Le Van C', '0345678901', '567890123456', 'levanc@example.com', '789 Tran Phu, Ho Chi Minh', N'Nam', '1995-03-03', N'Chuyển đi', N'Trả đủ', '2023-01-01', NULL);
+GO
+
 
 SELECT * FROM HopDongThue;
 
