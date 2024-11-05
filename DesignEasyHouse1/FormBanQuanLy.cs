@@ -99,7 +99,7 @@ namespace DesignEasyHouse1
 
             switch (SessionNhanVien.PhongBan)
             {
-                case "Vệ Sinh":
+                case "Vệ sinh":
                     showVeSinhModule();
                     break;
                 case "Quản lý dự án thi công":
@@ -150,6 +150,16 @@ namespace DesignEasyHouse1
         {
             OpenChildForm(new formsPhongBan.PhongDuAnThiCong.formQuanLyDuAnThiCong());
             
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongVeSinh.tableNhanYeuCau());
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

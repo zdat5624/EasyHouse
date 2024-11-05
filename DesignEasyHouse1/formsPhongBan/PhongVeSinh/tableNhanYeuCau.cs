@@ -40,5 +40,20 @@ namespace DesignEasyHouse1.formsPhongBan.PhongVeSinh
         {
 
         }
+
+        private void cbKieuVeSinh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
