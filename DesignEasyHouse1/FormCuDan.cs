@@ -1,4 +1,5 @@
-﻿using DesignEasyHouse1.Properties;
+﻿using DesignEasyHouse1.DAO;
+using DesignEasyHouse1.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -60,6 +61,71 @@ namespace DesignEasyHouse1
         private void btnPhanHoiDanhGia_Click(object sender, EventArgs e)
         {
             OpenChildForm(new formsCuDan.formPhanHoiDanhGia());
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsCuDan.moduleVeSinh.formYeuCauVeSinh());
+            //labelTieuDe.Text = "Yêu Cầu Vệ Sinh";
+        }
+
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsCuDan.moduleVeSinh.tableTheoDoiyeuCauVeSinh());
+            //labelTieuDe.Text = "Theo Dõi Yêu Cầu Vệ Sinh ";
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsCuDan.moduleVeSinh.formDanhGiaChatLuong());
+            //labelTieuDe.Text = "Đánh Giá Dịch Vụ Vệ Sinh";
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelTieuDe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void FormCuDan_Load(object sender, EventArgs e)
+        {
+            SessionCuDan.CuDanID = CuDanDAO.Instance.GetCuDanID(Session.UserId);
+
+            //Lấy tên của cư dân 
+            SessionCuDan.TenCuDan = CuDanDAO.Instance.GetTenCuDan(Session.UserId);
+
+            //Hiển thị tên người dùng 
+            btnChaoUser.Text = SessionCuDan.TenCuDan;
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            // Đặt lại thông tin phiên người dùng
+            Session.TenDangNhap = null;
+            Session.UserId = -1;
+
+            // Ẩn form chính
+            this.Close();
+
+            // Tạo và hiển thị lại form đăng nhập
+            FormDangNhap loginForm = new FormDangNhap();
+            //loginForm.FormClosed += (s, args) => Application.Exit(); // Đảm bảo form chính sẽ hiển thị lại khi form đăng nhập đóng
+            loginForm.Show(); // Hiện form đăng nhập
+        }
+
+        private void FormCuDan_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

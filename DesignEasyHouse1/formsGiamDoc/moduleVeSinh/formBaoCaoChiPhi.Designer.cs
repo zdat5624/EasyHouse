@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grbChonthoiGian = new System.Windows.Forms.GroupBox();
             this.lblChonThoiGian = new System.Windows.Forms.Label();
             this.dtpThoiGianKetThuc = new System.Windows.Forms.DateTimePicker();
@@ -39,6 +39,7 @@
             this.dvgBaoCaoChiPhi = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblChiPhi = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.grbChonthoiGian.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgBaoCaoChiPhi)).BeginInit();
             this.panel1.SuspendLayout();
@@ -60,7 +61,7 @@
             // lblChonThoiGian
             // 
             this.lblChonThoiGian.AutoSize = true;
-            this.lblChonThoiGian.Location = new System.Drawing.Point(361, 37);
+            this.lblChonThoiGian.Location = new System.Drawing.Point(327, 37);
             this.lblChonThoiGian.Name = "lblChonThoiGian";
             this.lblChonThoiGian.Size = new System.Drawing.Size(31, 16);
             this.lblChonThoiGian.TabIndex = 5;
@@ -68,7 +69,7 @@
             // 
             // dtpThoiGianKetThuc
             // 
-            this.dtpThoiGianKetThuc.Location = new System.Drawing.Point(433, 35);
+            this.dtpThoiGianKetThuc.Location = new System.Drawing.Point(364, 35);
             this.dtpThoiGianKetThuc.Name = "dtpThoiGianKetThuc";
             this.dtpThoiGianKetThuc.Size = new System.Drawing.Size(315, 22);
             this.dtpThoiGianKetThuc.TabIndex = 4;
@@ -109,28 +110,28 @@
             this.dvgBaoCaoChiPhi.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dvgBaoCaoChiPhi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dvgBaoCaoChiPhi.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvgBaoCaoChiPhi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgBaoCaoChiPhi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dvgBaoCaoChiPhi.ColumnHeadersHeight = 30;
             this.dvgBaoCaoChiPhi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dvgBaoCaoChiPhi.EnableHeadersVisualStyles = false;
             this.dvgBaoCaoChiPhi.Location = new System.Drawing.Point(29, 204);
             this.dvgBaoCaoChiPhi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dvgBaoCaoChiPhi.Name = "dvgBaoCaoChiPhi";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvgBaoCaoChiPhi.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgBaoCaoChiPhi.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dvgBaoCaoChiPhi.RowHeadersVisible = false;
             this.dvgBaoCaoChiPhi.RowHeadersWidth = 51;
             this.dvgBaoCaoChiPhi.RowTemplate.Height = 24;
@@ -194,5 +195,6 @@
         private System.Windows.Forms.DataGridView dvgBaoCaoChiPhi;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button lblChiPhi;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

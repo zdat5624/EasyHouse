@@ -47,7 +47,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="SessionNhanVien.cs" />
+    <Compile Include="SessionCuDan.cs" />
+    <Compile Include="formsGiamDoc\QuanLyNhanVien\DanhSachNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsGiamDoc\QuanLyNhanVien\DanhSachNhanVien.Designer.cs">
+      <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsGiamDoc\QuanLyNhanVien\ThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsGiamDoc\QuanLyNhanVien\ThemNhanVien.Designer.cs">
+      <DependentUpon>ThemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs" />
     <Compile Include="DAO\ChiTietHopDongThueCanHoDAO.cs" />
+    <Compile Include="DAO\UsersDAO.cs" />
+    <Compile Include="DAO\YeuCauVeSinhDAO.cs" />
+    <Compile Include="DAO\DichVuVeSinhDAO.cs" />
     <Compile Include="DAO\CuDanDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\LichSuCapNhatCuDanDAO.cs" />
@@ -58,6 +77,8 @@
     <Compile Include="DTO\CanHo.cs" />
     <Compile Include="DTO\ChiPhi.cs" />
     <Compile Include="DTO\ChiTietHopDongThueCanHo.cs" />
+    <Compile Include="DTO\YeuCauVeSinh.cs" />
+    <Compile Include="DTO\DichVuVeSinh.cs" />
     <Compile Include="DTO\CuDan.cs" />
     <Compile Include="DTO\DoanhThu.cs" />
     <Compile Include="DTO\LichSuCapNhatCuDan.cs" />
@@ -117,12 +138,6 @@
     <Compile Include="formsCuDan\moduleVeSinh\formDanhGiaChatLuong.Designer.cs">
       <DependentUpon>formDanhGiaChatLuong.cs</DependentUpon>
     </Compile>
-    <Compile Include="formsCuDan\moduleVeSinh\formDKDinhKy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formsCuDan\moduleVeSinh\formDKDinhKy.Designer.cs">
-      <DependentUpon>formDKDinhKy.cs</DependentUpon>
-    </Compile>
     <Compile Include="formsCuDan\moduleVeSinh\formYeuCauVeSinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,12 +149,6 @@
     </Compile>
     <Compile Include="formsCuDan\moduleVeSinh\tableTheoDoiyeuCauVeSinh.Designer.cs">
       <DependentUpon>tableTheoDoiyeuCauVeSinh.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formsCuDan\moduleVeSinh\tableVeSinhDinhKy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formsCuDan\moduleVeSinh\tableVeSinhDinhKy.Designer.cs">
-      <DependentUpon>tableVeSinhDinhKy.cs</DependentUpon>
     </Compile>
     <Compile Include="formsGiamDoc\moduleVeSinh\bieuDoHoatDong.cs">
       <SubType>Form</SubType>
@@ -335,17 +344,11 @@
     <EmbeddedResource Include="formsCuDan\moduleVeSinh\formDanhGiaChatLuong.resx">
       <DependentUpon>formDanhGiaChatLuong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formsCuDan\moduleVeSinh\formDKDinhKy.resx">
-      <DependentUpon>formDKDinhKy.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formsCuDan\moduleVeSinh\formYeuCauVeSinh.resx">
       <DependentUpon>formYeuCauVeSinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsCuDan\moduleVeSinh\tableTheoDoiyeuCauVeSinh.resx">
       <DependentUpon>tableTheoDoiyeuCauVeSinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formsCuDan\moduleVeSinh\tableVeSinhDinhKy.resx">
-      <DependentUpon>tableVeSinhDinhKy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsGiamDoc\moduleVeSinh\bieuDoHoatDong.resx">
       <DependentUpon>bieuDoHoatDong.cs</DependentUpon>
@@ -355,6 +358,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsGiamDoc\moduleVeSinh\tableDoanhThu.resx">
       <DependentUpon>tableDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsGiamDoc\QuanLyNhanVien\DanhSachNhanVien.resx">
+      <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsGiamDoc\QuanLyNhanVien\ThemNhanVien.resx">
+      <DependentUpon>ThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formPhanHoiYeuCau.resx">
       <DependentUpon>formPhanHoiYeuCau.cs</DependentUpon>

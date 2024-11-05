@@ -52,5 +52,41 @@ namespace DesignEasyHouse1
         {
             OpenChildForm(new formsGiamDoc.moduleVeSinh.bieuDoHoatDong());
         }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+            btnUserName.Text = "Xin chào," + Session.TenDangNhap;
+        }
+
+        private void btnDanhSachNhanVien_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsGiamDoc.QuanLyNhanVien.DanhSachNhanVien());
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            // Đặt lại thông tin phiên người dùng
+            Session.TenDangNhap = null;
+            Session.UserId = -1;
+
+            // Ẩn form chính
+            this.Close();
+
+            // Tạo và hiển thị lại form đăng nhập
+            FormDangNhap loginForm = new FormDangNhap();
+            //loginForm.FormClosed += (s, args) => Application.Exit(); // Đảm bảo form chính sẽ hiển thị lại khi form đăng nhập đóng
+            
+            loginForm.Show(); // Hiện form đăng nhập
+        }
+
+        private void FormGiamDoc_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormGiamDoc_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

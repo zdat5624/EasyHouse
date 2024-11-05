@@ -1,4 +1,5 @@
-﻿using DesignEasyHouse1.Properties;
+﻿using DesignEasyHouse1.DAO;
+using DesignEasyHouse1.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -79,6 +80,61 @@ namespace DesignEasyHouse1
         private void btnHopDongThue_Click(object sender, EventArgs e)
         {
             OpenChildForm(new formsPhongBan.PhongCuDan.formQuanLyHopDongThueCanHo());
+        }
+
+        private void FormBanQuanLy_Load(object sender, EventArgs e)
+        {
+            SessionNhanVien.HoTen  = NhanVienDAO.Instance.GetTenNhanVien(Session.UserId);
+            SessionNhanVien.id = NhanVienDAO.Instance.GetNhanVienId(Session.UserId);
+            btnTenNguoiDung.Text = "Xin chào ," + SessionNhanVien.HoTen;
+
+            //thực hiện phân quyền giữa các phòng ban 
+            SessionNhanVien.PhongBan = NhanVienDAO.Instance.GetPhongBan(Session.UserId);
+
+            //thực hiện phân quyền dựa trên chức vụ 
+            SessionNhanVien.ChucVu = NhanVienDAO.Instance.GetChucVu(Session.UserId);
+
+            Console.WriteLine( SessionNhanVien.ChucVu + " "+ SessionNhanVien.PhongBan);
+
+            switch (SessionNhanVien.PhongBan)
+            {
+                case "Vệ Sinh":
+                    showVeSinhModule();
+                    break;
+                case "Quản lý cư dân":
+                    showQuanLyCuDanModule();
+                    break;
+
+            }
+
+
+        }
+
+        private void showQuanLyCuDanModule()
+        {
+            btnDichVuCuDan.Visible = true;
+            panelQuanLyCuDan.Visible = true;
+        }
+
+        private void showVeSinhModule()
+        {
+            btnDichVuVeSinh.Visible = true;
+            panelQuanLyVeSinh.Visible = true;
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            // Đặt lại thông tin phiên người dùng
+            Session.TenDangNhap = null;
+            Session.UserId = -1;
+
+            // Ẩn form chính
+            this.Close();
+
+            // Tạo và hiển thị lại form đăng nhập
+            FormDangNhap loginForm = new FormDangNhap();
+            //loginForm.FormClosed += (s, args) => Application.Exit(); // Đảm bảo form chính sẽ hiển thị lại khi form đăng nhập đóng
+            loginForm.Show(); // Hiện form đăng nhập
         }
     }
 }

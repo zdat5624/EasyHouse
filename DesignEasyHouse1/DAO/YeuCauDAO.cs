@@ -60,5 +60,14 @@ namespace DesignEasyHouse1.DAO
             int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
             return result > 0;
         }
+        public bool DeleteYeuCau(int yeuCauID)
+        {
+            string query = "DELETE FROM YeuCau WHERE YeuCauID = @YeuCauID";
+            object[] parameters = new object[] { yeuCauID };
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
+
+            return result > 0; // Trả về true nếu xóa thành công
+        }
     }
 }

@@ -3,6 +3,18 @@ GO
 
 USE EasyHouseDB;
 GO
+--Bảng user lưu thông tin đăng nhập của toàn bộ người dùng 
+CREATE TABLE users (
+    id INT IDENTITY PRIMARY KEY,
+    TenDangNhap VARCHAR(255) NOT NULL,
+    MatKhau VARCHAR(255) NOT NULL
+);
+--INSERT INTO users (TenDangNhap, MatKhau)
+--VALUES ('vana@example.com', '123')
+--,('thib@example.com', '123');
+
+
+
 
 -- Bảng thông tin cư dân
 CREATE TABLE CuDan (
@@ -17,9 +29,30 @@ CREATE TABLE CuDan (
 	TrangThai NVARCHAR(255) DEFAULT N'Còn ở', --'Còn ở' hoặc 'Chuyển đi'
 	ThanhToan NVARCHAR(255) DEFAULT N'Trả đủ', --'Trả đủ' hoặc 'Nợ'
 	NgayChuyenDen DATE DEFAULT GETDATE(),
-	HinhAnh Image
+	HinhAnh Image,
+	UserId INT  
 );
 GO
+
+
+CREATE TABLE NhanVien (
+    id INT PRIMARY KEY IDENTITY(1,1),  -- Khóa chính, tự tăng
+    Ten NVARCHAR(100) NOT NULL,        -- Tên nhân viên
+    ChucVu NVARCHAR(50) NOT NULL,      -- Chức vụ
+    NgaySinh DATE,                     -- Ngày sinh
+    DiaChi NVARCHAR(255),              -- Địa chỉ
+    DienThoai NVARCHAR(15),            -- Số điện thoại
+    Email NVARCHAR(100),                -- Email
+    NgayTuyenDung DATE,                -- Ngày tuyển dụng
+    Luong DECIMAL(18, 2),              -- Lương
+    PhongBan NVARCHAR(50),             -- Phòng ban
+    UserId INT                         -- ID người dùng, có thể là khóa ngoại tham chiếu đến bảng users
+);
+
+--Thêm nhân viên 
+INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+    ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '0123456789', 'vana@example.com', '2020-01-01', 10000000, N'Vệ Sinh');
 
 --SoCanHo NVARCHAR(10),
 --ThanhToan NVARCHAR(255) DEFAULT N'Trả đủ', --'Trả đủ' hoặc 'Nợ'
@@ -91,24 +124,51 @@ CREATE TABLE ThongBaoCuDan (
 );
 GO
 
--- Bảng yêu cầu cư dân
-CREATE TABLE LoaiYeuCau (
-    LoaiYeuCauID INT IDENTITY PRIMARY KEY,
-    TenLoaiYeuCau NVARCHAR(100),
-    MoTa NVARCHAR(255)
-);
-GO
 
 CREATE TABLE YeuCau (
     YeuCauID INT IDENTITY PRIMARY KEY,
     CuDanID INT,
-	LoaiYeuCauID INT,
+	DichvuId INT,
     TieuDe NVARCHAR(255),
     NoiDung NVARCHAR(MAX),
     NgayGui DATETIME DEFAULT GETDATE(),
     TrangThai NVARCHAR(50) DEFAULT N'Đang chờ xử lý', --'Đang xử lý' hoặc 'Hoàn thành'
 );
 GO
+
+
+drop table DichVuVeSinh
+CREATE TABLE DichVuVeSinh (
+    DichVuVeSinhID INT PRIMARY KEY IDENTITY(1,1),  -- ID tự tăng
+    KhuVucVeSinh NVARCHAR(100),                     -- Khu vực vệ sinh chung
+    LoaiVeSinh NVARCHAR(50), 
+	KieuVeSinh NVARCHAR(50)                       -- Loại vệ sinh (Vệ sinh hàng ngày, vệ sinh định kỳ...)
+    KhuVucCuThe NVARCHAR(255),                      -- Khu vực cụ thể cần vệ sinh
+    ThoiGianVeSinh DATETIME,                        -- Thời gian vệ sinh
+    CuDanID INT                                      -- ID của cư dân
+);
+
+CREATE TABLE DanhGia (
+    id INT PRIMARY KEY ,
+    YeuCauId INT NOT NULL,
+    ThaiDoPhucVu VARCHAR(255),
+    PhanHoiChiTiet TEXT,
+    ThoiGianHoanThanh DATETIME
+    --FOREIGN KEY (YeuCauId) REFERENCES YeuCau(id)
+);
+
+CREATE TABLE PhanCong (
+    id INT PRIMARY KEY ,
+    YeuCauId INT NOT NULL,
+    NhanVienId INT NOT NULL,
+    --FOREIGN KEY (YeuCauId) REFERENCES YeuCau(id),
+    --FOREIGN KEY (NhanVienId) REFERENCES NhanVien(id)
+);
+
+
+
+
+
 
 CREATE TABLE PhanHoiYeuCau (
     PhanHoiID INT IDENTITY PRIMARY KEY,
@@ -215,11 +275,7 @@ GO
 
 
 
-INSERT INTO YeuCau (CuDanID, LoaiYeuCauID, TieuDe, NoiDung)
-VALUES 
-(1, 101, N'Yêu cầu sửa chữa', N'Xin vui lòng sửa chữa hệ thống điện ở tầng 2.'),
-(2, 102, N'Yêu cầu vệ sinh', N'Vui lòng dọn vệ sinh khu vực công cộng tầng 1.'),
-(3, 101, N'Yêu cầu sửa chữa', N'Hệ thống nước bị rò rỉ ở phòng 302.');
+
 
 INSERT INTO PhanHoiYeuCau (YeuCauID, NguoiPhanHoiID, NoiDung)
 VALUES 
@@ -269,7 +325,77 @@ INSERT INTO ThueCanHo (CuDanID, HopDongID, VaiTro) VALUES
 (3, 3, N'Người thuê chính')   -- Giả sử CuDanID 3 là cư dân thứ ba
 GO
 
---Bảng thuộc module vệ sinh 
+
+
+---trigger thêm yêu cầu- dịch vụ vệ sinh 
+CREATE TRIGGER trg_AfterInsertDichVuVeSinh
+ON DichVuVeSinh
+AFTER INSERT
+AS
+BEGIN
+    INSERT INTO YeuCau (CuDanID, DichvuId, TieuDe, NoiDung, NgayGui)
+    SELECT 
+        CuDanID,
+        DichVuVeSinhID,  -- Giả sử DichVuVeSinhID là ID của dịch vụ vệ sinh tương ứng
+        N'Yêu cầu vệ sinh - ' + CAST(GETDATE() AS NVARCHAR(20)),
+        KhuVucCuThe + N' cần được vệ sinh vào ' + CONVERT(NVARCHAR(20), ThoiGianVeSinh, 120),
+        GETDATE()
+    FROM 
+        inserted;  -- Bảng ảo chứa các bản ghi mới được thêm vào
+END;
+
+
+--khi thêm nhân viên vào thì tự động cũng sẽ có account đăng nhập, tên đăng nhập là email , mật khẩu là số điện thoại  
+CREATE TRIGGER trg_AfterInsertNhanVien
+ON NhanVien
+AFTER INSERT
+AS
+BEGIN
+    -- Tạo bảng tạm để lưu ID vừa được tạo từ bảng Users
+    DECLARE @InsertedUsers TABLE (UserId INT);
+
+    -- Thêm dữ liệu vào bảng Users và lưu ID vào bảng tạm
+    INSERT INTO Users (TenDangNhap, MatKhau)
+    OUTPUT INSERTED.Id INTO @InsertedUsers(UserId)
+    SELECT i.Email, i.DienThoai
+    FROM inserted i
+    WHERE i.Email IS NOT NULL AND i.DienThoai IS NOT NULL;
+
+    -- Cập nhật UserId trong bảng NhanVien bằng giá trị từ bảng tạm
+    UPDATE NhanVien
+    SET UserId = (SELECT UserId FROM @InsertedUsers)
+    FROM inserted i
+    WHERE NhanVien.id = i.id;
+END;
+
+
+CREATE TRIGGER trg_AfterInsertCuDan
+ON CuDan
+AFTER INSERT
+AS
+BEGIN
+    -- Tạo bảng tạm để lưu ID vừa được tạo từ bảng Users
+    DECLARE @InsertedUsers TABLE (UserId INT);
+
+    -- Thêm dữ liệu vào bảng Users và lưu ID vào bảng tạm
+    INSERT INTO Users (TenDangNhap, MatKhau)
+    OUTPUT INSERTED.Id INTO @InsertedUsers(UserId)
+    SELECT i.Email, i.DienThoai
+    FROM inserted i
+    WHERE i.Email IS NOT NULL AND i.DienThoai IS NOT NULL;
+
+    -- Cập nhật UserId trong bảng CuDan bằng giá trị từ bảng tạm
+    UPDATE CuDan
+    SET UserId = (SELECT UserId FROM @InsertedUsers)
+    FROM inserted i
+    WHERE CuDan.id = i.id;
+END;
+
+
+drop trigger trg_AfterInsertNhanVien
+
+
+
 
 --bảng doanh thu 
 CREATE TABLE DoanhThu (
@@ -291,6 +417,8 @@ VALUES
 (2, 102, N'Thi công sửa chữa', 1200000, '2024-10-02'),
 (3, 103, N'Gửi xe', 2500000, '2024-10-03 11:00:00'),
 (4, 104, N'Dịch vụ vệ sinh', 500000, '2024-10-03');
+
+
 
 
 --Bảng Chi phí 
