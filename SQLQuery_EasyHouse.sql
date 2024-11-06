@@ -53,7 +53,19 @@ CREATE TABLE NhanVien (
 --Thêm nhân viên
 INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
 VALUES 
-    ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '0123456789', 'vana@example.com', '2020-01-01', 10000000, N'Vệ Sinh');
+    ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '1', '1', '2020-01-01', 10000000, N'Vệ Sinh');
+
+INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+    ('Nguyen Van B', 'Quản lý', '1985-05-10', 'Hà Nội', 'qlcudan', 'qlcudan', '2020-01-01', 10000000, N'Quản lý cư dân');
+
+
+INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+    ('Nguyen Van c', 'Quản lý', '1985-05-10', 'Hà Nội', 'thicong', 'thicong', '2020-01-01', 10000000, N'Quản lý dự án thi công');
+
+
+
 
 
 --SoCanHo NVARCHAR(10),

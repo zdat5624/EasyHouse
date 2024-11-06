@@ -175,5 +175,10 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
             Form form = new formDanhGiaChatLuong();
             form.ShowDialog();
         }
+
+        private void panelTieuDe_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
  }
