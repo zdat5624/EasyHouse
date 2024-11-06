@@ -40,6 +40,7 @@ namespace DesignEasyHouse1.formsPhongBan.PhongVeSinh
             DateTime tuNgay = dtpTu.Value;
             DateTime denNgay = dtpDen.Value;
             DataTable dt;
+
             if (cbKieuVeSinh.Text == "Định kỳ theo tuần")
             {
                 dt = DanhSachVeSinhTuan(tuNgay, denNgay);
@@ -50,14 +51,11 @@ namespace DesignEasyHouse1.formsPhongBan.PhongVeSinh
             }
             else
             {
-                dt = DanhSachVeSinh( tuNgay, denNgay);
+                dt = DanhSachVeSinh(tuNgay, denNgay);
             }
-            Console.WriteLine(dt);
+
             dtgvYeuCauVeSinh.DataSource = dt;
-            //if(dtgvTheoDoiVeSinh.Rows.Count == 0)
-            //{
-            //    MessageBox.Show("Chưa có yêu cầu nào ");
-            //}
+
             // Đặt tiêu đề cột cho DataGridView
             dtgvYeuCauVeSinh.Columns["MaYeuCau"].HeaderText = "Mã Yêu Cầu";
             dtgvYeuCauVeSinh.Columns["TrangThai"].HeaderText = "Trạng Thái";
@@ -65,11 +63,64 @@ namespace DesignEasyHouse1.formsPhongBan.PhongVeSinh
             dtgvYeuCauVeSinh.Columns["ThoiGianVeSinh"].HeaderText = "Thời Gian Vệ Sinh";
             dtgvYeuCauVeSinh.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            // Xóa cột "Thao Tác" nếu đã tồn tại
+            // Thêm cột nút "Chấp nhận" nếu chưa có
+            if (!dtgvYeuCauVeSinh.Columns.Contains("Chấp Nhận"))
+            {
+                DataGridViewButtonColumn btnAccept = new DataGridViewButtonColumn();
+                btnAccept.Name = "Chấp Nhận";
+                btnAccept.HeaderText = "Chấp Nhận Yêu Cầu";
+                btnAccept.Text = "Chấp Nhận";
+                btnAccept.UseColumnTextForButtonValue = true; // Hiển thị văn bản trên nút
+                btnAccept.FlatStyle = FlatStyle.Popup; // Chọn kiểu hiển thị nút
+                btnAccept.DefaultCellStyle.BackColor = Color.LightGreen; // Màu nền của nút
+                btnAccept.DefaultCellStyle.ForeColor = Color.White; // Màu chữ của nút
+                dtgvYeuCauVeSinh.Columns.Add(btnAccept);
+            }
 
+            // Xử lý sự kiện CellContentClick để nhận sự kiện nhấn nút
+            dtgvYeuCauVeSinh.CellContentClick += DtgvYeuCauVeSinh_CellClick;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+
+        private void DtgvYeuCauVeSinh_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Kiểm tra nếu chỉ số hàng hợp lệ và không phải là hàng tiêu đề
+            if (e.RowIndex >= 0 && e.RowIndex < dtgvYeuCauVeSinh.Rows.Count)
+            {
+                // Kiểm tra nếu cột là "Chấp Nhận"
+                if (dtgvYeuCauVeSinh.Columns[e.ColumnIndex].Name == "Chấp Nhận")
+                {
+                    // Kiểm tra nếu cột "TrangThai" tồn tại
+                    var cellTrangThai = dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["TrangThai"];
+                        
+                    if (cellTrangThai != null && cellTrangThai.Value != null)
+                    {
+                        string trangThai = cellTrangThai.Value.ToString();
+                        
+                        if (trangThai == "Đang chờ xử lý")
+                        {
+                            string maYeuCau = dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["MaYeuCau"].Value.ToString();
+
+                            // Cập nhật trạng thái yêu cầu
+                            cellTrangThai.Value = "Chấp nhận yêu cầu, nhân viên vệ sinh sẽ xử lý đúng lịch đã đăng ký";
+                            // Gọi hàm cập nhật trạng thái, v.v.
+                            MessageBox.Show($"Yêu cầu {maYeuCau} đã được chấp nhận.");
+
+                            // Đổi màu nút thành xám để chỉ báo rằng yêu cầu đã được xử lý
+                            var cellChapNhan = dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["Chấp Nhận"];
+                            cellChapNhan.Style.BackColor = Color.Gray;
+                            cellChapNhan.Style.ForeColor = Color.DarkGray;
+                            cellChapNhan.Value = "Đã xử lý";
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+    private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
