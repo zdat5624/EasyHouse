@@ -509,7 +509,58 @@ CREATE TABLE ThoThiCong (
 
 GO
 
+CREATE TABLE DichVuGuiXe (
+    DichVuGuiXeID INT PRIMARY KEY IDENTITY(1,1),
+	PhuongTienID INT,
+	ChoDoXeID INT,
+	NgayDangKy DATETIME DEFAULT GETDATE(), -- Ngày đăng ký gửi xe
+    TrangThai nvarchar(20) DEFAULT N'Đang gửi' -- 'Đang gửi', 'Đã rời', 'Đã thanh toán'
+);
+GO
 
+CREATE TABLE PhuongTien (
+    PhuongTienID INT PRIMARY KEY IDENTITY(1,1),
+	BienSoXe nvarchar(30),
+    CuDanID int,
+	LoaiXe nvarchar(10), --xe máy hoặc ô tô
+	ThoiGianGui DATETIME,
+	CavetXe IMAGE, -- Cà vẹt xe
+    CCCD_CMND IMAGE, -- CMND hoặc CCCD
+);
+GO
+
+CREATE TABLE ChoDoXe (
+    ChoDoXeID INT PRIMARY KEY IDENTITY(1,1),
+	TrangThai nvarchar DEFAULT N'Trống', -- 'Trống' hoặc 'Đã sử dụng'
+	ViTri nvarchar, --VD: A1, B1, A2, B2,...
+	ThoiGianVao DATETIME,
+	ThoiGianRa DATETIME
+);
+GO
+
+-- Bảng theo dõi giao dịch gửi xe
+CREATE TABLE GiaoDichGuiXe (
+    GiaoDichID INT PRIMARY KEY IDENTITY(1,1),
+    PhuongTienID INT,
+    ThoiGianYeuCau DATETIME DEFAULT GETDATE(), -- Thời gian yêu cầu gửi xe
+    ThoiGianRa DATETIME NULL, -- Thời gian xe rời bãi (có thể là null nếu xe chưa rời)
+    DaThanhToan BIT DEFAULT 0, -- 0: Chưa thanh toán, 1: Đã thanh toán
+    PhiGuiXe DECIMAL(18, 2) -- Số tiền cho lần gửi xe này
+);
+GO
+
+
+CREATE TABLE ThanhToanGuiXe (
+    ThanhToanID INT PRIMARY KEY IDENTITY(1,1),
+    DichVuGuiXeID INT, 
+    SoTien DECIMAL(18, 2), -- Số tiền phải thanh toán
+    NgayThanhToan DATETIME DEFAULT GETDATE(), -- Ngày thực hiện thanh toán
+    PhuongThucThanhToan NVARCHAR(50), -- Phương thức thanh toán: 'Tiền mặt', 'Chuyển khoản', 'Thẻ'
+    LoaiThanhToan NVARCHAR(20) DEFAULT N'Theo tháng', -- 'Một lần' hoặc 'Theo tháng'
+    ThangThanhToan INT, -- Tháng áp dụng thanh toán (chỉ dùng khi LoaiThanhToan là 'Theo tháng')
+    NamThanhToan INT -- Năm áp dụng thanh toán (chỉ dùng khi LoaiThanhToan là 'Theo tháng')
+);
+GO
 SELECT * FROM HopDongThue;
 
 exec sp_UpdateNgayKetThuc 1, '2025-5-5'
