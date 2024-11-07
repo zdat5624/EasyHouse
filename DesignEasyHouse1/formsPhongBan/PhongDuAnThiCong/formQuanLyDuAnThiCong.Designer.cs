@@ -221,6 +221,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "formQuanLyDuAnThiCong";
+            this.Text = "Quản lý dự án";
             this.Load += new System.EventHandler(this.formQuanLyDuAnThiCong_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

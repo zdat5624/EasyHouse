@@ -52,6 +52,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.cbbTrangThai = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -186,6 +187,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.btnThoThiCong);
             this.panel2.Controls.Add(this.btnLapKeHoach);
             this.panel2.Controls.Add(this.btnLuu);
@@ -208,13 +210,13 @@
             this.btnThoThiCong.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoThiCong.ForeColor = System.Drawing.Color.White;
             this.btnThoThiCong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoThiCong.Location = new System.Drawing.Point(144, 2);
+            this.btnThoThiCong.Location = new System.Drawing.Point(120, 2);
             this.btnThoThiCong.Margin = new System.Windows.Forms.Padding(2);
             this.btnThoThiCong.Name = "btnThoThiCong";
             this.btnThoThiCong.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnThoThiCong.Size = new System.Drawing.Size(129, 43);
+            this.btnThoThiCong.Size = new System.Drawing.Size(105, 43);
             this.btnThoThiCong.TabIndex = 35;
-            this.btnThoThiCong.Text = "Thợ thi công";
+            this.btnThoThiCong.Text = "Thợ";
             this.btnThoThiCong.UseVisualStyleBackColor = false;
             this.btnThoThiCong.Click += new System.EventHandler(this.btnThoThiCong_Click);
             // 
@@ -232,9 +234,9 @@
             this.btnLapKeHoach.Margin = new System.Windows.Forms.Padding(2);
             this.btnLapKeHoach.Name = "btnLapKeHoach";
             this.btnLapKeHoach.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnLapKeHoach.Size = new System.Drawing.Size(129, 43);
+            this.btnLapKeHoach.Size = new System.Drawing.Size(105, 43);
             this.btnLapKeHoach.TabIndex = 34;
-            this.btnLapKeHoach.Text = "Lập kế hoạch";
+            this.btnLapKeHoach.Text = "Kế hoạch";
             this.btnLapKeHoach.UseVisualStyleBackColor = false;
             this.btnLapKeHoach.Click += new System.EventHandler(this.btnLapKeHoach_Click);
             // 
@@ -423,6 +425,26 @@
             this.cbbTrangThai.Size = new System.Drawing.Size(368, 31);
             this.cbbTrangThai.TabIndex = 83;
             // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(229, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button3.Size = new System.Drawing.Size(105, 43);
+            this.button3.TabIndex = 36;
+            this.button3.Text = "Vật tư";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // formChiTietDuAnThiCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -485,5 +507,6 @@
         private System.Windows.Forms.Button btnThoThiCong;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbbTrangThai;
+        private System.Windows.Forms.Button button3;
     }
 }

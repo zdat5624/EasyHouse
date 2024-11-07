@@ -165,11 +165,10 @@ namespace DesignEasyHouse1
         {
 
             OpenChildForm(new formsPhongBan.PhongDuAnThiCong.formTheoDoiDuAn());
+        private void button3_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongVeSinh.tableNhanYeuCau());
         }
-            private void button3_Click(object sender, EventArgs e)
-            {
-                OpenChildForm(new formsPhongBan.PhongVeSinh.tableNhanYeuCau());
-            }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)
         {

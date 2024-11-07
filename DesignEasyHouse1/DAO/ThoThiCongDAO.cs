@@ -62,5 +62,17 @@ namespace DesignEasyHouse1.DAO
             int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { thoThiCongID });
             return result > 0;
         }
+
+        public ThoThiCong GetThoThiCongByThoThiCongID(int thoThiCongID)
+        {
+            string query = "SELECT * FROM ThoThiCong where ThoThiCongID = @thoThiCongID ";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query, new object[] { thoThiCongID });
+            if (dt.Rows.Count>0)
+            {
+                ThoThiCong ttc = new ThoThiCong(dt.Rows[0]);
+                return ttc;
+            }
+            return null;
+        }
     }
 }

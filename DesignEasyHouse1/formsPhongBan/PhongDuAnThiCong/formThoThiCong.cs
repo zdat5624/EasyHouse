@@ -30,7 +30,9 @@ namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
 
         void XemChiTietThoThiCong(int thoThiCongID)
         {
-
+            formCapNhatThoThiCong f = new formCapNhatThoThiCong(thoThiCongID);
+            f.ShowDialog();
+            LoadForm();
         }
 
         void XoaThoThiCong(int thoThiCongID)
