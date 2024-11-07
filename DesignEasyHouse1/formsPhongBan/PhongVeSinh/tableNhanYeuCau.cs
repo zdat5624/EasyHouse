@@ -100,75 +100,80 @@ namespace DesignEasyHouse1.formsPhongBan.PhongVeSinh
             if (e.RowIndex >= 0 && e.RowIndex < dtgvYeuCauVeSinh.Rows.Count)
             {
                 int maYeuCau = int.Parse(dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["MaYeuCau"].Value.ToString());
+
                 // Kiểm tra nếu cột là "Chấp Nhận"
                 if (dtgvYeuCauVeSinh.Columns[e.ColumnIndex].Name == "Chấp Nhận")
                 {
                     // Kiểm tra nếu cột "TrangThai" tồn tại
                     var cellTrangThai = dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["TrangThai"];
-                        
+
                     if (cellTrangThai != null && cellTrangThai.Value != null)
                     {
                         string trangThai = cellTrangThai.Value.ToString();
-                        
+
                         if (trangThai == "Đang chờ xử lý")
                         {
-
-                            // Cập nhật trạng thái yêu cầu
-                            cellTrangThai.Value = "Nhân viên vệ sinh sẽ xử lý đúng lịch đã đăng ký";
-
                             // Gọi hàm cập nhật trạng thái, v.v.
-                            if (YeuCauDAO.Instance.ChapNhanYeuCauVeSinh(maYeuCau))
-                            {
+
+                            if (YeuCauDAO.Instance.ChapNhanYeuCauVeSinh(maYeuCau)){ 
+                                // Cập nhật trạng thái yêu cầu
+                                cellTrangThai.Value = "Nhân viên vệ sinh sẽ xử lý đúng lịch đã đăng ký";
                                 MessageBox.Show($"Yêu cầu {maYeuCau} đã được chấp nhận.");
                                 // Đổi màu nút thành xám để chỉ báo rằng yêu cầu đã được xử lý
-                                var cellChapNhan = dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["Chấp Nhận"];
-                                cellChapNhan.Style.BackColor = Color.Gray;
-                                cellChapNhan.Style.ForeColor = Color.DarkGray;
-                                cellChapNhan.Value = "Đã xử lý";
+                                var btnChapNhan = dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["Chấp Nhận"];
+                                btnChapNhan.Style.BackColor = Color.Gray;
+                                btnChapNhan.Style.ForeColor = Color.DarkGray;
+                                btnChapNhan.Value = "Đã xử lý";
                             }
                             else
                             {
-                                MessageBox.Show("Lỗi");
-
+                                MessageBox.Show("Hiện chưa có nhân viên nào trống lịch");
                             }
-
-
                         }
                     }
                 }
+
                 // Kiểm tra nếu cột là "Từ Chối"
                 if (dtgvYeuCauVeSinh.Columns[e.ColumnIndex].Name == "TuChoi")
-            {
-                var cellTrangThai = dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["TrangThai"];
-                if (cellTrangThai != null && cellTrangThai.Value != null)
                 {
-                    string trangThai = cellTrangThai.Value.ToString();
-
-                    if (trangThai == "Đang chờ xử lý")
+                    var cellTrangThai = dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["TrangThai"];
+                    if (cellTrangThai != null && cellTrangThai.Value != null)
                     {
-                        // Cập nhật trạng thái yêu cầu thành "Đã từ chối"
-                        cellTrangThai.Value = "Đã từ chối";
+                        string trangThai = cellTrangThai.Value.ToString();
+
+                        if (trangThai == "Đang chờ xử lý")
+                        {
+                            // Cập nhật trạng thái yêu cầu thành "Đã từ chối"
                             if (YeuCauDAO.Instance.TuChoiYeuCauVeSinh(maYeuCau))
                             {
+                                cellTrangThai.Value = "Đã từ chối";
                                 // Đổi màu nút thành xám và thay đổi văn bản thành "Đã từ chối"
-                                var cellTuChoi = dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["TuChoi"];
-                                cellTuChoi.Style.BackColor = Color.Gray;
-                                cellTuChoi.Style.ForeColor = Color.DarkGray;
-                                cellTuChoi.Value = "Đã từ chối";
+                                var btnTuChoi = dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["TuChoi"];
+                                btnTuChoi.Style.BackColor = Color.Gray;
+                                btnTuChoi.Style.ForeColor = Color.DarkGray;
+                                btnTuChoi.Value = "Đã từ chối";
                                 MessageBox.Show($"Yêu cầu {maYeuCau} đã bị từ chối");
                             }
+                            else
+                            {
+                                MessageBox.Show("Lỗi khi từ chối yêu cầu ");
+                            }
+                        }
                     }
                 }
-            }
-                // Vô hiệu hóa cả hai nút
-                //dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["Chấp Nhận"].ReadOnly = true;
-                //dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["TuChoi"].ReadOnly = true;
+
+                // Vô hiệu hóa cả hai nút (Chấp Nhận và Từ Chối) sau khi xử lý
+                var cellChapNhan = dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["Chấp Nhận"];
+                var cellTuChoi = dtgvYeuCauVeSinh.Rows[e.RowIndex].Cells["TuChoi"];
+                cellChapNhan.ReadOnly = true;
+                cellTuChoi.ReadOnly = true;
             }
         }
 
 
 
-    private void panel1_Paint(object sender, PaintEventArgs e)
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

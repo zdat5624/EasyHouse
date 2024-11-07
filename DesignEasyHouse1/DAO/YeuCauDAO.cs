@@ -73,8 +73,16 @@ namespace DesignEasyHouse1.DAO
         {
             string query = "UPDATE YeuCau SET TrangThai = N'Nhân viên vệ sinh sẽ xử lý đúng lịch đã đăng ký' WHERE YeuCauID = @YeuCauID ";
             object[] parameters = new object[] { yeuCauID };
+            int result;
+            try
+            {
+                result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
 
-            int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
+            }
+            catch (Exception ex)
+            {
+            result = 0;
+        }
 
             return result > 0; // Trả về true nếu thay đổi thành công
         }
@@ -83,7 +91,16 @@ namespace DesignEasyHouse1.DAO
             string query = "UPDATE YeuCau SET TrangThai = N'Yêu cầu bị từ chối' WHERE YeuCauID = @YeuCauID ";
             object[] parameters = new object[] { yeuCauID };
 
-            int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
+            int result;
+            try
+            {
+                result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
+
+            }
+            catch(Exception ex)
+            {
+                result = 0;
+            }
 
             return result > 0; // Trả về true nếu thay đổi thành công
         }
