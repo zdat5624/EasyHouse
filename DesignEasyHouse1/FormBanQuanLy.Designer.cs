@@ -109,6 +109,7 @@
             this.btnTheoDoiDuAnThiCong.Text = "Theo dõi dự án";
             this.btnTheoDoiDuAnThiCong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTheoDoiDuAnThiCong.UseVisualStyleBackColor = false;
+            this.btnTheoDoiDuAnThiCong.Click += new System.EventHandler(this.btnTheoDoiDuAnThiCong_Click);
             // 
             // btnQuanLyDuAnThiCong
             // 

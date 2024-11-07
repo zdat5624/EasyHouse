@@ -47,12 +47,66 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\DuAnThiCongDAO.cs" />
+    <Compile Include="DAO\GiaiDoanThiCongDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="DAO\ThoThiCongDAO.cs" />
+    <Compile Include="DTO\DuAnThiCong.cs" />
+    <Compile Include="DTO\GiaiDoanThiCong.cs" />
+    <Compile Include="DTO\ThoThiCong.cs" />
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formCapNhatGiaiDoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formCapNhatGiaiDoan.Designer.cs">
+      <DependentUpon>formCapNhatGiaiDoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formChiTietDuAnThiCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formChiTietDuAnThiCong.Designer.cs">
+      <DependentUpon>formChiTietDuAnThiCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formLapKeHoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formLapKeHoach.Designer.cs">
+      <DependentUpon>formLapKeHoach.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formQuanLyDuAnThiCong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formQuanLyDuAnThiCong.Designer.cs">
       <DependentUpon>formQuanLyDuAnThiCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formThemDuAnThiCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formThemDuAnThiCong.Designer.cs">
+      <DependentUpon>formThemDuAnThiCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formThemGiaiDoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formThemGiaiDoan.Designer.cs">
+      <DependentUpon>formThemGiaiDoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formThemThoThiCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formThemThoThiCong.Designer.cs">
+      <DependentUpon>formThemThoThiCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formTheoDoiDuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formTheoDoiDuAn.Designer.cs">
+      <DependentUpon>formTheoDoiDuAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formThoThiCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formThoThiCong.Designer.cs">
+      <DependentUpon>formThoThiCong.cs</DependentUpon>
     </Compile>
     <Compile Include="SessionNhanVien.cs" />
     <Compile Include="SessionCuDan.cs" />
@@ -404,8 +458,32 @@
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formXemChiTietThongTinCuDan.resx">
       <DependentUpon>formXemChiTietThongTinCuDan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formCapNhatGiaiDoan.resx">
+      <DependentUpon>formCapNhatGiaiDoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formChiTietDuAnThiCong.resx">
+      <DependentUpon>formChiTietDuAnThiCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formLapKeHoach.resx">
+      <DependentUpon>formLapKeHoach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formQuanLyDuAnThiCong.resx">
       <DependentUpon>formQuanLyDuAnThiCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formThemDuAnThiCong.resx">
+      <DependentUpon>formThemDuAnThiCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formThemGiaiDoan.resx">
+      <DependentUpon>formThemGiaiDoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formThemThoThiCong.resx">
+      <DependentUpon>formThemThoThiCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formTheoDoiDuAn.resx">
+      <DependentUpon>formTheoDoiDuAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formThoThiCong.resx">
+      <DependentUpon>formThoThiCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongVeSinh\formDeXuat.resx">
       <DependentUpon>formDeXuat.cs</DependentUpon>

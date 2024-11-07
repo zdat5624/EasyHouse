@@ -39,7 +39,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dtgvThongTinCuDan = new System.Windows.Forms.DataGridView();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Details = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinCuDan)).BeginInit();
             this.SuspendLayout();
@@ -144,11 +144,12 @@
             this.dtgvThongTinCuDan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgvThongTinCuDan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Delete,
-            this.Edit});
+            this.Details});
             this.dtgvThongTinCuDan.EnableHeadersVisualStyles = false;
-            this.dtgvThongTinCuDan.Location = new System.Drawing.Point(199, 136);
+            this.dtgvThongTinCuDan.Location = new System.Drawing.Point(124, 136);
             this.dtgvThongTinCuDan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgvThongTinCuDan.Name = "dtgvThongTinCuDan";
+            this.dtgvThongTinCuDan.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -160,7 +161,7 @@
             this.dtgvThongTinCuDan.RowHeadersVisible = false;
             this.dtgvThongTinCuDan.RowHeadersWidth = 51;
             this.dtgvThongTinCuDan.RowTemplate.Height = 24;
-            this.dtgvThongTinCuDan.Size = new System.Drawing.Size(668, 370);
+            this.dtgvThongTinCuDan.Size = new System.Drawing.Size(852, 338);
             this.dtgvThongTinCuDan.TabIndex = 38;
             // 
             // Delete
@@ -170,17 +171,19 @@
             this.Delete.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
+            this.Delete.ReadOnly = true;
             this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Delete.Width = 6;
             // 
-            // Edit
+            // Details
             // 
-            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Edit.HeaderText = "";
-            this.Edit.Image = global::DesignEasyHouse1.Properties.Resources.Edit1;
-            this.Edit.MinimumWidth = 6;
-            this.Edit.Name = "Edit";
-            this.Edit.Width = 6;
+            this.Details.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Details.HeaderText = "";
+            this.Details.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
+            this.Details.MinimumWidth = 6;
+            this.Details.Name = "Details";
+            this.Details.ReadOnly = true;
+            this.Details.Width = 6;
             // 
             // SampleChildForm
             // 
@@ -210,6 +213,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.DataGridView dtgvThongTinCuDan;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
-        private System.Windows.Forms.DataGridViewImageColumn Edit;
+        private System.Windows.Forms.DataGridViewImageColumn Details;
     }
 }

@@ -151,5 +151,11 @@ namespace DesignEasyHouse1
             OpenChildForm(new formsPhongBan.PhongDuAnThiCong.formQuanLyDuAnThiCong());
             
         }
+
+        private void btnTheoDoiDuAnThiCong_Click(object sender, EventArgs e)
+        {
+
+            OpenChildForm(new formsPhongBan.PhongDuAnThiCong.formTheoDoiDuAn());
+        }
     }
 }

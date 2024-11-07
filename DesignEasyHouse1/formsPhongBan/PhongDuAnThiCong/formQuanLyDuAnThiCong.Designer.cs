@@ -32,15 +32,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.button30 = new System.Windows.Forms.Button();
+            this.btnThemDuAn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dtgvThongTinCuDan = new System.Windows.Forms.DataGridView();
+            this.dtgvDuAnThiCong = new System.Windows.Forms.DataGridView();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Details = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinCuDan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDuAnThiCong)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewImageColumn1
@@ -61,32 +63,33 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 125;
             // 
-            // button30
+            // btnThemDuAn
             // 
-            this.button30.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
-            this.button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button30.FlatAppearance.BorderSize = 0;
-            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button30.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button30.ForeColor = System.Drawing.Color.White;
-            this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button30.Location = new System.Drawing.Point(39, 593);
-            this.button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button30.Name = "button30";
-            this.button30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button30.Size = new System.Drawing.Size(160, 40);
-            this.button30.TabIndex = 31;
-            this.button30.Text = "Thêm dự án";
-            this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button30.UseVisualStyleBackColor = false;
+            this.btnThemDuAn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnThemDuAn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.btnThemDuAn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnThemDuAn.FlatAppearance.BorderSize = 0;
+            this.btnThemDuAn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemDuAn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnThemDuAn.ForeColor = System.Drawing.Color.White;
+            this.btnThemDuAn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemDuAn.Location = new System.Drawing.Point(39, 593);
+            this.btnThemDuAn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThemDuAn.Name = "btnThemDuAn";
+            this.btnThemDuAn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnThemDuAn.Size = new System.Drawing.Size(138, 40);
+            this.btnThemDuAn.TabIndex = 31;
+            this.btnThemDuAn.Text = "Thêm dự án";
+            this.btnThemDuAn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThemDuAn.UseVisualStyleBackColor = false;
+            this.btnThemDuAn.Click += new System.EventHandler(this.btnThemDuAn_Click);
             // 
             // panel2
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Location = new System.Drawing.Point(755, 36);
+            this.panel2.Location = new System.Drawing.Point(763, 26);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 25);
             this.panel2.TabIndex = 37;
@@ -122,15 +125,16 @@
             this.textBox2.Size = new System.Drawing.Size(214, 31);
             this.textBox2.TabIndex = 32;
             // 
-            // dtgvThongTinCuDan
+            // dtgvDuAnThiCong
             // 
-            this.dtgvThongTinCuDan.AllowUserToAddRows = false;
-            this.dtgvThongTinCuDan.AllowUserToDeleteRows = false;
-            this.dtgvThongTinCuDan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgvThongTinCuDan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvThongTinCuDan.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            this.dtgvThongTinCuDan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgvThongTinCuDan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgvDuAnThiCong.AllowUserToAddRows = false;
+            this.dtgvDuAnThiCong.AllowUserToDeleteRows = false;
+            this.dtgvDuAnThiCong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtgvDuAnThiCong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvDuAnThiCong.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dtgvDuAnThiCong.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvDuAnThiCong.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,16 +142,17 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvThongTinCuDan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvThongTinCuDan.ColumnHeadersHeight = 30;
-            this.dtgvThongTinCuDan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgvThongTinCuDan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgvDuAnThiCong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvDuAnThiCong.ColumnHeadersHeight = 30;
+            this.dtgvDuAnThiCong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvDuAnThiCong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Delete,
-            this.Edit});
-            this.dtgvThongTinCuDan.EnableHeadersVisualStyles = false;
-            this.dtgvThongTinCuDan.Location = new System.Drawing.Point(39, 77);
-            this.dtgvThongTinCuDan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dtgvThongTinCuDan.Name = "dtgvThongTinCuDan";
+            this.Details});
+            this.dtgvDuAnThiCong.EnableHeadersVisualStyles = false;
+            this.dtgvDuAnThiCong.Location = new System.Drawing.Point(39, 78);
+            this.dtgvDuAnThiCong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtgvDuAnThiCong.Name = "dtgvDuAnThiCong";
+            this.dtgvDuAnThiCong.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -155,12 +160,13 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvThongTinCuDan.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvThongTinCuDan.RowHeadersVisible = false;
-            this.dtgvThongTinCuDan.RowHeadersWidth = 51;
-            this.dtgvThongTinCuDan.RowTemplate.Height = 24;
-            this.dtgvThongTinCuDan.Size = new System.Drawing.Size(966, 409);
-            this.dtgvThongTinCuDan.TabIndex = 38;
+            this.dtgvDuAnThiCong.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvDuAnThiCong.RowHeadersVisible = false;
+            this.dtgvDuAnThiCong.RowHeadersWidth = 51;
+            this.dtgvDuAnThiCong.RowTemplate.Height = 24;
+            this.dtgvDuAnThiCong.Size = new System.Drawing.Size(974, 397);
+            this.dtgvDuAnThiCong.TabIndex = 39;
+            this.dtgvDuAnThiCong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDuAnThiCong_CellContentClick);
             // 
             // Delete
             // 
@@ -169,17 +175,38 @@
             this.Delete.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
             this.Delete.MinimumWidth = 6;
             this.Delete.Name = "Delete";
+            this.Delete.ReadOnly = true;
             this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Delete.Width = 6;
             // 
-            // Edit
+            // Details
             // 
-            this.Edit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Edit.HeaderText = "";
-            this.Edit.Image = global::DesignEasyHouse1.Properties.Resources.Edit1;
-            this.Edit.MinimumWidth = 6;
-            this.Edit.Name = "Edit";
-            this.Edit.Width = 6;
+            this.Details.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Details.HeaderText = "";
+            this.Details.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
+            this.Details.MinimumWidth = 6;
+            this.Details.Name = "Details";
+            this.Details.ReadOnly = true;
+            this.Details.Width = 6;
+            // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn3.HeaderText = "";
+            this.dataGridViewImageColumn3.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
+            this.dataGridViewImageColumn3.MinimumWidth = 6;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn3.Width = 125;
+            // 
+            // dataGridViewImageColumn4
+            // 
+            this.dataGridViewImageColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn4.HeaderText = "";
+            this.dataGridViewImageColumn4.Image = global::DesignEasyHouse1.Properties.Resources.Edit1;
+            this.dataGridViewImageColumn4.MinimumWidth = 6;
+            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
+            this.dataGridViewImageColumn4.Width = 125;
             // 
             // formQuanLyDuAnThiCong
             // 
@@ -187,16 +214,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1061, 654);
-            this.Controls.Add(this.dtgvThongTinCuDan);
+            this.Controls.Add(this.dtgvDuAnThiCong);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button30);
+            this.Controls.Add(this.btnThemDuAn);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "formQuanLyDuAnThiCong";
+            this.Load += new System.EventHandler(this.formQuanLyDuAnThiCong_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinCuDan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDuAnThiCong)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -204,12 +232,14 @@
         #endregion
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
-        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button btnThemDuAn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DataGridView dtgvThongTinCuDan;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn4;
+        private System.Windows.Forms.DataGridView dtgvDuAnThiCong;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
-        private System.Windows.Forms.DataGridViewImageColumn Edit;
+        private System.Windows.Forms.DataGridViewImageColumn Details;
     }
 }

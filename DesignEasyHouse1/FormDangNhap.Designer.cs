@@ -66,6 +66,7 @@
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(307, 50);
             this.txtMatKhau.TabIndex = 1;
+            this.txtMatKhau.Text = "3";
             // 
             // label1
             // 
@@ -142,6 +143,7 @@
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(307, 50);
             this.txtTenDangNhap.TabIndex = 0;
+            this.txtTenDangNhap.Text = "3";
             // 
             // label2
             // 

@@ -19,7 +19,7 @@ GO
 
 -- Bảng thông tin cư dân
 CREATE TABLE CuDan (
-    CuDanID INT IDENTITY PRIMARY KEY ,
+    CuDanID INT IDENTITY(1000,1) PRIMARY KEY,
     HoTen NVARCHAR(100),
     SoDienThoai NVARCHAR(15),
 	CCCD NVARCHAR(15),
@@ -37,7 +37,7 @@ GO
 
 
 CREATE TABLE NhanVien (
-    id INT PRIMARY KEY IDENTITY(1,1),  -- Khóa chính, tự tăng
+    id INT PRIMARY KEY IDENTITY(100,1),  -- Khóa chính, tự tăng
     Ten NVARCHAR(100) NOT NULL,        -- Tên nhân viên
     ChucVu NVARCHAR(50) NOT NULL,      -- Chức vụ
     NgaySinh DATE,                     -- Ngày sinh
@@ -454,24 +454,25 @@ VALUES
 GO
 
 CREATE TABLE DuAnThiCong (
-    DuAnThiCongID INT PRIMARY KEY IDENTITY(1,1),
-    TenDuDan NVARCHAR(100) NOT NULL,
+    DuAnThiCongID INT PRIMARY KEY IDENTITY(100,1), -- Bắt đầu từ 100, tăng dần 1 đơn vị
+    TenDuAn NVARCHAR(100) NOT NULL,
     TenNhaThau NVARCHAR(100) NOT NULL,
+    ChuDuAn NVARCHAR(100) NOT NULL, -- "Tòa nhà hoặc Khách thuê"
     NgayBatDau DATE,
     NgayKetThuc DATE,
     TrangThai NVARCHAR(50) DEFAULT 'Đang thi công', -- Đang thi công, Hoàn thành, Tạm dừng
-    FileTaiLieu NVARCHAR(255) -- Lưu đường dẫn của file zip/rar
+    FileTaiLieu VARBINARY(MAX) DEFAULT NULL -- Lưu trực tiếp file zip/rar dưới dạng nhị phân
 );
 
 
+GO
 
 CREATE TABLE GiaiDoanThiCong (
     GiaiDoanID INT PRIMARY KEY IDENTITY(1,1),
-    DuAnThiCongID INT, -- Tham chiếu không có khóa ngoại
+    DuAnThiCongID INT,
     ThuTu INT, -- Thứ tự 1, 2, 3
-    NgayKetThucDuKien DATE,
     NgayKetThuc DATE DEFAULT NULL,
-    TrangThai NVARCHAR(50) DEFAULT 'Đang thi công', -- Đang thi công, Hoàn thành
+    TrangThai NVARCHAR(50) DEFAULT 'Chưa thi công', -- Chưa thi công, Đang thi công, Hoàn thành
     NoiDung NVARCHAR(MAX)
 );
 GO
@@ -490,10 +491,56 @@ CREATE TABLE ThoThiCong (
     ThoThiCongID INT PRIMARY KEY IDENTITY(1,1),
     DuAnThiCongID INT, -- Tham chiếu không có khóa ngoại
     HoTen NVARCHAR(100),
-    CCCD NVARCHAR(100) UNIQUE,
+    CCCD NVARCHAR(100),
     NhiemVu NVARCHAR(100)
 );
+GO
 
+CREATE PROCEDURE sp_ThemGiaiDoanThiCong
+    @DuAnThiCongID INT,
+    @NgayKetThuc DATE = NULL,
+    @TrangThai NVARCHAR(50) = 'Chưa thi công',
+    @NoiDung NVARCHAR(MAX)
+AS
+BEGIN
+    -- Bắt đầu một giao dịch
+    BEGIN TRANSACTION;
+
+    BEGIN TRY
+        -- Tìm thứ tự cao nhất hiện có trong bảng cho một DuAnThiCongID cụ thể
+        DECLARE @MaxThuTu INT;
+        SELECT @MaxThuTu = MAX(ThuTu)
+        FROM GiaiDoanThiCong
+        WHERE DuAnThiCongID = @DuAnThiCongID;
+
+        -- Nếu không có giai đoạn nào trước đó, thiết lập ThuTu là 1
+        IF @MaxThuTu IS NULL
+            SET @MaxThuTu = 0;
+
+        -- Thêm giai đoạn mới với ThuTu tăng thêm 1
+        INSERT INTO GiaiDoanThiCong (DuAnThiCongID, ThuTu, NgayKetThuc, TrangThai, NoiDung)
+        VALUES (@DuAnThiCongID, @MaxThuTu + 1, @NgayKetThuc, @TrangThai, @NoiDung);
+
+        -- Commit giao dịch nếu không có lỗi
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        -- Rollback giao dịch nếu xảy ra lỗi
+        ROLLBACK TRANSACTION;
+
+        -- In ra thông báo lỗi
+        DECLARE @ErrorMessage NVARCHAR(4000);
+        DECLARE @ErrorSeverity INT;
+        DECLARE @ErrorState INT;
+
+        SELECT 
+            @ErrorMessage = ERROR_MESSAGE(),
+            @ErrorSeverity = ERROR_SEVERITY(),
+            @ErrorState = ERROR_STATE();
+
+        RAISERROR (@ErrorMessage, @ErrorSeverity, @ErrorState);
+    END CATCH
+END;
 
 GO
 
