@@ -45,5 +45,23 @@ namespace DesignEasyHouse1.DAO
         {
            return YeuCauDAO.Instance.DeleteYeuCau(YeuCauId);
         }
+        public DataTable LayDanhSachYeuCauTuCuDanTheoTuan(DateTime tuNgay, DateTime denNgay)
+        {
+            string query = "SELECT y.YeuCauID AS MaYeuCau,    y.TrangThai,  d.KhuVucVeSinh,    d.ThoiGianVeSinh FROM    YeuCau y JOIN     DichVuVeSinh d ON y.DichvuId = d.DichVuVeSinhID  WHERE  d.KieuVeSinh = N'Định kỳ theo tuần' AND ThoiGianVeSinh BETWEEN @tuNgay AND @denNgay ";
+            object[] parameters = new object[] { tuNgay, denNgay };
+            return DataProvider.Instance.ExecuteQuery(query, parameters);
+        }
+        public DataTable LayDanhSachYeuCauTuCuDanTheoThang(DateTime tuNgay, DateTime denNgay)
+        {
+            string query = "SELECT y.YeuCauID AS MaYeuCau,    y.TrangThai,  d.KhuVucVeSinh,    d.ThoiGianVeSinh FROM    YeuCau y JOIN     DichVuVeSinh d ON y.DichvuId = d.DichVuVeSinhID  WHERE  d.KieuVeSinh = N'Định kỳ theo tháng' AND ThoiGianVeSinh BETWEEN @tuNgay AND @denNgay ";
+            object[] parameters = new object[] { tuNgay, denNgay };
+            return DataProvider.Instance.ExecuteQuery(query, parameters);
+        }
+        public DataTable LayDanhSachYeuCauTuCuDan(DateTime tuNgay, DateTime denNgay)
+        {
+            string query = "SELECT y.YeuCauID AS MaYeuCau,    y.TrangThai,  d.KhuVucVeSinh,    d.ThoiGianVeSinh FROM    YeuCau y JOIN     DichVuVeSinh d ON y.DichvuId = d.DichVuVeSinhID  WHERE d.KieuVeSinh = N'Thường' AND ThoiGianVeSinh BETWEEN @tuNgay AND @denNgay ";
+            object[] parameters = new object[] { tuNgay, denNgay };
+            return DataProvider.Instance.ExecuteQuery(query, parameters);
+        }
     }
 }

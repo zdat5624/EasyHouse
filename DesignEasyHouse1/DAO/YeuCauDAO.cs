@@ -69,5 +69,23 @@ namespace DesignEasyHouse1.DAO
 
             return result > 0; // Trả về true nếu xóa thành công
         }
+        public bool ChapNhanYeuCauVeSinh(int yeuCauID)
+        {
+            string query = "UPDATE YeuCau SET TrangThai = N'Nhân viên vệ sinh sẽ xử lý đúng lịch đã đăng ký' WHERE YeuCauID = @YeuCauID ";
+            object[] parameters = new object[] { yeuCauID };
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
+
+            return result > 0; // Trả về true nếu thay đổi thành công
+        }
+        public bool TuChoiYeuCauVeSinh(int yeuCauID)
+        {
+            string query = "UPDATE YeuCau SET TrangThai = N'Yêu cầu bị từ chối' WHERE YeuCauID = @YeuCauID ";
+            object[] parameters = new object[] { yeuCauID };
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
+
+            return result > 0; // Trả về true nếu thay đổi thành công
+        }
     }
 }
