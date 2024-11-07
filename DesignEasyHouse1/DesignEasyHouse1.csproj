@@ -108,6 +108,12 @@
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formThoThiCong.Designer.cs">
       <DependentUpon>formThoThiCong.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\formXemKeHoachVeSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\formXemKeHoachVeSinh.Designer.cs">
+      <DependentUpon>formXemKeHoachVeSinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="SessionNhanVien.cs" />
     <Compile Include="SessionCuDan.cs" />
     <Compile Include="formsGiamDoc\QuanLyNhanVien\DanhSachNhanVien.cs">
@@ -484,6 +490,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formThoThiCong.resx">
       <DependentUpon>formThoThiCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongVeSinh\formXemKeHoachVeSinh.resx">
+      <DependentUpon>formXemKeHoachVeSinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongVeSinh\formDeXuat.resx">
       <DependentUpon>formDeXuat.cs</DependentUpon>

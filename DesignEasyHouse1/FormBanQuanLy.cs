@@ -124,6 +124,15 @@ namespace DesignEasyHouse1
         {
             //btnDichVuVeSinh.Visible = true;
             panelQuanLyVeSinh.Visible = true;
+            if (SessionNhanVien.ChucVu == "Nhân viên") { 
+                btnPhanHoiCaNhan.Visible = true;
+                btnCongViecVeSinhNhanVien.Visible = true;
+                btnHieuSuatNhanVien.Visible= false;
+                btnKeHoachVeSinh.Visible= false;
+                btnYeuCauVeSinh.Visible=false;
+                btnPhanHoi.Visible= false;
+                btnBaoCao.Visible= false;
+            }
         }
         private void showDuAnThiCongModule()
         {
@@ -156,14 +165,25 @@ namespace DesignEasyHouse1
         {
 
             OpenChildForm(new formsPhongBan.PhongDuAnThiCong.formTheoDoiDuAn());
-        private void button3_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new formsPhongBan.PhongVeSinh.tableNhanYeuCau());
         }
+            private void button3_Click(object sender, EventArgs e)
+            {
+                OpenChildForm(new formsPhongBan.PhongVeSinh.tableNhanYeuCau());
+            }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        private void btnCongViecVeSinhNhanVien_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongVeSinh.formXemKeHoachVeSinh());
+        }
+
+        //private void panelMain_Paint(object sender, PaintEventArgs e)
+        //{
+
+        //}
     }
 }

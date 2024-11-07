@@ -176,10 +176,8 @@ CREATE TABLE PhanCong (
     id INT PRIMARY KEY ,
     YeuCauId INT NOT NULL,
     NhanVienId INT NOT NULL,
-    --FOREIGN KEY (YeuCauId) REFERENCES YeuCau(id),
-    --FOREIGN KEY (NhanVienId) REFERENCES NhanVien(id)
+	ThoiGianPhanCong DATETIME
 );
-
 
 
 
@@ -377,6 +375,53 @@ BEGIN
     WHERE NhanVien.id = i.id;
 END;
 GO
+
+--triggers tự động phân việc cho nhân viên khi trạng thái yêu cầu thay đổi thành "Nhân viên vệ sinh sẽ xử lý đúng lịch đã đăng ký"
+CREATE TRIGGER trg_UpdateYeuCauTrangThai
+ON YeuCau
+AFTER UPDATE
+AS
+BEGIN
+    -- Only proceed if the TrangThai is updated to 'Đang xử lý'
+    IF UPDATE(TrangThai)
+    BEGIN
+        DECLARE @YeuCauID INT, @NhanVienID INT, @ThoiGianPhanCong DATETIME;
+        
+        -- Get the YeuCauID and the ThoiGianVeSinh from DichVuVeSinh
+        SELECT 
+            @YeuCauID = YeuCauID,
+            @ThoiGianPhanCong = dv.ThoiGianVeSinh
+        FROM INSERTED i
+        JOIN DichVuVeSinh dv ON i.DichvuId = dv.DichVuVeSinhID
+        WHERE i.TrangThai = N'Đang xử lý';
+        
+        -- Assuming the employee is the one responsible for cleaning service
+        SELECT @NhanVienID = id  -- Use 'id' instead of 'NhanVienId'
+        FROM NhanVien
+        WHERE ChucVu = N'Nhân viên' AND PhongBan = N'Vệ Sinh';  -- Adjust this condition depending on how employees are assigned
+        
+        -- Check if the employee is already assigned to a task on the same day and time
+        IF NOT EXISTS (
+            SELECT 1
+            FROM PhanCong
+            WHERE NhanVienId = @NhanVienID
+            AND ThoiGianPhanCong = @ThoiGianPhanCong
+        )
+        BEGIN
+            -- Insert the new record into PhanCong table
+            INSERT INTO PhanCong (YeuCauId, NhanVienId, ThoiGianPhanCong)
+            VALUES (@YeuCauID, @NhanVienID, @ThoiGianPhanCong);
+        END
+    END
+END;
+
+
+drop trigger trg_UpdateYeuCauTrangThai
+
+
+
+
+
 
 CREATE TRIGGER trg_AfterInsertCuDan
 ON CuDan
