@@ -148,5 +148,11 @@ namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
             f.ShowDialog();
         }
         #endregion
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            formQuanLyVatTuThiCong f = new formQuanLyVatTuThiCong();
+            f.ShowDialog();
+        }
     }
 }

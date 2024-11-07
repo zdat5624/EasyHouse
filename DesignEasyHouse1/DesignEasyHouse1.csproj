@@ -78,6 +78,12 @@
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formQuanLyDuAnThiCong.Designer.cs">
       <DependentUpon>formQuanLyDuAnThiCong.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formQuanLyVatTuThiCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formQuanLyVatTuThiCong.Designer.cs">
+      <DependentUpon>formQuanLyVatTuThiCong.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formThemDuAnThiCong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,12 @@
     </Compile>
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formThemGiaiDoan.Designer.cs">
       <DependentUpon>formThemGiaiDoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formCapNhatThoThiCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formCapNhatThoThiCong.Designer.cs">
+      <DependentUpon>formCapNhatThoThiCong.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formThemThoThiCong.cs">
       <SubType>Form</SubType>
@@ -470,11 +482,17 @@
     <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formQuanLyDuAnThiCong.resx">
       <DependentUpon>formQuanLyDuAnThiCong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formQuanLyVatTuThiCong.resx">
+      <DependentUpon>formQuanLyVatTuThiCong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formThemDuAnThiCong.resx">
       <DependentUpon>formThemDuAnThiCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formThemGiaiDoan.resx">
       <DependentUpon>formThemGiaiDoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formCapNhatThoThiCong.resx">
+      <DependentUpon>formCapNhatThoThiCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formThemThoThiCong.resx">
       <DependentUpon>formThemThoThiCong.cs</DependentUpon>

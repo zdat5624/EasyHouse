@@ -149,7 +149,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(612, 49);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Danh Sách Thợ Thi Công";
+            this.button1.Text = "Quản Lý Thợ Thi Công";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // dataGridViewImageColumn1
@@ -183,7 +183,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "formThoThiCong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Thợ thi công";
+            this.Text = "Quản lý thợ thi công";
             this.Load += new System.EventHandler(this.formThoThiCong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachThoThiCong)).EndInit();
             this.panel1.ResumeLayout(false);
