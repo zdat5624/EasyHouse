@@ -117,7 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Details.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="HoanThanh.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAHUAAAB1AePCB2UAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAAA0UlEQVQ4T2MYBcQD96o0SY+eyJNurZFToULEA4fiSBGP7qirkfsi/3tPjXwGFSYOOGSF8ri3RZ2P
+        2Bv5P2BR5Hu3qmhPqBQm8GiP3OQ1MfKBa3WsCYgP1twcdTESqDloadRnl+qwYLBCXMC7P+ou2JmTI547
+        VUQ6uTVGnY3YDdS8POqrU3VELFQZbmBbEqznOz3yEciQgPlRv8CaV0X+cGuISoMqIQwcayO1fWdGPQQZ
+        Erw24rd7U2QBVIp44FwbberVH3nNrTG6Eio0CnACBgYA3h5Q9RJWiNEAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

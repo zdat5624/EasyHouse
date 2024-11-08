@@ -30,6 +30,27 @@ namespace DesignEasyHouse1.DAO
             string query = "SELECT * FROM YeuCau";
             return DataProvider.Instance.ExecuteQuery(query);
         }
+        public DataTable GetDanhSachYeuCauDuocPhanCong(int NhanVienID)
+        {
+            string query = "SELECT yc.YeuCauID, yc.TieuDe, yc.NoiDung, yc.NgayGui, yc.TrangThai, \r\n    pc.ThoiGianPhanCong\r\nFROM YeuCau yc\r\nJOIN PhanCong pc ON yc.YeuCauID = pc.YeuCauId\r\nJOIN NhanVien nv ON pc.NhanVienId = nv.id\r\nWHERE pc.NhanVienId = @NhanVienID";
+
+            object[] parameters = new object[] { NhanVienID };
+            return DataProvider.Instance.ExecuteQuery(query, parameters);
+        }
+        public DataTable GetDanhSachYeuCauDuocPhanCongDaHoanThanh(int NhanVienID)
+        {
+            string query = "SELECT yc.YeuCauID, yc.TieuDe, yc.NoiDung, yc.NgayGui, yc.TrangThai, \r\n    pc.ThoiGianPhanCong\r\nFROM YeuCau yc\r\nJOIN PhanCong pc ON yc.YeuCauID = pc.YeuCauId\r\nJOIN NhanVien nv ON pc.NhanVienId = nv.id\r\nWHERE yc.TrangThai = N'Hoàn thành' AND pc.NhanVienId = @NhanVienID";
+
+            object[] parameters = new object[] { NhanVienID };
+            return DataProvider.Instance.ExecuteQuery(query, parameters);
+        }
+        public DataTable GetDanhSachYeuCauDuocPhanCongChuaHoanThanh(int NhanVienID)
+        {
+            string query = "SELECT yc.YeuCauID, yc.TieuDe, yc.NoiDung, yc.NgayGui, yc.TrangThai, \r\n    pc.ThoiGianPhanCong\r\nFROM YeuCau yc\r\nJOIN PhanCong pc ON yc.YeuCauID = pc.YeuCauId\r\nJOIN NhanVien nv ON pc.NhanVienId = nv.id\r\nWHERE yc.TrangThai = N'Nhân viên vệ sinh sẽ xử lý đúng lịch đã đăng ký' AND pc.NhanVienId = @NhanVienID";
+
+            object[] parameters = new object[] { NhanVienID };
+            return DataProvider.Instance.ExecuteQuery(query, parameters);
+        }
 
         public bool ThemYeuCau(int CuDanID, int LoaiYeuCauID, string TieuDe, string NoiDung)
         {
