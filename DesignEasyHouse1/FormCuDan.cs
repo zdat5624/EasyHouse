@@ -141,5 +141,10 @@ namespace DesignEasyHouse1
         {
             //OpenChildForm(new formsCuDan.moduleVeSinh.);
         }
+
+        private void btnThongBaoCuDan_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsCuDan.formThongBaoCuaCuDan());
+        }
     }
 }

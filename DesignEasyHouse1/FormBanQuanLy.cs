@@ -183,7 +183,7 @@ namespace DesignEasyHouse1
 
         private void btnThongBaoTuHeThong_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new formsPhongBan.formsThongBaoPhongBan());
+            //OpenChildForm(new formsPhongBan.formsThongBaoPhongBan());
         }
 
         //private void panelMain_Paint(object sender, PaintEventArgs e)

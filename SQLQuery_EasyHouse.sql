@@ -390,7 +390,7 @@ ON YeuCau
 AFTER UPDATE
 AS
 BEGIN
-    -- Only proceed if the TrangThai is updated to 'Đang xử lý'
+    -- Only proceed if the TrangThai is updated to 'Đang chờ  xử lý'
     IF UPDATE(TrangThai)
     BEGIN
         DECLARE @YeuCauID INT, @NhanVienID INT, @ThoiGianPhanCong DATETIME;
@@ -401,7 +401,7 @@ BEGIN
             @ThoiGianPhanCong = dv.ThoiGianVeSinh
         FROM INSERTED i
         JOIN DichVuVeSinh dv ON i.DichvuId = dv.DichVuVeSinhID
-        WHERE i.TrangThai = N'Đang xử lý';
+        WHERE i.TrangThai = N'Nhân viên vệ sinh sẽ xử lý đúng lịch đã đăng ký';
         
         -- Assuming the employee is the one responsible for cleaning service
         SELECT @NhanVienID = id  -- Use 'id' instead of 'NhanVienId'
@@ -462,20 +462,47 @@ BEGIN
     INSERT INTO ThongBao (TieuDe, NoiDung, ThoiGian, UsersId, YeuCauId)
     SELECT 
         inserted.TieuDe, 
-        N'Cư dân đã thêm yêu cầu '+inserted.NoiDung, 
+        inserted.NoiDung, 
         GETDATE(), 
         u.id, 
         inserted.YeuCauID
     FROM 
         inserted
+	JOIN 
+        CuDan c ON c.CuDanId = inserted.CuDanID
     JOIN 
-        users u ON u.id = inserted.CuDanID; -- Giả sử CuDanID trong bảng YeuCau tham chiếu đến ID trong bảng users
+        users u ON u.id = c.UserId; -- Giả sử CuDanID trong bảng YeuCau tham chiếu đến ID trong bảng users
 END;
 GO
 
 
+--trigger thông báo cho cư dân khi hoàn thành yêu cầu 
+CREATE TRIGGER trg_YeuCau_HoanThanh_ThongBao
+ON YeuCau
+AFTER UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
 
+    -- Thêm thông báo cho các yêu cầu có trạng thái cập nhật thành "Hoàn thành"
+    INSERT INTO ThongBao (TieuDe, NoiDung, ThoiGian, UsersId, YeuCauId)
+    SELECT 
+		CONCAT(N'Hoàn thành yêu cầu có mã :',i.YeuCauID ),                               -- Tiêu đề thông báo
+        N'vui lòng thanh toán phi dịch vụ : 100.000 đồng', -- Nội dung thông báo
+        GETDATE(),                                           -- Thời gian hiện tại
+        c.UserId,                                           -- User ID của cư dân từ bảng CuDan
+        i.YeuCauID                                           -- ID của yêu cầu
+    FROM 
+        Inserted i
+    JOIN 
+        CuDan c ON c.CuDanID = i.CuDanID                    -- Liên kết với bảng CuDan để lấy UsersId
+    WHERE 
+        i.TrangThai = N'Hoàn thành'                         -- Kiểm tra trạng thái cập nhật là "Hoàn thành"
+        AND (SELECT TrangThai FROM Deleted d WHERE d.YeuCauID = i.YeuCauID) <> N'Hoàn thành';
+    -- Chỉ thực hiện khi trạng thái thay đổi từ khác "Hoàn thành" sang "Hoàn thành"
+END;
 GO
+
 --bảng doanh thu 
 CREATE TABLE DoanhThu (
     DoanhThuId INT PRIMARY KEY,        -- Khóa chính

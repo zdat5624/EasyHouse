@@ -50,10 +50,17 @@
     <Compile Include="DAO\DuAnThiCongDAO.cs" />
     <Compile Include="DAO\GiaiDoanThiCongDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="DAO\ThongBaoDAO.cs" />
     <Compile Include="DAO\ThoThiCongDAO.cs" />
     <Compile Include="DTO\DuAnThiCong.cs" />
     <Compile Include="DTO\GiaiDoanThiCong.cs" />
     <Compile Include="DTO\ThoThiCong.cs" />
+    <Compile Include="formsCuDan\formThongBaoCuaCuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCuDan\formThongBaoCuaCuDan.Designer.cs">
+      <DependentUpon>formThongBaoCuaCuDan.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsPhongBan\formsThongBaoPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -312,12 +319,6 @@
     <Compile Include="formsPhongBan\PhongCuDan\formThemHopDongThueCanHo.Designer.cs">
       <DependentUpon>formThemHopDongThueCanHo.cs</DependentUpon>
     </Compile>
-    <Compile Include="formsPhongBan\formThemThongBaoDenCuDan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formsPhongBan\formThemThongBaoDenCuDan.Designer.cs">
-      <DependentUpon>formThemThongBaoDenCuDan.cs</DependentUpon>
-    </Compile>
     <Compile Include="formsPhongBan\PhongVeSinh\formDeXuat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -419,6 +420,9 @@
     <EmbeddedResource Include="formsCuDan\formPhanHoiDanhGia.resx">
       <DependentUpon>formPhanHoiDanhGia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsCuDan\formThongBaoCuaCuDan.resx">
+      <DependentUpon>formThongBaoCuaCuDan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsCuDan\formYeuCauDichVuCuDan.resx">
       <DependentUpon>formYeuCauDichVuCuDan.cs</DependentUpon>
     </EmbeddedResource>
@@ -472,9 +476,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formThemHopDongThueCanHo.resx">
       <DependentUpon>formThemHopDongThueCanHo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formsPhongBan\formThemThongBaoDenCuDan.resx">
-      <DependentUpon>formThemThongBaoDenCuDan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formXemChiTietHopDongThue.resx">
       <DependentUpon>formXemChiTietHopDongThue.cs</DependentUpon>
@@ -634,6 +635,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\bell.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

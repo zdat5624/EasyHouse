@@ -34,14 +34,14 @@ namespace DesignEasyHouse1.DAO
         }
         public int GetCuDanID(int userId)
         {
-            string query = "SELECT CuDanID FROM CuDan WHERE CuDanID = @userId";
+            string query = "SELECT CuDanID FROM CuDan WHERE UserId= @userId";
             object[] parameters = new object[] { userId };
             int result =  (int)DataProvider.Instance.ExecuteScalar(query, parameters);
             return result;
         }
         public string GetTenCuDan(int userId)
         {
-            string query = "SELECT HoTen FROM CuDan WHERE CuDanID = @userId";
+            string query = "SELECT HoTen FROM CuDan WHERE UserId = @userId";
             object[] parameters = new object[] { userId };
             return (string)DataProvider.Instance.ExecuteScalar(query, parameters);
         }
