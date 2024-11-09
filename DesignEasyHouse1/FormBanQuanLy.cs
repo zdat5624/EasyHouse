@@ -125,7 +125,7 @@ namespace DesignEasyHouse1
             //btnDichVuVeSinh.Visible = true;
             panelQuanLyVeSinh.Visible = true;
             if (SessionNhanVien.ChucVu == "Nhân viên") { 
-                btnPhanHoiCaNhan.Visible = true;
+                btnThongBaoTuHeThong.Visible = true;
                 btnCongViecVeSinhNhanVien.Visible = true;
                 btnHieuSuatNhanVien.Visible= false;
                 btnKeHoachVeSinh.Visible= false;
@@ -179,6 +179,11 @@ namespace DesignEasyHouse1
         private void btnCongViecVeSinhNhanVien_Click(object sender, EventArgs e)
         {
             OpenChildForm(new formsPhongBan.PhongVeSinh.formXemKeHoachVeSinh());
+        }
+
+        private void btnThongBaoTuHeThong_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.formsThongBaoPhongBan());
         }
 
         //private void panelMain_Paint(object sender, PaintEventArgs e)

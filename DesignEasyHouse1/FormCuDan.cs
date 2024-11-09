@@ -136,5 +136,10 @@ namespace DesignEasyHouse1
             //loginForm.FormClosed += (s, args) => Application.Exit(); // Đảm bảo form chính sẽ hiển thị lại khi form đăng nhập đóng
             loginForm.Show(); // Hiện form đăng nhập
         }
+
+        private void btnThongBaoTuHeThong_Click(object sender, EventArgs e)
+        {
+            //OpenChildForm(new formsCuDan.moduleVeSinh.);
+        }
     }
 }

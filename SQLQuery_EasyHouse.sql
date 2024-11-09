@@ -64,7 +64,15 @@ INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyen
 VALUES 
     ('Nguyen Van c', 'Quản lý', '1985-05-10', 'Hà Nội', 'thicong', 'thicong', '2020-01-01', 10000000, N'Quản lý dự án thi công');
 
-
+CREATE TABLE ThongBao (
+    id INT PRIMARY KEY IDENTITY,
+    TieuDe NVARCHAR(255) NOT NULL,
+    NoiDung NVARCHAR(MAX),
+	LoaiThongBao NVARCHAR(255),
+    ThoiGian DATETIME DEFAULT GETDATE(),
+    UsersId INT,
+	YeuCauId INT
+);
 
 
 
@@ -123,14 +131,14 @@ GO
 
 
 -- Bảng quản lý thông báo
-CREATE TABLE ThongBao (
-    ThongBaoID INT IDENTITY PRIMARY KEY,
-    TieuDe NVARCHAR(255),
-    NoiDung NVARCHAR(MAX),
-    NgayGui DATETIME DEFAULT GETDATE(),
-    LoaiThongBao NVARCHAR(50) -- 'Chung' hoặc 'Riêng'
-);
-GO
+--CREATE TABLE ThongBao (
+  --  ThongBaoID INT IDENTITY PRIMARY KEY,
+    --TieuDe NVARCHAR(255),
+    --NoiDung NVARCHAR(MAX),
+    --NgayGui DATETIME DEFAULT GETDATE(),
+    --LoaiThongBao NVARCHAR(50) -- 'Chung' hoặc 'Riêng'
+--);
+--GO
 
 -- Bảng lưu thông báo riêng đến các cư dân
 CREATE TABLE ThongBaoCuDan (
@@ -344,7 +352,7 @@ BEGIN
     SELECT 
         CuDanID,
         DichVuVeSinhID,  -- Giả sử DichVuVeSinhID là ID của dịch vụ vệ sinh tương ứng
-        N'Yêu cầu vệ sinh - ' + CAST(GETDATE() AS NVARCHAR(20)),
+        N'Yêu cầu vệ sinh',
         KhuVucCuThe + N' cần được vệ sinh vào ' + CONVERT(NVARCHAR(20), ThoiGianVeSinh, 120),
         GETDATE()
     FROM 
@@ -416,13 +424,12 @@ BEGIN
 END;
 
 
-drop trigger trg_UpdateYeuCauTrangThai
 
 
 
 
 
-
+--Them người dùng là cư dân 
 CREATE TRIGGER trg_AfterInsertCuDan
 ON CuDan
 AFTER INSERT
@@ -444,6 +451,29 @@ BEGIN
     FROM inserted i
     WHERE CuDan.UserId = i.UserId;
 END;
+
+-- trigger thêm thông báo khi có yêu cầu đc thêm , từ  phía cư dân , show ở thông báo cư dân 
+CREATE TRIGGER trg_ThongBaoYeuCauMoi
+ON YeuCau
+AFTER INSERT
+AS
+BEGIN
+    -- Thêm thông báo cho mỗi yêu cầu mới được thêm vào
+    INSERT INTO ThongBao (TieuDe, NoiDung, ThoiGian, UsersId, YeuCauId)
+    SELECT 
+        inserted.TieuDe, 
+        N'Cư dân đã thêm yêu cầu '+inserted.NoiDung, 
+        GETDATE(), 
+        u.id, 
+        inserted.YeuCauID
+    FROM 
+        inserted
+    JOIN 
+        users u ON u.id = inserted.CuDanID; -- Giả sử CuDanID trong bảng YeuCau tham chiếu đến ID trong bảng users
+END;
+GO
+
+
 
 GO
 --bảng doanh thu 

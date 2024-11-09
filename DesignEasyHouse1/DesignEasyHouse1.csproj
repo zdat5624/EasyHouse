@@ -54,6 +54,12 @@
     <Compile Include="DTO\DuAnThiCong.cs" />
     <Compile Include="DTO\GiaiDoanThiCong.cs" />
     <Compile Include="DTO\ThoThiCong.cs" />
+    <Compile Include="formsPhongBan\formsThongBaoPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\formsThongBaoPhongBan.Designer.cs">
+      <DependentUpon>formsThongBaoPhongBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formCapNhatGiaiDoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -445,6 +451,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formPhanHoiYeuCau.resx">
       <DependentUpon>formPhanHoiYeuCau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\formsThongBaoPhongBan.resx">
+      <DependentUpon>formsThongBaoPhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formQuanLyCuDan.resx">
       <DependentUpon>formQuanLyCuDan.cs</DependentUpon>

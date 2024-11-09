@@ -61,7 +61,6 @@ namespace DesignEasyHouse1
             this.button25 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button19 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
@@ -83,6 +82,7 @@ namespace DesignEasyHouse1
             this.labelTieuDe = new System.Windows.Forms.Label();
             this.ptbHideMenu = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.btnThongBaoTuHeThong = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -649,7 +649,7 @@ namespace DesignEasyHouse1
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.button19);
+            this.panel8.Controls.Add(this.btnThongBaoTuHeThong);
             this.panel8.Controls.Add(this.button17);
             this.panel8.Controls.Add(this.button18);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
@@ -658,25 +658,6 @@ namespace DesignEasyHouse1
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(248, 130);
             this.panel8.TabIndex = 47;
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.Location = new System.Drawing.Point(0, 78);
-            this.button19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button19.Name = "button19";
-            this.button19.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button19.Size = new System.Drawing.Size(248, 39);
-            this.button19.TabIndex = 19;
-            this.button19.Text = " ";
-            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.UseVisualStyleBackColor = false;
             // 
             // button17
             // 
@@ -691,7 +672,7 @@ namespace DesignEasyHouse1
             this.button17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button17.Name = "button17";
             this.button17.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button17.Size = new System.Drawing.Size(248, 39);
+            this.button17.Size = new System.Drawing.Size(248, 45);
             this.button17.TabIndex = 21;
             this.button17.Text = "Phản hồi và đánh giá";
             this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1036,6 +1017,27 @@ namespace DesignEasyHouse1
             this.panelMain.Size = new System.Drawing.Size(883, 590);
             this.panelMain.TabIndex = 4;
             // 
+            // btnThongBaoTuHeThong
+            // 
+            this.btnThongBaoTuHeThong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnThongBaoTuHeThong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThongBaoTuHeThong.FlatAppearance.BorderSize = 0;
+            this.btnThongBaoTuHeThong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongBaoTuHeThong.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btnThongBaoTuHeThong.ForeColor = System.Drawing.Color.White;
+            this.btnThongBaoTuHeThong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongBaoTuHeThong.Location = new System.Drawing.Point(0, 84);
+            this.btnThongBaoTuHeThong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThongBaoTuHeThong.Name = "btnThongBaoTuHeThong";
+            this.btnThongBaoTuHeThong.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
+            this.btnThongBaoTuHeThong.Size = new System.Drawing.Size(248, 36);
+            this.btnThongBaoTuHeThong.TabIndex = 22;
+            this.btnThongBaoTuHeThong.Text = "Thông báo từ hệ thống";
+            this.btnThongBaoTuHeThong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongBaoTuHeThong.UseVisualStyleBackColor = false;
+            this.btnThongBaoTuHeThong.Visible = false;
+            this.btnThongBaoTuHeThong.Click += new System.EventHandler(this.btnThongBaoTuHeThong_Click);
+            // 
             // FormCuDan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1049,7 +1051,6 @@ namespace DesignEasyHouse1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EasyHouse";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            //this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCuDan_FormClosing);
             this.Load += new System.EventHandler(this.FormCuDan_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -1081,7 +1082,6 @@ namespace DesignEasyHouse1
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
@@ -1124,5 +1124,6 @@ namespace DesignEasyHouse1
         private System.Windows.Forms.Label labelTieuDe;
         private System.Windows.Forms.PictureBox ptbHideMenu;
         private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.Button btnThongBaoTuHeThong;
     }
 }
