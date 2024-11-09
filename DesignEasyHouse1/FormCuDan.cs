@@ -146,5 +146,11 @@ namespace DesignEasyHouse1
         {
             OpenChildForm(new formsCuDan.formThongBaoCuaCuDan());
         }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+            Form ThanhToanForm = new formsCuDan.formsThanhToan();
+            ThanhToanForm.ShowDialog();
+        }
     }
 }

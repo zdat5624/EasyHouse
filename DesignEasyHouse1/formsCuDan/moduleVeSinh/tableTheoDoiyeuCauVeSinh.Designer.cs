@@ -30,9 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panelTieuDe = new System.Windows.Forms.Panel();
-            this.labelTieuDe = new System.Windows.Forms.Label();
-            this.ptbHideMenu = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDanhGia = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -46,8 +43,6 @@
             this.lblDen = new System.Windows.Forms.Label();
             this.lblDinhKy = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.panelTieuDe.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbHideMenu)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTheoDoiVeSinh)).BeginInit();
@@ -55,53 +50,14 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelTieuDe
-            // 
-            this.panelTieuDe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.panelTieuDe.Controls.Add(this.labelTieuDe);
-            this.panelTieuDe.Controls.Add(this.ptbHideMenu);
-            this.panelTieuDe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTieuDe.Location = new System.Drawing.Point(0, 0);
-            this.panelTieuDe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelTieuDe.Name = "panelTieuDe";
-            this.panelTieuDe.Size = new System.Drawing.Size(1166, 73);
-            this.panelTieuDe.TabIndex = 26;
-            this.panelTieuDe.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTieuDe_Paint);
-            // 
-            // labelTieuDe
-            // 
-            this.labelTieuDe.AutoSize = true;
-            this.labelTieuDe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelTieuDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelTieuDe.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold);
-            this.labelTieuDe.ForeColor = System.Drawing.Color.White;
-            this.labelTieuDe.Location = new System.Drawing.Point(66, 22);
-            this.labelTieuDe.Name = "labelTieuDe";
-            this.labelTieuDe.Size = new System.Drawing.Size(221, 28);
-            this.labelTieuDe.TabIndex = 1;
-            this.labelTieuDe.Text = "Xem Yêu Cầu Vệ Sinh";
-            // 
-            // ptbHideMenu
-            // 
-            this.ptbHideMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptbHideMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ptbHideMenu.Image = global::DesignEasyHouse1.Properties.Resources.iconlessthan_2;
-            this.ptbHideMenu.Location = new System.Drawing.Point(0, 0);
-            this.ptbHideMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbHideMenu.Name = "ptbHideMenu";
-            this.ptbHideMenu.Size = new System.Drawing.Size(60, 73);
-            this.ptbHideMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbHideMenu.TabIndex = 0;
-            this.ptbHideMenu.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnDanhGia);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 73);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1166, 640);
+            this.panel1.Size = new System.Drawing.Size(1166, 713);
             this.panel1.TabIndex = 27;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -290,13 +246,9 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1166, 713);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panelTieuDe);
             this.Name = "tableTheoDoiyeuCauVeSinh";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.tableTheoDoiyeuCauVeSinh_Load);
-            this.panelTieuDe.ResumeLayout(false);
-            this.panelTieuDe.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbHideMenu)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTheoDoiVeSinh)).EndInit();
@@ -309,9 +261,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panelTieuDe;
-        private System.Windows.Forms.Label labelTieuDe;
-        private System.Windows.Forms.PictureBox ptbHideMenu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.DataGridView dtgvTheoDoiVeSinh;
