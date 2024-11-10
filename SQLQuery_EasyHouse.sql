@@ -156,7 +156,8 @@ CREATE TABLE YeuCau (
     TieuDe NVARCHAR(255),
     NoiDung NVARCHAR(MAX),
     NgayGui DATETIME DEFAULT GETDATE(),
-    TrangThai NVARCHAR(50) DEFAULT N'Đang chờ xử lý', --'Đang xử lý' hoặc 'Hoàn thành'
+    TrangThai NVARCHAR(50) DEFAULT N'Đang chờ xử lý', --'Đang xử lý' hoặc 'Hoàn thành',
+	ThanhToan NVARCHAR(50) DEFAULT N'chưa thanh toán'
 );
 GO
 
@@ -656,6 +657,31 @@ BEGIN
     END CATCH
 END;
 
+GO
+CREATE TRIGGER trg_ThongBao_ThanhToan_ThayDoi
+ON YeuCau
+AFTER UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- Thêm thông báo cho các yêu cầu khi cột ThanhToan được thay đổi
+    INSERT INTO ThongBao (TieuDe, NoiDung, ThoiGian, UsersId, YeuCauId)
+    SELECT 
+        N'Thông báo thanh toán',                               -- Tiêu đề thông báo
+        CONCAT(N'Đang chờ xác nhận thanh toán yêu cầu :',i.YeuCauID,N'từ hệ thống' ), -- Nội dung thông báo
+        GETDATE(),                                            -- Thời gian hiện tại
+        c.UserId,                                             -- User ID của cư dân từ bảng CuDan
+        i.YeuCauID                                            -- ID của yêu cầu
+    FROM 
+        Inserted i
+    JOIN 
+        Deleted d ON i.YeuCauID = d.YeuCauID                  -- Liên kết với bảng Deleted để kiểm tra thay đổi
+    JOIN 
+        CuDan c ON c.CuDanID = i.CuDanID                      -- Liên kết với bảng CuDan để lấy UsersId
+    WHERE 
+        i.ThanhToan <> d.ThanhToan                            -- Chỉ thực thi khi cột ThanhToan thực sự thay đổi
+END;
 GO
 
 CREATE TABLE DichVuGuiXe (

@@ -50,5 +50,10 @@ namespace DesignEasyHouse1.formsCuDan
         {
             this.Close();
         }
+
+        private void formGuiYeuCauDichVuCuDan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

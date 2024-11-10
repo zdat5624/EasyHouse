@@ -64,6 +64,7 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
             dtgvTheoDoiVeSinh.Columns["TrangThai"].HeaderText = "Trạng Thái";
             dtgvTheoDoiVeSinh.Columns["KhuVucVeSinh"].HeaderText = "Khu Vực Vệ Sinh";
             dtgvTheoDoiVeSinh.Columns["ThoiGianVeSinh"].HeaderText = "Thời Gian Vệ Sinh";
+            dtgvTheoDoiVeSinh.Columns["ThanhToan"].HeaderText = "Trạng thái thanh toán";
             // Xóa cột "Thao Tác" nếu đã tồn tại
             if (dtgvTheoDoiVeSinh.Columns.Contains("Chỉnh sửa"))
             {

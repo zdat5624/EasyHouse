@@ -25,19 +25,19 @@ namespace DesignEasyHouse1.DAO
         }
         public DataTable GetDanhSachVeSinh(int CuDanID, DateTime tuNgay, DateTime denNgay)
         {
-            string query = "SELECT y.YeuCauID AS MaYeuCau,    y.TrangThai,  d.KhuVucVeSinh,    d.ThoiGianVeSinh FROM    YeuCau y JOIN     DichVuVeSinh d ON y.DichvuId = d.DichVuVeSinhID  WHERE y.CuDanID = @CuDanID  AND d.KieuVeSinh = N'Thường' AND ThoiGianVeSinh BETWEEN @tuNgay AND @denNgay ";
+            string query = "SELECT y.YeuCauID AS MaYeuCau,    y.TrangThai, y.ThanhToan,   d.KhuVucVeSinh,    d.ThoiGianVeSinh FROM    YeuCau y JOIN     DichVuVeSinh d ON y.DichvuId = d.DichVuVeSinhID  WHERE y.CuDanID = @CuDanID  AND d.KieuVeSinh = N'Thường' AND ThoiGianVeSinh BETWEEN @tuNgay AND @denNgay ";
             object[] parameters = new object[] { CuDanID , tuNgay,  denNgay };
             return DataProvider.Instance.ExecuteQuery(query, parameters);
         }
         public DataTable GetDanhSachVeSinhThang(int CuDanID, DateTime tuNgay, DateTime denNgay)
         {
-            string query = "SELECT y.YeuCauID AS MaYeuCau,    y.TrangThai,  d.KhuVucVeSinh,    d.ThoiGianVeSinh FROM    YeuCau y JOIN     DichVuVeSinh d ON y.DichvuId = d.DichVuVeSinhID  WHERE y.CuDanID = @CuDanID AND d.KieuVeSinh = N'Định kỳ theo tháng' AND ThoiGianVeSinh BETWEEN @tuNgay AND @denNgay ";
+            string query = "SELECT y.YeuCauID AS MaYeuCau,    y.TrangThai, y.ThanhToan, d.KhuVucVeSinh,    d.ThoiGianVeSinh FROM    YeuCau y JOIN     DichVuVeSinh d ON y.DichvuId = d.DichVuVeSinhID  WHERE y.CuDanID = @CuDanID AND d.KieuVeSinh = N'Định kỳ theo tháng' AND ThoiGianVeSinh BETWEEN @tuNgay AND @denNgay ";
             object[] parameters = new object[] { CuDanID, tuNgay, denNgay };
             return DataProvider.Instance.ExecuteQuery(query, parameters);
         }
         public DataTable GetDanhSachVeSinhTuan(int CuDanID, DateTime tuNgay, DateTime denNgay)
         {
-            string query = "SELECT y.YeuCauID AS MaYeuCau,    y.TrangThai,  d.KhuVucVeSinh,    d.ThoiGianVeSinh FROM    YeuCau y JOIN     DichVuVeSinh d ON y.DichvuId = d.DichVuVeSinhID  WHERE y.CuDanID = @CuDanID AND d.KieuVeSinh = N'Định kỳ theo tuần' AND ThoiGianVeSinh BETWEEN @tuNgay AND @denNgay ";
+            string query = "SELECT y.YeuCauID AS MaYeuCau,    y.TrangThai, y.ThanhToan, d.KhuVucVeSinh,    d.ThoiGianVeSinh FROM    YeuCau y JOIN     DichVuVeSinh d ON y.DichvuId = d.DichVuVeSinhID  WHERE y.CuDanID = @CuDanID AND d.KieuVeSinh = N'Định kỳ theo tuần' AND ThoiGianVeSinh BETWEEN @tuNgay AND @denNgay ";
             object[] parameters = new object[] { CuDanID, tuNgay, denNgay };
             return DataProvider.Instance.ExecuteQuery(query, parameters);
         }

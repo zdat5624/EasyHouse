@@ -30,6 +30,12 @@ namespace DesignEasyHouse1.DAO
             string query = "SELECT * FROM YeuCau";
             return DataProvider.Instance.ExecuteQuery(query);
         }
+        public DataTable LayYeuCauDaHoanThanhNhungChuaThanhToan(int cuDanId)
+        {
+            string query = "Select YeuCauID, TieuDe FROM YeuCau WHERE CuDanID = @CuDanId AND ThanhToan = N'Chưa thanh toán' AND ThanhToan = N'Hoàn Thành'";
+            object[] parameters = new object[] { cuDanId };
+            return DataProvider.Instance.ExecuteQuery(query, parameters);
+        }
         public DataTable GetDanhSachYeuCauDuocPhanCong(int NhanVienID)
         {
             string query = "SELECT yc.YeuCauID, yc.TieuDe, yc.NoiDung, yc.NgayGui, yc.TrangThai, \r\n    pc.ThoiGianPhanCong\r\nFROM YeuCau yc\r\nJOIN PhanCong pc ON yc.YeuCauID = pc.YeuCauId\r\nJOIN NhanVien nv ON pc.NhanVienId = nv.id\r\nWHERE pc.NhanVienId = @NhanVienID";
@@ -119,6 +125,24 @@ namespace DesignEasyHouse1.DAO
 
             }
             catch(Exception ex)
+            {
+                result = 0;
+            }
+
+            return result > 0; // Trả về true nếu thay đổi thành công
+        }
+        public bool XacNhanThanhToanTuCuDan(int yeuCauId)
+        {
+            string query = "UPDATE YeuCau SET ThanhToan = N'Chờ xác thực thanh toán' WHERE YeuCauID = @YeuCauID ";
+            object[] parameters = new object[] { yeuCauId };
+
+            int result;
+            try
+            {
+                result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
+
+            }
+            catch (Exception ex)
             {
                 result = 0;
             }
