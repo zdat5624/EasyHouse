@@ -14,7 +14,7 @@ namespace DesignEasyHouse1.DTO
         public string TrangThai { get; set; }
         public byte[] FileTaiLieu { get; set; }
 
-        public DuAnThiCong(){}
+        public DuAnThiCong() { }
 
         // Constructor nhận DataRow để khởi tạo đối tượng từ dữ liệu
         public DuAnThiCong(DataRow row)

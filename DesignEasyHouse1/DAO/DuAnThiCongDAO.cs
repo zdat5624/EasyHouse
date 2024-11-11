@@ -35,11 +35,10 @@ namespace DesignEasyHouse1.DAO
 
         public bool ThemDuAn(DuAnThiCong duAn)
         {
-            // Câu lệnh SQL để thêm một dự án thi công mới vào cơ sở dữ liệu
             string query;
 
             object[] para;
-            if (duAn.FileTaiLieu==null)
+            if (duAn.FileTaiLieu == null)
             {
                 query = "INSERT INTO DuAnThiCong (TenDuAn, TenNhaThau, ChuDuAn, NgayBatDau, NgayKetThuc, TrangThai) " +
                            "VALUES ( @tenDuAn , @tenNhaThau , @chuDuAn , @ngayBatDau , @ngayKetThuc , @trangThai  )";
@@ -65,7 +64,7 @@ namespace DesignEasyHouse1.DAO
                         duAn.NgayBatDau.HasValue ? (object)duAn.NgayBatDau.Value : DBNull.Value,
                         duAn.NgayKetThuc.HasValue ? (object)duAn.NgayKetThuc.Value : DBNull.Value,
                         duAn.TrangThai,
-                        duAn.FileTaiLieu 
+                        duAn.FileTaiLieu
                 };
             }
 
@@ -93,7 +92,7 @@ namespace DesignEasyHouse1.DAO
 
                 // Tạo đối tượng DuAnThiCong với các thông tin từ cơ sở dữ liệu
                 DuAnThiCong duAn = new DuAnThiCong(row);
-                    
+
 
                 return duAn;
             }
@@ -164,6 +163,47 @@ namespace DesignEasyHouse1.DAO
             // Trả về true nếu cập nhật thành công, ngược lại false
             return result > 0;
         }
+
+        public List<DuAnThiCong> GetAllDuAnThiCongList()
+        {
+            // Câu lệnh SQL để lấy tất cả các dự án thi công
+            string query = "SELECT * FROM DuAnThiCong";
+
+            // Lấy dữ liệu từ cơ sở dữ liệu
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            // Danh sách các dự án thi công
+            List<DuAnThiCong> duAnList = new List<DuAnThiCong>();
+
+            // Duyệt qua các dòng dữ liệu và tạo đối tượng DuAnThiCong
+            foreach (DataRow row in data.Rows)
+            {
+                DuAnThiCong duAn = new DuAnThiCong(row);
+                duAnList.Add(duAn);
+            }
+
+            return duAnList;
+        }
+
+        // Phương thức lấy dự án thi công theo ID
+        public DuAnThiCong GetDuAnThiCongByID(int duAnID)
+        {
+            // Câu lệnh SQL để tìm dự án thi công theo ID
+            string query = "SELECT * FROM DuAnThiCong WHERE DuAnThiCongID = @duAnID";
+
+            // Thực hiện truy vấn và lấy dữ liệu
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { duAnID });
+
+            // Kiểm tra nếu có dữ liệu, trả về đối tượng DuAnThiCong
+            if (data.Rows.Count > 0)
+            {
+                return new DuAnThiCong(data.Rows[0]);
+            }
+
+            // Trả về null nếu không tìm thấy dự án
+            return null;
+        }
+
 
     }
 }

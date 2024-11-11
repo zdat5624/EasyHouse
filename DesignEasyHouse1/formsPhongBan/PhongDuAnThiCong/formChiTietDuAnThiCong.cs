@@ -20,8 +20,8 @@ namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
 
         public formChiTietDuAnThiCong(int duAnThiCongID)
         {
-            this.duAnThiCong = DuAnThiCongDAO.Instance.GetDuAnThiCongByDuAnThiCongID(duAnThiCongID);
             InitializeComponent();
+            this.duAnThiCong = DuAnThiCongDAO.Instance.GetDuAnThiCongByDuAnThiCongID(duAnThiCongID);
         }
 
         #region Medthods
@@ -45,7 +45,7 @@ namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
             string chuDuAn = cbbChuDuAn.Text.Trim();
             DateTime? ngayBatDau = dtpNgayBatDau.Checked ? (DateTime?)dtpNgayBatDau.Value : null;
             DateTime? ngayKetThuc = dtpNgayKetThuc.Checked ? (DateTime?)dtpNgayKetThuc.Value : null;
-            string trangThai = cbbChuDuAn.Text.Trim();
+            string trangThai = cbbTrangThai.Text.Trim();
 
             // Tạo một đối tượng DuAnThiCong từ dữ liệu người dùng nhập
             DuAnThiCong duAn = new DuAnThiCong
@@ -92,7 +92,7 @@ namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
             dtpNgayKetThuc.Enabled = !dtpNgayKetThuc.Enabled;
 
             lblTaiLieu.Visible = !lblTaiLieu.Visible;
-            txtFileTaiLieu.Visible  = !txtFileTaiLieu.Visible;
+            txtFileTaiLieu.Visible = !txtFileTaiLieu.Visible;
 
             btnChonFile.Visible = !btnChonFile.Visible;
             lblGhiChu.Visible = !lblGhiChu.Visible;
@@ -151,7 +151,7 @@ namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
 
         private void button3_Click(object sender, EventArgs e)
         {
-            formQuanLyVatTuThiCong f = new formQuanLyVatTuThiCong();
+            formQuanLyVatTuThiCong f = new formQuanLyVatTuThiCong(this.duAnThiCong.DuAnThiCongID);
             f.ShowDialog();
         }
     }

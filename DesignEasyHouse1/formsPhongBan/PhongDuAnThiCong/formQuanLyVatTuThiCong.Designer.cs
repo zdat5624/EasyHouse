@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
             this.dtgvDanhSachVatTuThiCong = new System.Windows.Forms.DataGridView();
+            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Details = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnVatTu = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Details = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachVatTuThiCong)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -64,14 +64,14 @@
             this.dtgvDanhSachVatTuThiCong.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dtgvDanhSachVatTuThiCong.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvDanhSachVatTuThiCong.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvDanhSachVatTuThiCong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvDanhSachVatTuThiCong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvDanhSachVatTuThiCong.ColumnHeadersHeight = 30;
             this.dtgvDanhSachVatTuThiCong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgvDanhSachVatTuThiCong.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -82,19 +82,40 @@
             this.dtgvDanhSachVatTuThiCong.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dtgvDanhSachVatTuThiCong.Name = "dtgvDanhSachVatTuThiCong";
             this.dtgvDanhSachVatTuThiCong.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvDanhSachVatTuThiCong.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvDanhSachVatTuThiCong.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvDanhSachVatTuThiCong.RowHeadersVisible = false;
             this.dtgvDanhSachVatTuThiCong.RowHeadersWidth = 51;
             this.dtgvDanhSachVatTuThiCong.RowTemplate.Height = 24;
             this.dtgvDanhSachVatTuThiCong.Size = new System.Drawing.Size(564, 511);
             this.dtgvDanhSachVatTuThiCong.TabIndex = 45;
+            // 
+            // Delete
+            // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Delete.HeaderText = "";
+            this.Delete.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.ReadOnly = true;
+            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Delete.Width = 6;
+            // 
+            // Details
+            // 
+            this.Details.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Details.HeaderText = "";
+            this.Details.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
+            this.Details.MinimumWidth = 6;
+            this.Details.Name = "Details";
+            this.Details.ReadOnly = true;
+            this.Details.Width = 6;
             // 
             // panel1
             // 
@@ -128,6 +149,7 @@
             this.btnVatTu.Text = "Thêm vật tư";
             this.btnVatTu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVatTu.UseVisualStyleBackColor = false;
+            this.btnVatTu.Click += new System.EventHandler(this.btnVatTu_Click);
             // 
             // dataGridViewImageColumn1
             // 
@@ -137,7 +159,7 @@
             this.dataGridViewImageColumn1.MinimumWidth = 6;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn1.Width = 6;
+            this.dataGridViewImageColumn1.Width = 125;
             // 
             // dataGridViewImageColumn2
             // 
@@ -146,28 +168,7 @@
             this.dataGridViewImageColumn2.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
             this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Width = 6;
-            // 
-            // Delete
-            // 
-            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Delete.HeaderText = "";
-            this.Delete.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.ReadOnly = true;
-            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Delete.Width = 6;
-            // 
-            // Details
-            // 
-            this.Details.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Details.HeaderText = "";
-            this.Details.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
-            this.Details.MinimumWidth = 6;
-            this.Details.Name = "Details";
-            this.Details.ReadOnly = true;
-            this.Details.Width = 6;
+            this.dataGridViewImageColumn2.Width = 125;
             // 
             // formQuanLyVatTuThiCong
             // 

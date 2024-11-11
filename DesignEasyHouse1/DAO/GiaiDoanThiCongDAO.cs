@@ -117,5 +117,21 @@ namespace DesignEasyHouse1.DAO
             return Convert.ToInt32(result) > 0;
         }
 
+        public List<GiaiDoanThiCong> GetGiaiDoanListByDuAnID(int duAnID)
+        {
+            List<GiaiDoanThiCong> list = new List<GiaiDoanThiCong>();
+
+            string query = "SELECT * FROM GiaiDoanThiCong WHERE DuAnThiCongID = @DuAnThiCongID";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { duAnID });
+
+            foreach (DataRow row in data.Rows)
+            {
+                GiaiDoanThiCong giaiDoan = new GiaiDoanThiCong(row);
+                list.Add(giaiDoan);
+            }
+
+            return list;
+        }
+
     }
 }

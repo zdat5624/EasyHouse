@@ -16,6 +16,7 @@ namespace DesignEasyHouse1.DTO
         public string TrangThai { get; set; }
         public string NoiDung { get; set; }
 
+
         // Constructor mặc định
         public GiaiDoanThiCong() { }
 
@@ -39,6 +40,10 @@ namespace DesignEasyHouse1.DTO
             TrangThai = row["TrangThai"].ToString();
             NoiDung = row["NoiDung"].ToString();
         }
+
+        // Kiểm tra xem giai đoạn có hoàn thành không
+        public bool IsCompleted => TrangThai == "Hoàn thành" && NgayKetThuc.HasValue;
+
     }
 }
 
