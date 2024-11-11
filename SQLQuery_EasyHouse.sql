@@ -687,9 +687,9 @@ GO
 CREATE TABLE DichVuGuiXe (
     DichVuGuiXeID INT PRIMARY KEY IDENTITY(1,1),
 	PhuongTienID INT,
-	ChoDoXeID INT,
+	ChoDoXeID INT DEFAULT NULL , --Khi quản lý gửi xác nhận thì hệ thống mới set
 	NgayDangKy DATETIME DEFAULT GETDATE(), -- Ngày đăng ký gửi xe
-    TrangThai nvarchar(20) DEFAULT N'Đang gửi' -- 'Đang gửi', 'Đã rời', 'Đã thanh toán'
+    TrangThai nvarchar(20) DEFAULT N'Đang chờ xác nhận' -- 'Đang chờ xác nhận', 'Đã xác nhận'
 );
 GO
 
@@ -697,7 +697,7 @@ CREATE TABLE PhuongTien (
     PhuongTienID INT PRIMARY KEY IDENTITY(1,1),
 	BienSoXe nvarchar(30),
     CuDanID int,
-	LoaiXe nvarchar(10), --xe máy hoặc ô tô
+	LoaiXe nvarchar(10), --xe máy, ô tô, xe đạp
 	ThoiGianGui DATETIME,
 	CavetXe IMAGE, -- Cà vẹt xe
     CCCD_CMND IMAGE, -- CMND hoặc CCCD
@@ -717,8 +717,6 @@ GO
 CREATE TABLE GiaoDichGuiXe (
     GiaoDichID INT PRIMARY KEY IDENTITY(1,1),
     PhuongTienID INT,
-    ThoiGianYeuCau DATETIME DEFAULT GETDATE(), -- Thời gian yêu cầu gửi xe
-    ThoiGianRa DATETIME NULL, -- Thời gian xe rời bãi (có thể là null nếu xe chưa rời)
     DaThanhToan BIT DEFAULT 0, -- 0: Chưa thanh toán, 1: Đã thanh toán
     PhiGuiXe DECIMAL(18, 2) -- Số tiền cho lần gửi xe này
 );
@@ -731,11 +729,30 @@ CREATE TABLE ThanhToanGuiXe (
     SoTien DECIMAL(18, 2), -- Số tiền phải thanh toán
     NgayThanhToan DATETIME DEFAULT GETDATE(), -- Ngày thực hiện thanh toán
     PhuongThucThanhToan NVARCHAR(50), -- Phương thức thanh toán: 'Tiền mặt', 'Chuyển khoản', 'Thẻ'
-    LoaiThanhToan NVARCHAR(20) DEFAULT N'Theo tháng', -- 'Một lần' hoặc 'Theo tháng'
+    LoaiThanhToan NVARCHAR(20) DEFAULT N'Một lần', -- 'Một lần' hoặc 'Theo tháng'
     ThangThanhToan INT, -- Tháng áp dụng thanh toán (chỉ dùng khi LoaiThanhToan là 'Theo tháng')
     NamThanhToan INT -- Năm áp dụng thanh toán (chỉ dùng khi LoaiThanhToan là 'Theo tháng')
 );
 GO
+
+INSERT INTO PhuongTien (BienSoXe, CuDanID, LoaiXe, ThoiGianGui, CavetXe, CCCD_CMND)
+VALUES ('SH180', 1, N'Xe máy', '2012-06-18 10:34:09 AM', NULL, NULL),
+       ('AB160', 2, N'Xe hơi', '2015-12-30 12:35:19 PM', NULL, NULL),
+       ('CD154', 3, N'Xe đạp', '2025-01-05 07:00:00 AM', NULL, NULL);
+
+CREATE TRIGGER trg_InsertDichVuGuiXe
+ON PhuongTien
+AFTER INSERT
+AS
+BEGIN
+    -- Thêm bản ghi vào bảng DichVuGuiXe khi có phương tiện mới được thêm vào PhuongTien
+    INSERT INTO DichVuGuiXe (PhuongTienID, TrangThai)
+    SELECT PhuongTienID, N'Đang chờ xác nhận'
+    FROM INSERTED
+    ORDER BY PhuongTienID;
+END;
+GO
+
 SELECT * FROM HopDongThue;
 
 exec sp_UpdateNgayKetThuc 1, '2025-5-5'

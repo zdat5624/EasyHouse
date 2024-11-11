@@ -108,7 +108,9 @@ namespace DesignEasyHouse1
                 case "Quản lý cư dân":
                     showQuanLyCuDanModule();
                     break;
-
+                case "Gửi xe":
+                    showGuiXeModule();
+                    break;
             }
 
 
@@ -140,6 +142,10 @@ namespace DesignEasyHouse1
             panelDuAnThiCong.Visible = true;
         }
 
+        private void showGuiXeModule()
+        {
+            panelDichVuGuiXe.Visible = true;
+        }
         private void button30_Click(object sender, EventArgs e)
         {
             // Đặt lại thông tin phiên người dùng
@@ -184,6 +190,11 @@ namespace DesignEasyHouse1
         private void btnThongBaoTuHeThong_Click(object sender, EventArgs e)
         {
             //OpenChildForm(new formsPhongBan.formsThongBaoPhongBan());
+        }
+
+        private void btnQuanLyDangKy_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongAnNinh.formQuanLyDangKyGuiXe());
         }
 
         //private void panelMain_Paint(object sender, PaintEventArgs e)
