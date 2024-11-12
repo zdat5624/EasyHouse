@@ -128,7 +128,7 @@
             this.Column1.HeaderText = "STT";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 64;
+            this.Column1.Width = 53;
             // 
             // Column3
             // 
@@ -136,7 +136,7 @@
             this.Column3.HeaderText = "Id";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 52;
+            this.Column3.Width = 44;
             // 
             // Column2
             // 
@@ -184,7 +184,6 @@
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewImageColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewImageColumn1.Width = 125;
             // 
             // dataGridViewImageColumn2
             // 
@@ -192,7 +191,6 @@
             this.dataGridViewImageColumn2.HeaderText = "";
             this.dataGridViewImageColumn2.MinimumWidth = 6;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Width = 125;
             // 
             // panel2
             // 
@@ -240,7 +238,7 @@
             this.textBox2.Location = new System.Drawing.Point(0, 0);
             this.textBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(365, 31);
+            this.textBox2.Size = new System.Drawing.Size(365, 25);
             this.textBox2.TabIndex = 32;
             // 
             // button30
@@ -265,9 +263,9 @@
             // 
             // formQuanLyThongBaoDenCuDan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 1000);
+            this.ClientSize = new System.Drawing.Size(1300, 749);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button30);
             this.Controls.Add(this.dataGridView1);

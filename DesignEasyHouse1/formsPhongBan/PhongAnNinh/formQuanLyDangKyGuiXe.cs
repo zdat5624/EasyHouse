@@ -26,6 +26,21 @@ namespace DesignEasyHouse1.formsPhongBan.PhongAnNinh
             // Cập nhật vị trí các cột như Delete và Details
             MyGUI.chuyenCotDenCuoiDTGV(dtgvThongTinPhuongTien, new List<string> { "Delete", "Details" });
         }
+
+        public bool CapNhatTrangThaiHoanThanh(int dichVuGuiXeID)
+        {
+            // Cập nhật trạng thái cho dịch vụ gửi xe thành "Đã xác nhận"
+            string query = "UPDATE DichVuGuiXe SET TrangThai = N'Đã xác nhận' WHERE DichVuGuiXeID = @DichVuGuiXeID";
+
+            // Truyền dichVuGuiXeID vào danh sách tham số
+            object[] parameters = new object[] { dichVuGuiXeID };
+
+            // Thực thi câu truy vấn
+            int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
+            return result > 0; // Trả về true nếu cập nhật thành công
+        }
+
+
         private void formQuanLyDangKyGuiXe_Load(object sender, EventArgs e)
         {
             LoadForm();
