@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ChoDoXeDAO.cs" />
     <Compile Include="DAO\DichVuGuiXeDAO.cs" />
     <Compile Include="DAO\DuAnThiCongDAO.cs" />
     <Compile Include="DAO\GiaiDoanThiCongDAO.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="DAO\ThongBaoDAO.cs" />
     <Compile Include="DAO\ThoThiCongDAO.cs" />
     <Compile Include="DAO\VatTuThiCongDAO.cs" />
+    <Compile Include="DTO\ChoDoXe.cs" />
     <Compile Include="DTO\DichVuGuiXe.cs" />
     <Compile Include="DTO\DuAnThiCong.cs" />
     <Compile Include="DTO\GiaiDoanThiCong.cs" />
@@ -90,6 +92,12 @@
     </Compile>
     <Compile Include="formsPhongBan\PhongAnNinh\formQuanLyDangKyGuiXe.Designer.cs">
       <DependentUpon>formQuanLyDangKyGuiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongAnNinh\formTheoDoiXeRaVao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongAnNinh\formTheoDoiXeRaVao.Designer.cs">
+      <DependentUpon>formTheoDoiXeRaVao.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formCapNhatGiaiDoan.cs">
       <SubType>Form</SubType>
@@ -504,6 +512,9 @@
     <EmbeddedResource Include="formsPhongBan\PhongAnNinh\formQuanLyDangKyGuiXe.resx">
       <DependentUpon>formQuanLyDangKyGuiXe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongAnNinh\formTheoDoiXeRaVao.resx">
+      <DependentUpon>formTheoDoiXeRaVao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formQuanLyCuDan.resx">
       <DependentUpon>formQuanLyCuDan.cs</DependentUpon>
     </EmbeddedResource>
@@ -683,6 +694,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\bell.png" />
+    <None Include="Resources\check2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
