@@ -1,5 +1,6 @@
 ﻿using DesignEasyHouse1.DAO;
 using DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong;
+using DesignEasyHouse1.formsPhongBan.PhongGuiDo;
 using DesignEasyHouse1.Properties;
 using System;
 using System.Collections.Generic;
@@ -108,10 +109,14 @@ namespace DesignEasyHouse1
                 case "Quản lý cư dân":
                     showQuanLyCuDanModule();
                     break;
+                case "Quản lý gửi đồ":
+                    showGuiDoModule();
+                    break;
                 case "Gửi xe":
                     showGuiXeModule();
                     break;
             }
+            
 
 
         }
@@ -140,6 +145,11 @@ namespace DesignEasyHouse1
         {
             //btnDichVuVeSinh.Visible = true;
             panelDuAnThiCong.Visible = true;
+        }
+
+        private void showGuiDoModule()
+        {
+            panelDichVuGuiDo.Visible = true;    
         }
 
         private void showGuiXeModule()
@@ -195,6 +205,16 @@ namespace DesignEasyHouse1
         private void btnQuanLyDangKy_Click(object sender, EventArgs e)
         {
             OpenChildForm(new formsPhongBan.PhongAnNinh.formQuanLyDangKyGuiXe());
+        }
+
+        private void btnThanhToanHoaDonGuiDo_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongGuiDo.formThanhToanHoaDon());
+        }
+
+        private void btnQuanLyHoaDonGuiDo_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongGuiDo.formQuanLyHoaDon());
         }
 
         //private void panelMain_Paint(object sender, PaintEventArgs e)

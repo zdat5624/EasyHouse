@@ -1,5 +1,7 @@
-﻿using System;
+﻿using DesignEasyHouse1.DTO;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,6 +45,25 @@ namespace DesignEasyHouse1.DAO
             string query = "SELECT id FROM NhanVien WHERE UserId = @userId";
             object[] parameters = new object[] { userId };
             return (int)DataProvider.Instance.ExecuteScalar(query, parameters);
+        }
+
+        // Phương thức lấy thông tin nhân viên theo ID
+        public NhanVien LayNhanVienBangID(int id)
+        {
+            string query = "SELECT * FROM NhanVien WHERE id = @id ";
+            object[] parameters = new object[] { id };
+
+            // Thực thi truy vấn và lấy kết quả
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, parameters);
+
+            if (data.Rows.Count > 0)
+            {
+                DataRow row = data.Rows[0];
+                NhanVien nhanVien = new NhanVien(row);
+                return nhanVien; 
+            }
+
+            return null; 
         }
     }
 }

@@ -50,6 +50,7 @@
     <Compile Include="DAO\DichVuGuiXeDAO.cs" />
     <Compile Include="DAO\DuAnThiCongDAO.cs" />
     <Compile Include="DAO\GiaiDoanThiCongDAO.cs" />
+    <Compile Include="DAO\HoaDonGuiDoDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\PhuongTienDAO.cs" />
     <Compile Include="DAO\ThongBaoDAO.cs" />
@@ -58,6 +59,8 @@
     <Compile Include="DTO\DichVuGuiXe.cs" />
     <Compile Include="DTO\DuAnThiCong.cs" />
     <Compile Include="DTO\GiaiDoanThiCong.cs" />
+    <Compile Include="DTO\HoaDonGuiDo.cs" />
+    <Compile Include="DTO\NhanVien.cs" />
     <Compile Include="DTO\PhuongTien.cs" />
     <Compile Include="DTO\ThoThiCong.cs" />
     <Compile Include="DTO\VatTuThiCong.cs" />
@@ -168,6 +171,30 @@
     </Compile>
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formThoThiCong.Designer.cs">
       <DependentUpon>formThoThiCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formChiTietHoaDon.Designer.cs">
+      <DependentUpon>formChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formQuanLyHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formQuanLyHoaDon.Designer.cs">
+      <DependentUpon>formQuanLyHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formThanhToanHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formThanhToanHoaDon.Designer.cs">
+      <DependentUpon>formThanhToanHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formThemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formThemHoaDon.Designer.cs">
+      <DependentUpon>formThemHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\PhongVeSinh\formXemKeHoachVeSinh.cs">
       <SubType>Form</SubType>
@@ -564,6 +591,18 @@
     <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formThoThiCong.resx">
       <DependentUpon>formThoThiCong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongGuiDo\formChiTietHoaDon.resx">
+      <DependentUpon>formChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongGuiDo\formQuanLyHoaDon.resx">
+      <DependentUpon>formQuanLyHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongGuiDo\formThanhToanHoaDon.resx">
+      <DependentUpon>formThanhToanHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongGuiDo\formThemHoaDon.resx">
+      <DependentUpon>formThemHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongVeSinh\formXemKeHoachVeSinh.resx">
       <DependentUpon>formXemKeHoachVeSinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -683,6 +722,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\bell.png" />
+    <None Include="Resources\icons8-picture-250.png" />
+    <None Include="Resources\iconPictures.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -60,13 +60,13 @@
             // 
             this.txtMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.Location = new System.Drawing.Point(87, 229);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.txtMatKhau.Multiline = true;
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(307, 50);
+            this.txtMatKhau.Size = new System.Drawing.Size(307, 36);
             this.txtMatKhau.TabIndex = 1;
-            this.txtMatKhau.Text = "3";
+            this.txtMatKhau.Text = "4";
             // 
             // label1
             // 
@@ -137,13 +137,13 @@
             // 
             this.txtTenDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtTenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDangNhap.Location = new System.Drawing.Point(87, 144);
             this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.txtTenDangNhap.Multiline = true;
             this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(307, 50);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(307, 36);
             this.txtTenDangNhap.TabIndex = 0;
-            this.txtTenDangNhap.Text = "3";
+            this.txtTenDangNhap.Text = "4";
             // 
             // label2
             // 

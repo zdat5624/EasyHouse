@@ -95,6 +95,7 @@
             this.dtgvDanhSachVatTuThiCong.RowTemplate.Height = 24;
             this.dtgvDanhSachVatTuThiCong.Size = new System.Drawing.Size(564, 511);
             this.dtgvDanhSachVatTuThiCong.TabIndex = 45;
+            this.dtgvDanhSachVatTuThiCong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDanhSachVatTuThiCong_CellContentClick);
             // 
             // Delete
             // 

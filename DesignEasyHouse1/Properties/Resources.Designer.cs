@@ -143,6 +143,16 @@ namespace DesignEasyHouse1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconPictures {
+            get {
+                object obj = ResourceManager.GetObject("iconPictures", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_less_than_96__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-less-than-96 (1)", resourceCulture);
@@ -156,6 +166,16 @@ namespace DesignEasyHouse1.Properties {
         internal static System.Drawing.Bitmap icons8_logout_38 {
             get {
                 object obj = ResourceManager.GetObject("icons8-logout-38", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_picture_250 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-picture-250", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

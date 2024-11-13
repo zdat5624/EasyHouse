@@ -41,8 +41,6 @@ namespace DesignEasyHouse1.DTO
             NoiDung = row["NoiDung"].ToString();
         }
 
-        // Kiểm tra xem giai đoạn có hoàn thành không
-        public bool IsCompleted => TrangThai == "Hoàn thành" && NgayKetThuc.HasValue;
 
     }
 }

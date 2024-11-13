@@ -64,6 +64,11 @@ INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyen
 VALUES 
     ('Nguyen Van c', 'Quản lý', '1985-05-10', 'Hà Nội', 'thicong', 'thicong', '2020-01-01', 10000000, N'Quản lý dự án thi công');
 
+INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+    ('Nguyen Van c', 'Quản lý', '1985-05-10', 'Hà Nội', 'vesinh', 'vesinh', '2020-01-01', 10000000, N'Vệ sinh');
+
+
 CREATE TABLE ThongBao (
     id INT PRIMARY KEY IDENTITY,
     TieuDe NVARCHAR(255) NOT NULL,
@@ -385,6 +390,30 @@ BEGIN
 END;
 GO
 
+CREATE TRIGGER trg_AfterInsertCuDan
+ON CuDan
+AFTER INSERT
+AS
+BEGIN
+    -- Tạo bảng tạm để lưu ID vừa được tạo từ bảng Users
+    DECLARE @InsertedUsers TABLE (UserId INT);
+
+    -- Thêm dữ liệu vào bảng Users và lưu ID vào bảng tạm
+    INSERT INTO Users (TenDangNhap, MatKhau)
+    OUTPUT INSERTED.Id INTO @InsertedUsers(UserId)
+    SELECT i.Email, i.SoDienThoai
+    FROM inserted i
+    WHERE i.Email IS NOT NULL AND i.SoDienThoai IS NOT NULL;
+
+    -- Cập nhật UserId trong bảng CuDan bằng giá trị từ bảng tạm
+    UPDATE CuDan
+    SET UserId = (SELECT UserId FROM @InsertedUsers)
+    FROM inserted i
+    WHERE CuDan.CuDanID = i.CuDanID;
+END;
+
+
+
 --triggers tự động phân việc cho nhân viên khi trạng thái yêu cầu thay đổi thành "Nhân viên vệ sinh sẽ xử lý đúng lịch đã đăng ký"
 CREATE TRIGGER trg_UpdateYeuCauTrangThai
 ON YeuCau
@@ -565,6 +594,10 @@ INSERT INTO NhanVien(Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenD
 VALUES 
 ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '3', '3', '2020-01-01', 10000000, N'Quản lý dự án thi công');
 
+INSERT INTO NhanVien(Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '4', '4', '2020-01-01', 10000000, N'Quản lý gửi đồ');
+
 
 GO
 
@@ -608,6 +641,24 @@ CREATE TABLE ThoThiCong (
     HoTen NVARCHAR(100),
     CCCD NVARCHAR(100),
     NhiemVu NVARCHAR(100)
+);
+GO
+
+CREATE TABLE HoaDonGuiDo (
+    HoaDonGuiDoID INT PRIMARY KEY IDENTITY(1,1),
+    LoaiDo NVARCHAR(100),
+	KichCo NVARCHAR(100),
+    ViTri NVARCHAR(100),
+	GhiChu NVARCHAR(255),
+	CuDanID INT, -- Nếu là khách thì CuDanID = 0
+	NgayTao DATETIME DEFAULT GETDATE(),
+	NguoiTaoID INT, -- NhanVienID của bảng NhanVien
+	NgayThanhToan DATETIME DEFAULT NULL,
+	NgayLayDuKien DATETIME DEFAULT NULL, -- Ngày cư dân dự kiến lấy đồ đã gửi
+	TrangThai NVARCHAR(50) DEFAULT N'Chưa thanh toán', -- 'Chưa thanh toán' hoặc 'Đã thanh toán'
+	NguoiThanhToanID INT, -- NhanVienID của bảng NhanVien
+	LoaiThanhToan NVARCHAR(255), -- 'Tiền mặt' hoặc 'Chuyển khoản'
+	SoTien FLOAT,
 );
 GO
 
@@ -756,3 +807,9 @@ GO
 SELECT * FROM HopDongThue;
 
 exec sp_UpdateNgayKetThuc 1, '2025-5-5'
+
+
+-- Dữ liệu mẫu cho bảng CuDan
+INSERT INTO CuDan (HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, TrangThai, ThanhToan, NgayChuyenDen, HinhAnh)
+VALUES 
+('Nguyen Van A', '99', '123456789012', '99', '123 Nguyen Trai, Ha Noi', N'Nam', '1990-01-01', N'Còn ở', N'Trả đủ', GETDATE(), NULL)
