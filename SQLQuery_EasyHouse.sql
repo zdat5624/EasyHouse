@@ -662,6 +662,18 @@ CREATE TABLE HoaDonGuiDo (
 );
 GO
 
+CREATE TABLE YeuCauGuiDoLayDo (
+	id INT PRIMARY KEY IDENTITY(1,1),
+	CuDanID INT, -- id của cư dân gửi yêu cầu
+	LoaiYeuCau NVARCHAR(50), -- 'Gửi đồ' hoặc 'Lấy đồ'
+	NoiDungYeuCau NVARCHAR(255),
+	NhanVienID INT, -- id của nhân viên phản hồi yêu cầu
+	KetQua NVARCHAR(25), -- 'Chấp nhận' hoặc 'Từ chối'
+	NoiDungPhanHoi NVARCHAR(255),
+	TrangThai NVARCHAR(50), -- 'Chưa phản hồi' hoặc 'Đã phản hồi'
+)
+GO
+
 CREATE PROCEDURE sp_ThemGiaiDoanThiCong
     @DuAnThiCongID INT,
     @NgayKetThuc DATE = NULL,
@@ -914,3 +926,8 @@ exec sp_UpdateNgayKetThuc 1, '2025-5-5'
 INSERT INTO CuDan (HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, TrangThai, ThanhToan, NgayChuyenDen, HinhAnh)
 VALUES 
 ('Nguyen Van A', '99', '123456789012', '99', '123 Nguyen Trai, Ha Noi', N'Nam', '1990-01-01', N'Còn ở', N'Trả đủ', GETDATE(), NULL)
+
+-- Dữ liệu mẫu cho bảng CuDan
+INSERT INTO CuDan (HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, TrangThai, ThanhToan, NgayChuyenDen, HinhAnh)
+VALUES 
+('Nguyen Van A', 'cd', '123456789012', 'cd', '123 Nguyen Trai, Ha Noi', N'Nam', '1990-01-01', N'Còn ở', N'Trả đủ', GETDATE(), NULL)

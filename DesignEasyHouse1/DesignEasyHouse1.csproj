@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -57,6 +57,7 @@
     <Compile Include="DAO\ThongBaoDAO.cs" />
     <Compile Include="DAO\ThoThiCongDAO.cs" />
     <Compile Include="DAO\VatTuThiCongDAO.cs" />
+    <Compile Include="DAO\YeuCauGuiDoLayDoDAO.cs" />
     <Compile Include="DTO\ChoDoXe.cs" />
     <Compile Include="DTO\DichVuGuiXe.cs" />
     <Compile Include="DTO\DuAnThiCong.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="DTO\PhuongTien.cs" />
     <Compile Include="DTO\ThoThiCong.cs" />
     <Compile Include="DTO\VatTuThiCong.cs" />
+    <Compile Include="DTO\YeuCauGuiDoLayDo.cs" />
     <Compile Include="formsCuDan\formsThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +79,24 @@
     </Compile>
     <Compile Include="formsCuDan\formThongBaoCuaCuDan.Designer.cs">
       <DependentUpon>formThongBaoCuaCuDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCuDan\moduleGuiDo\formChiTietYeuCauLayDoGuiDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCuDan\moduleGuiDo\formChiTietYeuCauLayDoGuiDo.Designer.cs">
+      <DependentUpon>formChiTietYeuCauLayDoGuiDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCuDan\moduleGuiDo\formGuiYeuCauGuiDoLayDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCuDan\moduleGuiDo\formGuiYeuCauGuiDoLayDo.Designer.cs">
+      <DependentUpon>formGuiYeuCauGuiDoLayDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsCuDan\moduleGuiDo\formYeuCauGuiDoLayDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsCuDan\moduleGuiDo\formYeuCauGuiDoLayDo.Designer.cs">
+      <DependentUpon>formYeuCauGuiDoLayDo.cs</DependentUpon>
     </Compile>
     <Compile Include="formsCuDan\moduleGuiXe\formDangKyGuiXe.cs">
       <SubType>Form</SubType>
@@ -209,6 +229,18 @@
     </Compile>
     <Compile Include="formsPhongBan\PhongGuiDo\formThemHoaDon.Designer.cs">
       <DependentUpon>formThemHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formQuanLyYeuCauLayDoGuiDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formQuanLyYeuCauLayDoGuiDo.Designer.cs">
+      <DependentUpon>formQuanLyYeuCauLayDoGuiDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formXemChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formXemChiTiet.Designer.cs">
+      <DependentUpon>formXemChiTiet.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\PhongVeSinh\formXemKeHoachVeSinh.cs">
       <SubType>Form</SubType>
@@ -509,6 +541,15 @@
     <EmbeddedResource Include="formsCuDan\formThongBao.resx">
       <DependentUpon>formThongBao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsCuDan\moduleGuiDo\formChiTietYeuCauLayDoGuiDo.resx">
+      <DependentUpon>formChiTietYeuCauLayDoGuiDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCuDan\moduleGuiDo\formGuiYeuCauGuiDoLayDo.resx">
+      <DependentUpon>formGuiYeuCauGuiDoLayDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsCuDan\moduleGuiDo\formYeuCauGuiDoLayDo.resx">
+      <DependentUpon>formYeuCauGuiDoLayDo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsCuDan\moduleGuiXe\formDangKyGuiXe.resx">
       <DependentUpon>formDangKyGuiXe.cs</DependentUpon>
     </EmbeddedResource>
@@ -617,11 +658,17 @@
     <EmbeddedResource Include="formsPhongBan\PhongGuiDo\formQuanLyHoaDon.resx">
       <DependentUpon>formQuanLyHoaDon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongGuiDo\formQuanLyYeuCauLayDoGuiDo.resx">
+      <DependentUpon>formQuanLyYeuCauLayDoGuiDo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongGuiDo\formThanhToanHoaDon.resx">
       <DependentUpon>formThanhToanHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongGuiDo\formThemHoaDon.resx">
       <DependentUpon>formThemHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongGuiDo\formXemChiTiet.resx">
+      <DependentUpon>formXemChiTiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongVeSinh\formXemKeHoachVeSinh.resx">
       <DependentUpon>formXemKeHoachVeSinh.cs</DependentUpon>

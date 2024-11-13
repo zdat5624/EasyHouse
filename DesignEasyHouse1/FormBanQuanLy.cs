@@ -1,4 +1,5 @@
 ﻿using DesignEasyHouse1.DAO;
+using DesignEasyHouse1.formsCuDan.moduleGuiDo;
 using DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong;
 using DesignEasyHouse1.formsPhongBan.PhongGuiDo;
 using DesignEasyHouse1.Properties;
@@ -215,6 +216,12 @@ namespace DesignEasyHouse1
         private void btnQuanLyHoaDonGuiDo_Click(object sender, EventArgs e)
         {
             OpenChildForm(new formsPhongBan.PhongGuiDo.formQuanLyHoaDon());
+        }
+
+        private void btnQuanLyYeuCauGuiDoLayDo_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongGuiDo.formQuanLyYeuCauLayDoGuiDo());
+            
         }
 
         //private void panelMain_Paint(object sender, PaintEventArgs e)
