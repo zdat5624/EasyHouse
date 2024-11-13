@@ -42,8 +42,8 @@
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn5 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Details = new System.Windows.Forms.DataGridViewImageColumn();
+            this.XacNhan = new System.Windows.Forms.DataGridViewImageColumn();
+            this.HuyBo = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinPhuongTien)).BeginInit();
             this.panel2.SuspendLayout();
             this.panelTren.SuspendLayout();
@@ -85,8 +85,8 @@
             this.dtgvThongTinPhuongTien.ColumnHeadersHeight = 30;
             this.dtgvThongTinPhuongTien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgvThongTinPhuongTien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Delete,
-            this.Details});
+            this.XacNhan,
+            this.HuyBo});
             this.dtgvThongTinPhuongTien.EnableHeadersVisualStyles = false;
             this.dtgvThongTinPhuongTien.Location = new System.Drawing.Point(40, 80);
             this.dtgvThongTinPhuongTien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -105,6 +105,7 @@
             this.dtgvThongTinPhuongTien.RowTemplate.Height = 24;
             this.dtgvThongTinPhuongTien.Size = new System.Drawing.Size(1220, 540);
             this.dtgvThongTinPhuongTien.TabIndex = 1;
+            this.dtgvThongTinPhuongTien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvThongTinPhuongTien_CellContentClick);
             // 
             // panel2
             // 
@@ -208,26 +209,26 @@
             this.dataGridViewImageColumn5.MinimumWidth = 6;
             this.dataGridViewImageColumn5.Name = "dataGridViewImageColumn5";
             // 
-            // Delete
+            // XacNhan
             // 
-            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Delete.HeaderText = "";
-            this.Delete.Image = global::DesignEasyHouse1.Properties.Resources.check;
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.ReadOnly = true;
-            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Delete.Width = 6;
+            this.XacNhan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.XacNhan.HeaderText = "";
+            this.XacNhan.Image = global::DesignEasyHouse1.Properties.Resources.check;
+            this.XacNhan.MinimumWidth = 6;
+            this.XacNhan.Name = "XacNhan";
+            this.XacNhan.ReadOnly = true;
+            this.XacNhan.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.XacNhan.Width = 6;
             // 
-            // Details
+            // HuyBo
             // 
-            this.Details.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Details.HeaderText = "";
-            this.Details.Image = global::DesignEasyHouse1.Properties.Resources.Close;
-            this.Details.MinimumWidth = 6;
-            this.Details.Name = "Details";
-            this.Details.ReadOnly = true;
-            this.Details.Width = 6;
+            this.HuyBo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.HuyBo.HeaderText = "";
+            this.HuyBo.Image = global::DesignEasyHouse1.Properties.Resources.Close;
+            this.HuyBo.MinimumWidth = 6;
+            this.HuyBo.Name = "HuyBo";
+            this.HuyBo.ReadOnly = true;
+            this.HuyBo.Width = 6;
             // 
             // formQuanLyDangKyGuiXe
             // 
@@ -265,7 +266,7 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn4;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn5;
-        private System.Windows.Forms.DataGridViewImageColumn Delete;
-        private System.Windows.Forms.DataGridViewImageColumn Details;
+        private System.Windows.Forms.DataGridViewImageColumn XacNhan;
+        private System.Windows.Forms.DataGridViewImageColumn HuyBo;
     }
 }

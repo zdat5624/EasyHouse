@@ -707,8 +707,8 @@ GO
 
 CREATE TABLE ChoDoXe (
     ChoDoXeID INT PRIMARY KEY IDENTITY(1,1),
-	TrangThai nvarchar DEFAULT N'Trống', -- 'Trống' hoặc 'Đã sử dụng'
-	ViTri nvarchar, --VD: A1, B1, A2, B2,...
+	TrangThai nvarchar(20) DEFAULT N'Trống', -- 'Trống' hoặc 'Đã sử dụng'
+	ViTri nvarchar(10), --VD: A1, B1, A2, B2,...
 	ThoiGianVao DATETIME,
 	ThoiGianRa DATETIME
 );
@@ -759,7 +759,7 @@ BEGIN
         PT.CuDanID,  -- Lấy CuDanID từ bảng PhuongTien
         DVGX.DichVuGuiXeID, 
         N'Đăng ký gửi xe',
-        N'Đăng ký gửi xe thành công ở chỗ đỗ xe '+ ViTri + 'Vào ngày' + CONVERT(NVARCHAR(20), PT.ThoiGianGui, 120),  -- Lấy ThoiGianGui từ PhuongTien
+        N'Bạn đã đăng ký gửi xe ' + 'vào ngày' + CONVERT(NVARCHAR(20), PT.ThoiGianGui, 120),  -- Lấy ThoiGianGui từ PhuongTien
         GETDATE()
     FROM 
         inserted DVGX
@@ -800,26 +800,54 @@ BEGIN
     WHERE 
         DVGX.TrangThai = N'Đã xác nhận';
 
-    -- Thêm thông báo xác nhận đăng ký gửi xe thành công
-    INSERT INTO ThongBao (TieuDe, NoiDung, ThoiGian, UsersId, YeuCauId)
-    SELECT 
-        N'Đăng ký gửi xe thành công',
-        CONCAT(N'Đăng ký gửi xe thành công. Vị trí đỗ xe: ', CDX.ViTri, 
-               N'. Ngày đăng ký: ', CONVERT(NVARCHAR(20), DVGX.NgayDangKy, 120)),
-        GETDATE(),
-        CD.CuDanID,
-        DVGX.DichVuGuiXeID
-    FROM 
-        inserted DVGX
-    JOIN 
-        CuDan CD ON CD.CuDanID = DVGX.CuDanID
-    JOIN 
-        ChoDoXe CDX ON DVGX.ChoDoXeID = CDX.ChoDoXeID
-    WHERE 
-        DVGX.TrangThai = N'Đã xác nhận';
+    -- Cập nhật trạng thái yêu cầu trong bảng YeuCau thành "Hoàn thành"
+    UPDATE YeuCau
+    SET TrangThai = N'Hoàn thành'
+    WHERE DichvuId IN (SELECT DichVuGuiXeID FROM inserted WHERE TrangThai = N'Đã xác nhận'); 
 END;
 GO
 
+CREATE TRIGGER trg_UpdateYeuCauGuiXe
+ON YeuCau
+AFTER UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- Thêm thông báo khi trạng thái yêu cầu được cập nhật thành "Hoàn thành"
+    INSERT INTO ThongBao (TieuDe, NoiDung, ThoiGian, UsersId, YeuCauId)
+    SELECT 
+        N'Hoàn thành đăng ký gửi xe',
+        CONCAT(N'Đăng ký gửi xe đã hoàn thành. Vị trí đỗ xe: ', CDX.ViTri, 
+               N'. Ngày đăng ký: ', CONVERT(NVARCHAR(20), DVGX.NgayDangKy, 120)),
+        GETDATE(),
+        DVGX.CuDanID,
+        YQ.YeuCauID
+    FROM 
+        inserted YQ
+    JOIN 
+        DichVuGuiXe DVGX ON YQ.DichvuId = DVGX.DichVuGuiXeID
+    JOIN 
+        ChoDoXe CDX ON DVGX.ChoDoXeID = CDX.ChoDoXeID
+    WHERE 
+        YQ.TrangThai = N'Hoàn thành';
+END;
+GO
+
+
+CREATE TRIGGER trg_DeleteDichVuGuiXe
+ON DichVuGuiXe
+AFTER DELETE
+AS
+BEGIN
+    -- Lấy PhuongTienID từ các bản ghi bị xóa và xóa phương tiện tương ứng trong bảng PhuongTien
+    DELETE FROM PhuongTien
+    WHERE PhuongTienID IN (SELECT PhuongTienID FROM deleted);
+
+	DELETE FROM YeuCau
+    WHERE YeuCauID IN (SELECT DichVuGuiXeID FROM deleted);
+END;
+GO
 
 INSERT INTO PhuongTien (BienSoXe, CuDanID, LoaiXe, ThoiGianGui, CavetXe, CCCD_CMND)
 VALUES ('SH180', 1, N'Xe máy', '2012-06-18 10:34:09 AM', NULL, NULL),

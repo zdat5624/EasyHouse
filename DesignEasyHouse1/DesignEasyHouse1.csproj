@@ -99,6 +99,12 @@
     <Compile Include="formsPhongBan\PhongAnNinh\formTheoDoiXeRaVao.Designer.cs">
       <DependentUpon>formTheoDoiXeRaVao.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsPhongBan\PhongAnNinh\formThongBaoDangKyLai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongAnNinh\formThongBaoDangKyLai.Designer.cs">
+      <DependentUpon>formThongBaoDangKyLai.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formCapNhatGiaiDoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -514,6 +520,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongAnNinh\formTheoDoiXeRaVao.resx">
       <DependentUpon>formTheoDoiXeRaVao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongAnNinh\formThongBaoDangKyLai.resx">
+      <DependentUpon>formThongBaoDangKyLai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formQuanLyCuDan.resx">
       <DependentUpon>formQuanLyCuDan.cs</DependentUpon>
