@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ChoDoXeDAO.cs" />
     <Compile Include="DAO\DichVuGuiXeDAO.cs" />
     <Compile Include="DAO\DuAnThiCongDAO.cs" />
     <Compile Include="DAO\GiaiDoanThiCongDAO.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="DAO\ThongBaoDAO.cs" />
     <Compile Include="DAO\ThoThiCongDAO.cs" />
     <Compile Include="DAO\VatTuThiCongDAO.cs" />
+    <Compile Include="DTO\ChoDoXe.cs" />
     <Compile Include="DTO\DichVuGuiXe.cs" />
     <Compile Include="DTO\DuAnThiCong.cs" />
     <Compile Include="DTO\GiaiDoanThiCong.cs" />
@@ -93,6 +95,18 @@
     </Compile>
     <Compile Include="formsPhongBan\PhongAnNinh\formQuanLyDangKyGuiXe.Designer.cs">
       <DependentUpon>formQuanLyDangKyGuiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongAnNinh\formTheoDoiXeRaVao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongAnNinh\formTheoDoiXeRaVao.Designer.cs">
+      <DependentUpon>formTheoDoiXeRaVao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongAnNinh\formThongBaoDangKyLai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongAnNinh\formThongBaoDangKyLai.Designer.cs">
+      <DependentUpon>formThongBaoDangKyLai.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formCapNhatGiaiDoan.cs">
       <SubType>Form</SubType>
@@ -531,6 +545,12 @@
     <EmbeddedResource Include="formsPhongBan\PhongAnNinh\formQuanLyDangKyGuiXe.resx">
       <DependentUpon>formQuanLyDangKyGuiXe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongAnNinh\formTheoDoiXeRaVao.resx">
+      <DependentUpon>formTheoDoiXeRaVao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongAnNinh\formThongBaoDangKyLai.resx">
+      <DependentUpon>formThongBaoDangKyLai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formQuanLyCuDan.resx">
       <DependentUpon>formQuanLyCuDan.cs</DependentUpon>
     </EmbeddedResource>
@@ -724,6 +744,7 @@
     <Content Include="Resources\bell.png" />
     <None Include="Resources\icons8-picture-250.png" />
     <None Include="Resources\iconPictures.png" />
+    <None Include="Resources\check2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
