@@ -85,6 +85,18 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
             }
         }
 
+        void LoadLoaiDo()
+        {
+            List<string> loaiDos = HoaDonGuiDoDAO.Instance.LayDanhSachLoaiDo();
+
+            cbbLoaiDo.Items.Clear();
+            cbbLoaiDo.Items.AddRange(loaiDos.ToArray());
+
+            if (cbbLoaiDo.Items.Count > 0)
+            {
+                cbbLoaiDo.SelectedIndex = 0;
+            }
+        }
 
         #endregion
 
@@ -102,6 +114,7 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
 
         private void formThemHoaDon_Load(object sender, EventArgs e)
         {
+            LoadLoaiDo();
             cbbNguoiGui.SelectedIndex = 0;
         }
 

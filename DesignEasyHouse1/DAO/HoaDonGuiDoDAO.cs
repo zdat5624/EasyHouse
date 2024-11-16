@@ -97,6 +97,30 @@ namespace DesignEasyHouse1.DAO
             return result > 0;
         }
 
+        public List<string> LayDanhSachLoaiDo()
+        {
+            List<string> dsLoaiDo = new List<string>();
+            string query = "SELECT DISTINCT LoaiDo FROM HoaDonGuiDo WHERE LoaiDo != ''";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                string loaiDo = row["LoaiDo"].ToString();
+                if (!string.IsNullOrEmpty(loaiDo))
+                {
+                    dsLoaiDo.Add(loaiDo);
+                }
+            }
+
+            return dsLoaiDo;
+        }
+
+        public bool CapNhatGhiChu(int hoaDonGuiDoID, string ghiChu)
+        {
+            string query = "UPDATE HoaDonGuiDo SET GhiChu = @GhiChu WHERE HoaDonGuiDoID = @HoaDonGuiDoID ";
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { ghiChu, hoaDonGuiDoID });
+            return result > 0;
+        }
 
     }
 }

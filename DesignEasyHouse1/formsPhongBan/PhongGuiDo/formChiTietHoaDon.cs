@@ -29,11 +29,12 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
                 return;
             }
 
-            // Hiển thị thông tin hóa đơn vào các TextBox, Label hoặc các điều khiển khác
             txtHoaDonID.Text = this.hoaDon.HoaDonGuiDoID.ToString();
             txtLoaiDo.Text = this.hoaDon.LoaiDo;
             txtKichCo.Text = this.hoaDon.KichCo;
             txtViTri.Text = this.hoaDon.ViTri;
+            txtGhiChu.Text = this.hoaDon.GhiChu;
+
             if (this.hoaDon.CuDanID==0)
             {
                 cbbNguoiGui.Text = "Khách";
@@ -91,6 +92,8 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
                 cbbLoaiThanhToan.Text = this.hoaDon.LoaiThanhToan;
                 nudSoTien.Value = (decimal)this.hoaDon.SoTien;
                 dtpNgayThanhToan.Value = (DateTime)this.hoaDon.NgayThanhToan;
+                cbbLoaiThanhToan.Enabled = false;
+                nudSoTien.Enabled = false;
                 NhanVien nvThanhToan = NhanVienDAO.Instance.LayNhanVienBangID((int)this.hoaDon.NguoiThanhToanID);
                 if (nvTaoHoaDon != null)
                 {
@@ -113,7 +116,19 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            int hoaDonGuiDoID = hoaDon.HoaDonGuiDoID;
+            string ghiChuMoi = txtGhiChu.Text;
 
+            bool kq = HoaDonGuiDoDAO.Instance.CapNhatGhiChu(hoaDonGuiDoID, ghiChuMoi);
+
+            if (kq)
+            {
+                MessageBox.Show("Cập nhật ghi chú thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật ghi chú thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
