@@ -25,6 +25,16 @@ namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
         {
             dtgvDanhSachVatTuThiCong.DataSource = VatTuThiCongDAO.Instance.GetVatTuByDuAnID(this.vatTuThiCongID);
             MyGUI.chuyenCotDenCuoiDTGV(dtgvDanhSachVatTuThiCong, new List<string> { "Delete", "Details" });
+
+            dtgvDanhSachVatTuThiCong.Columns["VatTuThiCongID"].HeaderText = "Vật Tư Thi Công ID";
+            dtgvDanhSachVatTuThiCong.Columns["VatTuThiCongID"].Visible = false;
+            dtgvDanhSachVatTuThiCong.Columns["DuAnThiCongID"].HeaderText = "Dự Án Thi Công ID";
+            dtgvDanhSachVatTuThiCong.Columns["DuAnThiCongID"].Visible = false;
+            dtgvDanhSachVatTuThiCong.Columns["TenVatTu"].HeaderText = "Tên Vật Tư";
+            dtgvDanhSachVatTuThiCong.Columns["LoaiVatTu"].HeaderText = "Loại Vật Tư";
+            dtgvDanhSachVatTuThiCong.Columns["SoLuong"].HeaderText = "Số Lượng";
+            dtgvDanhSachVatTuThiCong.Columns["DonVi"].HeaderText = "Đơn Vị";
+            dtgvDanhSachVatTuThiCong.Columns["GhiChu"].HeaderText = "Ghi Chú";
         }
 
         // Hàm xóa vật tư thi công

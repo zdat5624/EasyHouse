@@ -39,6 +39,8 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
                 cbbNguoiGui.Text = "Khách";
                 txtHoTenCuDan.Visible = false;
                 txtCuDanID.Visible = false;
+                labelCuDanID.Visible = false;
+                labelHoTen.Visible = false;
             } else
             {
                 cbbNguoiGui.Text = "Cư dân";
@@ -107,6 +109,11 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
         private void formChiTietHoaDon_Load(object sender, EventArgs e)
         {
             LoadForm();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

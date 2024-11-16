@@ -123,6 +123,24 @@ namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
                 // Tính số ngày còn lại (so với ngày hiện tại)
                 int soNgayConLai = (ngayKetThuc.Value - DateTime.Now).Days;
 
+                if (duAnThiCong.TrangThai == "Hoàn thành")
+                {
+                    lblThoiHan.Text = "Dự Án";
+                    lblThoiHan.BackColor = Color.FromArgb(0, 119, 200);
+                    labelNgayConLai.Text = $"Hoàn Thành";
+                    labelNgayConLai.BackColor = Color.FromArgb(0, 119, 200);
+                    return;
+                }
+
+                if (duAnThiCong.TrangThai == "Tạm Dừng")
+                {
+                    lblThoiHan.Text = "Dự Án";
+                    lblThoiHan.BackColor = Color.Red;
+                    labelNgayConLai.Text = "Tạm Dừng";
+                    labelNgayConLai.BackColor = Color.Red;
+                    return;
+                }
+
                 // Nếu số ngày còn lại nhỏ hơn 0 (quá hạn), trả về 0
                 if (soNgayConLai <= 0)
                 {
@@ -203,13 +221,6 @@ namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
                         btnGiaiDoan.BackColor = Color.Gray;  // Màu xám nếu trạng thái không xác định
                         break;
                 }
-
-                // Thêm sự kiện khi nhấn vào button
-                btnGiaiDoan.Click += (sender, e) =>
-                {
-                    int giaiDoanID = (int)((Button)sender).Tag;
-                    MessageBox.Show($"Bạn đã chọn giai đoạn với ID: {giaiDoanID}");
-                };
 
                 // Thêm button vào FlowLayoutPanel
                 flowLayoutPanelKeHoach.Controls.Add(btnGiaiDoan);

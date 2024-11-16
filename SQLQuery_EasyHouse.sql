@@ -412,7 +412,7 @@ BEGIN
     WHERE CuDan.CuDanID = i.CuDanID;
 END;
 
-
+GO
 
 --triggers tự động phân việc cho nhân viên khi trạng thái yêu cầu thay đổi thành "Nhân viên vệ sinh sẽ xử lý đúng lịch đã đăng ký"
 CREATE TRIGGER trg_UpdateYeuCauTrangThai
@@ -454,34 +454,10 @@ BEGIN
 END;
 
 
+GO
 
 
-
-
-
---Them người dùng là cư dân 
-CREATE TRIGGER trg_AfterInsertCuDan
-ON CuDan
-AFTER INSERT
-AS
-BEGIN
-    -- Tạo bảng tạm để lưu ID vừa được tạo từ bảng Users
-    DECLARE @InsertedUsers TABLE (UserId INT);
-
-    -- Thêm dữ liệu vào bảng Users và lưu ID vào bảng tạm
-    INSERT INTO Users (TenDangNhap, MatKhau)
-    OUTPUT INSERTED.Id INTO @InsertedUsers(UserId)
-    SELECT i.Email, i.SoDienThoai
-    FROM inserted i
-    WHERE i.Email IS NOT NULL AND i.SoDienThoai IS NOT NULL;
-
-    -- Cập nhật UserId trong bảng CuDan bằng giá trị từ bảng tạm
-    UPDATE CuDan
-    SET UserId = (SELECT UserId FROM @InsertedUsers)
-    FROM inserted i
-    WHERE CuDan.UserId = i.UserId;
-END;
-
+GO
 -- trigger thêm thông báo khi có yêu cầu đc thêm , từ  phía cư dân , show ở thông báo cư dân 
 CREATE TRIGGER trg_ThongBaoYeuCauMoi
 ON YeuCau
@@ -578,8 +554,12 @@ GO
 -- Dữ liệu mẫu cho bảng CuDan
 INSERT INTO CuDan (HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, TrangThai, ThanhToan, NgayChuyenDen, HinhAnh)
 VALUES 
-('Nguyen Van A', '0123456789', '123456789012', 'nguyenvana@example.com', '123 Nguyen Trai, Ha Noi', N'Nam', '1990-01-01', N'Còn ở', N'Trả đủ', GETDATE(), NULL),
-('Tran Thi B', '0987654321', '987654321098', 'tranthib@example.com', '456 Le Loi, Da Nang', N'Nữ', '1992-02-02', N'Còn ở', N'Nợ', GETDATE(), NULL),
+('Nguyen Van A', '0123456789', '123456789012', 'nguyenvana@example.com', '123 Nguyen Trai, Ha Noi', N'Nam', '1990-01-01', N'Còn ở', N'Trả đủ', GETDATE(), NULL)
+INSERT INTO CuDan (HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, TrangThai, ThanhToan, NgayChuyenDen, HinhAnh)
+VALUES 
+('Tran Thi B', '0987654321', '987654321098', 'tranthib@example.com', '456 Le Loi, Da Nang', N'Nữ', '1992-02-02', N'Còn ở', N'Nợ', GETDATE(), NULL)
+INSERT INTO CuDan (HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, TrangThai, ThanhToan, NgayChuyenDen, HinhAnh)
+VALUES 
 ('Le Van C', '0345678901', '567890123456', 'levanc@example.com', '789 Tran Phu, Ho Chi Minh', N'Nam', '1995-03-03', N'Chuyển đi', N'Trả đủ', '2023-01-01', NULL);
 GO
 INSERT INTO NhanVien(Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
@@ -631,7 +611,8 @@ CREATE TABLE VatTuThiCong (
     TenVatTu NVARCHAR(100),
     LoaiVatTu NVARCHAR(100),
     SoLuong INT,
-	DonVi NVARCHAR(100)
+	DonVi NVARCHAR(100),
+	GhiChu NVARCHAR(255),
 );
 GO
 
@@ -642,6 +623,21 @@ CREATE TABLE ThoThiCong (
     CCCD NVARCHAR(100),
     NhiemVu NVARCHAR(100)
 );
+GO
+
+
+CREATE TABLE YeuCauThiCong (
+	id INT PRIMARY KEY IDENTITY(1,1),
+	CuDanID INT, -- id của cư dân gửi yêu cầu
+	LoaiYeuCau NVARCHAR(50), -- 'Gửi đồ' hoặc 'Lấy đồ'
+	NoiDungYeuCau NVARCHAR(255),
+	NhanVienID INT, -- id của nhân viên phản hồi yêu cầu
+	KetQua NVARCHAR(25), -- 'Chấp nhận' hoặc 'Từ chối'
+	NoiDungPhanHoi NVARCHAR(255),
+	TrangThai NVARCHAR(50), -- 'Chưa phản hồi' hoặc 'Đã phản hồi'
+	NgayGui DATETIME DEFAULT GETDATE(),
+	NgayPhanHoi DATETIME DEFAULT NULL
+)
 GO
 
 CREATE TABLE HoaDonGuiDo (
@@ -671,6 +667,8 @@ CREATE TABLE YeuCauGuiDoLayDo (
 	KetQua NVARCHAR(25), -- 'Chấp nhận' hoặc 'Từ chối'
 	NoiDungPhanHoi NVARCHAR(255),
 	TrangThai NVARCHAR(50), -- 'Chưa phản hồi' hoặc 'Đã phản hồi'
+	NgayGui DATETIME DEFAULT GETDATE(),
+	NgayPhanHoi DATETIME DEFAULT NULL
 )
 GO
 

@@ -1,6 +1,6 @@
-﻿namespace DesignEasyHouse1.formsCuDan.moduleGuiDo
+﻿namespace DesignEasyHouse1.formsCuDan.moduleThiCong
 {
-    partial class formGuiYeuCauGuiDoLayDo
+    partial class formGuiYeuCauThiCong
     {
         /// <summary>
         /// Required designer variable.
@@ -51,11 +51,11 @@
             this.cbbLoaiYeuCau.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbLoaiYeuCau.FormattingEnabled = true;
             this.cbbLoaiYeuCau.Items.AddRange(new object[] {
-            "Gửi đồ",
-            "Lấy đồ"});
-            this.cbbLoaiYeuCau.Location = new System.Drawing.Point(139, 87);
+            "Thi công thuê dịch vụ tòa nhà",
+            "Thi công thuê bên ngoài"});
+            this.cbbLoaiYeuCau.Location = new System.Drawing.Point(128, 87);
             this.cbbLoaiYeuCau.Name = "cbbLoaiYeuCau";
-            this.cbbLoaiYeuCau.Size = new System.Drawing.Size(437, 31);
+            this.cbbLoaiYeuCau.Size = new System.Drawing.Size(465, 31);
             this.cbbLoaiYeuCau.TabIndex = 101;
             // 
             // button1
@@ -66,7 +66,7 @@
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(613, 44);
+            this.button1.Size = new System.Drawing.Size(611, 44);
             this.button1.TabIndex = 0;
             this.button1.Text = "Gửi Yêu Cầu";
             this.button1.UseVisualStyleBackColor = true;
@@ -76,7 +76,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 91);
+            this.label2.Location = new System.Drawing.Point(18, 91);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 23);
@@ -93,7 +93,7 @@
             this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(448, 2);
+            this.button2.Location = new System.Drawing.Point(488, 2);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -113,7 +113,7 @@
             this.btnGui.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGui.ForeColor = System.Drawing.Color.White;
             this.btnGui.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGui.Location = new System.Drawing.Point(331, 2);
+            this.btnGui.Location = new System.Drawing.Point(379, 2);
             this.btnGui.Margin = new System.Windows.Forms.Padding(2);
             this.btnGui.Name = "btnGui";
             this.btnGui.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -130,11 +130,11 @@
             this.txtNoiDung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtNoiDung.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNoiDung.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoiDung.Location = new System.Drawing.Point(139, 130);
+            this.txtNoiDung.Location = new System.Drawing.Point(128, 130);
             this.txtNoiDung.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.txtNoiDung.Multiline = true;
             this.txtNoiDung.Name = "txtNoiDung";
-            this.txtNoiDung.Size = new System.Drawing.Size(437, 337);
+            this.txtNoiDung.Size = new System.Drawing.Size(465, 337);
             this.txtNoiDung.TabIndex = 98;
             this.txtNoiDung.Text = "Điền thông tin liên quan yêu cầu của bạn";
             // 
@@ -143,7 +143,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(29, 130);
+            this.label6.Location = new System.Drawing.Point(18, 130);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 23);
@@ -158,7 +158,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 502);
             this.panel2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(613, 53);
+            this.panel2.Size = new System.Drawing.Size(611, 53);
             this.panel2.TabIndex = 97;
             // 
             // panel1
@@ -171,21 +171,21 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(613, 44);
+            this.panel1.Size = new System.Drawing.Size(611, 44);
             this.panel1.TabIndex = 94;
             // 
-            // formGuiYeuCauGuiDoLayDo
+            // formGuiYeuCauThiCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(613, 555);
+            this.ClientSize = new System.Drawing.Size(611, 555);
             this.Controls.Add(this.cbbLoaiYeuCau);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNoiDung);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "formGuiYeuCauGuiDoLayDo";
+            this.Name = "formGuiYeuCauThiCong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gửi yêu cầu gửi đồ lấy đô";
             this.panel2.ResumeLayout(false);

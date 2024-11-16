@@ -27,6 +27,19 @@ namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
         {
             dtgvGiaiDoanThiCong.DataSource = GiaiDoanThiCongDAO.Instance.GetGiaiDoanByDuAnID(this.duAnThiCong.DuAnThiCongID);
             MyGUI.chuyenCotDenCuoiDTGV(dtgvGiaiDoanThiCong, new List<string> { "Delete", "Details" });
+            MyGUI.dinhDangCotAllCellsDTGV(dtgvGiaiDoanThiCong, new List<string> { "ThuTu" });
+            // Giả sử dgvGiaiDoanThiCong là tên của DataGridView
+            dtgvGiaiDoanThiCong.Columns["GiaiDoanID"].HeaderText = "Giai Đoạn ID";
+            dtgvGiaiDoanThiCong.Columns["GiaiDoanID"].Visible = false;
+            dtgvGiaiDoanThiCong.Columns["DuAnThiCongID"].HeaderText = "Dự Án Thi Công ID";
+            dtgvGiaiDoanThiCong.Columns["DuAnThiCongID"].Visible = false;
+
+            dtgvGiaiDoanThiCong.Columns["ThuTu"].HeaderText = "Thứ Tự";
+            dtgvGiaiDoanThiCong.Columns["NgayKetThuc"].HeaderText = "Ngày Kết Thúc";
+            dtgvGiaiDoanThiCong.Columns["TrangThai"].HeaderText = "Trạng Thái";
+            dtgvGiaiDoanThiCong.Columns["NoiDung"].HeaderText = "Nội Dung";
+
+
         }
 
         void XemChiTietGiaiDoanThiCong(int giaiDoanThiCongID)

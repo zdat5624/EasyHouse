@@ -31,6 +31,7 @@
             this.panelMenu = new System.Windows.Forms.Panel();
             this.button30 = new System.Windows.Forms.Button();
             this.panelDichVuGuiDo = new System.Windows.Forms.Panel();
+            this.btnQuanLyYeuCauGuiDoLayDo = new System.Windows.Forms.Button();
             this.btnQuanLyHoaDonGuiDo = new System.Windows.Forms.Button();
             this.btnThanhToanHoaDonGuiDo = new System.Windows.Forms.Button();
             this.btnDichVuGuiDo = new System.Windows.Forms.Button();
@@ -66,7 +67,7 @@
             this.labelTieuDe = new System.Windows.Forms.Label();
             this.ptbHideMenu = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.btnQuanLyYeuCauGuiDoLayDo = new System.Windows.Forms.Button();
+            this.btnYeuCauThiCong = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelDichVuGuiDo.SuspendLayout();
             this.panelDichVuGuiXe.SuspendLayout();
@@ -131,6 +132,26 @@
             this.panelDichVuGuiDo.Size = new System.Drawing.Size(243, 184);
             this.panelDichVuGuiDo.TabIndex = 39;
             this.panelDichVuGuiDo.Visible = false;
+            // 
+            // btnQuanLyYeuCauGuiDoLayDo
+            // 
+            this.btnQuanLyYeuCauGuiDoLayDo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnQuanLyYeuCauGuiDoLayDo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQuanLyYeuCauGuiDoLayDo.FlatAppearance.BorderSize = 0;
+            this.btnQuanLyYeuCauGuiDoLayDo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuanLyYeuCauGuiDoLayDo.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btnQuanLyYeuCauGuiDoLayDo.ForeColor = System.Drawing.Color.White;
+            this.btnQuanLyYeuCauGuiDoLayDo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuanLyYeuCauGuiDoLayDo.Location = new System.Drawing.Point(0, 126);
+            this.btnQuanLyYeuCauGuiDoLayDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnQuanLyYeuCauGuiDoLayDo.Name = "btnQuanLyYeuCauGuiDoLayDo";
+            this.btnQuanLyYeuCauGuiDoLayDo.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
+            this.btnQuanLyYeuCauGuiDoLayDo.Size = new System.Drawing.Size(243, 39);
+            this.btnQuanLyYeuCauGuiDoLayDo.TabIndex = 13;
+            this.btnQuanLyYeuCauGuiDoLayDo.Text = "Quản lý yêu cầu";
+            this.btnQuanLyYeuCauGuiDoLayDo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuanLyYeuCauGuiDoLayDo.UseVisualStyleBackColor = false;
+            this.btnQuanLyYeuCauGuiDoLayDo.Click += new System.EventHandler(this.btnQuanLyYeuCauGuiDoLayDo_Click);
             // 
             // btnQuanLyHoaDonGuiDo
             // 
@@ -499,6 +520,7 @@
             // 
             // panelDuAnThiCong
             // 
+            this.panelDuAnThiCong.Controls.Add(this.btnYeuCauThiCong);
             this.panelDuAnThiCong.Controls.Add(this.btnTheoDoiDuAnThiCong);
             this.panelDuAnThiCong.Controls.Add(this.btnQuanLyDuAnThiCong);
             this.panelDuAnThiCong.Controls.Add(this.button7);
@@ -769,25 +791,25 @@
             this.panelMain.TabIndex = 3;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
-            // btnQuanLyYeuCauGuiDoLayDo
+            // btnYeuCauThiCong
             // 
-            this.btnQuanLyYeuCauGuiDoLayDo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnQuanLyYeuCauGuiDoLayDo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnQuanLyYeuCauGuiDoLayDo.FlatAppearance.BorderSize = 0;
-            this.btnQuanLyYeuCauGuiDoLayDo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuanLyYeuCauGuiDoLayDo.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.btnQuanLyYeuCauGuiDoLayDo.ForeColor = System.Drawing.Color.White;
-            this.btnQuanLyYeuCauGuiDoLayDo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuanLyYeuCauGuiDoLayDo.Location = new System.Drawing.Point(0, 126);
-            this.btnQuanLyYeuCauGuiDoLayDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnQuanLyYeuCauGuiDoLayDo.Name = "btnQuanLyYeuCauGuiDoLayDo";
-            this.btnQuanLyYeuCauGuiDoLayDo.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnQuanLyYeuCauGuiDoLayDo.Size = new System.Drawing.Size(243, 39);
-            this.btnQuanLyYeuCauGuiDoLayDo.TabIndex = 13;
-            this.btnQuanLyYeuCauGuiDoLayDo.Text = "Quản lý yêu cầu";
-            this.btnQuanLyYeuCauGuiDoLayDo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuanLyYeuCauGuiDoLayDo.UseVisualStyleBackColor = false;
-            this.btnQuanLyYeuCauGuiDoLayDo.Click += new System.EventHandler(this.btnQuanLyYeuCauGuiDoLayDo_Click);
+            this.btnYeuCauThiCong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnYeuCauThiCong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnYeuCauThiCong.FlatAppearance.BorderSize = 0;
+            this.btnYeuCauThiCong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnYeuCauThiCong.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btnYeuCauThiCong.ForeColor = System.Drawing.Color.White;
+            this.btnYeuCauThiCong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnYeuCauThiCong.Location = new System.Drawing.Point(0, 126);
+            this.btnYeuCauThiCong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnYeuCauThiCong.Name = "btnYeuCauThiCong";
+            this.btnYeuCauThiCong.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
+            this.btnYeuCauThiCong.Size = new System.Drawing.Size(243, 39);
+            this.btnYeuCauThiCong.TabIndex = 13;
+            this.btnYeuCauThiCong.Text = "Yêu cầu thi công";
+            this.btnYeuCauThiCong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnYeuCauThiCong.UseVisualStyleBackColor = false;
+            this.btnYeuCauThiCong.Click += new System.EventHandler(this.btnYeuCauThiCong_Click);
             // 
             // FormBanQuanLy
             // 
@@ -857,5 +879,6 @@
         private System.Windows.Forms.Button btnThanhToanHoaDonGuiDo;
         private System.Windows.Forms.Button btnDichVuGuiDo;
         private System.Windows.Forms.Button btnQuanLyYeuCauGuiDoLayDo;
+        private System.Windows.Forms.Button btnYeuCauThiCong;
     }
 }

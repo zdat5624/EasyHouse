@@ -23,6 +23,31 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
         {
             dtgvQuanLyHoaDon.DataSource = HoaDonGuiDoDAO.Instance.LayDanhSachHoaDon();
             MyGUI.chuyenCotDenCuoiDTGV(dtgvQuanLyHoaDon, new List<string> {"Delete" ,"Details" });
+            MyGUI.dinhDangCotAllCellsDTGV(dtgvQuanLyHoaDon, new List<string> { "HoaDonGuiDoID" });
+
+            dtgvQuanLyHoaDon.Columns["HoaDonGuiDoID"].HeaderText = "ID";
+            dtgvQuanLyHoaDon.Columns["LoaiDo"].HeaderText = "Loại Đồ";
+            dtgvQuanLyHoaDon.Columns["KichCo"].HeaderText = "Kích Cỡ";
+            dtgvQuanLyHoaDon.Columns["ViTri"].HeaderText = "Vị Trí";
+            dtgvQuanLyHoaDon.Columns["GhiChu"].HeaderText = "Ghi Chú";
+            dtgvQuanLyHoaDon.Columns["CuDanID"].HeaderText = "Cư Dân ID";
+            dtgvQuanLyHoaDon.Columns["CuDanID"].Visible = false;
+            dtgvQuanLyHoaDon.Columns["NgayTao"].HeaderText = "Ngày Tạo";
+            dtgvQuanLyHoaDon.Columns["NguoiTaoID"].HeaderText = "Người Tạo ID";
+            dtgvQuanLyHoaDon.Columns["NguoiTaoID"].Visible = false;
+            dtgvQuanLyHoaDon.Columns["NgayThanhToan"].HeaderText = "Ngày Thanh Toán";
+            dtgvQuanLyHoaDon.Columns["NgayThanhToan"].Visible = false;
+            dtgvQuanLyHoaDon.Columns["NgayLayDuKien"].HeaderText = "Ngày Lấy Dự Kiến";
+            dtgvQuanLyHoaDon.Columns["NgayLayDuKien"].Visible = false;
+            dtgvQuanLyHoaDon.Columns["TrangThai"].HeaderText = "Trạng Thái";
+            
+            dtgvQuanLyHoaDon.Columns["NguoiThanhToanID"].HeaderText = "Người Thanh Toán ID";
+            dtgvQuanLyHoaDon.Columns["NguoiThanhToanID"].Visible = false;
+            dtgvQuanLyHoaDon.Columns["LoaiThanhToan"].HeaderText = "Loại Thanh Toán";
+            dtgvQuanLyHoaDon.Columns["LoaiThanhToan"].Visible = false;
+            dtgvQuanLyHoaDon.Columns["SoTien"].HeaderText = "Số Tiền";
+            
+
         }
 
         private void formQuanLyHoaDon_Load(object sender, EventArgs e)

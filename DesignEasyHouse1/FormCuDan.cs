@@ -1,5 +1,4 @@
 ﻿using DesignEasyHouse1.DAO;
-using DesignEasyHouse1.formsCuDan.moduleGuiDo;
 using DesignEasyHouse1.Properties;
 using System;
 using System.Collections.Generic;
@@ -65,7 +64,7 @@ namespace DesignEasyHouse1
 
         private void btnYeuCauSuaChua_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new formsCuDan.formGuiYeuCauDichVuCuDan());
+            OpenChildForm(new formsCuDan.moduleThiCong.formYeuCauThiCong());
         }
 
         private void btnTheoDoiYeuCau_Click(object sender, EventArgs e)

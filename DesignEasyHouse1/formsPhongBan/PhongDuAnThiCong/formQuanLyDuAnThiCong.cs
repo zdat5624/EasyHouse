@@ -23,10 +23,17 @@ namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
         {
             var duAnList = DuAnThiCongDAO.Instance.GetAllDuAnThiCong();
             dtgvDuAnThiCong.DataSource = duAnList;
-
-
             // Cập nhật vị trí các cột như Delete và Details
             MyGUI.chuyenCotDenCuoiDTGV(dtgvDuAnThiCong, new List<string> { "Delete", "Details" });
+            MyGUI.dinhDangCotAllCellsDTGV(dtgvDuAnThiCong, new List<string> { "DuAnThiCongID" });
+            dtgvDuAnThiCong.Columns["DuAnThiCongID"].HeaderText = "ID";
+            dtgvDuAnThiCong.Columns["TenDuAn"].HeaderText = "Tên Dự Án";
+            dtgvDuAnThiCong.Columns["TenNhaThau"].HeaderText = "Tên Nhà Thầu";
+            dtgvDuAnThiCong.Columns["ChuDuAn"].HeaderText = "Chủ Dự Án";
+            dtgvDuAnThiCong.Columns["NgayBatDau"].HeaderText = "Ngày Bắt Đầu";
+            dtgvDuAnThiCong.Columns["NgayKetThuc"].HeaderText = "Ngày Kết Thúc";
+            dtgvDuAnThiCong.Columns["TrangThai"].HeaderText = "Trạng Thái";
+
         }
 
         // Hàm xóa dự án thi công

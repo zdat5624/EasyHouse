@@ -23,19 +23,11 @@ namespace DesignEasyHouse1.DAO
         private GiaiDoanThiCongDAO() { }
 
         // Phương thức lấy danh sách giai đoạn theo DuAnThiCongID
-        public List<GiaiDoanThiCong> GetGiaiDoanByDuAnID(int duAnThiCongID)
+        public DataTable GetGiaiDoanByDuAnID(int duAnThiCongID)
         {
-            List<GiaiDoanThiCong> list = new List<GiaiDoanThiCong>();
             string query = "SELECT * FROM GiaiDoanThiCong WHERE DuAnThiCongID = @duAnThiCongID ORDER BY ThuTu ASC";
             DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { duAnThiCongID });
-
-            foreach (DataRow row in data.Rows)
-            {
-                GiaiDoanThiCong giaiDoan = new GiaiDoanThiCong(row);
-                list.Add(giaiDoan);
-            }
-
-            return list;
+            return data;
         }
 
         // Phương thức thêm mới một giai đoạn thi công

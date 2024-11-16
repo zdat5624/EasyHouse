@@ -1,4 +1,4 @@
-﻿using DesignEasyHouse1.DTO;
+﻿using DesignEasyHouse1.formsPhongBan.PhongGuiDo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,29 +9,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
+namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
 {
-    public partial class formQuanLyYeuCauLayDoGuiDo : Form
+    public partial class formQuanLyYeuCauThiCong : Form
     {
-        public formQuanLyYeuCauLayDoGuiDo()
+        public formQuanLyYeuCauThiCong()
         {
             InitializeComponent();
         }
 
+
         void XemChiTiet(int yeuCauID)
         {
-            formXemChiTiet f = new formXemChiTiet(yeuCauID);
+            formXemChiTietYeuCau f = new formXemChiTietYeuCau(yeuCauID);
             f.ShowDialog();
             LoadDTGV();
         }
 
         void LoadDTGV()
         {
-            dtgvQuanLyYeuCau.DataSource = YeuCauGuiDoLayDoDAO.Instance.LayTatCaYeuCau();
-            MyGUI.chuyenCotDenCuoiDTGV(dtgvQuanLyYeuCau, new List<string> { "Details"});
-            MyGUI.dinhDangCotAllCellsDTGV(dtgvQuanLyYeuCau, new List<string> { "id"});
+            dtgvQuanLyYeuCau.DataSource = YeuCauThiCongDAO.Instance.LayTatCaYeuCau();
+            MyGUI.chuyenCotDenCuoiDTGV(dtgvQuanLyYeuCau, new List<string> { "Details" });
+            MyGUI.dinhDangCotAllCellsDTGV(dtgvQuanLyYeuCau, new List<string> { "id" });
             dtgvQuanLyYeuCau.Columns["id"].HeaderText = "ID";
-
             dtgvQuanLyYeuCau.Columns["CuDanID"].HeaderText = "Cư Dân ID";
             dtgvQuanLyYeuCau.Columns["CuDanID"].Visible = false;
             dtgvQuanLyYeuCau.Columns["LoaiYeuCau"].HeaderText = "Loại Yêu Cầu";

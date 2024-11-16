@@ -6,20 +6,20 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
+namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
 {
-    public partial class formXemChiTiet : Form
+    public partial class formXemChiTietYeuCau : Form
     {
-        YeuCauGuiDoLayDo yeuCau = null;
-        public formXemChiTiet(int id)
+        YeuCauThiCong yeuCau = null;
+
+        public formXemChiTietYeuCau(int id)
         {
             InitializeComponent();
-            this.yeuCau = YeuCauGuiDoLayDoDAO.Instance.LayYeuCauBangID(id);
+            this.yeuCau = YeuCauThiCongDAO.Instance.LayYeuCauBangID(id);
             LoadYeuCau();
         }
 
@@ -47,11 +47,12 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
                 txtNhanVien.Visible = false;
                 labelNhanVien.Visible = false;
                 txtNgayPhanHoi.Visible = false;
-                lblNgayPhanHoi.Visible = false ;
+                lblNgayPhanHoi.Visible = false;
                 cbbKetQua.SelectedIndex = 0;
                 txtNoiDungPhanHoi.Text = "Điền nội dung phản hồi cư đân ở đây";
                 return;
-            } else
+            }
+            else
             {
                 btnPhanHoi.Visible = false;
                 cbbKetQua.Enabled = false;
@@ -61,9 +62,10 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
                 txtNgayPhanHoi.Visible = true;
                 lblNgayPhanHoi.Visible = true;
 
-                cbbKetQua.Text = !string.IsNullOrEmpty(yeuCau.KetQua) ? yeuCau.KetQua : "";
-                txtNoiDungPhanHoi.Text = !string.IsNullOrEmpty(yeuCau.NoiDungPhanHoi) ? yeuCau.NoiDungPhanHoi : "";
                 txtNgayPhanHoi.Text = yeuCau.NgayPhanHoi.ToString();
+                txtNoiDungPhanHoi.Text = yeuCau.NoiDungPhanHoi;
+                cbbKetQua.Text = yeuCau.KetQua;
+
                 if (yeuCau.NhanVienID != null)
                 {
                     NhanVien nv = NhanVienDAO.Instance.LayNhanVienBangID((int)yeuCau.NhanVienID);
@@ -77,16 +79,15 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
 
         void PhanHoiYeuCau()
         {
-            // Kiểm tra nếu thông tin phản hồi hợp lệ
-            if (string.IsNullOrEmpty(cbbKetQua.Text) || string.IsNullOrEmpty(txtNoiDungPhanHoi.Text))
+            if (string.IsNullOrEmpty(cbbKetQua.Text))
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin kết quả và nội dung phản hồi.");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin kết quả");
                 return;
             }
 
-            bool result = YeuCauGuiDoLayDoDAO.Instance.PhanHoiYeuCau(
-                yeuCau.Id,  // ID của yêu cầu
-                SessionNhanVien.id,          
+            bool result = YeuCauThiCongDAO.Instance.PhanHoiYeuCau(
+                yeuCau.Id,
+                SessionNhanVien.id,
                 cbbKetQua.Text,
                 txtNoiDungPhanHoi.Text);
 
@@ -101,16 +102,11 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
             }
         }
 
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void formXemChiTiet_Load(object sender, EventArgs e)
-        {
-            LoadYeuCau();
-        }
 
         private void btnPhanHoi_Click(object sender, EventArgs e)
         {

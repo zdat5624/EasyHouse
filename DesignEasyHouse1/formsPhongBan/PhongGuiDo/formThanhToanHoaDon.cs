@@ -24,6 +24,30 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
         {
             dtgvHoaDonChuaThanhToan.DataSource = HoaDonGuiDoDAO.Instance.LayDanhSachHoaDonChuaThanhToan();
             MyGUI.chuyenCotDenCuoiDTGV(dtgvHoaDonChuaThanhToan, new List<string> { "Details" });
+            MyGUI.dinhDangCotAllCellsDTGV(dtgvHoaDonChuaThanhToan, new List<string> { "HoaDonGuiDoID" });
+
+            dtgvHoaDonChuaThanhToan.Columns["HoaDonGuiDoID"].HeaderText = "ID";
+            dtgvHoaDonChuaThanhToan.Columns["LoaiDo"].HeaderText = "Loại Đồ";
+            dtgvHoaDonChuaThanhToan.Columns["KichCo"].HeaderText = "Kích Cỡ";
+            dtgvHoaDonChuaThanhToan.Columns["ViTri"].HeaderText = "Vị Trí";
+            dtgvHoaDonChuaThanhToan.Columns["GhiChu"].HeaderText = "Ghi Chú";
+            dtgvHoaDonChuaThanhToan.Columns["CuDanID"].HeaderText = "Cư Dân ID";
+            dtgvHoaDonChuaThanhToan.Columns["CuDanID"].Visible = false;
+            dtgvHoaDonChuaThanhToan.Columns["NgayTao"].HeaderText = "Ngày Tạo";
+            dtgvHoaDonChuaThanhToan.Columns["NguoiTaoID"].HeaderText = "Người Tạo ID";
+            dtgvHoaDonChuaThanhToan.Columns["NguoiTaoID"].Visible = false;
+            dtgvHoaDonChuaThanhToan.Columns["NgayThanhToan"].HeaderText = "Ngày Thanh Toán";
+            dtgvHoaDonChuaThanhToan.Columns["NgayThanhToan"].Visible = false;
+            dtgvHoaDonChuaThanhToan.Columns["NgayLayDuKien"].HeaderText = "Ngày Lấy Dự Kiến";
+            dtgvHoaDonChuaThanhToan.Columns["NgayLayDuKien"].Visible = false;
+            dtgvHoaDonChuaThanhToan.Columns["TrangThai"].HeaderText = "Trạng Thái";
+            dtgvHoaDonChuaThanhToan.Columns["TrangThai"].Visible = false;
+            dtgvHoaDonChuaThanhToan.Columns["NguoiThanhToanID"].HeaderText = "Người Thanh Toán ID";
+            dtgvHoaDonChuaThanhToan.Columns["NguoiThanhToanID"].Visible = false;
+            dtgvHoaDonChuaThanhToan.Columns["LoaiThanhToan"].HeaderText = "Loại Thanh Toán";
+            dtgvHoaDonChuaThanhToan.Columns["LoaiThanhToan"].Visible = false;
+            dtgvHoaDonChuaThanhToan.Columns["SoTien"].HeaderText = "Số Tiền";
+            dtgvHoaDonChuaThanhToan.Columns["SoTien"].Visible = false;
         }
 
         void LoadGbThanhThoan()

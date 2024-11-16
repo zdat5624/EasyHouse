@@ -31,13 +31,6 @@ namespace DesignEasyHouse1
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnLichSuGuiXe = new System.Windows.Forms.Button();
-            this.btnDangKyGuiXe = new System.Windows.Forms.Button();
-            this.btnTheoDoiThoiGianRaVao = new System.Windows.Forms.Button();
-            this.btnThongTinXe = new System.Windows.Forms.Button();
-            this.btnThanhToanPhi = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnYeuCauGuiDoLayDo = new System.Windows.Forms.Button();
             this.button32 = new System.Windows.Forms.Button();
@@ -52,25 +45,12 @@ namespace DesignEasyHouse1
             this.button13 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.btnThongBaoTuHeThong = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnYeuCauThiCong = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -82,12 +62,9 @@ namespace DesignEasyHouse1
             this.ptbHideMenu = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -99,18 +76,12 @@ namespace DesignEasyHouse1
             // 
             this.panelMenu.AutoScroll = true;
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.panelMenu.Controls.Add(this.panel1);
-            this.panelMenu.Controls.Add(this.button37);
             this.panelMenu.Controls.Add(this.panel4);
             this.panelMenu.Controls.Add(this.button32);
             this.panelMenu.Controls.Add(this.panel5);
             this.panelMenu.Controls.Add(this.button22);
             this.panelMenu.Controls.Add(this.panel6);
             this.panelMenu.Controls.Add(this.button7);
-            this.panelMenu.Controls.Add(this.panel7);
-            this.panelMenu.Controls.Add(this.button27);
-            this.panelMenu.Controls.Add(this.panel8);
-            this.panelMenu.Controls.Add(this.button20);
             this.panelMenu.Controls.Add(this.panel9);
             this.panelMenu.Controls.Add(this.button11);
             this.panelMenu.Controls.Add(this.panel10);
@@ -125,140 +96,11 @@ namespace DesignEasyHouse1
             this.panelMenu.Size = new System.Drawing.Size(269, 629);
             this.panelMenu.TabIndex = 0;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnLichSuGuiXe);
-            this.panel1.Controls.Add(this.btnDangKyGuiXe);
-            this.panel1.Controls.Add(this.btnTheoDoiThoiGianRaVao);
-            this.panel1.Controls.Add(this.btnThongTinXe);
-            this.panel1.Controls.Add(this.btnThanhToanPhi);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 1487);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(248, 210);
-            this.panel1.TabIndex = 0;
-            // 
-            // btnLichSuGuiXe
-            // 
-            this.btnLichSuGuiXe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnLichSuGuiXe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLichSuGuiXe.FlatAppearance.BorderSize = 0;
-            this.btnLichSuGuiXe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLichSuGuiXe.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLichSuGuiXe.ForeColor = System.Drawing.Color.White;
-            this.btnLichSuGuiXe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLichSuGuiXe.Location = new System.Drawing.Point(0, 156);
-            this.btnLichSuGuiXe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLichSuGuiXe.Name = "btnLichSuGuiXe";
-            this.btnLichSuGuiXe.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnLichSuGuiXe.Size = new System.Drawing.Size(248, 39);
-            this.btnLichSuGuiXe.TabIndex = 47;
-            this.btnLichSuGuiXe.Text = "Lịch sử gửi xe";
-            this.btnLichSuGuiXe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLichSuGuiXe.UseVisualStyleBackColor = false;
-            // 
-            // btnDangKyGuiXe
-            // 
-            this.btnDangKyGuiXe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnDangKyGuiXe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDangKyGuiXe.FlatAppearance.BorderSize = 0;
-            this.btnDangKyGuiXe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangKyGuiXe.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangKyGuiXe.ForeColor = System.Drawing.Color.White;
-            this.btnDangKyGuiXe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangKyGuiXe.Location = new System.Drawing.Point(0, 117);
-            this.btnDangKyGuiXe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDangKyGuiXe.Name = "btnDangKyGuiXe";
-            this.btnDangKyGuiXe.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnDangKyGuiXe.Size = new System.Drawing.Size(248, 39);
-            this.btnDangKyGuiXe.TabIndex = 43;
-            this.btnDangKyGuiXe.Text = "Đăng ký gửi xe";
-            this.btnDangKyGuiXe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangKyGuiXe.UseVisualStyleBackColor = false;
-            this.btnDangKyGuiXe.Click += new System.EventHandler(this.btnDangKyGuiXe_Click);
-            // 
-            // btnTheoDoiThoiGianRaVao
-            // 
-            this.btnTheoDoiThoiGianRaVao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnTheoDoiThoiGianRaVao.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTheoDoiThoiGianRaVao.FlatAppearance.BorderSize = 0;
-            this.btnTheoDoiThoiGianRaVao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTheoDoiThoiGianRaVao.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTheoDoiThoiGianRaVao.ForeColor = System.Drawing.Color.White;
-            this.btnTheoDoiThoiGianRaVao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTheoDoiThoiGianRaVao.Location = new System.Drawing.Point(0, 78);
-            this.btnTheoDoiThoiGianRaVao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTheoDoiThoiGianRaVao.Name = "btnTheoDoiThoiGianRaVao";
-            this.btnTheoDoiThoiGianRaVao.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnTheoDoiThoiGianRaVao.Size = new System.Drawing.Size(248, 39);
-            this.btnTheoDoiThoiGianRaVao.TabIndex = 46;
-            this.btnTheoDoiThoiGianRaVao.Text = "Theo dõi thời gian ra vào";
-            this.btnTheoDoiThoiGianRaVao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTheoDoiThoiGianRaVao.UseVisualStyleBackColor = false;
-            // 
-            // btnThongTinXe
-            // 
-            this.btnThongTinXe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnThongTinXe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThongTinXe.FlatAppearance.BorderSize = 0;
-            this.btnThongTinXe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongTinXe.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongTinXe.ForeColor = System.Drawing.Color.White;
-            this.btnThongTinXe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongTinXe.Location = new System.Drawing.Point(0, 39);
-            this.btnThongTinXe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThongTinXe.Name = "btnThongTinXe";
-            this.btnThongTinXe.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnThongTinXe.Size = new System.Drawing.Size(248, 39);
-            this.btnThongTinXe.TabIndex = 44;
-            this.btnThongTinXe.Text = "Thông tin xe";
-            this.btnThongTinXe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongTinXe.UseVisualStyleBackColor = false;
-            // 
-            // btnThanhToanPhi
-            // 
-            this.btnThanhToanPhi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnThanhToanPhi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThanhToanPhi.FlatAppearance.BorderSize = 0;
-            this.btnThanhToanPhi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThanhToanPhi.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanhToanPhi.ForeColor = System.Drawing.Color.White;
-            this.btnThanhToanPhi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThanhToanPhi.Location = new System.Drawing.Point(0, 0);
-            this.btnThanhToanPhi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThanhToanPhi.Name = "btnThanhToanPhi";
-            this.btnThanhToanPhi.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnThanhToanPhi.Size = new System.Drawing.Size(248, 39);
-            this.btnThanhToanPhi.TabIndex = 45;
-            this.btnThanhToanPhi.Text = "Thanh toán phí";
-            this.btnThanhToanPhi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThanhToanPhi.UseVisualStyleBackColor = false;
-            // 
-            // button37
-            // 
-            this.button37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button37.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button37.FlatAppearance.BorderSize = 0;
-            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button37.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button37.ForeColor = System.Drawing.Color.White;
-            this.button37.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button37.Location = new System.Drawing.Point(0, 1439);
-            this.button37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button37.Name = "button37";
-            this.button37.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.button37.Size = new System.Drawing.Size(248, 48);
-            this.button37.TabIndex = 42;
-            this.button37.Text = "GỬI XE";
-            this.button37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button37.UseVisualStyleBackColor = false;
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.btnYeuCauGuiDoLayDo);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 1269);
+            this.panel4.Location = new System.Drawing.Point(0, 913);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(248, 170);
@@ -293,7 +135,7 @@ namespace DesignEasyHouse1
             this.button32.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button32.ForeColor = System.Drawing.Color.White;
             this.button32.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button32.Location = new System.Drawing.Point(0, 1221);
+            this.button32.Location = new System.Drawing.Point(0, 865);
             this.button32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button32.Name = "button32";
             this.button32.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -308,7 +150,7 @@ namespace DesignEasyHouse1
             this.panel5.Controls.Add(this.button31);
             this.panel5.Controls.Add(this.button23);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 1131);
+            this.panel5.Location = new System.Drawing.Point(0, 775);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(248, 90);
@@ -361,7 +203,7 @@ namespace DesignEasyHouse1
             this.button22.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button22.ForeColor = System.Drawing.Color.White;
             this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.Location = new System.Drawing.Point(0, 1083);
+            this.button22.Location = new System.Drawing.Point(0, 727);
             this.button22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button22.Name = "button22";
             this.button22.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -379,7 +221,7 @@ namespace DesignEasyHouse1
             this.panel6.Controls.Add(this.button13);
             this.panel6.Controls.Add(this.button15);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 873);
+            this.panel6.Location = new System.Drawing.Point(0, 517);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(248, 210);
@@ -489,7 +331,7 @@ namespace DesignEasyHouse1
             this.button7.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 825);
+            this.button7.Location = new System.Drawing.Point(0, 469);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -498,184 +340,6 @@ namespace DesignEasyHouse1
             this.button7.Text = "MÔI GIỚI";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = false;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.button24);
-            this.panel7.Controls.Add(this.button26);
-            this.panel7.Controls.Add(this.button25);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 695);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(248, 130);
-            this.panel7.TabIndex = 46;
-            // 
-            // button24
-            // 
-            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.button24.ForeColor = System.Drawing.Color.White;
-            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.Location = new System.Drawing.Point(0, 78);
-            this.button24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button24.Name = "button24";
-            this.button24.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button24.Size = new System.Drawing.Size(248, 39);
-            this.button24.TabIndex = 27;
-            this.button24.Text = "Phản hồi và đánh giá";
-            this.button24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.UseVisualStyleBackColor = false;
-            // 
-            // button26
-            // 
-            this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button26.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button26.FlatAppearance.BorderSize = 0;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.ForeColor = System.Drawing.Color.White;
-            this.button26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button26.Location = new System.Drawing.Point(0, 39);
-            this.button26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button26.Name = "button26";
-            this.button26.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button26.Size = new System.Drawing.Size(248, 39);
-            this.button26.TabIndex = 25;
-            this.button26.Text = "Mua sắm trực tuyến";
-            this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button26.UseVisualStyleBackColor = false;
-            // 
-            // button25
-            // 
-            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button25.FlatAppearance.BorderSize = 0;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.button25.ForeColor = System.Drawing.Color.White;
-            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.Location = new System.Drawing.Point(0, 0);
-            this.button25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button25.Name = "button25";
-            this.button25.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button25.Size = new System.Drawing.Size(248, 39);
-            this.button25.TabIndex = 26;
-            this.button25.Text = "Theo dõi đơn hàng";
-            this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.UseVisualStyleBackColor = false;
-            // 
-            // button27
-            // 
-            this.button27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button27.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button27.FlatAppearance.BorderSize = 0;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.ForeColor = System.Drawing.Color.White;
-            this.button27.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button27.Location = new System.Drawing.Point(0, 647);
-            this.button27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button27.Name = "button27";
-            this.button27.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.button27.Size = new System.Drawing.Size(248, 48);
-            this.button27.TabIndex = 24;
-            this.button27.Text = "SIÊU THỊ";
-            this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button27.UseVisualStyleBackColor = false;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.btnThongBaoTuHeThong);
-            this.panel8.Controls.Add(this.button17);
-            this.panel8.Controls.Add(this.button18);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 517);
-            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(248, 130);
-            this.panel8.TabIndex = 47;
-            // 
-            // btnThongBaoTuHeThong
-            // 
-            this.btnThongBaoTuHeThong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnThongBaoTuHeThong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThongBaoTuHeThong.FlatAppearance.BorderSize = 0;
-            this.btnThongBaoTuHeThong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongBaoTuHeThong.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.btnThongBaoTuHeThong.ForeColor = System.Drawing.Color.White;
-            this.btnThongBaoTuHeThong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongBaoTuHeThong.Location = new System.Drawing.Point(0, 85);
-            this.btnThongBaoTuHeThong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnThongBaoTuHeThong.Name = "btnThongBaoTuHeThong";
-            this.btnThongBaoTuHeThong.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnThongBaoTuHeThong.Size = new System.Drawing.Size(248, 36);
-            this.btnThongBaoTuHeThong.TabIndex = 22;
-            this.btnThongBaoTuHeThong.Text = "Thông báo từ hệ thống";
-            this.btnThongBaoTuHeThong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongBaoTuHeThong.UseVisualStyleBackColor = false;
-            this.btnThongBaoTuHeThong.Visible = false;
-            this.btnThongBaoTuHeThong.Click += new System.EventHandler(this.btnThongBaoTuHeThong_Click);
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(0, 39);
-            this.button17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button17.Name = "button17";
-            this.button17.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button17.Size = new System.Drawing.Size(248, 46);
-            this.button17.TabIndex = 21;
-            this.button17.Text = "Phản hồi và đánh giá";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(0, 0);
-            this.button18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button18.Name = "button18";
-            this.button18.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button18.Size = new System.Drawing.Size(248, 39);
-            this.button18.TabIndex = 20;
-            this.button18.Text = "Theo dõi yêu cầu";
-            this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.White;
-            this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.Location = new System.Drawing.Point(0, 469);
-            this.button20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button20.Name = "button20";
-            this.button20.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.button20.Size = new System.Drawing.Size(248, 48);
-            this.button20.TabIndex = 18;
-            this.button20.Text = "CHĂM SÓC CÂY";
-            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.UseVisualStyleBackColor = false;
             // 
             // panel9
             // 
@@ -749,10 +413,7 @@ namespace DesignEasyHouse1
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.button3);
-            this.panel10.Controls.Add(this.button6);
-            this.panel10.Controls.Add(this.button4);
-            this.panel10.Controls.Add(this.button5);
+            this.panel10.Controls.Add(this.btnYeuCauThiCong);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 164);
             this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -760,84 +421,25 @@ namespace DesignEasyHouse1
             this.panel10.Size = new System.Drawing.Size(248, 170);
             this.panel10.TabIndex = 49;
             // 
-            // button3
+            // btnYeuCauThiCong
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 117);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(248, 39);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Yêu cầu sữa chữa";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.btnYeuCauSuaChua_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 78);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(248, 39);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Phản hồi và đánh giá";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.btnPhanHoiDanhGia_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 39);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(248, 39);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Theo dõi yêu cầu";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.btnTheoDoiYeuCau_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(248, 39);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Lịch hẹn sữa chữa";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnYeuCauThiCong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnYeuCauThiCong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnYeuCauThiCong.FlatAppearance.BorderSize = 0;
+            this.btnYeuCauThiCong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnYeuCauThiCong.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYeuCauThiCong.ForeColor = System.Drawing.Color.White;
+            this.btnYeuCauThiCong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnYeuCauThiCong.Location = new System.Drawing.Point(0, 0);
+            this.btnYeuCauThiCong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnYeuCauThiCong.Name = "btnYeuCauThiCong";
+            this.btnYeuCauThiCong.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
+            this.btnYeuCauThiCong.Size = new System.Drawing.Size(248, 39);
+            this.btnYeuCauThiCong.TabIndex = 5;
+            this.btnYeuCauThiCong.Text = "Yêu cầu thi công sữa chữa";
+            this.btnYeuCauThiCong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnYeuCauThiCong.UseVisualStyleBackColor = false;
+            this.btnYeuCauThiCong.Click += new System.EventHandler(this.btnYeuCauSuaChua_Click);
             // 
             // button30
             // 
@@ -850,7 +452,7 @@ namespace DesignEasyHouse1
             this.button30.ForeColor = System.Drawing.Color.White;
             this.button30.Image = global::DesignEasyHouse1.Properties.Resources.icons8_logout_38;
             this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button30.Location = new System.Drawing.Point(0, 1697);
+            this.button30.Location = new System.Drawing.Point(0, 1083);
             this.button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button30.Name = "button30";
             this.button30.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -876,7 +478,7 @@ namespace DesignEasyHouse1
             this.button2.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
             this.button2.Size = new System.Drawing.Size(248, 48);
             this.button2.TabIndex = 4;
-            this.button2.Text = "SỬA CHỮA";
+            this.button2.Text = "THI CÔNG SỬA CHỮA";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -920,7 +522,7 @@ namespace DesignEasyHouse1
             this.btnChaoUser.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChaoUser.ForeColor = System.Drawing.Color.Silver;
             this.btnChaoUser.Location = new System.Drawing.Point(0, 0);
-            this.btnChaoUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChaoUser.Margin = new System.Windows.Forms.Padding(4);
             this.btnChaoUser.Name = "btnChaoUser";
             this.btnChaoUser.Size = new System.Drawing.Size(248, 41);
             this.btnChaoUser.TabIndex = 0;
@@ -999,7 +601,7 @@ namespace DesignEasyHouse1
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelMain.Location = new System.Drawing.Point(269, 41);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(883, 588);
             this.panelMain.TabIndex = 4;
@@ -1019,12 +621,9 @@ namespace DesignEasyHouse1
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormCuDan_Load);
             this.panelMenu.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -1040,21 +639,11 @@ namespace DesignEasyHouse1
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnYeuCauThiCong;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button btnChaoUser;
         private System.Windows.Forms.Button btnYeuCauGuiDoLayDo;
         private System.Windows.Forms.Button button32;
@@ -1067,25 +656,15 @@ namespace DesignEasyHouse1
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button btnLichSuGuiXe;
-        private System.Windows.Forms.Button btnTheoDoiThoiGianRaVao;
-        private System.Windows.Forms.Button btnThanhToanPhi;
-        private System.Windows.Forms.Button btnThongTinXe;
-        private System.Windows.Forms.Button btnDangKyGuiXe;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panelTieuDe;
         private System.Windows.Forms.PictureBox ptbHideMenu;
         private System.Windows.Forms.Panel panelMain;
-        private System.Windows.Forms.Button btnThongBaoTuHeThong;
         private System.Windows.Forms.Button btnThongBaoCuDan;
         private System.Windows.Forms.Button btnThanhToan;
     }

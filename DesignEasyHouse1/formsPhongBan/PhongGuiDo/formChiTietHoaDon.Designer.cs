@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.txtHoaDonID = new System.Windows.Forms.TextBox();
@@ -62,62 +59,13 @@
             this.nudSoTien = new System.Windows.Forms.NumericUpDown();
             this.lblNgayThanhToan = new System.Windows.Forms.Label();
             this.dtpNgayThanhToan = new System.Windows.Forms.DateTimePicker();
-            this.panel2.SuspendLayout();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoTien)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(924, 2);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button2.Size = new System.Drawing.Size(105, 43);
-            this.button2.TabIndex = 32;
-            this.button2.Text = "Hủy bỏ";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
-            this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLuu.FlatAppearance.BorderSize = 0;
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(815, 2);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnLuu.Size = new System.Drawing.Size(105, 43);
-            this.btnLuu.TabIndex = 31;
-            this.btnLuu.Text = "Thêm";
-            this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLuu.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.btnLuu);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 509);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1019, 53);
-            this.panel2.TabIndex = 97;
             // 
             // panel1
             // 
@@ -519,6 +467,59 @@
             this.dtpNgayThanhToan.Size = new System.Drawing.Size(280, 31);
             this.dtpNgayThanhToan.TabIndex = 151;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnLuu);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 509);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1019, 53);
+            this.panel2.TabIndex = 97;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(903, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button2.Size = new System.Drawing.Size(105, 43);
+            this.button2.TabIndex = 32;
+            this.button2.Text = "Hủy bỏ";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLuu.FlatAppearance.BorderSize = 0;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(788, 2);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnLuu.Size = new System.Drawing.Size(105, 43);
+            this.btnLuu.TabIndex = 31;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
             // formChiTietHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -561,18 +562,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chi tiết hóa đơn";
             this.Load += new System.EventHandler(this.formChiTietHoaDon_Load);
-            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nudSoTien)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtHoaDonID;
@@ -604,5 +602,8 @@
         private System.Windows.Forms.NumericUpDown nudSoTien;
         private System.Windows.Forms.Label lblNgayThanhToan;
         private System.Windows.Forms.DateTimePicker dtpNgayThanhToan;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnLuu;
     }
 }

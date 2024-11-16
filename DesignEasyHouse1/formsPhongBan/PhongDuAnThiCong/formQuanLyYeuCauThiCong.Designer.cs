@@ -1,6 +1,6 @@
-﻿namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
+﻿namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
 {
-    partial class formQuanLyYeuCauLayDoGuiDo
+    partial class formQuanLyYeuCauThiCong
     {
         /// <summary>
         /// Required designer variable.
@@ -163,7 +163,7 @@
             this.panel1.Size = new System.Drawing.Size(1061, 80);
             this.panel1.TabIndex = 39;
             // 
-            // formQuanLyYeuCauLayDoGuiDo
+            // formQuanLyYeuCauThiCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -173,8 +173,8 @@
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.Name = "formQuanLyYeuCauLayDoGuiDo";
-            this.Text = "Quản lý yêu cầu gửi đồ và lấy đồ";
+            this.Name = "formQuanLyYeuCauThiCong";
+            this.Text = "Quản lý yêu cầu thi công";
             this.Load += new System.EventHandler(this.formQuanLyYeuCauLayDoGuiDo_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
