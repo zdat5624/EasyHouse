@@ -670,6 +670,44 @@ CREATE TABLE YeuCauGuiDoLayDo (
 )
 GO
 
+CREATE TABLE CanHoChoGiaoDich (
+    ID INT IDENTITY(1,1) PRIMARY KEY
+    MaCanHo NVARCHAR(50), -- Liên kết với bảng CanHo
+    GiaTriGiaoDichMongMuon FLOAT,                   -- Giá trị giao dịch
+	GhiChu NVARCHAR(255),
+);
+
+CREATE TABLE FileTaiLieuGiaoDich (
+	ID INT IDENTITY(1,1) PRIMARY KEY,
+	CanHoChoGiaoDichID INT,
+	FileTaiLieu VARBINARY(MAX) DEFAULT NULL -- Lưu trực tiếp file zip/rar dưới dạng nhị phân
+)
+
+
+CREATE TABLE HopDongGiaoDich (
+    HopDongID INT IDENTITY(1,1) PRIMARY KEY,     -- Mã hợp đồng
+    MaCanHo NVARCHAR(50), -- Khóa ngoại liên kết với bảng CanHo
+	MoiGioiID INT,
+    TenKhachHang NVARCHAR(100),             -- Tên khách hàng
+    GiaTriGiaoDich FLOAT,                   -- Giá trị giao dịch
+	ChiPhi FLOAT,
+    TienDo NVARCHAR(50) DEFAULT N'Đang đàm phán' -- Tiến độ giao dịch ('Đang đàm phán', 'Hoàn thành')
+);
+GO
+
+CREATE TABLE MoiGioi (
+    MoiGioiID INT IDENTITY(1,1) PRIMARY KEY, -- Mã môi giới
+    TenMoiGioi NVARCHAR(100),                -- Tên người môi giới hoặc công ty
+	PhanLoai NVARCHAR(50),					-- 'Môi giới của tòa nhà' hoặc 'Môi giới của cư dân'
+    SoGiayPhep NVARCHAR(50),                 -- Số giấy phép hành nghề
+    ThongTinLienHe NVARCHAR(255)             -- Thông tin liên hệ
+	TrangThai NVARCHAR(50)						-- 'Đang hợp tác' hoặc 'Ngưng hợp tác'
+);
+GO
+
+
+
+
 CREATE PROCEDURE sp_ThemGiaiDoanThiCong
     @DuAnThiCongID INT,
     @NgayKetThuc DATE = NULL,
