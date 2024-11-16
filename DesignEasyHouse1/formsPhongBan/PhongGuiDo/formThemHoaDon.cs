@@ -98,6 +98,23 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
             }
         }
 
+        private void LoadViTri()
+        {
+            List<string> danhSachViTri = HoaDonGuiDoDAO.Instance.LayDanhSachViTri();
+            cbbViTri.Items.Clear();
+
+            foreach (string viTri in danhSachViTri)
+            {
+                cbbViTri.Items.Add(viTri);
+            }
+
+            if (cbbViTri.Items.Count > 0)
+            {
+                cbbViTri.SelectedIndex = 0;
+            }
+        }
+
+
         #endregion
 
         #region Events
@@ -115,6 +132,7 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
         private void formThemHoaDon_Load(object sender, EventArgs e)
         {
             LoadLoaiDo();
+            LoadViTri();
             cbbNguoiGui.SelectedIndex = 0;
         }
 
@@ -152,7 +170,6 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
-                // Hủy sự kiện nhập nếu ký tự không hợp lệ
                 e.Handled = true;
             }
         }

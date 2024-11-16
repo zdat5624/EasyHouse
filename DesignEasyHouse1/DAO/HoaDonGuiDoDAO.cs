@@ -100,7 +100,7 @@ namespace DesignEasyHouse1.DAO
         public List<string> LayDanhSachLoaiDo()
         {
             List<string> dsLoaiDo = new List<string>();
-            string query = "SELECT DISTINCT LoaiDo FROM HoaDonGuiDo WHERE LoaiDo != ''";
+            string query = "SELECT DISTINCT LoaiDo FROM HoaDonGuiDo WHERE LoaiDo != '' ";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow row in data.Rows)
@@ -120,6 +120,21 @@ namespace DesignEasyHouse1.DAO
             string query = "UPDATE HoaDonGuiDo SET GhiChu = @GhiChu WHERE HoaDonGuiDoID = @HoaDonGuiDoID ";
             int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { ghiChu, hoaDonGuiDoID });
             return result > 0;
+        }
+
+
+        public List<string> LayDanhSachViTri()
+        {
+            List<string> danhSachViTri = new List<string>();
+            string query = "SELECT DISTINCT ViTri FROM HoaDonGuiDo WHERE ViTri IS NOT NULL AND ViTri <> '' ";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                danhSachViTri.Add(row["ViTri"].ToString());
+            }
+
+            return danhSachViTri;
         }
 
     }
