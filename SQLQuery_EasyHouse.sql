@@ -693,7 +693,6 @@ CREATE TABLE HopDongGiaoDich (
     MaCanHo NVARCHAR(50), --  Liên kết với bảng CanHo
 	MoiGioiID INT,
     TenKhachHang NVARCHAR(100),             -- Tên khách hàng
-	LoaiGiaoDich NVARCHAR(50), -- 'Mua bán căn hộ' hoặc 'Cho thuê căn hộ'
     GiaTriGiaoDich FLOAT,                   -- Giá trị giao dịch
 	ChiPhi FLOAT,
     TienDo NVARCHAR(50) DEFAULT N'Đang đàm phán' -- Tiến độ giao dịch ('Đang đàm phán', 'Hoàn thành')
