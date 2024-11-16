@@ -116,6 +116,9 @@ namespace DesignEasyHouse1
                 case "Gửi xe":
                     showGuiXeModule();
                     break;
+                case "Môi giới bất động sản":
+                    showMoiGioiBatDongSanModule();
+                    break;
             }
             
 
@@ -151,6 +154,10 @@ namespace DesignEasyHouse1
         private void showGuiDoModule()
         {
             panelDichVuGuiDo.Visible = true;    
+        }
+        private void showMoiGioiBatDongSanModule()
+        {
+            panelMoiGioiBatDongSan.Visible = true;
         }
 
         private void showGuiXeModule()
@@ -227,6 +234,11 @@ namespace DesignEasyHouse1
         private void btnYeuCauThiCong_Click(object sender, EventArgs e)
         {
             OpenChildForm(new formsPhongBan.PhongDuAnThiCong.formQuanLyYeuCauThiCong());
+        }
+
+        private void btnCanHoChoGiaoDich_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongMoiGioiBatDongSan.formCanHoChoGiaoDich());
         }
 
         //private void panelMain_Paint(object sender, PaintEventArgs e)

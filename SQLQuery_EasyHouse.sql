@@ -68,6 +68,10 @@ INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyen
 VALUES 
     ('Nguyen Van c', 'Quản lý', '1985-05-10', 'Hà Nội', 'vesinh', 'vesinh', '2020-01-01', 10000000, N'Vệ sinh');
 
+INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+    ('Nguyen Van dat', 'Quản lý', '1985-05-10', 'Hà Nội', '5', '5', '2020-01-01', 10000000, N'Môi giới bất động sản');
+
 
 CREATE TABLE ThongBao (
     id INT PRIMARY KEY IDENTITY,
@@ -671,7 +675,7 @@ CREATE TABLE YeuCauGuiDoLayDo (
 GO
 
 CREATE TABLE CanHoChoGiaoDich (
-    ID INT IDENTITY(1,1) PRIMARY KEY
+    ID INT IDENTITY(1,1) PRIMARY KEY,
     MaCanHo NVARCHAR(50), -- Liên kết với bảng CanHo
     GiaTriGiaoDichMongMuon FLOAT,                   -- Giá trị giao dịch
 	GhiChu NVARCHAR(255),
@@ -700,8 +704,9 @@ CREATE TABLE MoiGioi (
     TenMoiGioi NVARCHAR(100),                -- Tên người môi giới hoặc công ty
 	PhanLoai NVARCHAR(50),					-- 'Môi giới của tòa nhà' hoặc 'Môi giới của cư dân'
     SoGiayPhep NVARCHAR(50),                 -- Số giấy phép hành nghề
-    ThongTinLienHe NVARCHAR(255)             -- Thông tin liên hệ
-	TrangThai NVARCHAR(50)						-- 'Đang hợp tác' hoặc 'Ngưng hợp tác'
+    ThongTinLienHe NVARCHAR(255),             -- Thông tin liên hệ
+	TrangThai NVARCHAR(50),						-- 'Đang hợp tác' hoặc 'Ngưng hợp tác'
+	NgayKetThucHopTac DATE
 );
 GO
 
