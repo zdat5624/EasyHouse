@@ -693,8 +693,10 @@ CREATE TABLE HopDongGiaoDich (
     MaCanHo NVARCHAR(50), --  Liên kết với bảng CanHo
 	MoiGioiID INT,
     TenKhachHang NVARCHAR(100),             -- Tên khách hàng
+	CuDanID INT, -- Nếu chủ hợp đồng là tòa nhà thì CuDanID=0, nếu chủ hợp đồng là cư dân thì ID = CuDanID
     GiaTriGiaoDich FLOAT,                   -- Giá trị giao dịch
 	ChiPhi FLOAT,
+	LoiNhuan FLOAT,
     TienDo NVARCHAR(50) DEFAULT N'Đang đàm phán' -- Tiến độ giao dịch ('Đang đàm phán', 'Hoàn thành')
 );
 GO
