@@ -84,36 +84,6 @@ namespace DesignEasyHouse1.DTO
             return str;
         }
 
-        //public ChiTietHopDongThueCanHo(DataTable dataTable)
-        //{
-        //    DanhSachThueCanHo = new List<ThueCanHo>();
-
-        //    foreach (DataRow row in dataTable.Rows)
-        //    {
-        //        if (HopDongID == 0)
-        //        {
-        //            HopDongID = Convert.ToInt32(row["HopDongID"]);
-        //            maCanHo = row["CanHoID"].ToString();
-        //            NgayBatDau = Convert.ToDateTime(row["NgayBatDau"]);
-        //            NgayKetThuc = row["NgayKetThuc"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(row["NgayKetThuc"]);
-        //            TienThue = Convert.ToDouble(row["TienThue"]);
-        //            DieuKhoan = row["DieuKhoan"].ToString();
-        //        }
-
-        //        if (row["ThueCanHoID"] != DBNull.Value)
-        //        {
-        //            var thueCanHo = new ThueCanHo
-        //            {
-        //                ThueCanHoID = Convert.ToInt32(row["ThueCanHoID"]),
-        //                CuDanID = Convert.ToInt32(row["CuDanID"]),
-        //                HopDongID = HopDongID,
-        //                VaiTro = row["VaiTro"].ToString()
-        //            };
-        //            DanhSachThueCanHo.Add(thueCanHo);
-        //        }
-        //    }
-        //}
-
     }
 
     public class ThueCanHo

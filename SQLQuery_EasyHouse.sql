@@ -71,7 +71,8 @@ VALUES
 
 CREATE TABLE ThongBao (
     id INT PRIMARY KEY IDENTITY,
-    TieuDe NVARCHAR(255) NOT NULL,
+    TieuDe NVARCHAR(255
+	) NOT NULL,
     NoiDung NVARCHAR(MAX),
 	LoaiThongBao NVARCHAR(255),
     ThoiGian DATETIME DEFAULT GETDATE(),
@@ -80,9 +81,6 @@ CREATE TABLE ThongBao (
 );
 
 
-
---SoCanHo NVARCHAR(10),
---ThanhToan NVARCHAR(255) DEFAULT N'Trả đủ', --'Trả đủ' hoặc 'Nợ'
 
 -- Bảng thông tin cư dân
 CREATE TABLE LichSuCapNhatCuDan (
@@ -110,7 +108,8 @@ CREATE TABLE CanHo (
     DienTich FLOAT,                   -- Diện tích căn hộ
     SoPhongNgu INT,                   -- Số phòng ngủ
     SoPhongTam INT,                   -- Số phòng tắm
-    TrangThai NVARCHAR(50) DEFAULT N'Trống'            -- Trạng thái căn hộ (Trống, Đang thuê, ...)
+    TrangThai NVARCHAR(50) DEFAULT N'Trống',            -- Trạng thái căn hộ (Trống, Đang thuê, Cư dân sở hữu)
+	CuDanID INT, -- ID cư dân sở hữu căn hộ, nếu người sở hữu là tòa nhà thì id bằng 0
 )
 GO
 
@@ -316,23 +315,22 @@ VALUES
 GO
 
 
-
-INSERT INTO CanHo (MaCanHo, ViTri, DienTich, SoPhongNgu, SoPhongTam, TrangThai) VALUES
-('CH001', N'Tầng 1, Block A', 50.0, 1, 1, N'Trống'),
-('CH002', N'Tầng 2, Block A', 75.0, 2, 1, N'Trống'),
-('CH003', N'Tầng 3, Block B', 100.0, 3, 2, N'Trống'),
-('CH004', N'Tầng 4, Block B', 60.0, 2, 1, N'Trống'),
-('CH005', N'Tầng 5, Block C', 90.0, 2, 2, N'Trống'),
-('CH006', N'Tầng 6, Block C', 120.0, 4, 2, N'Trống'),
-('CH007', N'Tầng 1, Block D', 55.0, 1, 1, N'Trống'),
-('CH008', N'Tầng 2, Block D', 80.0, 3, 2, N'Trống'),
-('CH009', N'Tầng 3, Block E', 85.0, 2, 2, N'Trống'),
-('CH010', N'Tầng 4, Block E', 110.0, 3, 2, N'Trống'),
-('CH011', N'Tầng 1, Block F', 65.0, 2, 1, N'Trống'),
-('CH012', N'Tầng 2, Block F', 95.0, 2, 2, N'Trống'),
-('CH013', N'Tầng 3, Block G', 115.0, 3, 2, N'Trống'),
-('CH014', N'Tầng 4, Block G', 130.0, 4, 3, N'Trống'),
-('CH015', N'Tầng 5, Block H', 140.0, 5, 3, N'Trống');
+INSERT INTO CanHo (MaCanHo, ViTri, DienTich, SoPhongNgu, SoPhongTam, TrangThai, CuDanID) VALUES
+('CH001', N'Tầng 1, Block A', 50.0, 1, 1, N'Trống', 0),
+('CH002', N'Tầng 2, Block A', 75.0, 2, 1, N'Trống', 0),
+('CH003', N'Tầng 3, Block B', 100.0, 3, 2, N'Trống', 0),
+('CH004', N'Tầng 4, Block B', 60.0, 2, 1, N'Trống', 0),
+('CH005', N'Tầng 5, Block C', 90.0, 2, 2, N'Trống', 0),
+('CH006', N'Tầng 6, Block C', 120.0, 4, 2, N'Trống', 0),
+('CH007', N'Tầng 1, Block D', 55.0, 1, 1, N'Trống', 0),
+('CH008', N'Tầng 2, Block D', 80.0, 3, 2, N'Trống', 0),
+('CH009', N'Tầng 3, Block E', 85.0, 2, 2, N'Trống', 0),
+('CH010', N'Tầng 4, Block E', 110.0, 3, 2, N'Trống', 0),
+('CH011', N'Tầng 1, Block F', 65.0, 2, 1, N'Trống', 0),
+('CH012', N'Tầng 2, Block F', 95.0, 2, 2, N'Trống', 0),
+('CH013', N'Tầng 3, Block G', 115.0, 3, 2, N'Trống', 0),
+('CH014', N'Tầng 4, Block G', 130.0, 4, 3, N'Trống', 0),
+('CH015', N'Tầng 5, Block H', 140.0, 5, 3, N'Trống', 0);
 GO
 
 EXEC sp_ThemHopDong 'CH001', '2023-01-01', '2024-01-01', 500, N'Thỏa thuận'
