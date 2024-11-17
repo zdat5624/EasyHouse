@@ -210,10 +210,10 @@ namespace DesignEasyHouse1
             //OpenChildForm(new formsPhongBan.formsThongBaoPhongBan());
         }
 
-        private void btnQuanLyDangKy_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new formsPhongBan.PhongAnNinh.formQuanLyDangKyGuiXe());
-        }
+        //private void btnQuanLyDangKy_Click(object sender, EventArgs e)
+        //{
+        //    OpenChildForm(new formsPhongBan.PhongAnNinh.formQuanLyDangKyGuiXe());
+        //}
 
         private void btnThanhToanHoaDonGuiDo_Click(object sender, EventArgs e)
         {

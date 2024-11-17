@@ -47,25 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO\ChoDoXeDAO.cs" />
-    <Compile Include="DAO\DichVuGuiXeDAO.cs" />
     <Compile Include="DAO\DuAnThiCongDAO.cs" />
     <Compile Include="DAO\GiaiDoanThiCongDAO.cs" />
     <Compile Include="DAO\HoaDonGuiDoDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
-    <Compile Include="DAO\PhuongTienDAO.cs" />
     <Compile Include="DAO\ThongBaoDAO.cs" />
     <Compile Include="DAO\ThoThiCongDAO.cs" />
     <Compile Include="DAO\VatTuThiCongDAO.cs" />
     <Compile Include="DAO\YeuCauGuiDoLayDoDAO.cs" />
     <Compile Include="DAO\YeuCauThiCongDAO.cs" />
-    <Compile Include="DTO\ChoDoXe.cs" />
-    <Compile Include="DTO\DichVuGuiXe.cs" />
     <Compile Include="DTO\DuAnThiCong.cs" />
     <Compile Include="DTO\GiaiDoanThiCong.cs" />
     <Compile Include="DTO\HoaDonGuiDo.cs" />
     <Compile Include="DTO\NhanVien.cs" />
-    <Compile Include="DTO\PhuongTien.cs" />
     <Compile Include="DTO\ThoThiCong.cs" />
     <Compile Include="DTO\VatTuThiCong.cs" />
     <Compile Include="DTO\YeuCauGuiDoLayDo.cs" />
@@ -100,12 +94,6 @@
     <Compile Include="formsCuDan\moduleGuiDo\formYeuCauGuiDoLayDo.Designer.cs">
       <DependentUpon>formYeuCauGuiDoLayDo.cs</DependentUpon>
     </Compile>
-    <Compile Include="formsCuDan\moduleGuiXe\formDangKyGuiXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formsCuDan\moduleGuiXe\formDangKyGuiXe.Designer.cs">
-      <DependentUpon>formDangKyGuiXe.cs</DependentUpon>
-    </Compile>
     <Compile Include="formsCuDan\moduleThiCong\formChiTietYeuCauThiCong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,24 +117,6 @@
     </Compile>
     <Compile Include="formsPhongBan\formsThongBaoPhongBan.Designer.cs">
       <DependentUpon>formsThongBaoPhongBan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formsPhongBan\PhongAnNinh\formQuanLyDangKyGuiXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formsPhongBan\PhongAnNinh\formQuanLyDangKyGuiXe.Designer.cs">
-      <DependentUpon>formQuanLyDangKyGuiXe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formsPhongBan\PhongAnNinh\formTheoDoiXeRaVao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formsPhongBan\PhongAnNinh\formTheoDoiXeRaVao.Designer.cs">
-      <DependentUpon>formTheoDoiXeRaVao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formsPhongBan\PhongAnNinh\formThongBaoDangKyLai.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formsPhongBan\PhongAnNinh\formThongBaoDangKyLai.Designer.cs">
-      <DependentUpon>formThongBaoDangKyLai.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formCapNhatGiaiDoan.cs">
       <SubType>Form</SubType>
@@ -588,9 +558,6 @@
     <EmbeddedResource Include="formsCuDan\moduleGuiDo\formYeuCauGuiDoLayDo.resx">
       <DependentUpon>formYeuCauGuiDoLayDo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formsCuDan\moduleGuiXe\formDangKyGuiXe.resx">
-      <DependentUpon>formDangKyGuiXe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formsCuDan\moduleThiCong\formChiTietYeuCauThiCong.resx">
       <DependentUpon>formChiTietYeuCauThiCong.cs</DependentUpon>
     </EmbeddedResource>
@@ -629,15 +596,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formsThongBaoPhongBan.resx">
       <DependentUpon>formsThongBaoPhongBan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formsPhongBan\PhongAnNinh\formQuanLyDangKyGuiXe.resx">
-      <DependentUpon>formQuanLyDangKyGuiXe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formsPhongBan\PhongAnNinh\formTheoDoiXeRaVao.resx">
-      <DependentUpon>formTheoDoiXeRaVao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formsPhongBan\PhongAnNinh\formThongBaoDangKyLai.resx">
-      <DependentUpon>formThongBaoDangKyLai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formQuanLyCuDan.resx">
       <DependentUpon>formQuanLyCuDan.cs</DependentUpon>
@@ -796,6 +754,7 @@
     <None Include="Images\menu-32.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="formsPhongBan\PhongAnNinh\" />
     <Folder Include="formsPhu\" />
   </ItemGroup>
   <ItemGroup>
