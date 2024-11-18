@@ -205,7 +205,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "formYeuCauGuiDoLayDo";
-            this.Text = "Quản lý yêu cầu";
+            this.Text = "Yêu cầu gửi đồ lấy đồ";
             this.Load += new System.EventHandler(this.formYeuCauGuiDoLayDo_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

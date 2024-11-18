@@ -177,9 +177,11 @@ namespace DesignEasyHouse1.formsCuDan.moduleVeSinh
             form.ShowDialog();
         }
 
-        private void panelTieuDe_Paint(object sender, PaintEventArgs e)
-        {
 
+        private void btnGuiYeuCau_Click(object sender, EventArgs e)
+        {
+            formYeuCauVeSinh f = new formYeuCauVeSinh();
+            f.ShowDialog();
         }
     }
  }

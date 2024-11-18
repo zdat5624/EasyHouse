@@ -36,6 +36,7 @@ namespace DesignEasyHouse1
             panelMain.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+            labelTieuDe.Text = childForm.Text;
         }
 
         private void ptbHideMenu_Click(object sender, EventArgs e)
@@ -56,10 +57,7 @@ namespace DesignEasyHouse1
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            if (currentChildForm != null)
-            {
-                currentChildForm.Close();
-            }
+            OpenChildForm(new formsCuDan.formThongBaoCuaCuDan());
         }
 
         private void btnYeuCauSuaChua_Click(object sender, EventArgs e)
@@ -67,49 +65,34 @@ namespace DesignEasyHouse1
             OpenChildForm(new formsCuDan.moduleThiCong.formYeuCauThiCong());
         }
 
-        private void btnTheoDoiYeuCau_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new formsCuDan.formYeuCauDichVuCuDan());
-        }
+        //private void btnTheoDoiYeuCau_Click(object sender, EventArgs e)
+        //{
+        //    OpenChildForm(new formsCuDan.formYeuCauDichVuCuDan());
+        //}
 
-        private void btnPhanHoiDanhGia_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new formsCuDan.formPhanHoiDanhGia());
-        }
+        //private void btnPhanHoiDanhGia_Click(object sender, EventArgs e)
+        //{
+        //    OpenChildForm(new formsCuDan.formPhanHoiDanhGia());
+        //}
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new formsCuDan.moduleVeSinh.formYeuCauVeSinh());
-            //labelTieuDe.Text = "Yêu Cầu Vệ Sinh";
-        }
+        //private void button10_Click(object sender, EventArgs e)
+        //{
+        //    OpenChildForm(new formsCuDan.moduleVeSinh.formYeuCauVeSinh());
+        //    //labelTieuDe.Text = "Yêu Cầu Vệ Sinh";
+        //}
 
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new formsCuDan.moduleVeSinh.tableTheoDoiyeuCauVeSinh());
-            //labelTieuDe.Text = "Theo Dõi Yêu Cầu Vệ Sinh ";
-        }
+        //private void button9_Click(object sender, EventArgs e)
+        //{
+        //    OpenChildForm(new formsCuDan.moduleVeSinh.tableTheoDoiyeuCauVeSinh());
+        //    //labelTieuDe.Text = "Theo Dõi Yêu Cầu Vệ Sinh ";
+        //}
 
-        private void button14_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new formsCuDan.moduleVeSinh.formDanhGiaChatLuong());
-            //labelTieuDe.Text = "Đánh Giá Dịch Vụ Vệ Sinh";
-        }
 
-        private void panelMain_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
 
-        private void labelTieuDe_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void button28_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void FormCuDan_Load(object sender, EventArgs e)
         {
@@ -120,6 +103,8 @@ namespace DesignEasyHouse1
 
             //Hiển thị tên người dùng 
             btnChaoUser.Text = SessionCuDan.TenCuDan;
+
+            OpenChildForm(new formsCuDan.formThongBaoCuaCuDan());
         }
 
         private void button30_Click(object sender, EventArgs e)
@@ -147,21 +132,21 @@ namespace DesignEasyHouse1
             OpenChildForm(new formsCuDan.formThongBaoCuaCuDan());
         }
 
-        private void btnThanhToan_Click(object sender, EventArgs e)
-        {
-            Form ThanhToanForm = new formsCuDan.formsThanhToan();
-            ThanhToanForm.ShowDialog();
-        }
-
-        //private void btnDangKyGuiXe_Click(object sender, EventArgs e)
-        //{
-        //    OpenChildForm(new formsCuDan.moduleGuiXe.formDangKyGuiXe());
-        //}
 
         private void btnYeuCauGuiDoLayDo_Click(object sender, EventArgs e)
         {
             OpenChildForm(new formsCuDan.moduleGuiDo.formYeuCauGuiDoLayDo());
             
+        }
+
+        private void btnYeuCauVeSinh_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsCuDan.moduleVeSinh.tableTheoDoiyeuCauVeSinh());
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsCuDan.moduleThanhToan.formHoaDonCuDan());
         }
     }
 }

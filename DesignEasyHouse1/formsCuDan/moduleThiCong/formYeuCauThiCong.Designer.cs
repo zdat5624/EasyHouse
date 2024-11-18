@@ -205,7 +205,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "formYeuCauThiCong";
-            this.Text = "Quản lý yêu cầu";
+            this.Text = "Yêu cầu thi công sữa chữa";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvYeuCau)).EndInit();

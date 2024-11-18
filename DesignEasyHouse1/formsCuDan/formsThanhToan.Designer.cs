@@ -169,9 +169,9 @@
             this.lblYeuCau.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYeuCau.Location = new System.Drawing.Point(56, 375);
             this.lblYeuCau.Name = "lblYeuCau";
-            this.lblYeuCau.Size = new System.Drawing.Size(230, 23);
+            this.lblYeuCau.Size = new System.Drawing.Size(208, 23);
             this.lblYeuCau.TabIndex = 56;
-            this.lblYeuCau.Text = "Mã yêu cầu chưa thanh toán";
+            this.lblYeuCau.Text = "Hóa đơn chưa thanh toán";
             // 
             // formsThanhToan
             // 
