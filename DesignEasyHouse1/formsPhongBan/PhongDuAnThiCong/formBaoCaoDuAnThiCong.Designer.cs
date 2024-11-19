@@ -1,6 +1,6 @@
-﻿namespace DesignEasyHouse1.formsPhongBan.PhongMoiGioiBatDongSan
+﻿namespace DesignEasyHouse1.formsPhongBan.PhongDuAnThiCong
 {
-    partial class formCanHoChoGiaoDich
+    partial class formBaoCaoDuAnThiCong
     {
         /// <summary>
         /// Required designer variable.
@@ -32,17 +32,24 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.button30 = new System.Windows.Forms.Button();
+            this.btnGuiBaoCao = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dtgvThongTinCuDan = new System.Windows.Forms.DataGridView();
-            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dtgvBaoCao = new System.Windows.Forms.DataGridView();
             this.Details = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.nudDoanhThu = new System.Windows.Forms.NumericUpDown();
+            this.dtpThangNam = new System.Windows.Forms.DateTimePicker();
+            this.nudChiPhi = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinCuDan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvBaoCao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDoanhThu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudChiPhi)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewImageColumn1
@@ -63,30 +70,32 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 125;
             // 
-            // button30
+            // btnGuiBaoCao
             // 
-            this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
-            this.button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button30.FlatAppearance.BorderSize = 0;
-            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button30.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button30.ForeColor = System.Drawing.Color.White;
-            this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button30.Location = new System.Drawing.Point(43, 599);
-            this.button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button30.Name = "button30";
-            this.button30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button30.Size = new System.Drawing.Size(144, 44);
-            this.button30.TabIndex = 31;
-            this.button30.Text = "Thêm căn hộ";
-            this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button30.UseVisualStyleBackColor = false;
+            this.btnGuiBaoCao.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnGuiBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.btnGuiBaoCao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnGuiBaoCao.FlatAppearance.BorderSize = 0;
+            this.btnGuiBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuiBaoCao.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnGuiBaoCao.ForeColor = System.Drawing.Color.White;
+            this.btnGuiBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuiBaoCao.Location = new System.Drawing.Point(873, 572);
+            this.btnGuiBaoCao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGuiBaoCao.Name = "btnGuiBaoCao";
+            this.btnGuiBaoCao.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnGuiBaoCao.Size = new System.Drawing.Size(143, 44);
+            this.btnGuiBaoCao.TabIndex = 31;
+            this.btnGuiBaoCao.Text = "Gửi báo cáo";
+            this.btnGuiBaoCao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGuiBaoCao.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Location = new System.Drawing.Point(43, 12);
+            this.panel2.Location = new System.Drawing.Point(39, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 25);
             this.panel2.TabIndex = 37;
@@ -122,15 +131,15 @@
             this.textBox2.Size = new System.Drawing.Size(214, 31);
             this.textBox2.TabIndex = 32;
             // 
-            // dtgvThongTinCuDan
+            // dtgvBaoCao
             // 
-            this.dtgvThongTinCuDan.AllowUserToAddRows = false;
-            this.dtgvThongTinCuDan.AllowUserToDeleteRows = false;
-            this.dtgvThongTinCuDan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgvThongTinCuDan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvThongTinCuDan.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            this.dtgvThongTinCuDan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgvThongTinCuDan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtgvBaoCao.AllowUserToAddRows = false;
+            this.dtgvBaoCao.AllowUserToDeleteRows = false;
+            this.dtgvBaoCao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtgvBaoCao.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvBaoCao.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dtgvBaoCao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvBaoCao.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,17 +147,16 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvThongTinCuDan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgvThongTinCuDan.ColumnHeadersHeight = 30;
-            this.dtgvThongTinCuDan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgvThongTinCuDan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Delete,
+            this.dtgvBaoCao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvBaoCao.ColumnHeadersHeight = 30;
+            this.dtgvBaoCao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvBaoCao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Details});
-            this.dtgvThongTinCuDan.EnableHeadersVisualStyles = false;
-            this.dtgvThongTinCuDan.Location = new System.Drawing.Point(43, 44);
-            this.dtgvThongTinCuDan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dtgvThongTinCuDan.Name = "dtgvThongTinCuDan";
-            this.dtgvThongTinCuDan.ReadOnly = true;
+            this.dtgvBaoCao.EnableHeadersVisualStyles = false;
+            this.dtgvBaoCao.Location = new System.Drawing.Point(39, 53);
+            this.dtgvBaoCao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtgvBaoCao.Name = "dtgvBaoCao";
+            this.dtgvBaoCao.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -156,23 +164,12 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvThongTinCuDan.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgvThongTinCuDan.RowHeadersVisible = false;
-            this.dtgvThongTinCuDan.RowHeadersWidth = 51;
-            this.dtgvThongTinCuDan.RowTemplate.Height = 24;
-            this.dtgvThongTinCuDan.Size = new System.Drawing.Size(979, 382);
-            this.dtgvThongTinCuDan.TabIndex = 38;
-            // 
-            // Delete
-            // 
-            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Delete.HeaderText = "";
-            this.Delete.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.ReadOnly = true;
-            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Delete.Width = 6;
+            this.dtgvBaoCao.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvBaoCao.RowHeadersVisible = false;
+            this.dtgvBaoCao.RowHeadersWidth = 51;
+            this.dtgvBaoCao.RowTemplate.Height = 24;
+            this.dtgvBaoCao.Size = new System.Drawing.Size(977, 368);
+            this.dtgvBaoCao.TabIndex = 38;
             // 
             // Details
             // 
@@ -203,36 +200,119 @@
             this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
             this.dataGridViewImageColumn4.Width = 125;
             // 
-            // formCanHoChoGiaoDich
+            // nudDoanhThu
+            // 
+            this.nudDoanhThu.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.nudDoanhThu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.nudDoanhThu.Location = new System.Drawing.Point(460, 537);
+            this.nudDoanhThu.Maximum = new decimal(new int[] {
+            1215752191,
+            23,
+            0,
+            0});
+            this.nudDoanhThu.Name = "nudDoanhThu";
+            this.nudDoanhThu.Size = new System.Drawing.Size(275, 30);
+            this.nudDoanhThu.TabIndex = 55;
+            // 
+            // dtpThangNam
+            // 
+            this.dtpThangNam.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.dtpThangNam.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtpThangNam.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpThangNam.Location = new System.Drawing.Point(179, 537);
+            this.dtpThangNam.Name = "dtpThangNam";
+            this.dtpThangNam.Size = new System.Drawing.Size(275, 30);
+            this.dtpThangNam.TabIndex = 53;
+            // 
+            // nudChiPhi
+            // 
+            this.nudChiPhi.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.nudChiPhi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.nudChiPhi.Location = new System.Drawing.Point(741, 537);
+            this.nudChiPhi.Maximum = new decimal(new int[] {
+            1215752191,
+            23,
+            0,
+            0});
+            this.nudChiPhi.Name = "nudChiPhi";
+            this.nudChiPhi.Size = new System.Drawing.Size(275, 30);
+            this.nudChiPhi.TabIndex = 57;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(175, 511);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 23);
+            this.label1.TabIndex = 58;
+            this.label1.Text = "Tháng báo cáo";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(456, 511);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(142, 23);
+            this.label2.TabIndex = 59;
+            this.label2.Text = "Doanh thu tháng";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(737, 511);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 23);
+            this.label3.TabIndex = 60;
+            this.label3.Text = "Chi phí tháng";
+            // 
+            // formBaoCaoDuAnThiCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 559);
-            this.Controls.Add(this.dtgvThongTinCuDan);
+            this.ClientSize = new System.Drawing.Size(1061, 654);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.nudChiPhi);
+            this.Controls.Add(this.nudDoanhThu);
+            this.Controls.Add(this.dtpThangNam);
+            this.Controls.Add(this.dtgvBaoCao);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button30);
+            this.Controls.Add(this.btnGuiBaoCao);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.Name = "formCanHoChoGiaoDich";
+            this.Name = "formBaoCaoDuAnThiCong";
+            this.Text = "Báo cáo";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinCuDan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvBaoCao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDoanhThu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudChiPhi)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
-        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button btnGuiBaoCao;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DataGridView dtgvThongTinCuDan;
-        private System.Windows.Forms.DataGridViewImageColumn Delete;
-        private System.Windows.Forms.DataGridViewImageColumn Details;
+        private System.Windows.Forms.DataGridView dtgvBaoCao;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn4;
+        private System.Windows.Forms.NumericUpDown nudDoanhThu;
+        private System.Windows.Forms.DateTimePicker dtpThangNam;
+        private System.Windows.Forms.NumericUpDown nudChiPhi;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewImageColumn Details;
     }
 }

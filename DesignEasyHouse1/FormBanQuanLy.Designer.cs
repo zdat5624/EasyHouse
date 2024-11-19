@@ -30,17 +30,13 @@
         {
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnBaoCaoTaiChinh = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.btnBaoCaoTaiChinh = new System.Windows.Forms.Button();
-            this.panelMoiGioiBatDongSan = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnCanHoChoGiaoDich = new System.Windows.Forms.Button();
-            this.btnMoiGioiBatDongSan = new System.Windows.Forms.Button();
+            this.btnTaiChinh = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.panelDichVuGuiDo = new System.Windows.Forms.Panel();
+            this.btnBaoCaoGuiDo = new System.Windows.Forms.Button();
             this.btnQuanLyYeuCauGuiDoLayDo = new System.Windows.Forms.Button();
             this.btnQuanLyHoaDonGuiDo = new System.Windows.Forms.Button();
             this.btnThanhToanHoaDonGuiDo = new System.Windows.Forms.Button();
@@ -53,6 +49,7 @@
             this.btnQuanLyDangKy = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panelQuanLyVeSinh = new System.Windows.Forms.Panel();
+            this.btnBaoCaoVeSinh = new System.Windows.Forms.Button();
             this.btnThongBaoTuHeThong = new System.Windows.Forms.Button();
             this.btnCongViecVeSinhNhanVien = new System.Windows.Forms.Button();
             this.btnBaoCao = new System.Windows.Forms.Button();
@@ -62,6 +59,7 @@
             this.btnHieuSuatNhanVien = new System.Windows.Forms.Button();
             this.btnDichVuVeSinh = new System.Windows.Forms.Button();
             this.panelDuAnThiCong = new System.Windows.Forms.Panel();
+            this.btnBaoCaoDuAnThiCong = new System.Windows.Forms.Button();
             this.btnYeuCauThiCong = new System.Windows.Forms.Button();
             this.btnTheoDoiDuAnThiCong = new System.Windows.Forms.Button();
             this.btnQuanLyDuAnThiCong = new System.Windows.Forms.Button();
@@ -80,7 +78,6 @@
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panelMoiGioiBatDongSan.SuspendLayout();
             this.panelDichVuGuiDo.SuspendLayout();
             this.panelDichVuGuiXe.SuspendLayout();
             this.panelQuanLyVeSinh.SuspendLayout();
@@ -95,7 +92,6 @@
             this.panelMenu.AutoScroll = true;
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.panelMenu.Controls.Add(this.panel2);
-            this.panelMenu.Controls.Add(this.panelMoiGioiBatDongSan);
             this.panelMenu.Controls.Add(this.button30);
             this.panelMenu.Controls.Add(this.panelDichVuGuiDo);
             this.panelMenu.Controls.Add(this.panelDichVuGuiXe);
@@ -113,36 +109,37 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.btnBaoCaoTaiChinh);
             this.panel2.Controls.Add(this.button8);
             this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.btnBaoCaoTaiChinh);
+            this.panel2.Controls.Add(this.btnTaiChinh);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 1465);
+            this.panel2.Location = new System.Drawing.Point(0, 1408);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(243, 184);
+            this.panel2.Size = new System.Drawing.Size(243, 215);
             this.panel2.TabIndex = 43;
             this.panel2.Visible = false;
             // 
-            // button6
+            // btnBaoCaoTaiChinh
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 126);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(243, 39);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Quản lý yêu cầu";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnBaoCaoTaiChinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnBaoCaoTaiChinh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBaoCaoTaiChinh.FlatAppearance.BorderSize = 0;
+            this.btnBaoCaoTaiChinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCaoTaiChinh.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btnBaoCaoTaiChinh.ForeColor = System.Drawing.Color.White;
+            this.btnBaoCaoTaiChinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCaoTaiChinh.Location = new System.Drawing.Point(0, 126);
+            this.btnBaoCaoTaiChinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBaoCaoTaiChinh.Name = "btnBaoCaoTaiChinh";
+            this.btnBaoCaoTaiChinh.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
+            this.btnBaoCaoTaiChinh.Size = new System.Drawing.Size(243, 39);
+            this.btnBaoCaoTaiChinh.TabIndex = 20;
+            this.btnBaoCaoTaiChinh.Text = "Báo cáo";
+            this.btnBaoCaoTaiChinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCaoTaiChinh.UseVisualStyleBackColor = false;
+            this.btnBaoCaoTaiChinh.Click += new System.EventHandler(this.btnBaoCaoTaiChinh_Click);
             // 
             // button8
             // 
@@ -182,115 +179,24 @@
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button9.UseVisualStyleBackColor = false;
             // 
-            // btnBaoCaoTaiChinh
+            // btnTaiChinh
             // 
-            this.btnBaoCaoTaiChinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnBaoCaoTaiChinh.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBaoCaoTaiChinh.FlatAppearance.BorderSize = 0;
-            this.btnBaoCaoTaiChinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaoCaoTaiChinh.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaoCaoTaiChinh.ForeColor = System.Drawing.Color.White;
-            this.btnBaoCaoTaiChinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBaoCaoTaiChinh.Location = new System.Drawing.Point(0, 0);
-            this.btnBaoCaoTaiChinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBaoCaoTaiChinh.Name = "btnBaoCaoTaiChinh";
-            this.btnBaoCaoTaiChinh.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnBaoCaoTaiChinh.Size = new System.Drawing.Size(243, 48);
-            this.btnBaoCaoTaiChinh.TabIndex = 6;
-            this.btnBaoCaoTaiChinh.Text = "BÁO CÁO TÀI CHÍNH";
-            this.btnBaoCaoTaiChinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBaoCaoTaiChinh.UseVisualStyleBackColor = false;
-            // 
-            // panelMoiGioiBatDongSan
-            // 
-            this.panelMoiGioiBatDongSan.Controls.Add(this.button1);
-            this.panelMoiGioiBatDongSan.Controls.Add(this.button2);
-            this.panelMoiGioiBatDongSan.Controls.Add(this.btnCanHoChoGiaoDich);
-            this.panelMoiGioiBatDongSan.Controls.Add(this.btnMoiGioiBatDongSan);
-            this.panelMoiGioiBatDongSan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMoiGioiBatDongSan.Location = new System.Drawing.Point(0, 1281);
-            this.panelMoiGioiBatDongSan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelMoiGioiBatDongSan.Name = "panelMoiGioiBatDongSan";
-            this.panelMoiGioiBatDongSan.Size = new System.Drawing.Size(243, 184);
-            this.panelMoiGioiBatDongSan.TabIndex = 41;
-            this.panelMoiGioiBatDongSan.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 126);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(243, 39);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Quản lý yêu cầu";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 87);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(243, 39);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Quản lý hóa đơn";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // btnCanHoChoGiaoDich
-            // 
-            this.btnCanHoChoGiaoDich.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnCanHoChoGiaoDich.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCanHoChoGiaoDich.FlatAppearance.BorderSize = 0;
-            this.btnCanHoChoGiaoDich.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCanHoChoGiaoDich.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCanHoChoGiaoDich.ForeColor = System.Drawing.Color.White;
-            this.btnCanHoChoGiaoDich.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCanHoChoGiaoDich.Location = new System.Drawing.Point(0, 48);
-            this.btnCanHoChoGiaoDich.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCanHoChoGiaoDich.Name = "btnCanHoChoGiaoDich";
-            this.btnCanHoChoGiaoDich.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.btnCanHoChoGiaoDich.Size = new System.Drawing.Size(243, 39);
-            this.btnCanHoChoGiaoDich.TabIndex = 11;
-            this.btnCanHoChoGiaoDich.Text = "Căn hộ chờ giao dịch";
-            this.btnCanHoChoGiaoDich.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCanHoChoGiaoDich.UseVisualStyleBackColor = false;
-            this.btnCanHoChoGiaoDich.Click += new System.EventHandler(this.btnCanHoChoGiaoDich_Click);
-            // 
-            // btnMoiGioiBatDongSan
-            // 
-            this.btnMoiGioiBatDongSan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            this.btnMoiGioiBatDongSan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMoiGioiBatDongSan.FlatAppearance.BorderSize = 0;
-            this.btnMoiGioiBatDongSan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMoiGioiBatDongSan.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMoiGioiBatDongSan.ForeColor = System.Drawing.Color.White;
-            this.btnMoiGioiBatDongSan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMoiGioiBatDongSan.Location = new System.Drawing.Point(0, 0);
-            this.btnMoiGioiBatDongSan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMoiGioiBatDongSan.Name = "btnMoiGioiBatDongSan";
-            this.btnMoiGioiBatDongSan.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnMoiGioiBatDongSan.Size = new System.Drawing.Size(243, 48);
-            this.btnMoiGioiBatDongSan.TabIndex = 6;
-            this.btnMoiGioiBatDongSan.Text = "MÔI GIỚI BĐS";
-            this.btnMoiGioiBatDongSan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMoiGioiBatDongSan.UseVisualStyleBackColor = false;
+            this.btnTaiChinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnTaiChinh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTaiChinh.FlatAppearance.BorderSize = 0;
+            this.btnTaiChinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaiChinh.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiChinh.ForeColor = System.Drawing.Color.White;
+            this.btnTaiChinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaiChinh.Location = new System.Drawing.Point(0, 0);
+            this.btnTaiChinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTaiChinh.Name = "btnTaiChinh";
+            this.btnTaiChinh.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnTaiChinh.Size = new System.Drawing.Size(243, 48);
+            this.btnTaiChinh.TabIndex = 6;
+            this.btnTaiChinh.Text = "TÀI CHÍNH";
+            this.btnTaiChinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaiChinh.UseVisualStyleBackColor = false;
             // 
             // button30
             // 
@@ -303,7 +209,7 @@
             this.button30.ForeColor = System.Drawing.Color.White;
             this.button30.Image = global::DesignEasyHouse1.Properties.Resources.icons8_logout_38;
             this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button30.Location = new System.Drawing.Point(0, 1649);
+            this.button30.Location = new System.Drawing.Point(0, 1623);
             this.button30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button30.Name = "button30";
             this.button30.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
@@ -316,17 +222,38 @@
             // 
             // panelDichVuGuiDo
             // 
+            this.panelDichVuGuiDo.Controls.Add(this.btnBaoCaoGuiDo);
             this.panelDichVuGuiDo.Controls.Add(this.btnQuanLyYeuCauGuiDoLayDo);
             this.panelDichVuGuiDo.Controls.Add(this.btnQuanLyHoaDonGuiDo);
             this.panelDichVuGuiDo.Controls.Add(this.btnThanhToanHoaDonGuiDo);
             this.panelDichVuGuiDo.Controls.Add(this.btnDichVuGuiDo);
             this.panelDichVuGuiDo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDichVuGuiDo.Location = new System.Drawing.Point(0, 1097);
+            this.panelDichVuGuiDo.Location = new System.Drawing.Point(0, 1184);
             this.panelDichVuGuiDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDichVuGuiDo.Name = "panelDichVuGuiDo";
-            this.panelDichVuGuiDo.Size = new System.Drawing.Size(243, 184);
+            this.panelDichVuGuiDo.Size = new System.Drawing.Size(243, 224);
             this.panelDichVuGuiDo.TabIndex = 39;
             this.panelDichVuGuiDo.Visible = false;
+            // 
+            // btnBaoCaoGuiDo
+            // 
+            this.btnBaoCaoGuiDo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnBaoCaoGuiDo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBaoCaoGuiDo.FlatAppearance.BorderSize = 0;
+            this.btnBaoCaoGuiDo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCaoGuiDo.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btnBaoCaoGuiDo.ForeColor = System.Drawing.Color.White;
+            this.btnBaoCaoGuiDo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCaoGuiDo.Location = new System.Drawing.Point(0, 165);
+            this.btnBaoCaoGuiDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBaoCaoGuiDo.Name = "btnBaoCaoGuiDo";
+            this.btnBaoCaoGuiDo.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
+            this.btnBaoCaoGuiDo.Size = new System.Drawing.Size(243, 39);
+            this.btnBaoCaoGuiDo.TabIndex = 20;
+            this.btnBaoCaoGuiDo.Text = "Báo cáo";
+            this.btnBaoCaoGuiDo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCaoGuiDo.UseVisualStyleBackColor = false;
+            this.btnBaoCaoGuiDo.Click += new System.EventHandler(this.btnBaoCaoGuiDo_Click);
             // 
             // btnQuanLyYeuCauGuiDoLayDo
             // 
@@ -416,10 +343,10 @@
             this.panelDichVuGuiXe.Controls.Add(this.btnQuanLyDangKy);
             this.panelDichVuGuiXe.Controls.Add(this.button3);
             this.panelDichVuGuiXe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDichVuGuiXe.Location = new System.Drawing.Point(0, 841);
+            this.panelDichVuGuiXe.Location = new System.Drawing.Point(0, 926);
             this.panelDichVuGuiXe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDichVuGuiXe.Name = "panelDichVuGuiXe";
-            this.panelDichVuGuiXe.Size = new System.Drawing.Size(243, 256);
+            this.panelDichVuGuiXe.Size = new System.Drawing.Size(243, 258);
             this.panelDichVuGuiXe.TabIndex = 38;
             this.panelDichVuGuiXe.Visible = false;
             // 
@@ -437,10 +364,11 @@
             this.btnBaoCaoGuiXe.Name = "btnBaoCaoGuiXe";
             this.btnBaoCaoGuiXe.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
             this.btnBaoCaoGuiXe.Size = new System.Drawing.Size(243, 39);
-            this.btnBaoCaoGuiXe.TabIndex = 15;
-            this.btnBaoCaoGuiXe.Text = "Báo cáo gửi xe";
+            this.btnBaoCaoGuiXe.TabIndex = 19;
+            this.btnBaoCaoGuiXe.Text = "Báo cáo";
             this.btnBaoCaoGuiXe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBaoCaoGuiXe.UseVisualStyleBackColor = false;
+            this.btnBaoCaoGuiXe.Click += new System.EventHandler(this.btnBaoCaoGuiXe_Click);
             // 
             // btnThanhToanPhiGuiXe
             // 
@@ -533,12 +461,13 @@
             this.button3.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
             this.button3.Size = new System.Drawing.Size(243, 48);
             this.button3.TabIndex = 6;
-            this.button3.Text = "DỊCH VỤ GỬI XE";
+            this.button3.Text = "AN NINH";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
             // 
             // panelQuanLyVeSinh
             // 
+            this.panelQuanLyVeSinh.Controls.Add(this.btnBaoCaoVeSinh);
             this.panelQuanLyVeSinh.Controls.Add(this.btnThongBaoTuHeThong);
             this.panelQuanLyVeSinh.Controls.Add(this.btnCongViecVeSinhNhanVien);
             this.panelQuanLyVeSinh.Controls.Add(this.btnBaoCao);
@@ -549,12 +478,32 @@
             this.panelQuanLyVeSinh.Controls.Add(this.btnDichVuVeSinh);
             this.panelQuanLyVeSinh.Cursor = System.Windows.Forms.Cursors.Default;
             this.panelQuanLyVeSinh.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelQuanLyVeSinh.Location = new System.Drawing.Point(0, 512);
+            this.panelQuanLyVeSinh.Location = new System.Drawing.Point(0, 555);
             this.panelQuanLyVeSinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelQuanLyVeSinh.Name = "panelQuanLyVeSinh";
-            this.panelQuanLyVeSinh.Size = new System.Drawing.Size(243, 329);
+            this.panelQuanLyVeSinh.Size = new System.Drawing.Size(243, 371);
             this.panelQuanLyVeSinh.TabIndex = 35;
             this.panelQuanLyVeSinh.Visible = false;
+            // 
+            // btnBaoCaoVeSinh
+            // 
+            this.btnBaoCaoVeSinh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnBaoCaoVeSinh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBaoCaoVeSinh.FlatAppearance.BorderSize = 0;
+            this.btnBaoCaoVeSinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCaoVeSinh.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btnBaoCaoVeSinh.ForeColor = System.Drawing.Color.White;
+            this.btnBaoCaoVeSinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCaoVeSinh.Location = new System.Drawing.Point(0, 311);
+            this.btnBaoCaoVeSinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBaoCaoVeSinh.Name = "btnBaoCaoVeSinh";
+            this.btnBaoCaoVeSinh.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
+            this.btnBaoCaoVeSinh.Size = new System.Drawing.Size(243, 39);
+            this.btnBaoCaoVeSinh.TabIndex = 18;
+            this.btnBaoCaoVeSinh.Text = "Báo cáo";
+            this.btnBaoCaoVeSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCaoVeSinh.UseVisualStyleBackColor = false;
+            this.btnBaoCaoVeSinh.Click += new System.EventHandler(this.btnBaoCaoVeSinh_Click);
             // 
             // btnThongBaoTuHeThong
             // 
@@ -616,6 +565,7 @@
             this.btnBaoCao.Text = "Báo Cáo Tổng Quan";
             this.btnBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBaoCao.UseVisualStyleBackColor = false;
+            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
             // 
             // btnPhanHoi
             // 
@@ -635,6 +585,7 @@
             this.btnPhanHoi.Text = "Phản Hồi Từ Cư Dân";
             this.btnPhanHoi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPhanHoi.UseVisualStyleBackColor = false;
+            this.btnPhanHoi.Click += new System.EventHandler(this.btnPhanHoi_Click);
             // 
             // btnYeuCauVeSinh
             // 
@@ -674,6 +625,7 @@
             this.btnKeHoachVeSinh.Text = "Kế Hoạch Vệ Sinh";
             this.btnKeHoachVeSinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKeHoachVeSinh.UseVisualStyleBackColor = false;
+            this.btnKeHoachVeSinh.Click += new System.EventHandler(this.btnKeHoachVeSinh_Click);
             // 
             // btnHieuSuatNhanVien
             // 
@@ -693,6 +645,7 @@
             this.btnHieuSuatNhanVien.Text = "Hiệu Suất Nhân Viên";
             this.btnHieuSuatNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHieuSuatNhanVien.UseVisualStyleBackColor = false;
+            this.btnHieuSuatNhanVien.Click += new System.EventHandler(this.btnHieuSuatNhanVien_Click);
             // 
             // btnDichVuVeSinh
             // 
@@ -715,6 +668,7 @@
             // 
             // panelDuAnThiCong
             // 
+            this.panelDuAnThiCong.Controls.Add(this.btnBaoCaoDuAnThiCong);
             this.panelDuAnThiCong.Controls.Add(this.btnYeuCauThiCong);
             this.panelDuAnThiCong.Controls.Add(this.btnTheoDoiDuAnThiCong);
             this.panelDuAnThiCong.Controls.Add(this.btnQuanLyDuAnThiCong);
@@ -723,9 +677,29 @@
             this.panelDuAnThiCong.Location = new System.Drawing.Point(0, 328);
             this.panelDuAnThiCong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelDuAnThiCong.Name = "panelDuAnThiCong";
-            this.panelDuAnThiCong.Size = new System.Drawing.Size(243, 184);
+            this.panelDuAnThiCong.Size = new System.Drawing.Size(243, 227);
             this.panelDuAnThiCong.TabIndex = 36;
             this.panelDuAnThiCong.Visible = false;
+            // 
+            // btnBaoCaoDuAnThiCong
+            // 
+            this.btnBaoCaoDuAnThiCong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            this.btnBaoCaoDuAnThiCong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBaoCaoDuAnThiCong.FlatAppearance.BorderSize = 0;
+            this.btnBaoCaoDuAnThiCong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCaoDuAnThiCong.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btnBaoCaoDuAnThiCong.ForeColor = System.Drawing.Color.White;
+            this.btnBaoCaoDuAnThiCong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCaoDuAnThiCong.Location = new System.Drawing.Point(0, 165);
+            this.btnBaoCaoDuAnThiCong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBaoCaoDuAnThiCong.Name = "btnBaoCaoDuAnThiCong";
+            this.btnBaoCaoDuAnThiCong.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
+            this.btnBaoCaoDuAnThiCong.Size = new System.Drawing.Size(243, 39);
+            this.btnBaoCaoDuAnThiCong.TabIndex = 14;
+            this.btnBaoCaoDuAnThiCong.Text = "Báo cáo";
+            this.btnBaoCaoDuAnThiCong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCaoDuAnThiCong.UseVisualStyleBackColor = false;
+            this.btnBaoCaoDuAnThiCong.Click += new System.EventHandler(this.btnBaoCaoDuAnThiCong_Click);
             // 
             // btnYeuCauThiCong
             // 
@@ -1004,7 +978,6 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(888, 711);
             this.panelMain.TabIndex = 3;
-            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
             // FormBanQuanLy
             // 
@@ -1022,7 +995,6 @@
             this.Load += new System.EventHandler(this.FormBanQuanLy_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panelMoiGioiBatDongSan.ResumeLayout(false);
             this.panelDichVuGuiDo.ResumeLayout(false);
             this.panelDichVuGuiXe.ResumeLayout(false);
             this.panelQuanLyVeSinh.ResumeLayout(false);
@@ -1064,7 +1036,6 @@
         private System.Windows.Forms.Button btnQuanLyDuAnThiCong;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panelDichVuGuiXe;
-        private System.Windows.Forms.Button btnBaoCaoGuiXe;
         private System.Windows.Forms.Button btnThanhToanPhiGuiXe;
         private System.Windows.Forms.Button btnQuanLyChoDoXe;
         private System.Windows.Forms.Button btnTheoDoiRaVao;
@@ -1077,15 +1048,14 @@
         private System.Windows.Forms.Button btnDichVuGuiDo;
         private System.Windows.Forms.Button btnQuanLyYeuCauGuiDoLayDo;
         private System.Windows.Forms.Button btnYeuCauThiCong;
-        private System.Windows.Forms.Panel panelMoiGioiBatDongSan;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnCanHoChoGiaoDich;
-        private System.Windows.Forms.Button btnMoiGioiBatDongSan;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnTaiChinh;
+        private System.Windows.Forms.Button btnBaoCaoDuAnThiCong;
+        private System.Windows.Forms.Button btnBaoCaoGuiXe;
+        private System.Windows.Forms.Button btnBaoCaoVeSinh;
         private System.Windows.Forms.Button btnBaoCaoTaiChinh;
+        private System.Windows.Forms.Button btnBaoCaoGuiDo;
     }
 }

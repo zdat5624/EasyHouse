@@ -50,27 +50,6 @@ CREATE TABLE NhanVien (
     UserId INT                         -- ID người dùng, có thể là khóa ngoại tham chiếu đến bảng users
 );
 
---Thêm nhân viên
-INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
-VALUES 
-    ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '1', '1', '2020-01-01', 10000000, N'Vệ Sinh');
-
-INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
-VALUES 
-    ('Nguyen Van B', 'Quản lý', '1985-05-10', 'Hà Nội', 'qlcudan', 'qlcudan', '2020-01-01', 10000000, N'Quản lý cư dân');
-
-
-INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
-VALUES 
-    ('Nguyen Van c', 'Quản lý', '1985-05-10', 'Hà Nội', 'thicong', 'thicong', '2020-01-01', 10000000, N'Quản lý dự án thi công');
-
-INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
-VALUES 
-    ('Nguyen Van c', 'Quản lý', '1985-05-10', 'Hà Nội', 'vesinh', 'vesinh', '2020-01-01', 10000000, N'Vệ sinh');
-
-INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
-VALUES 
-    ('Nguyen Van dat', 'Quản lý', '1985-05-10', 'Hà Nội', '5', '5', '2020-01-01', 10000000, N'Môi giới bất động sản');
 
 
 CREATE TABLE ThongBao (
@@ -518,7 +497,6 @@ CREATE TABLE DoanhThu (
     loaiDv NVARCHAR(100),               -- Loại dịch vụ
     SoTien DECIMAL(15, 2),             -- Số tiền doanh thu
     thoiGian DATETIME,                 -- Thời gian phát sinh doanh thu
-    --CONSTRAINT FK_YeuCau FOREIGN KEY (YeuCauID) REFERENCES YeuCau(YeuCauID)  -- Khóa ngoại tham chiếu đến bảng YeuCau
 );
 GO 
 
@@ -580,6 +558,23 @@ INSERT INTO NhanVien(Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenD
 VALUES 
 ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '4', '4', '2020-01-01', 10000000, N'Quản lý gửi đồ');
 
+--Thêm nhân viên
+INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+    ('Nguyen Van A', 'Quản lý', '1985-05-10', 'Hà Nội', '1', '1', '2020-01-01', 10000000, N'Vệ Sinh');
+
+INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+    ('Nguyen Van B', 'Quản lý', '1985-05-10', 'Hà Nội', 'qlcudan', 'qlcudan', '2020-01-01', 10000000, N'Quản lý cư dân');
+
+
+INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+    ('Nguyen Van c', 'Quản lý', '1985-05-10', 'Hà Nội', 'thicong', 'thicong', '2020-01-01', 10000000, N'Quản lý dự án thi công');
+
+INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+    ('Nguyen Van c', 'Quản lý', '1985-05-10', 'Hà Nội', 'vesinh', 'vesinh', '2020-01-01', 10000000, N'Vệ sinh');
 
 GO
 
@@ -674,46 +669,16 @@ CREATE TABLE YeuCauGuiDoLayDo (
 )
 GO
 
-CREATE TABLE CanHoChoGiaoDich (
-    ID INT IDENTITY(1,1) PRIMARY KEY,
-    MaCanHo NVARCHAR(50), -- Liên kết với bảng CanHo
-    GiaTriGiaoDichMongMuon FLOAT,                   -- Giá trị giao dịch
-	GhiChu NVARCHAR(255),
-);
-
-CREATE TABLE FileTaiLieuGiaoDich (
-	ID INT IDENTITY(1,1) PRIMARY KEY,
-	CanHoChoGiaoDichID INT,
-	FileTaiLieu VARBINARY(MAX) DEFAULT NULL -- Lưu trực tiếp file zip/rar dưới dạng nhị phân
-)
-
-
-CREATE TABLE HopDongGiaoDich (
-    HopDongID INT IDENTITY(1,1) PRIMARY KEY,     -- Mã hợp đồng
-    MaCanHo NVARCHAR(50), --  Liên kết với bảng CanHo
-	MoiGioiID INT,
-    TenKhachHang NVARCHAR(100),             -- Tên khách hàng
-	CuDanID INT, -- Nếu chủ hợp đồng là tòa nhà thì CuDanID=0, nếu chủ hợp đồng là cư dân thì ID = CuDanID
-    GiaTriGiaoDich FLOAT,                   -- Giá trị giao dịch
-	ChiPhi FLOAT,
-	LoiNhuan FLOAT,
-    TienDo NVARCHAR(50) DEFAULT N'Đang đàm phán' -- Tiến độ giao dịch ('Đang đàm phán', 'Hoàn thành')
+CREATE TABLE BaoCaoDoanhThuChiPhi (
+    BaoCaoID INT PRIMARY KEY IDENTITY(1,1),
+    PhanLoai NVARCHAR(50), -- 'Dự án thi công', 'Gửi đồ', 'Vệ sinh', 'Gửi xe', 'Tài chính'
+    ThangNam DATE,
+    DoanhThu FLOAT,
+    ChiPhi FLOAT,
+	NgayTao DATETIME DEFAULT GETDATE(),
+    FilePDF VARBINARY(MAX) DEFAULT NULL
 );
 GO
-
-CREATE TABLE MoiGioi (
-    MoiGioiID INT IDENTITY(1,1) PRIMARY KEY, -- Mã môi giới
-    TenMoiGioi NVARCHAR(100),                -- Tên người môi giới hoặc công ty
-	PhanLoai NVARCHAR(50),					-- 'Môi giới của tòa nhà' hoặc 'Môi giới của cư dân'
-    SoGiayPhep NVARCHAR(50),                 -- Số giấy phép hành nghề
-    ThongTinLienHe NVARCHAR(255),             -- Thông tin liên hệ
-	TrangThai NVARCHAR(50),						-- 'Đang hợp tác' hoặc 'Ngưng hợp tác'
-	NgayKetThucHopTac DATE
-);
-GO
-
-
-
 
 CREATE PROCEDURE sp_ThemGiaiDoanThiCong
     @DuAnThiCongID INT,

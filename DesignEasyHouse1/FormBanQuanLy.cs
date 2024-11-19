@@ -77,7 +77,7 @@ namespace DesignEasyHouse1
 
         private void btnYeuCauCuDan_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new formsPhongBan.formQuanLyYeuCauTuCuDan());
+            //OpenChildForm(new formsPhongBan.formQuanLyYeuCauTuCuDan());
         }
 
         private void btnHopDongThue_Click(object sender, EventArgs e)
@@ -116,8 +116,8 @@ namespace DesignEasyHouse1
                 case "Gửi xe":
                     showGuiXeModule();
                     break;
-                case "Môi giới bất động sản":
-                    showMoiGioiBatDongSanModule();
+                case "Tài chính":
+                    showGuiXeModule();
                     break;
             }
             
@@ -155,10 +155,6 @@ namespace DesignEasyHouse1
         {
             panelDichVuGuiDo.Visible = true;    
         }
-        private void showMoiGioiBatDongSanModule()
-        {
-            panelMoiGioiBatDongSan.Visible = true;
-        }
 
         private void showGuiXeModule()
         {
@@ -195,11 +191,6 @@ namespace DesignEasyHouse1
             OpenChildForm(new formsPhongBan.PhongVeSinh.tableNhanYeuCau());
         }
 
-        private void panelMain_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnCongViecVeSinhNhanVien_Click(object sender, EventArgs e)
         {
             OpenChildForm(new formsPhongBan.PhongVeSinh.formXemKeHoachVeSinh());
@@ -210,10 +201,6 @@ namespace DesignEasyHouse1
             //OpenChildForm(new formsPhongBan.formsThongBaoPhongBan());
         }
 
-        //private void btnQuanLyDangKy_Click(object sender, EventArgs e)
-        //{
-        //    OpenChildForm(new formsPhongBan.PhongAnNinh.formQuanLyDangKyGuiXe());
-        //}
 
         private void btnThanhToanHoaDonGuiDo_Click(object sender, EventArgs e)
         {
@@ -236,9 +223,51 @@ namespace DesignEasyHouse1
             OpenChildForm(new formsPhongBan.PhongDuAnThiCong.formQuanLyYeuCauThiCong());
         }
 
-        private void btnCanHoChoGiaoDich_Click(object sender, EventArgs e)
+
+
+        private void btnBaoCaoDuAnThiCong_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new formsPhongBan.PhongMoiGioiBatDongSan.formCanHoChoGiaoDich());
+            OpenChildForm(new formsPhongBan.PhongDuAnThiCong.formBaoCaoDuAnThiCong());
+        }
+
+        private void btnHieuSuatNhanVien_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnKeHoachVeSinh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPhanHoi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBaoCaoGuiDo_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongGuiDo.formBaoCaoGuiDo());
+        }
+
+        private void btnBaoCaoVeSinh_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongVeSinh.formBaoCaoVeSinh());
+        }
+
+        private void btnBaoCaoGuiXe_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongAnNinh.formBaoCaoGuiXe());
+        }
+
+        private void btnBaoCaoTaiChinh_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongTaiChinh.formBaoCaoTaiChinh());
         }
 
         //private void panelMain_Paint(object sender, PaintEventArgs e)

@@ -204,6 +204,22 @@ namespace DesignEasyHouse1.DAO
             return null;
         }
 
+        public DataTable GetThongTinDuAnHoanThanhTrongThang(int thang, int nam)
+        {
+            // Câu truy vấn chỉ lấy tên dự án, tên nhà thầu và ngày kết thúc
+            string query = "SELECT TenDuAn, TenNhaThau, NgayKetThuc " +
+                           "FROM DuAnThiCong " +
+                           "WHERE TrangThai = N'Hoàn thành' " +
+                           "AND MONTH(NgayKetThuc) = @Thang " +
+                           "AND YEAR(NgayKetThuc) = @Nam ";
+
+            // Tham số tháng và năm
+            object[] parameters = new object[] { thang, nam };
+
+            return DataProvider.Instance.ExecuteQuery(query, parameters);
+        }
+
+
 
     }
 }

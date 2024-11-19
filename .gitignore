@@ -1,3 +1,10 @@
+# Bỏ qua thư mục chứa gói NuGet cục bộ
+packages/
+*.nupkg
+
+# Bỏ qua cấu hình tạm thời
+project.lock.json
+
 # Thư mục chứa file build và output
 bin/
 obj/

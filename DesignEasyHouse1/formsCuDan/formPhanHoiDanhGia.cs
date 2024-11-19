@@ -33,8 +33,8 @@ namespace DesignEasyHouse1.formsCuDan
         }
         private void btnGuiPhanHoi_Click(object sender, EventArgs e)
         {
-            formsPhongBan.formPhanHoiYeuCau f = new formsPhongBan.formPhanHoiYeuCau();
-            f.ShowDialog();
+            //formsPhongBan.formPhanHoiYeuCau f = new formsPhongBan.formPhanHoiYeuCau();
+            //f.ShowDialog();
         }
         private void formPhanHoiDanhGia_Load(object sender, EventArgs e)
         {

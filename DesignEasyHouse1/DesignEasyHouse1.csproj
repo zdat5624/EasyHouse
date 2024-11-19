@@ -33,6 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
@@ -47,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\BaoCaoDoanhThuChiPhiDAO.cs" />
     <Compile Include="DAO\DuAnThiCongDAO.cs" />
     <Compile Include="DAO\GiaiDoanThiCongDAO.cs" />
     <Compile Include="DAO\HoaDonGuiDoDAO.cs" />
@@ -56,6 +75,7 @@
     <Compile Include="DAO\VatTuThiCongDAO.cs" />
     <Compile Include="DAO\YeuCauGuiDoLayDoDAO.cs" />
     <Compile Include="DAO\YeuCauThiCongDAO.cs" />
+    <Compile Include="DTO\BaoCaoDoanhThuChiPhi.cs" />
     <Compile Include="DTO\DuAnThiCong.cs" />
     <Compile Include="DTO\GiaiDoanThiCong.cs" />
     <Compile Include="DTO\HoaDonGuiDo.cs" />
@@ -123,6 +143,24 @@
     </Compile>
     <Compile Include="formsPhongBan\formsThongBaoPhongBan.Designer.cs">
       <DependentUpon>formsThongBaoPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\formXemBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\formXemBaoCao.Designer.cs">
+      <DependentUpon>formXemBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongAnNinh\formBaoCaoGuiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongAnNinh\formBaoCaoGuiXe.Designer.cs">
+      <DependentUpon>formBaoCaoGuiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formBaoCaoDuAnThiCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongDuAnThiCong\formBaoCaoDuAnThiCong.Designer.cs">
+      <DependentUpon>formBaoCaoDuAnThiCong.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formCapNhatGiaiDoan.cs">
       <SubType>Form</SubType>
@@ -214,6 +252,12 @@
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formXemChiTietYeuCau.Designer.cs">
       <DependentUpon>formXemChiTietYeuCau.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formBaoCaoGuiDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongGuiDo\formBaoCaoGuiDo.Designer.cs">
+      <DependentUpon>formBaoCaoGuiDo.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsPhongBan\PhongGuiDo\formChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,11 +294,17 @@
     <Compile Include="formsPhongBan\PhongGuiDo\formXemChiTiet.Designer.cs">
       <DependentUpon>formXemChiTiet.cs</DependentUpon>
     </Compile>
-    <Compile Include="formsPhongBan\PhongMoiGioiBatDongSan\formCanHoChoGiaoDich.cs">
+    <Compile Include="formsPhongBan\PhongTaiChinh\formBaoCaoTaiChinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formsPhongBan\PhongMoiGioiBatDongSan\formCanHoChoGiaoDich.Designer.cs">
-      <DependentUpon>formCanHoChoGiaoDich.cs</DependentUpon>
+    <Compile Include="formsPhongBan\PhongTaiChinh\formBaoCaoTaiChinh.Designer.cs">
+      <DependentUpon>formBaoCaoTaiChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\formBaoCaoVeSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongVeSinh\formBaoCaoVeSinh.Designer.cs">
+      <DependentUpon>formBaoCaoVeSinh.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\PhongVeSinh\formXemKeHoachVeSinh.cs">
       <SubType>Form</SubType>
@@ -364,29 +414,11 @@
     <Compile Include="formsGiamDoc\moduleVeSinh\tableDoanhThu.Designer.cs">
       <DependentUpon>tableDoanhThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="formsPhongBan\formPhanHoiYeuCau.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formsPhongBan\formPhanHoiYeuCau.Designer.cs">
-      <DependentUpon>formPhanHoiYeuCau.cs</DependentUpon>
-    </Compile>
     <Compile Include="formsPhongBan\PhongCuDan\formQuanLyCuDan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formsPhongBan\PhongCuDan\formQuanLyCuDan.Designer.cs">
       <DependentUpon>formQuanLyCuDan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formsPhongBan\formQuanLyThongBaoDenCuDan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formsPhongBan\formQuanLyThongBaoDenCuDan.Designer.cs">
-      <DependentUpon>formQuanLyThongBaoDenCuDan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formsPhongBan\formQuanLyYeuCauTuCuDan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formsPhongBan\formQuanLyYeuCauTuCuDan.Designer.cs">
-      <DependentUpon>formQuanLyYeuCauTuCuDan.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\PhongCuDan\formQuanLyHopDongThueCanHo.cs">
       <SubType>Form</SubType>
@@ -507,6 +539,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="FormBanQuanLy.resx">
       <DependentUpon>FormBanQuanLy.cs</DependentUpon>
     </EmbeddedResource>
@@ -573,20 +606,17 @@
     <EmbeddedResource Include="formsGiamDoc\QuanLyNhanVien\ThemNhanVien.resx">
       <DependentUpon>ThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formsPhongBan\formPhanHoiYeuCau.resx">
-      <DependentUpon>formPhanHoiYeuCau.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formsThongBaoPhongBan.resx">
       <DependentUpon>formsThongBaoPhongBan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\formXemBaoCao.resx">
+      <DependentUpon>formXemBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongAnNinh\formBaoCaoGuiXe.resx">
+      <DependentUpon>formBaoCaoGuiXe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formQuanLyCuDan.resx">
       <DependentUpon>formQuanLyCuDan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formsPhongBan\formQuanLyThongBaoDenCuDan.resx">
-      <DependentUpon>formQuanLyThongBaoDenCuDan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formsPhongBan\formQuanLyYeuCauTuCuDan.resx">
-      <DependentUpon>formQuanLyYeuCauTuCuDan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formQuanLyHopDongThueCanHo.resx">
       <DependentUpon>formQuanLyHopDongThueCanHo.cs</DependentUpon>
@@ -605,6 +635,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formXemChiTietThongTinCuDan.resx">
       <DependentUpon>formXemChiTietThongTinCuDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formBaoCaoDuAnThiCong.resx">
+      <DependentUpon>formBaoCaoDuAnThiCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formCapNhatGiaiDoan.resx">
       <DependentUpon>formCapNhatGiaiDoan.cs</DependentUpon>
@@ -645,6 +678,9 @@
     <EmbeddedResource Include="formsPhongBan\PhongDuAnThiCong\formXemChiTietYeuCau.resx">
       <DependentUpon>formXemChiTietYeuCau.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongGuiDo\formBaoCaoGuiDo.resx">
+      <DependentUpon>formBaoCaoGuiDo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongGuiDo\formChiTietHoaDon.resx">
       <DependentUpon>formChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -663,8 +699,11 @@
     <EmbeddedResource Include="formsPhongBan\PhongGuiDo\formXemChiTiet.resx">
       <DependentUpon>formXemChiTiet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formsPhongBan\PhongMoiGioiBatDongSan\formCanHoChoGiaoDich.resx">
-      <DependentUpon>formCanHoChoGiaoDich.cs</DependentUpon>
+    <EmbeddedResource Include="formsPhongBan\PhongTaiChinh\formBaoCaoTaiChinh.resx">
+      <DependentUpon>formBaoCaoTaiChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongVeSinh\formBaoCaoVeSinh.resx">
+      <DependentUpon>formBaoCaoVeSinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongVeSinh\formXemKeHoachVeSinh.resx">
       <DependentUpon>formXemKeHoachVeSinh.cs</DependentUpon>
@@ -713,6 +752,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -736,7 +776,6 @@
     <None Include="Images\menu-32.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="formsPhongBan\PhongAnNinh\" />
     <Folder Include="formsPhu\" />
   </ItemGroup>
   <ItemGroup>
@@ -786,6 +825,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\bell.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\icons8-picture-250.png" />
     <None Include="Resources\iconPictures.png" />
     <None Include="Resources\check2.png" />
