@@ -275,6 +275,11 @@ namespace DesignEasyHouse1
             OpenChildForm(new formsPhongBan.PhongCuDan.formQuanLyCanHo());
         }
 
+        private void btnHoaDonCanHo_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongCuDan.formHoaDonCanHo());
+        }
+
         //private void panelMain_Paint(object sender, PaintEventArgs e)
         //{
 

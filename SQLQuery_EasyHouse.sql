@@ -91,7 +91,7 @@ CREATE TABLE CanHo (
     DienTich FLOAT,                   -- Diện tích căn hộ
     SoPhongNgu INT,                   -- Số phòng ngủ
     SoPhongTam INT,                   -- Số phòng tắm
-    TrangThai NVARCHAR(50) DEFAULT N'Trống',            -- Trạng thái căn hộ (Trống, Đang thuê, Cư dân sở hữu)
+    TrangThai NVARCHAR(50) DEFAULT N'Trống',            -- Trạng thái căn hộ (Trống, Đang thuê, Đã bán)
 	CuDanID INT, -- ID cư dân sở hữu căn hộ, nếu người sở hữu là tòa nhà thì id bằng 0
 )
 GO
@@ -679,6 +679,16 @@ CREATE TABLE BaoCaoDoanhThuChiPhi (
     FilePDF VARBINARY(MAX) DEFAULT NULL
 );
 GO
+
+CREATE TABLE HoaDon (
+    HoaDonID INT PRIMARY KEY IDENTITY(1,1),
+    PhanLoai NVARCHAR(255),								-- Phân loại hóa đơn (1. "Hóa đơn Điện-Nước-Thuê căn hộ-Phí dịch vụ", 2. 'Hóa đơn vệ sinh')
+    TongTien FLOAT,										-- Tổng tiền mà cư dân phải trả	
+	NoiDung NVARCHAR(255),								-- Nội dung chi tiết của hóa đơn
+	NgayTao DATETIME DEFAULT GETDATE(),					-- Ngày tạo hóa đơn
+	TrangThai NVARCHAR(50) DEFAULT N'Chưa thanh toán',	-- 'Chưa thanh toán' hoặc 'Đã thanh toán'
+    CuDanID INT,										-- CuDanID của Cư dân trả hóa đơn này
+);
 
 CREATE PROCEDURE sp_ThemGiaiDoanThiCong
     @DuAnThiCongID INT,

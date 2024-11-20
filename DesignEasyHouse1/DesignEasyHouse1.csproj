@@ -69,6 +69,7 @@
     <Compile Include="DAO\CanHoDAO.cs" />
     <Compile Include="DAO\DuAnThiCongDAO.cs" />
     <Compile Include="DAO\GiaiDoanThiCongDAO.cs" />
+    <Compile Include="DAO\HoaDonDTO.cs" />
     <Compile Include="DAO\HoaDonGuiDoDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\ThongBaoDAO.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="DTO\BaoCaoDoanhThuChiPhi.cs" />
     <Compile Include="DTO\DuAnThiCong.cs" />
     <Compile Include="DTO\GiaiDoanThiCong.cs" />
+    <Compile Include="DTO\HoaDon.cs" />
     <Compile Include="DTO\HoaDonGuiDo.cs" />
     <Compile Include="DTO\NhanVien.cs" />
     <Compile Include="DTO\ThoThiCong.cs" />
@@ -163,6 +165,12 @@
     <Compile Include="formsPhongBan\PhongCuDan\formChiTietCanHo.Designer.cs">
       <DependentUpon>formChiTietCanHo.cs</DependentUpon>
     </Compile>
+    <Compile Include="formsPhongBan\PhongCuDan\formHoaDonCanHo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongCuDan\formHoaDonCanHo.Designer.cs">
+      <DependentUpon>formHoaDonCanHo.cs</DependentUpon>
+    </Compile>
     <Compile Include="formsPhongBan\PhongCuDan\formQuanLyCanHo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +182,12 @@
     </Compile>
     <Compile Include="formsPhongBan\PhongCuDan\formThemCanHo.Designer.cs">
       <DependentUpon>formThemCanHo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongCuDan\formThemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongCuDan\formThemHoaDon.Designer.cs">
+      <DependentUpon>formThemHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\PhongDuAnThiCong\formBaoCaoDuAnThiCong.cs">
       <SubType>Form</SubType>
@@ -631,6 +645,9 @@
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formChiTietCanHo.resx">
       <DependentUpon>formChiTietCanHo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongCuDan\formHoaDonCanHo.resx">
+      <DependentUpon>formHoaDonCanHo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formQuanLyCanHo.resx">
       <DependentUpon>formQuanLyCanHo.cs</DependentUpon>
     </EmbeddedResource>
@@ -645,6 +662,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formThemCuDan.resx">
       <DependentUpon>formThemCuDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongCuDan\formThemHoaDon.resx">
+      <DependentUpon>formThemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongCuDan\formThemHopDongThueCanHo.resx">
       <DependentUpon>formThemHopDongThueCanHo.cs</DependentUpon>
