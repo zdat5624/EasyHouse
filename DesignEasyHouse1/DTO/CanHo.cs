@@ -15,7 +15,7 @@ namespace DesignEasyHouse1.DTO
         private int soPhongNgu;
         private int soPhongTam;
         private string trangThai;
-        private int cuDanID; // Thêm thuộc tính mới
+        private int cuDanID;
 
         public string MaCanHo { get => maCanHo; set => maCanHo = value; }
         public string ViTri { get => viTri; set => viTri = value; }
@@ -23,7 +23,7 @@ namespace DesignEasyHouse1.DTO
         public int SoPhongNgu { get => soPhongNgu; set => soPhongNgu = value; }
         public int SoPhongTam { get => soPhongTam; set => soPhongTam = value; }
         public string TrangThai { get => trangThai; set => trangThai = value; }
-        public int CuDanID { get => cuDanID; set => cuDanID = value; } // Getter và Setter cho thuộc tính mới
+        public int CuDanID { get => cuDanID; set => cuDanID = value; }
 
         public CanHo() { }
 

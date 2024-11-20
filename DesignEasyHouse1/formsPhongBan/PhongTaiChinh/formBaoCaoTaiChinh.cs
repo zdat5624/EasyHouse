@@ -36,8 +36,8 @@ namespace DesignEasyHouse1.formsPhongBan.PhongTaiChinh
 
         void LoadDTGV()
         {
-            string phanLoai = "Tài chính";
-            dtgvBaoCao.DataSource = BaoCaoDoanhThuChiPhiDAO.Instance.LayBaoCaoTheoPhanLoai(phanLoai);
+            //string phanLoai = "Tài chính";
+            dtgvBaoCao.DataSource = BaoCaoDoanhThuChiPhiDAO.Instance.LayTatCaBaoCao();
             dtgvBaoCao.Columns["BaoCaoID"].HeaderText = "ID";
             dtgvBaoCao.Columns["PhanLoai"].HeaderText = "Phân Loại";
             dtgvBaoCao.Columns["PhanLoai"].Visible = false;

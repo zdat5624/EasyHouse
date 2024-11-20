@@ -29,19 +29,19 @@ namespace DesignEasyHouse1.DAO
 
         public DataTable GetDanhSachCuDanKhongHoanChinh()
         {
-            string query = "SELECT CuDanID, HoTen, SoDienThoai, CCCD, Email, DiaChi, TrangThai, ThanhToan FROM CuDan";
+            string query = "SELECT CuDanID, HoTen, SoDienThoai, CCCD, Email, DiaChi, TrangThai, ThanhToan FROM CuDan ";
             return DataProvider.Instance.ExecuteQuery(query);
         }
         public int GetCuDanID(int userId)
         {
-            string query = "SELECT CuDanID FROM CuDan WHERE UserId= @userId";
+            string query = "SELECT CuDanID FROM CuDan WHERE UserId= @userId ";
             object[] parameters = new object[] { userId };
             int result =  (int)DataProvider.Instance.ExecuteScalar(query, parameters);
             return result;
         }
         public string GetTenCuDan(int userId)
         {
-            string query = "SELECT HoTen FROM CuDan WHERE UserId = @userId";
+            string query = "SELECT HoTen FROM CuDan WHERE UserId = @userId ";
             object[] parameters = new object[] { userId };
             return (string)DataProvider.Instance.ExecuteScalar(query, parameters);
         }
@@ -58,14 +58,14 @@ namespace DesignEasyHouse1.DAO
 
         public bool XoaCuDanByCuDanID(int CuDanID)
         {
-            string query = "DELETE FROM CuDan WHERE CuDanID = @CuDanID";
+            string query = "DELETE FROM CuDan WHERE CuDanID = @CuDanID ";
             int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { CuDanID });
             return result > 0;
         }
 
         public CuDan GetCuDanByCuDanID(int cuDanID)
         {
-            string query = "SELECT * FROM CuDan WHERE CuDanID = @CuDanID";
+            string query = "SELECT * FROM CuDan WHERE CuDanID = @CuDanID ";
             DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { cuDanID });
             if (data.Rows.Count > 0)
             {
@@ -76,7 +76,7 @@ namespace DesignEasyHouse1.DAO
 
         public bool CapNhatThongTinCuDan(CuDan cd)
         {
-        string query = "UPDATE CuDan SET HoTen = @HoTen , SoDienThoai = @SoDienThoai , CCCD = @CCCD , Email = @Email , DiaChi = @DiaChi , GioiTinh = @GioiTinh , NgaySinh = @NgaySinh , TrangThai = @TrangThai , ThanhToan = @ThanhToan , NgayChuyenDen = @NgayChuyenDen , HinhAnh = @HinhAnh WHERE CuDanID = @CuDanID";
+        string query = "UPDATE CuDan SET HoTen = @HoTen , SoDienThoai = @SoDienThoai , CCCD = @CCCD , Email = @Email , DiaChi = @DiaChi , GioiTinh = @GioiTinh , NgaySinh = @NgaySinh , TrangThai = @TrangThai , ThanhToan = @ThanhToan , NgayChuyenDen = @NgayChuyenDen , HinhAnh = @HinhAnh WHERE CuDanID = @CuDanID ";
 
             object[] parameters = new object[] { cd.HoTen, cd.SoDienThoai, cd.CCCD, cd.Email, cd.DiaChi, cd.GioiTinh, cd.NgaySinh, cd.TrangThai, cd.ThanhToan, cd.NgayChuyenDen, cd.HinhAnh, cd.CuDanID };
 
@@ -84,5 +84,13 @@ namespace DesignEasyHouse1.DAO
 
             return result > 0;
         }
+
+        public bool KiemTraCuDanTonTai(int cuDanID)
+        {
+            string query = "SELECT COUNT(*) FROM CuDan WHERE CuDanID = @CuDanID ";
+            int count = (int)DataProvider.Instance.ExecuteScalar(query, new object[] { cuDanID });
+            return count > 0;
+        }
+
     }
 }

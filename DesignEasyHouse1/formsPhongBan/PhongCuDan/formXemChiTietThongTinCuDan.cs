@@ -57,7 +57,10 @@ namespace DesignEasyHouse1.formsPhongBan
             cbTrangThai.SelectedItem = cuDan.TrangThai;
             cbThanhToan.SelectedItem = cuDan.ThanhToan;
             dtpNgayChuyenDen.Value = cuDan.NgayChuyenDen;
-            ptbHinhAnh.Image = MyGUI.ByteArrayToImage(cuDan.HinhAnh);
+            if (cuDan.HinhAnh != null)
+            {
+                ptbHinhAnh.Image = MyGUI.ByteArrayToImage(cuDan.HinhAnh);
+            }
         }
 
         void CapNhatThongTinCuDan()

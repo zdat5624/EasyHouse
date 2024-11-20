@@ -270,6 +270,11 @@ namespace DesignEasyHouse1
             OpenChildForm(new formsPhongBan.PhongTaiChinh.formBaoCaoTaiChinh());
         }
 
+        private void btnQuanLyCanHo_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongCuDan.formQuanLyCanHo());
+        }
+
         //private void panelMain_Paint(object sender, PaintEventArgs e)
         //{
 
