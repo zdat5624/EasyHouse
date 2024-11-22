@@ -28,21 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dtgvThongTinCuDan = new System.Windows.Forms.DataGridView();
+            this.dtgvHoaDon = new System.Windows.Forms.DataGridView();
+            this.Details = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Details = new System.Windows.Forms.DataGridViewImageColumn();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinCuDan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHoaDon)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewImageColumn1
@@ -93,99 +92,6 @@
             this.panel2.Size = new System.Drawing.Size(250, 25);
             this.panel2.TabIndex = 37;
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.textBox2.Location = new System.Drawing.Point(0, 0);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(214, 31);
-            this.textBox2.TabIndex = 32;
-            // 
-            // dtgvThongTinCuDan
-            // 
-            this.dtgvThongTinCuDan.AllowUserToAddRows = false;
-            this.dtgvThongTinCuDan.AllowUserToDeleteRows = false;
-            this.dtgvThongTinCuDan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgvThongTinCuDan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvThongTinCuDan.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            this.dtgvThongTinCuDan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgvThongTinCuDan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvThongTinCuDan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgvThongTinCuDan.ColumnHeadersHeight = 30;
-            this.dtgvThongTinCuDan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtgvThongTinCuDan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Delete,
-            this.Details});
-            this.dtgvThongTinCuDan.EnableHeadersVisualStyles = false;
-            this.dtgvThongTinCuDan.Location = new System.Drawing.Point(39, 53);
-            this.dtgvThongTinCuDan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dtgvThongTinCuDan.Name = "dtgvThongTinCuDan";
-            this.dtgvThongTinCuDan.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvThongTinCuDan.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dtgvThongTinCuDan.RowHeadersVisible = false;
-            this.dtgvThongTinCuDan.RowHeadersWidth = 51;
-            this.dtgvThongTinCuDan.RowTemplate.Height = 24;
-            this.dtgvThongTinCuDan.Size = new System.Drawing.Size(975, 421);
-            this.dtgvThongTinCuDan.TabIndex = 38;
-            // 
-            // dataGridViewImageColumn3
-            // 
-            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn3.HeaderText = "";
-            this.dataGridViewImageColumn3.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
-            this.dataGridViewImageColumn3.MinimumWidth = 6;
-            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
-            this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn3.Width = 6;
-            // 
-            // dataGridViewImageColumn4
-            // 
-            this.dataGridViewImageColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn4.HeaderText = "";
-            this.dataGridViewImageColumn4.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
-            this.dataGridViewImageColumn4.MinimumWidth = 6;
-            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
-            this.dataGridViewImageColumn4.Width = 6;
-            // 
-            // Delete
-            // 
-            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Delete.HeaderText = "";
-            this.Delete.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.ReadOnly = true;
-            this.Delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Delete.Width = 6;
-            // 
-            // Details
-            // 
-            this.Details.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Details.HeaderText = "";
-            this.Details.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
-            this.Details.MinimumWidth = 6;
-            this.Details.Name = "Details";
-            this.Details.ReadOnly = true;
-            this.Details.Width = 6;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
@@ -205,12 +111,93 @@
             this.button2.TabIndex = 32;
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.textBox2.Location = new System.Drawing.Point(0, 0);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(214, 31);
+            this.textBox2.TabIndex = 32;
+            // 
+            // dtgvHoaDon
+            // 
+            this.dtgvHoaDon.AllowUserToAddRows = false;
+            this.dtgvHoaDon.AllowUserToDeleteRows = false;
+            this.dtgvHoaDon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtgvHoaDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvHoaDon.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dtgvHoaDon.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtgvHoaDon.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvHoaDon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgvHoaDon.ColumnHeadersHeight = 30;
+            this.dtgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvHoaDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Details});
+            this.dtgvHoaDon.EnableHeadersVisualStyles = false;
+            this.dtgvHoaDon.Location = new System.Drawing.Point(39, 53);
+            this.dtgvHoaDon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtgvHoaDon.Name = "dtgvHoaDon";
+            this.dtgvHoaDon.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvHoaDon.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgvHoaDon.RowHeadersVisible = false;
+            this.dtgvHoaDon.RowHeadersWidth = 51;
+            this.dtgvHoaDon.RowTemplate.Height = 24;
+            this.dtgvHoaDon.Size = new System.Drawing.Size(975, 421);
+            this.dtgvHoaDon.TabIndex = 38;
+            // 
+            // Details
+            // 
+            this.Details.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Details.HeaderText = "";
+            this.Details.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
+            this.Details.MinimumWidth = 6;
+            this.Details.Name = "Details";
+            this.Details.ReadOnly = true;
+            this.Details.Width = 6;
+            // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn3.HeaderText = "";
+            this.dataGridViewImageColumn3.Image = global::DesignEasyHouse1.Properties.Resources.Delete;
+            this.dataGridViewImageColumn3.MinimumWidth = 6;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn3.Width = 125;
+            // 
+            // dataGridViewImageColumn4
+            // 
+            this.dataGridViewImageColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn4.HeaderText = "";
+            this.dataGridViewImageColumn4.Image = global::DesignEasyHouse1.Properties.Resources.analysis;
+            this.dataGridViewImageColumn4.MinimumWidth = 6;
+            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
+            this.dataGridViewImageColumn4.Width = 125;
+            // 
             // formHoaDonCuDan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1061, 654);
-            this.Controls.Add(this.dtgvThongTinCuDan);
+            this.Controls.Add(this.dtgvHoaDon);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnThanhToan);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -220,7 +207,7 @@
             this.Text = "Hóa đơn của bạn";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTinCuDan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHoaDon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,10 +219,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DataGridView dtgvThongTinCuDan;
-        private System.Windows.Forms.DataGridViewImageColumn Delete;
-        private System.Windows.Forms.DataGridViewImageColumn Details;
+        private System.Windows.Forms.DataGridView dtgvHoaDon;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn4;
+        private System.Windows.Forms.DataGridViewImageColumn Details;
     }
 }

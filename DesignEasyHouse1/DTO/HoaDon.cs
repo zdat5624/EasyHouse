@@ -17,6 +17,8 @@ namespace DesignEasyHouse1.DTO
         public string TrangThai { get; set; }
         public int CuDanID { get; set; }
 
+        public HoaDon () { }
+
         public HoaDon(int hoaDonID, string phanLoai, float tongTien, string noiDung, DateTime ngayTao, string trangThai, int cuDanID)
         {
             HoaDonID = hoaDonID;
@@ -38,6 +40,7 @@ namespace DesignEasyHouse1.DTO
             TrangThai = row["TrangThai"].ToString();
             CuDanID = Convert.ToInt32(row["CuDanID"]);
         }
+
     }
 }
 

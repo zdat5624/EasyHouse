@@ -690,6 +690,16 @@ CREATE TABLE HoaDon (
     CuDanID INT,										-- CuDanID của Cư dân trả hóa đơn này
 );
 
+CREATE TABLE ThongTinToaNha (
+    ID INT PRIMARY KEY IDENTITY(1,1),  -- ID tự động tăng, làm khóa chính
+    TenToaNha NVARCHAR(255), -- Tên của tòa nhà
+	MoTa NVARCHAR(MAX),               -- Mô tả thêm về tòa nhà
+    ChuDauTu NVARCHAR(255),           -- Chủ đầu tư của tòa nhà
+    DonViQuanLi NVARCHAR(255),
+	ThongTinThanhToan NVARCHAR(255)
+);
+
+
 CREATE PROCEDURE sp_ThemGiaiDoanThiCong
     @DuAnThiCongID INT,
     @NgayKetThuc DATE = NULL,

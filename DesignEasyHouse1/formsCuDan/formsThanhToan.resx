@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>*Hướng dẫn: Cư dân chọn hóa đơn cần thanh toán và chuyển khoản đủ số tiền của hóa đơn đó vào tài khoản của tòa nhà với cú pháp nội dung chuyển khoản là (Cú pháp: &lt;ID hóa đơn&gt; &lt;ID cư dân&gt; &lt;Họ tên&gt; &lt;Số điện thoại liên hệ&gt;). Sau khi chuyển khoản thành công cư dân bấm nút "Gửi yêu cầu xác nhận" và đợi quản lý tòa nhà xác nhận.</value>
+  </data>
 </root>

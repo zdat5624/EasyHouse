@@ -38,7 +38,10 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
             nudSoPhongNgu.Value = canHo.SoPhongNgu;
             nudSoPhongTam.Value = canHo.SoPhongTam;
             cbbTrangThai.Text = canHo.TrangThai;
-            txtCuDanID.Text = canHo.CuDanID.ToString();
+            if (canHo.CuDanID != 0)
+            {
+                txtCuDanID.Text = canHo.CuDanID.ToString();
+            }
         }
 
         void CapNhatCanHo()
@@ -140,19 +143,18 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
 
         private void txtCuDanID_TextChanged(object sender, EventArgs e)
         {
-            if (txtCuDanID.Text == "")
-            {
-                return;
-            }
 
             if (Convert.ToInt32(txtCuDanID.Text)==0)
             {
-                return;
+                txtTenCuDan.Text = "";
             }
-            CuDan cd = CuDanDAO.Instance.GetCuDanByCuDanID(canHo.CuDanID);
+            CuDan cd = CuDanDAO.Instance.GetCuDanByCuDanID(Convert.ToInt32(txtCuDanID.Text));
             if (cd!= null)
             {
                 txtTenCuDan.Text = cd.HoTen;
+            } else
+            {
+                txtTenCuDan.Text = "";
             }
         }
 

@@ -83,7 +83,7 @@ namespace DesignEasyHouse1.DAO
 
         public HoaDon LayHoaDonTheoID(int hoaDonID)
         {
-            string query = "SELECT * FROM HoaDon WHERE HoaDonID = @HoaDonID";
+            string query = "SELECT * FROM HoaDon WHERE HoaDonID = @HoaDonID ";
             DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { hoaDonID });
 
             if (data.Rows.Count > 0)
@@ -138,5 +138,60 @@ namespace DesignEasyHouse1.DAO
 
             return result > 0;
         }
+
+        public List<HoaDon> LayDanhSachHoaDonChuaThanhToanTheoCuDanID(int cuDanID)
+        {
+            List<HoaDon> danhSachHoaDon = new List<HoaDon>();
+
+            string query = @"SELECT  * FROM HoaDon  WHERE TrangThai = N'Chưa thanh toán' AND CuDanID = @CuDanID ";
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { cuDanID });
+
+            foreach (DataRow row in data.Rows)
+            {
+                HoaDon hoaDon = new HoaDon(row);
+                danhSachHoaDon.Add(hoaDon);
+            }
+
+            return danhSachHoaDon;
+        }
+
+        public DataTable LayDTHoaDonChuaThanhToanTheoCuDanID(int cuDanID)
+        {
+            string query = @"
+                            SELECT * 
+                            FROM HoaDon  
+                            WHERE TrangThai = N'Chưa thanh toán' AND CuDanID = @CuDanID 
+                            ORDER BY NgayTao DESC ";
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { cuDanID });
+
+            return data;
+        }
+
+        public DataTable LayDTHoaDonTheoCuDanID(int cuDanID)
+        {
+            string query = @"
+                            SELECT * 
+                            FROM HoaDon  
+                            WHERE CuDanID = @CuDanID 
+                            ORDER BY NgayTao DESC ";
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { cuDanID });
+
+            return data;
+        }
+
+        public bool CapNhatTrangThaiHoaDon(int hoaDonID, string trangThai)
+        {
+            string query = "UPDATE HoaDon SET TrangThai = @TrangThai WHERE HoaDonID = @HoaDonID ";
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { trangThai, hoaDonID });
+
+            return result > 0;
+        }
+
+
+
     }
 }

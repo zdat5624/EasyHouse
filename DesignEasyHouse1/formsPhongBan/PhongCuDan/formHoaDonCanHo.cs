@@ -22,6 +22,7 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
             {
                 cbbLocHoaDon.SelectedIndex = 0;
             }
+            dtgvHoaDonCanHo.CellContentClick += dtgvHoaDonCanHo_CellContentClick;
         }
 
         void LoadDtgvHoaDonChuaThanhToan()
@@ -35,7 +36,7 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
             dtgvHoaDonCanHo.Columns["TrangThai"].HeaderText = "Trạng Thái";
             dtgvHoaDonCanHo.Columns["CuDanID"].HeaderText = "ID Cư Dân Trả";
             dtgvHoaDonCanHo.Columns["TenCuDan"].HeaderText = "Tên Cư Dân Trả";
-            MyGUI.chuyenCotDenCuoiDTGV(dtgvHoaDonCanHo, new List<string> { "Delete"});
+            MyGUI.chuyenCotDenCuoiDTGV(dtgvHoaDonCanHo, new List<string> { "Delete", "Details"});
             MyGUI.dinhDangCotAllCellsDTGV(dtgvHoaDonCanHo, new List<string> { "HoaDonID" });
         }
 
@@ -95,6 +96,11 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
             //Hóa đơn chưa thanh toán
             //Tất cả hóa đơn
 
+            LoadDTGV();
+        }
+
+        void LoadDTGV ()
+        {
             string selectedItem = cbbLocHoaDon.SelectedItem?.ToString();
 
             if (selectedItem == "Hóa đơn chưa thanh toán")
@@ -107,6 +113,13 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
             }
         }
 
+        void XemChiTietHoaDon(int hoaDonID)
+        {
+            formChiTietHoaDon f = new formChiTietHoaDon(hoaDonID);
+            f.ShowDialog();
+            LoadDTGV();
+        }
+
         private void dtgvHoaDonCanHo_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             // Xử lý xóa, xem chi tiết
@@ -116,14 +129,19 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
                 {
                     int hoaDonID = Convert.ToInt32(dtgvHoaDonCanHo.Rows[e.RowIndex].Cells["HoaDonID"].Value);
                     XoaHoaDon(hoaDonID);
+                } else if (e.ColumnIndex == dtgvHoaDonCanHo.Columns["Details"].Index)
+                {
+                    int hoaDonID = Convert.ToInt32(dtgvHoaDonCanHo.Rows[e.RowIndex].Cells["HoaDonID"].Value);
+                    XemChiTietHoaDon(hoaDonID);
                 }
             }
         }
 
         private void btnThemHoaDon_Click(object sender, EventArgs e)
         {
-            formThemHoaDon f = new formThemHoaDon("Hóa đơn Điện-Nước-Thuê nhà-Phí dịch vụ");
+            formThemHoaDon f = new formThemHoaDon("Hóa đơn điện-nước-thuê nhà-phí dịch vụ");
             f.ShowDialog();
+            LoadDTGV();
         }
     }
 }

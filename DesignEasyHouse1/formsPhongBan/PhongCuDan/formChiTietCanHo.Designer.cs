@@ -295,6 +295,7 @@
             // 
             this.txtTenCuDan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtTenCuDan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTenCuDan.Enabled = false;
             this.txtTenCuDan.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.txtTenCuDan.Location = new System.Drawing.Point(260, 406);
             this.txtTenCuDan.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -329,6 +330,7 @@
             // lblTenCuDan
             // 
             this.lblTenCuDan.AutoSize = true;
+            this.lblTenCuDan.Enabled = false;
             this.lblTenCuDan.Location = new System.Drawing.Point(101, 410);
             this.lblTenCuDan.Name = "lblTenCuDan";
             this.lblTenCuDan.Size = new System.Drawing.Size(93, 23);

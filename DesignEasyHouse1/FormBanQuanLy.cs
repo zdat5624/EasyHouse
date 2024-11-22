@@ -117,7 +117,7 @@ namespace DesignEasyHouse1
                     showGuiXeModule();
                     break;
                 case "Tài chính":
-                    showGuiXeModule();
+                    showTaiChinhModule();
                     break;
             }
             
@@ -129,6 +129,12 @@ namespace DesignEasyHouse1
         {
             //btnDichVuCuDan.Visible = true;
             panelQuanLyCuDan.Visible = true;
+        }
+
+        private void showTaiChinhModule()
+        {
+            //btnDichVuCuDan.Visible = true;
+            panelTaiChinh.Visible = true;
         }
 
         private void showVeSinhModule()
@@ -278,6 +284,16 @@ namespace DesignEasyHouse1
         private void btnHoaDonCanHo_Click(object sender, EventArgs e)
         {
             OpenChildForm(new formsPhongBan.PhongCuDan.formHoaDonCanHo());
+        }
+
+        private void btnThongTinToaNha_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsGiamDoc.formThongTinToaNha());
+        }
+
+        private void btnXacThucThanhToan_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formsPhongBan.PhongTaiChinh.formXacThucThanhToan());
         }
 
         //private void panelMain_Paint(object sender, PaintEventArgs e)

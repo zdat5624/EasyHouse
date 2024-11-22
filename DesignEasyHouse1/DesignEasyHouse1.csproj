@@ -69,10 +69,11 @@
     <Compile Include="DAO\CanHoDAO.cs" />
     <Compile Include="DAO\DuAnThiCongDAO.cs" />
     <Compile Include="DAO\GiaiDoanThiCongDAO.cs" />
-    <Compile Include="DAO\HoaDonDTO.cs" />
+    <Compile Include="DAO\HoaDonDAO.cs" />
     <Compile Include="DAO\HoaDonGuiDoDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\ThongBaoDAO.cs" />
+    <Compile Include="DAO\ThongTinToaNhaDAO.cs" />
     <Compile Include="DAO\ThoThiCongDAO.cs" />
     <Compile Include="DAO\VatTuThiCongDAO.cs" />
     <Compile Include="DAO\YeuCauGuiDoLayDoDAO.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="DTO\HoaDon.cs" />
     <Compile Include="DTO\HoaDonGuiDo.cs" />
     <Compile Include="DTO\NhanVien.cs" />
+    <Compile Include="DTO\ThongTinToaNha.cs" />
     <Compile Include="DTO\ThoThiCong.cs" />
     <Compile Include="DTO\VatTuThiCong.cs" />
     <Compile Include="DTO\YeuCauGuiDoLayDo.cs" />
@@ -140,6 +142,18 @@
     </Compile>
     <Compile Include="formsCuDan\moduleThiCong\formYeuCauThiCong.Designer.cs">
       <DependentUpon>formYeuCauThiCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsGiamDoc\formThongTinToaNha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsGiamDoc\formThongTinToaNha.Designer.cs">
+      <DependentUpon>formThongTinToaNha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\formChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\formChiTietHoaDon.Designer.cs">
+      <DependentUpon>formChiTietHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\formsThongBaoPhongBan.cs">
       <SubType>Form</SubType>
@@ -332,6 +346,12 @@
     </Compile>
     <Compile Include="formsPhongBan\PhongTaiChinh\formBaoCaoTaiChinh.Designer.cs">
       <DependentUpon>formBaoCaoTaiChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongTaiChinh\formXacThucThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsPhongBan\PhongTaiChinh\formXacThucThanhToan.Designer.cs">
+      <DependentUpon>formXacThucThanhToan.cs</DependentUpon>
     </Compile>
     <Compile Include="formsPhongBan\PhongVeSinh\formBaoCaoVeSinh.cs">
       <SubType>Form</SubType>
@@ -617,6 +637,9 @@
     <EmbeddedResource Include="formsCuDan\moduleVeSinh\tableTheoDoiyeuCauVeSinh.resx">
       <DependentUpon>tableTheoDoiyeuCauVeSinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formsGiamDoc\formThongTinToaNha.resx">
+      <DependentUpon>formThongTinToaNha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formsGiamDoc\moduleVeSinh\bieuDoHoatDong.resx">
       <DependentUpon>bieuDoHoatDong.cs</DependentUpon>
     </EmbeddedResource>
@@ -631,6 +654,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsGiamDoc\QuanLyNhanVien\ThemNhanVien.resx">
       <DependentUpon>ThemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\formChiTietHoaDon.resx">
+      <DependentUpon>formChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\formsThongBaoPhongBan.resx">
       <DependentUpon>formsThongBaoPhongBan.cs</DependentUpon>
@@ -742,6 +768,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongTaiChinh\formBaoCaoTaiChinh.resx">
       <DependentUpon>formBaoCaoTaiChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsPhongBan\PhongTaiChinh\formXacThucThanhToan.resx">
+      <DependentUpon>formXacThucThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formsPhongBan\PhongVeSinh\formBaoCaoVeSinh.resx">
       <DependentUpon>formBaoCaoVeSinh.cs</DependentUpon>
