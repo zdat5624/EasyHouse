@@ -21,6 +21,7 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
         {
             this.ctHopDongThue = chiTietHopDongThueCanHo;
             InitializeComponent();
+            cbbVaiTro.SelectedIndex = 0;
         }
 
         #region Methods
@@ -48,7 +49,7 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
             lbVaiTro.Visible = !lbVaiTro.Visible;
             btnThemCuDan.Visible = !btnThemCuDan.Visible;
             tbCuDanID.Visible = !tbCuDanID.Visible;
-            tbVaiTro.Visible = !tbVaiTro.Visible;
+            cbbVaiTro.Visible = !cbbVaiTro.Visible;
 
             cbbMaCanHo.Enabled = !cbbMaCanHo.Enabled;
             dtpNgayBatDau.Enabled = !dtpNgayBatDau.Enabled;
@@ -133,7 +134,7 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
                 return;
             }
 
-            string vaiTro = tbVaiTro.Text;
+            string vaiTro = cbbVaiTro.Text;
             CuDan cd = CuDanDAO.Instance.GetCuDanByCuDanID(cuDanID);
             if (cd == null)
             {
@@ -163,6 +164,13 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
 
         void CapNhatHopDong()
         {
+            if (ctHopDongThue.DanhSachThueCanHo == null || ctHopDongThue.DanhSachThueCanHo.Count == 0)
+            {
+                MessageBox.Show("Danh sách cư dân thuê đang trống. Vui lòng thêm cư dân trước khi tạo hợp đồng.",
+                                "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             string maCanHo = cbbMaCanHo.SelectedValue.ToString();
             DateTime ngayBatDau = dtpNgayBatDau.Value;
             DateTime ngayKetThuc = dtpNgayKetThuc.Value;

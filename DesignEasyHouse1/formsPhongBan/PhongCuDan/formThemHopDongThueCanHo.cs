@@ -51,7 +51,7 @@ namespace DesignEasyHouse1.formsPhongBan
                 return;
             }
 
-            string vaiTro = tbVaiTro.Text;
+            string vaiTro = cbbVaiTro.SelectedItem.ToString();
             CuDan cd = CuDanDAO.Instance.GetCuDanByCuDanID(cuDanID);
             if (cd == null)
             {
@@ -98,6 +98,13 @@ namespace DesignEasyHouse1.formsPhongBan
 
         void ThemHopDong()
         {
+            if (dsThueCanHo == null || dsThueCanHo.Count == 0)
+            {
+                MessageBox.Show("Danh sách cư dân thuê đang trống. Vui lòng thêm cư dân trước khi tạo hợp đồng.",
+                                "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (cbbMaCanHo.SelectedValue==null)
             {
                 MessageBox.Show("Vui lòng kiểm tra lại Mã căn hộ");
@@ -146,6 +153,7 @@ namespace DesignEasyHouse1.formsPhongBan
         {
             LoadDanhSachMaCanHo();
             LoadDtgvCuDanThue();
+            cbbVaiTro.SelectedIndex = 0;
         }
 
         private void btnHuyBo_Click(object sender, EventArgs e)
@@ -178,5 +186,10 @@ namespace DesignEasyHouse1.formsPhongBan
         }
 
         #endregion
+
+        private void tbVaiTro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

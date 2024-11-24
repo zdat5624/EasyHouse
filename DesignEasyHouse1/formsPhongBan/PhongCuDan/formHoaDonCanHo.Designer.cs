@@ -42,6 +42,8 @@
             this.dtgvHoaDonCanHo = new System.Windows.Forms.DataGridView();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.Details = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnTaoPhieuGhiThang = new System.Windows.Forms.Button();
+            this.btnNhapPhieuGhi = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHoaDonCanHo)).BeginInit();
             this.SuspendLayout();
@@ -135,8 +137,9 @@
             this.cbbLocHoaDon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbLocHoaDon.FormattingEnabled = true;
             this.cbbLocHoaDon.Items.AddRange(new object[] {
+            "Tất cả hóa đơn",
             "Hóa đơn chưa thanh toán",
-            "Tất cả hóa đơn"});
+            "Hóa đơn chờ xác nhận"});
             this.cbbLocHoaDon.Location = new System.Drawing.Point(310, 9);
             this.cbbLocHoaDon.Name = "cbbLocHoaDon";
             this.cbbLocHoaDon.Size = new System.Drawing.Size(238, 31);
@@ -223,11 +226,55 @@
             this.Details.ReadOnly = true;
             this.Details.Width = 6;
             // 
+            // btnTaoPhieuGhiThang
+            // 
+            this.btnTaoPhieuGhiThang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTaoPhieuGhiThang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.btnTaoPhieuGhiThang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnTaoPhieuGhiThang.FlatAppearance.BorderSize = 0;
+            this.btnTaoPhieuGhiThang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaoPhieuGhiThang.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnTaoPhieuGhiThang.ForeColor = System.Drawing.Color.White;
+            this.btnTaoPhieuGhiThang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaoPhieuGhiThang.Location = new System.Drawing.Point(609, 603);
+            this.btnTaoPhieuGhiThang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTaoPhieuGhiThang.Name = "btnTaoPhieuGhiThang";
+            this.btnTaoPhieuGhiThang.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnTaoPhieuGhiThang.Size = new System.Drawing.Size(220, 40);
+            this.btnTaoPhieuGhiThang.TabIndex = 115;
+            this.btnTaoPhieuGhiThang.Text = "Tạo phiếu ghi tháng";
+            this.btnTaoPhieuGhiThang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTaoPhieuGhiThang.UseVisualStyleBackColor = false;
+            this.btnTaoPhieuGhiThang.Click += new System.EventHandler(this.btnTaoPhieuGhiThang_Click);
+            // 
+            // btnNhapPhieuGhi
+            // 
+            this.btnNhapPhieuGhi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNhapPhieuGhi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(200)))));
+            this.btnNhapPhieuGhi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnNhapPhieuGhi.FlatAppearance.BorderSize = 0;
+            this.btnNhapPhieuGhi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhapPhieuGhi.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnNhapPhieuGhi.ForeColor = System.Drawing.Color.White;
+            this.btnNhapPhieuGhi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhapPhieuGhi.Location = new System.Drawing.Point(835, 603);
+            this.btnNhapPhieuGhi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNhapPhieuGhi.Name = "btnNhapPhieuGhi";
+            this.btnNhapPhieuGhi.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnNhapPhieuGhi.Size = new System.Drawing.Size(174, 40);
+            this.btnNhapPhieuGhi.TabIndex = 116;
+            this.btnNhapPhieuGhi.Text = "Nhập phiếu ghi";
+            this.btnNhapPhieuGhi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNhapPhieuGhi.UseVisualStyleBackColor = false;
+            this.btnNhapPhieuGhi.Click += new System.EventHandler(this.btnNhapPhieuGhi_Click);
+            // 
             // formHoaDonCanHo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1061, 654);
+            this.Controls.Add(this.btnNhapPhieuGhi);
+            this.Controls.Add(this.btnTaoPhieuGhiThang);
             this.Controls.Add(this.dtgvHoaDonCanHo);
             this.Controls.Add(this.cbbLocHoaDon);
             this.Controls.Add(this.panel2);
@@ -257,5 +304,7 @@
         private System.Windows.Forms.DataGridView dtgvHoaDonCanHo;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
         private System.Windows.Forms.DataGridViewImageColumn Details;
+        private System.Windows.Forms.Button btnTaoPhieuGhiThang;
+        private System.Windows.Forms.Button btnNhapPhieuGhi;
     }
 }

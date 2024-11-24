@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnKetThucHopDong = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
@@ -41,7 +41,6 @@
             this.lbHopDongID = new System.Windows.Forms.Label();
             this.tbCuDanID = new System.Windows.Forms.TextBox();
             this.lbVaiTro = new System.Windows.Forms.Label();
-            this.tbVaiTro = new System.Windows.Forms.TextBox();
             this.lbCuDanID = new System.Windows.Forms.Label();
             this.dtpNgayKetThuc = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,6 +59,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tbTrangThai = new System.Windows.Forms.TextBox();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cbbVaiTro = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panelTieuDe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCuDanThue)).BeginInit();
@@ -243,19 +243,6 @@
             this.lbVaiTro.Text = "Vai trò";
             this.lbVaiTro.Visible = false;
             // 
-            // tbVaiTro
-            // 
-            this.tbVaiTro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbVaiTro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tbVaiTro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbVaiTro.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.tbVaiTro.Location = new System.Drawing.Point(638, 437);
-            this.tbVaiTro.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tbVaiTro.Name = "tbVaiTro";
-            this.tbVaiTro.Size = new System.Drawing.Size(332, 31);
-            this.tbVaiTro.TabIndex = 78;
-            this.tbVaiTro.Visible = false;
-            // 
             // lbCuDanID
             // 
             this.lbCuDanID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -308,14 +295,14 @@
             this.dtgvCuDanThue.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dtgvCuDanThue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvCuDanThue.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvCuDanThue.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvCuDanThue.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvCuDanThue.ColumnHeadersHeight = 30;
             this.dtgvCuDanThue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgvCuDanThue.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -326,14 +313,14 @@
             this.dtgvCuDanThue.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgvCuDanThue.Name = "dtgvCuDanThue";
             this.dtgvCuDanThue.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvCuDanThue.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvCuDanThue.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvCuDanThue.RowHeadersVisible = false;
             this.dtgvCuDanThue.RowHeadersWidth = 51;
             this.dtgvCuDanThue.RowTemplate.Height = 24;
@@ -415,7 +402,7 @@
             this.btnThemCuDan.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.btnThemCuDan.ForeColor = System.Drawing.Color.Black;
             this.btnThemCuDan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemCuDan.Location = new System.Drawing.Point(550, 476);
+            this.btnThemCuDan.Location = new System.Drawing.Point(550, 483);
             this.btnThemCuDan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThemCuDan.Name = "btnThemCuDan";
             this.btnThemCuDan.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -460,7 +447,7 @@
             this.txtDieuKhoan.Name = "txtDieuKhoan";
             this.txtDieuKhoan.ReadOnly = true;
             this.txtDieuKhoan.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtDieuKhoan.Size = new System.Drawing.Size(420, 260);
+            this.txtDieuKhoan.Size = new System.Drawing.Size(420, 284);
             this.txtDieuKhoan.TabIndex = 64;
             // 
             // lbEmail
@@ -509,12 +496,28 @@
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewImageColumn1.Width = 125;
             // 
+            // cbbVaiTro
+            // 
+            this.cbbVaiTro.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbbVaiTro.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbbVaiTro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbbVaiTro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbVaiTro.FormattingEnabled = true;
+            this.cbbVaiTro.Items.AddRange(new object[] {
+            "Người thanh toán",
+            "Người ở"});
+            this.cbbVaiTro.Location = new System.Drawing.Point(638, 441);
+            this.cbbVaiTro.Name = "cbbVaiTro";
+            this.cbbVaiTro.Size = new System.Drawing.Size(332, 31);
+            this.cbbVaiTro.TabIndex = 87;
+            // 
             // formXemChiTietHopDongThue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1015, 616);
+            this.Controls.Add(this.cbbVaiTro);
             this.Controls.Add(this.tbTrangThai);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbHopDongID);
@@ -524,7 +527,6 @@
             this.Controls.Add(this.panelTieuDe);
             this.Controls.Add(this.lbVaiTro);
             this.Controls.Add(this.lbEmail);
-            this.Controls.Add(this.tbVaiTro);
             this.Controls.Add(this.txtDieuKhoan);
             this.Controls.Add(this.lbCuDanID);
             this.Controls.Add(this.lbCCCD);
@@ -565,7 +567,6 @@
         private System.Windows.Forms.Label lbHopDongID;
         private System.Windows.Forms.TextBox tbCuDanID;
         private System.Windows.Forms.Label lbVaiTro;
-        private System.Windows.Forms.TextBox tbVaiTro;
         private System.Windows.Forms.Label lbCuDanID;
         private System.Windows.Forms.DateTimePicker dtpNgayKetThuc;
         private System.Windows.Forms.Label label2;
@@ -585,5 +586,6 @@
         private System.Windows.Forms.TextBox tbTrangThai;
         private System.Windows.Forms.Button btnKetThucHopDong;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.ComboBox cbbVaiTro;
     }
 }

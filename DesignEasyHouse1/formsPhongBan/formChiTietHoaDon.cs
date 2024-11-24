@@ -32,7 +32,7 @@ namespace DesignEasyHouse1.formsPhongBan
             this.hoaDon = HoaDonDAO.Instance.LayHoaDonTheoID(hoaDonID);
             if (hoaDon != null)
                 this.cuDan = CuDanDAO.Instance.GetCuDanByCuDanID(hoaDon.CuDanID);
-            LoadForm();
+            LoadFormDanhChoCuDan();
         }
 
         void LoadForm()
@@ -101,7 +101,7 @@ namespace DesignEasyHouse1.formsPhongBan
             }
             else if (hoaDon.TrangThai == "Chờ xác nhận")
             {
-                txtTrangThai.ForeColor = Color.Orange;
+                txtTrangThai.BackColor = Color.Yellow;
             }
         }
 
@@ -176,6 +176,11 @@ namespace DesignEasyHouse1.formsPhongBan
         private void btnXacNhanChuaThanhToan_Click(object sender, EventArgs e)
         {
             CapNhatHoaDonChuaThanhToan();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

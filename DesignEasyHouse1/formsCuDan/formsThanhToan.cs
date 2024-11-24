@@ -37,7 +37,7 @@ namespace DesignEasyHouse1.formsCuDan
                 var hoaDonDisplayList = listHoaDon.Select(hd => new
                 {
                     hd.HoaDonID,
-                    DisplayText = $"ID: {hd.HoaDonID} - Số tiền: {hd.TongTien} - Phân loại: {hd.PhanLoai}"
+                    DisplayText = $"ID: {hd.HoaDonID} - Số tiền: {(Decimal)hd.TongTien} - Phân loại: {hd.PhanLoai}"
                 }).ToList();
 
                 cbbHoaDonChuaThanhToan.DataSource = hoaDonDisplayList;

@@ -141,5 +141,24 @@ namespace DesignEasyHouse1.DAO
             return result > 0;
         }
 
+        public float LayTienThueTheoCanHo(string maCanHo)
+        {
+            string query = "SELECT TienThue FROM HopDongThue WHERE MaCanHo = @MaCanHo AND TrangThai = N'Hiệu lực' ";
+            object result = DataProvider.Instance.ExecuteScalar(query, new object[] { maCanHo });
+            return result != null ? Convert.ToSingle(result) : 0;
+        }
+
+        public int LayCuDanIDTheoVaiTro(string maCanHo, string vaiTro)
+        {
+            string query = @"
+                            SELECT TC.CuDanID
+                            FROM ThueCanHo TC
+                            JOIN HopDongThue HT ON TC.HopDongID = HT.HopDongID
+                            WHERE HT.MaCanHo = @MaCanHo AND HT.TrangThai = N'Hiệu lực' AND TC.VaiTro = @VaiTro ";
+            object result = DataProvider.Instance.ExecuteScalar(query, new object[] { maCanHo, vaiTro });
+            return result != null ? Convert.ToInt32(result) : 0;
+        }
+
+
     }
 }

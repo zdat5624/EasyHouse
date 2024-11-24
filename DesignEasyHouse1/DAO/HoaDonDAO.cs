@@ -36,49 +36,86 @@ namespace DesignEasyHouse1.DAO
             return danhSachHoaDon;
         }
 
-        public DataTable LayDTHoaDon()
+        public DataTable LayDTHoaDon(string phanLoai = null)
         {
             string query = @"
-                            SELECT 
-                                HoaDon.HoaDonID, 
-                                HoaDon.PhanLoai, 
-                                HoaDon.TongTien, 
-                                HoaDon.NoiDung, 
-                                HoaDon.NgayTao, 
-                                HoaDon.TrangThai, 
-                                HoaDon.CuDanID, 
-                                CuDan.HoTen AS TenCuDan
-                            FROM HoaDon
-                            LEFT JOIN CuDan ON HoaDon.CuDanID = CuDan.CuDanID
-                        ";
+                    SELECT 
+                        HoaDon.HoaDonID, 
+                        HoaDon.PhanLoai, 
+                        HoaDon.TongTien, 
+                        HoaDon.NoiDung, 
+                        HoaDon.NgayTao, 
+                        HoaDon.TrangThai, 
+                        HoaDon.CuDanID, 
+                        CuDan.HoTen AS TenCuDan
+                    FROM HoaDon
+                    LEFT JOIN CuDan ON HoaDon.CuDanID = CuDan.CuDanID
+                ";
 
-            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            if (!string.IsNullOrEmpty(phanLoai))
+            {
+                query += " WHERE HoaDon.PhanLoai = @PhanLoai ";
+            }
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { phanLoai });
 
             return data;
         }
 
-
-        public DataTable LayDTHoaDonChuaThanhToan()
+        public DataTable LayDTHoaDonChuaThanhToan(string phanLoai = null)
         {
             string query = @"
-                            SELECT 
-                                HoaDon.HoaDonID, 
-                                HoaDon.PhanLoai, 
-                                HoaDon.TongTien, 
-                                HoaDon.NoiDung, 
-                                HoaDon.NgayTao, 
-                                HoaDon.TrangThai, 
-                                HoaDon.CuDanID, 
-                                CuDan.HoTen AS TenCuDan
-                            FROM HoaDon
-                            LEFT JOIN CuDan ON HoaDon.CuDanID = CuDan.CuDanID
-                            WHERE HoaDon.TrangThai = N'Chưa thanh toán'
-                        ";
+                    SELECT 
+                        HoaDon.HoaDonID, 
+                        HoaDon.PhanLoai, 
+                        HoaDon.TongTien, 
+                        HoaDon.NoiDung, 
+                        HoaDon.NgayTao, 
+                        HoaDon.TrangThai, 
+                        HoaDon.CuDanID, 
+                        CuDan.HoTen AS TenCuDan
+                    FROM HoaDon
+                    LEFT JOIN CuDan ON HoaDon.CuDanID = CuDan.CuDanID
+                    WHERE HoaDon.TrangThai = N'Chưa thanh toán' 
+                ";
 
-            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            if (!string.IsNullOrEmpty(phanLoai))
+            {
+                query += " AND HoaDon.PhanLoai = @PhanLoai ";
+            }
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { phanLoai });
 
             return data;
         }
+
+        public DataTable LayDTHoaDonChoXacNhan(string phanLoai = null)
+        {
+            string query = @"
+                    SELECT 
+                        HoaDon.HoaDonID, 
+                        HoaDon.PhanLoai, 
+                        HoaDon.TongTien, 
+                        HoaDon.NoiDung, 
+                        HoaDon.NgayTao, 
+                        HoaDon.TrangThai, 
+                        HoaDon.CuDanID, 
+                        CuDan.HoTen AS TenCuDan
+                    FROM HoaDon
+                    LEFT JOIN CuDan ON HoaDon.CuDanID = CuDan.CuDanID
+                    WHERE HoaDon.TrangThai = N'Chờ xác nhận' 
+                ";
+
+            if (!string.IsNullOrEmpty(phanLoai))
+            {
+                query += " AND HoaDon.PhanLoai = @PhanLoai ";
+            }
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, new object[] { phanLoai });
+
+            return data;
+        }
+
 
 
         public HoaDon LayHoaDonTheoID(int hoaDonID)

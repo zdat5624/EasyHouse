@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OfficeOpenXml;
 
 namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
 {
@@ -23,11 +24,17 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
                 cbbLocHoaDon.SelectedIndex = 0;
             }
             dtgvHoaDonCanHo.CellContentClick += dtgvHoaDonCanHo_CellContentClick;
+
+            string thangHienTai = DateTime.Now.ToString("MM");
+
+            btnTaoPhieuGhiThang.Text = $"Tạo phiếu ghi tháng {thangHienTai}";
         }
+
+        #region Medthods
 
         void LoadDtgvHoaDonChuaThanhToan()
         {
-            dtgvHoaDonCanHo.DataSource = HoaDonDAO.Instance.LayDTHoaDonChuaThanhToan();
+            dtgvHoaDonCanHo.DataSource = HoaDonDAO.Instance.LayDTHoaDonChuaThanhToan("Hóa đơn điện-nước-thuê nhà-phí dịch vụ");
             dtgvHoaDonCanHo.Columns["HoaDonID"].HeaderText = "ID";
             dtgvHoaDonCanHo.Columns["PhanLoai"].HeaderText = "Phân Loại";
             dtgvHoaDonCanHo.Columns["TongTien"].HeaderText = "Tổng Tiền";
@@ -40,9 +47,9 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
             MyGUI.dinhDangCotAllCellsDTGV(dtgvHoaDonCanHo, new List<string> { "HoaDonID" });
         }
 
-        void LoadDtgvTatCaHoaDon()
+        void LoadDtgvHoaDonChoXacNhan()
         {
-            dtgvHoaDonCanHo.DataSource = HoaDonDAO.Instance.LayDTHoaDon();
+            dtgvHoaDonCanHo.DataSource = HoaDonDAO.Instance.LayDTHoaDonChuaThanhToan("Hóa đơn điện-nước-thuê nhà-phí dịch vụ");
             dtgvHoaDonCanHo.Columns["HoaDonID"].HeaderText = "ID";
             dtgvHoaDonCanHo.Columns["PhanLoai"].HeaderText = "Phân Loại";
             dtgvHoaDonCanHo.Columns["TongTien"].HeaderText = "Tổng Tiền";
@@ -51,9 +58,26 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
             dtgvHoaDonCanHo.Columns["TrangThai"].HeaderText = "Trạng Thái";
             dtgvHoaDonCanHo.Columns["CuDanID"].HeaderText = "ID Cư Dân Trả";
             dtgvHoaDonCanHo.Columns["TenCuDan"].HeaderText = "Tên Cư Dân Trả";
-            MyGUI.chuyenCotDenCuoiDTGV(dtgvHoaDonCanHo, new List<string> { "Delete"});
+            MyGUI.chuyenCotDenCuoiDTGV(dtgvHoaDonCanHo, new List<string> { "Delete", "Details" });
             MyGUI.dinhDangCotAllCellsDTGV(dtgvHoaDonCanHo, new List<string> { "HoaDonID" });
         }
+
+        void LoadDtgvTatCaHoaDon()
+        {
+            dtgvHoaDonCanHo.DataSource = HoaDonDAO.Instance.LayDTHoaDon("Hóa đơn điện-nước-thuê nhà-phí dịch vụ");
+            dtgvHoaDonCanHo.Columns["HoaDonID"].HeaderText = "ID";
+            dtgvHoaDonCanHo.Columns["PhanLoai"].HeaderText = "Phân Loại";
+            dtgvHoaDonCanHo.Columns["TongTien"].HeaderText = "Tổng Tiền";
+            dtgvHoaDonCanHo.Columns["NoiDung"].HeaderText = "Nội Dung";
+            dtgvHoaDonCanHo.Columns["NgayTao"].HeaderText = "Ngày Tạo";
+            dtgvHoaDonCanHo.Columns["TrangThai"].HeaderText = "Trạng Thái";
+            dtgvHoaDonCanHo.Columns["CuDanID"].HeaderText = "ID Cư Dân Trả";
+            dtgvHoaDonCanHo.Columns["TenCuDan"].HeaderText = "Tên Cư Dân Trả";
+            MyGUI.chuyenCotDenCuoiDTGV(dtgvHoaDonCanHo, new List<string> { "Delete", "Details" });
+            MyGUI.dinhDangCotAllCellsDTGV(dtgvHoaDonCanHo, new List<string> { "HoaDonID" });
+        }
+
+        
 
         void XoaHoaDon(int hoaDonID)
         {
@@ -90,16 +114,7 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
             }
         }
 
-        private void cbbLocHoaDon_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //cbbLocHoaDon
-            //Hóa đơn chưa thanh toán
-            //Tất cả hóa đơn
-
-            LoadDTGV();
-        }
-
-        void LoadDTGV ()
+        void LoadDTGV()
         {
             string selectedItem = cbbLocHoaDon.SelectedItem?.ToString();
 
@@ -111,12 +126,27 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
             {
                 LoadDtgvTatCaHoaDon();
             }
+            else if (selectedItem == "Hóa đơn chờ xác nhận")
+            {
+                LoadDtgvHoaDonChoXacNhan();
+            }
         }
 
         void XemChiTietHoaDon(int hoaDonID)
         {
             formChiTietHoaDon f = new formChiTietHoaDon(hoaDonID);
             f.ShowDialog();
+            LoadDTGV();
+        }
+
+        #endregion
+
+        private void cbbLocHoaDon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //cbbLocHoaDon
+            //Hóa đơn chưa thanh toán
+            //Tất cả hóa đơn
+
             LoadDTGV();
         }
 
@@ -142,6 +172,17 @@ namespace DesignEasyHouse1.formsPhongBan.PhongCuDan
             formThemHoaDon f = new formThemHoaDon("Hóa đơn điện-nước-thuê nhà-phí dịch vụ");
             f.ShowDialog();
             LoadDTGV();
+        }
+
+        private void btnTaoPhieuGhiThang_Click(object sender, EventArgs e)
+        {
+            formTaoPhieuGhi f = new formTaoPhieuGhi();
+            f.ShowDialog();
+        }
+
+        private void btnNhapPhieuGhi_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

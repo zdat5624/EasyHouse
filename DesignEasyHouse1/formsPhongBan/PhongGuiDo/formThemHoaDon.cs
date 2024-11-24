@@ -178,6 +178,12 @@ namespace DesignEasyHouse1.formsPhongBan.PhongGuiDo
 
         private void txtCuDanID_TextChanged(object sender, EventArgs e)
         {
+            if (txtCuDanID.Text == "")
+            {
+                txtHoTenCuDan.Text = "";
+                return;
+            }
+
             CuDan cd = CuDanDAO.Instance.GetCuDanByCuDanID(Convert.ToInt32(txtCuDanID.Text));
             if (cd != null)
             {

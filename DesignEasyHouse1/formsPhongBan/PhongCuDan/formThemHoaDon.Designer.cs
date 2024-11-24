@@ -205,8 +205,8 @@
             this.nudTongTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.nudTongTien.Location = new System.Drawing.Point(321, 115);
             this.nudTongTien.Maximum = new decimal(new int[] {
-            1215752191,
-            23,
+            1410065407,
+            2,
             0,
             0});
             this.nudTongTien.Name = "nudTongTien";

@@ -28,6 +28,23 @@ namespace DesignEasyHouse1.DAO
             return DataProvider.Instance.ExecuteQuery(query);
         }
 
+        public List<CanHo> LayDanhSachCanHo()
+        {
+            string query = "SELECT * FROM CanHo";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            List<CanHo> danhSachCanHo = new List<CanHo>();
+
+            foreach (DataRow row in data.Rows)
+            {
+                CanHo canHo = new CanHo(row);
+                danhSachCanHo.Add(canHo);
+            }
+
+            return danhSachCanHo;
+        }
+
+
         public CanHo LayCanHoTheoMa(string maCanHo)
         {
             string query = "SELECT * FROM CanHo WHERE MaCanHo = @MaCanHo ";

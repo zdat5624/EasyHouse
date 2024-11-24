@@ -111,7 +111,7 @@ CREATE TABLE ThueCanHo (
     ThueCanHoID INT IDENTITY PRIMARY KEY,
     CuDanID INT NOT NULL,             -- Khóa ngoại tới bảng CuDan
     HopDongID INT NOT NULL,           -- Khóa ngoại tới bảng HopDongThue
-    VaiTro NVARCHAR(50),              -- Vai trò của cư dân (Người thuê chính, Người ở ghép,...)
+    VaiTro NVARCHAR(50),              -- Vai trò của cư dân (Người thanh toán, Người ở,...)
 )
 GO
 
@@ -174,10 +174,6 @@ CREATE TABLE PhanCong (
     NhanVienId INT NOT NULL,
 	ThoiGianPhanCong DATETIME
 );
-
-
-
-
 
 CREATE TABLE PhanHoiYeuCau (
     PhanHoiID INT IDENTITY PRIMARY KEY,
@@ -576,6 +572,10 @@ INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyen
 VALUES 
     ('Nguyen Van c', 'Quản lý', '1985-05-10', 'Hà Nội', 'vesinh', 'vesinh', '2020-01-01', 10000000, N'Vệ sinh');
 
+	INSERT INTO nhanvien (Ten, ChucVu, NgaySinh, DiaChi, DienThoai, Email, NgayTuyenDung, Luong, PhongBan)
+VALUES 
+    ('Nguyen Van c', 'Quản lý', '1985-05-10', 'Hà Nội', '55', '55', '2020-01-01', 10000000, N'Tài chính');
+
 GO
 
 CREATE TABLE DuAnThiCong (
@@ -689,6 +689,7 @@ CREATE TABLE HoaDon (
 	TrangThai NVARCHAR(50) DEFAULT N'Chưa thanh toán',	-- 'Chưa thanh toán' hoặc 'Đã thanh toán'
     CuDanID INT,										-- CuDanID của Cư dân trả hóa đơn này
 );
+GO
 
 CREATE TABLE ThongTinToaNha (
     ID INT PRIMARY KEY IDENTITY(1,1),  -- ID tự động tăng, làm khóa chính
@@ -696,9 +697,24 @@ CREATE TABLE ThongTinToaNha (
 	MoTa NVARCHAR(MAX),               -- Mô tả thêm về tòa nhà
     ChuDauTu NVARCHAR(255),           -- Chủ đầu tư của tòa nhà
     DonViQuanLi NVARCHAR(255),
-	ThongTinThanhToan NVARCHAR(255)
+	ThongTinThanhToan NVARCHAR(255),
+	ThongTinLienHeVoiCuDan NVARCHAR(255),
 );
+GO
 
+
+CREATE TRIGGER trg_GioiHanThongTinToaNha
+ON ThongTinToaNha
+AFTER INSERT
+AS
+BEGIN
+    IF (SELECT COUNT(*) FROM ThongTinToaNha) > 1
+    BEGIN
+        ROLLBACK TRANSACTION;
+        RAISERROR ('Bảng ThongTinToaNha chỉ được phép có một hàng duy nhất.', 16, 1);
+    END
+END;
+GO
 
 CREATE PROCEDURE sp_ThemGiaiDoanThiCong
     @DuAnThiCongID INT,
@@ -784,3 +800,5 @@ VALUES
 INSERT INTO CuDan (HoTen, SoDienThoai, CCCD, Email, DiaChi, GioiTinh, NgaySinh, TrangThai, ThanhToan, NgayChuyenDen, HinhAnh)
 VALUES 
 ('Nguyen Van A', 'cd', '123456789012', 'cd', '123 Nguyen Trai, Ha Noi', N'Nam', '1990-01-01', N'Còn ở', N'Trả đủ', GETDATE(), NULL)
+
+
